@@ -1,0 +1,1622 @@
+{
+  "domain": "infrastructure",
+  "nodes": [
+    {
+      "id": "phantom",
+      "label": "Phantom",
+      "labelZh": "Phantom",
+      "type": "protocol",
+      "parent": "wallet",
+      "group": "infrastructure",
+      "summaryZh": "Phantom 是目前 Solana 上使用最廣的自託管錢包，同時提供瀏覽器擴充功能與手機應用。使用者可連接去中心化應用、兌換代幣與質押，也能搭配硬體裝置離線簽章。",
+      "url": "https://phantom.com",
+      "tags": [
+        "wallet",
+        "self-custody"
+      ]
+    },
+    {
+      "id": "solflare",
+      "label": "Solflare",
+      "labelZh": "Solflare",
+      "type": "protocol",
+      "parent": "wallet",
+      "group": "infrastructure",
+      "summaryZh": "Solflare 是以 Solana 為核心的自託管錢包，涵蓋質押、非同質化代幣與應用連線，並可搭配硬體簽章器，把私鑰留在離線裝置裡完成授權。",
+      "url": "https://www.solflare.com/",
+      "tags": [
+        "wallet",
+        "staking"
+      ]
+    },
+    {
+      "id": "backpack",
+      "label": "Backpack",
+      "labelZh": "Backpack",
+      "type": "protocol",
+      "parent": "wallet",
+      "group": "infrastructure",
+      "summaryZh": "Backpack 把自託管錢包與現貨、合約和借貸放進同一套應用，支援 Solana 以及其他網路，也是早期非同質化代幣應用規格的主要入口。",
+      "url": "https://backpack.app/",
+      "tags": [
+        "wallet",
+        "exchange"
+      ]
+    },
+    {
+      "id": "glow",
+      "label": "Glow",
+      "labelZh": "Glow",
+      "type": "protocol",
+      "parent": "wallet",
+      "group": "infrastructure",
+      "summaryZh": "Glow 是專注 Solana 的自託管錢包，提供手機與瀏覽器擴充、站內兌換、非同質化代幣與質押，並可連接硬體簽章器保護私鑰。",
+      "url": "https://glow.app/",
+      "tags": [
+        "wallet"
+      ]
+    },
+    {
+      "id": "nightly",
+      "label": "Nightly",
+      "labelZh": "Nightly",
+      "type": "protocol",
+      "parent": "wallet",
+      "group": "infrastructure",
+      "summaryZh": "Nightly 是支援多條鏈的自託管錢包，在 Solana 上提供資產管理、應用連線以及手機與擴充套件入口，讓使用者在本地簽署交易。",
+      "url": "https://nightly.app/",
+      "tags": [
+        "wallet"
+      ]
+    },
+    {
+      "id": "fuse",
+      "label": "Fuse",
+      "labelZh": "Fuse",
+      "type": "protocol",
+      "parent": "wallet",
+      "group": "infrastructure",
+      "summaryZh": "Fuse 是建在 Squads 多簽智慧帳戶上的自託管錢包，每筆交易需多把金鑰核准，並支援社交恢復、支出上限、質押以及站內聚合兌換。",
+      "url": "https://fusewallet.com/",
+      "tags": [
+        "wallet",
+        "smart-account"
+      ]
+    },
+    {
+      "id": "okx-wallet",
+      "label": "OKX Wallet",
+      "labelZh": "OKX 錢包",
+      "type": "protocol",
+      "parent": "wallet",
+      "group": "infrastructure",
+      "summaryZh": "OKX 錢包是支援 Solana 的多鏈自託管錢包，提供手機、瀏覽器擴充與應用瀏覽器，可管理非同質化代幣、站內兌換，並接上硬體簽章。",
+      "url": "https://web3.okx.com",
+      "tags": [
+        "wallet",
+        "multichain"
+      ]
+    },
+    {
+      "id": "trust-wallet",
+      "label": "Trust Wallet",
+      "labelZh": "Trust Wallet",
+      "type": "protocol",
+      "parent": "wallet",
+      "group": "infrastructure",
+      "summaryZh": "Trust Wallet 是多鏈自託管錢包，手機與擴充套件都能保管 Solana 上的資產、連接應用，並提供兌換與質押入口，私鑰存在使用者裝置。",
+      "url": "https://trustwallet.com",
+      "tags": [
+        "wallet",
+        "multichain"
+      ]
+    },
+    {
+      "id": "coinbase-wallet",
+      "label": "Coinbase Wallet",
+      "labelZh": "Coinbase 錢包",
+      "type": "protocol",
+      "parent": "wallet",
+      "group": "infrastructure",
+      "summaryZh": "Coinbase 錢包是自託管的多鏈錢包，支援 Solana 的資產與應用連線。使用者自行保管鑰匙，也可搭配硬體裝置簽署，而不把私鑰交給交易所。",
+      "url": "https://www.coinbase.com/wallet",
+      "tags": [
+        "wallet",
+        "multichain"
+      ]
+    },
+    {
+      "id": "ledger",
+      "label": "Ledger",
+      "labelZh": "Ledger",
+      "type": "protocol",
+      "parent": "wallet",
+      "group": "infrastructure",
+      "summaryZh": "Ledger 是離線硬體簽章裝置，私鑰不進入手機或瀏覽器。多款 Solana 軟體錢包都能把它當作簽名器，適合長期存放較大部位。",
+      "url": "https://www.ledger.com",
+      "tags": [
+        "wallet",
+        "hardware"
+      ]
+    },
+    {
+      "id": "keystone",
+      "label": "Keystone",
+      "labelZh": "Keystone",
+      "type": "protocol",
+      "parent": "wallet",
+      "group": "infrastructure",
+      "summaryZh": "Keystone 是空氣隔離的硬體簽章器，可與軟體錢包搭配，用掃描方式傳遞待簽交易，避免私鑰接觸已連網的手機或電腦。",
+      "url": "https://keyst.one",
+      "tags": [
+        "wallet",
+        "hardware"
+      ]
+    },
+    {
+      "id": "seeker",
+      "label": "Seeker",
+      "labelZh": "Seeker",
+      "type": "protocol",
+      "parent": "mobile",
+      "group": "infrastructure",
+      "summaryZh": "Seeker 是 Solana Mobile 的旗艦加密手機，已出貨超過二十萬台。它內建 Seed Vault 硬體金鑰保管、指紋簽章錢包與 dApp Store，每台裝置可鑄造不可轉讓的創世憑證，並綁定專屬網域。",
+      "url": "https://solanamobile.com/seeker",
+      "tags": [
+        "mobile",
+        "hardware"
+      ]
+    },
+    {
+      "id": "saga",
+      "label": "Saga",
+      "labelZh": "Saga",
+      "type": "protocol",
+      "parent": "mobile",
+      "group": "infrastructure",
+      "summaryZh": "Saga 是 Solana Mobile 的第一代加密手機，最先把硬體金鑰保管與應用商店做進裝置。後續旗艦改由 Seeker 承接，原本的產品路徑已併回官網首頁。",
+      "url": "https://solanamobile.com/saga",
+      "tags": [
+        "mobile",
+        "hardware"
+      ]
+    },
+    {
+      "id": "dapp-store",
+      "label": "Solana dApp Store",
+      "labelZh": "Solana 應用商店",
+      "type": "protocol",
+      "parent": "mobile",
+      "group": "infrastructure",
+      "summaryZh": "Solana dApp Store 是旗艦手機預載的加密應用商店，接受簽章後的安裝包，也可用網頁殼上架。它不沿用一般應用商店對代幣與鏈上功能的限制。",
+      "url": "https://docs.solanamobile.com/dapp-store/intro",
+      "tags": [
+        "mobile",
+        "store"
+      ]
+    },
+    {
+      "id": "seed-vault",
+      "label": "Seed Vault",
+      "labelZh": "Seed Vault",
+      "type": "protocol",
+      "parent": "mobile",
+      "group": "infrastructure",
+      "summaryZh": "Seed Vault 把種子與私鑰放在手機的安全執行環境，每次簽章都要指紋或密碼。一般應用不直接碰鑰匙，而是透過行動錢包轉接協議間接使用。",
+      "url": "https://docs.solanamobile.com/solana-mobile-stack/seed-vault",
+      "tags": [
+        "mobile",
+        "security"
+      ]
+    },
+    {
+      "id": "sms",
+      "label": "Solana Mobile Stack",
+      "labelZh": "Solana Mobile Stack",
+      "type": "protocol",
+      "parent": "mobile",
+      "group": "infrastructure",
+      "summaryZh": "Solana Mobile Stack 把硬體金鑰保管、手機錢包與應用商店打包成可授權的技術堆疊，開放給安卓廠商。二○二六年起可整合兩大手機晶片平台的安全硬體。",
+      "url": "https://solanamobile.com/sms",
+      "tags": [
+        "mobile",
+        "sdk"
+      ]
+    },
+    {
+      "id": "helius",
+      "label": "Helius",
+      "labelZh": "Helius",
+      "type": "protocol",
+      "parent": "rpc",
+      "group": "infrastructure",
+      "summaryZh": "Helius 是以 Solana 為核心的節點與資料平台，提供增強後的交易解析、數位資產介面與事件回呼，也有相容即時串流協定的託管服務。",
+      "url": "https://www.helius.dev",
+      "tags": [
+        "rpc",
+        "data"
+      ]
+    },
+    {
+      "id": "triton",
+      "label": "Triton One",
+      "labelZh": "Triton One",
+      "type": "protocol",
+      "parent": "rpc",
+      "group": "infrastructure",
+      "summaryZh": "Triton One 提供低延遲節點、專線與即時串流。交易與做市團隊常用它訂閱帳戶和交易更新，而不靠反覆輪詢一般遠端程序呼叫。",
+      "url": "https://triton.one",
+      "tags": [
+        "rpc",
+        "streaming"
+      ]
+    },
+    {
+      "id": "quicknode",
+      "label": "QuickNode",
+      "labelZh": "QuickNode",
+      "type": "protocol",
+      "parent": "rpc",
+      "group": "infrastructure",
+      "summaryZh": "QuickNode 是多鏈節點平台，在 Solana 上提供遠端程序呼叫、推送串流與打包送出。適合同時要維運多條網路的後端團隊。",
+      "url": "https://www.quicknode.com",
+      "tags": [
+        "rpc",
+        "multichain"
+      ]
+    },
+    {
+      "id": "alchemy",
+      "label": "Alchemy",
+      "labelZh": "Alchemy",
+      "type": "protocol",
+      "parent": "rpc",
+      "group": "infrastructure",
+      "summaryZh": "Alchemy 提供包含 Solana 的多鏈節點與開發工具，以計算單位計費。適合已經在其他網路使用同一套儀表板、想少接一家供應商的團隊。",
+      "url": "https://www.alchemy.com",
+      "tags": [
+        "rpc",
+        "multichain"
+      ]
+    },
+    {
+      "id": "chainstack",
+      "label": "Chainstack",
+      "labelZh": "Chainstack",
+      "type": "protocol",
+      "parent": "rpc",
+      "group": "infrastructure",
+      "summaryZh": "Chainstack 提供 Solana 的共享節點、專用節點與封存查詢。官方遠端程序呼叫目錄把它列為生產環境選項，方便依請求量擴充。",
+      "url": "https://chainstack.com",
+      "tags": [
+        "rpc"
+      ]
+    },
+    {
+      "id": "syndica",
+      "label": "Syndica",
+      "labelZh": "Syndica",
+      "type": "protocol",
+      "parent": "rpc",
+      "group": "infrastructure",
+      "summaryZh": "Syndica 是專注 Solana 的節點供應商，提供串流與依質押加權的連線品質，適合請求量大、又希望單價較可預期的後端服務。",
+      "url": "https://syndica.io",
+      "tags": [
+        "rpc",
+        "streaming"
+      ]
+    },
+    {
+      "id": "ankr",
+      "label": "Ankr",
+      "labelZh": "Ankr",
+      "type": "protocol",
+      "parent": "rpc",
+      "group": "infrastructure",
+      "summaryZh": "Ankr 提供公開與付費的 Solana 節點端點，並被列在官方目錄。它適合需要多鏈節點、但不依賴這條鏈專用解析介面的應用。",
+      "url": "https://www.ankr.com",
+      "tags": [
+        "rpc"
+      ]
+    },
+    {
+      "id": "blockdaemon",
+      "label": "Blockdaemon",
+      "labelZh": "Blockdaemon",
+      "type": "protocol",
+      "parent": "rpc",
+      "group": "infrastructure",
+      "summaryZh": "Blockdaemon 為機構提供 Solana 的節點與遠端程序呼叫，也參與驗證者託管與預言機基礎設施，適合要簽維運合約而不是自己買裸機的團隊。",
+      "url": "https://www.blockdaemon.com",
+      "tags": [
+        "rpc",
+        "validator"
+      ]
+    },
+    {
+      "id": "getblock",
+      "label": "GetBlock",
+      "labelZh": "GetBlock",
+      "type": "protocol",
+      "parent": "rpc",
+      "group": "infrastructure",
+      "summaryZh": "GetBlock 提供包含主網在內的共享節點，列在官方目錄裡，給開發者一個可快速接上的多鏈端點，用來讀取狀態與送出交易。",
+      "url": "https://getblock.io",
+      "tags": [
+        "rpc"
+      ]
+    },
+    {
+      "id": "firedancer",
+      "label": "Firedancer",
+      "labelZh": "Firedancer",
+      "type": "protocol",
+      "parent": "validator-client",
+      "group": "infrastructure",
+      "summaryZh": "Firedancer 是用系統程式語言重寫的獨立驗證者客戶端。二○二六年十月的版本已標示可上主網，但共識機制切換當下，驗證者仍須先改跑參考客戶端一系。",
+      "url": "https://github.com/firedancer-io/firedancer",
+      "tags": [
+        "validator"
+      ]
+    },
+    {
+      "id": "agave",
+      "label": "Agave",
+      "labelZh": "Agave",
+      "type": "protocol",
+      "parent": "validator-client",
+      "group": "infrastructure",
+      "summaryZh": "Agave 是目前的參考驗證者客戶端，由接手順實驗室客戶端的團隊維護。協議升級通常先在這裡完成，其他客戶端再依其行為對齊。",
+      "url": "https://www.anza.xyz/",
+      "tags": [
+        "validator"
+      ]
+    },
+    {
+      "id": "jito-solana",
+      "label": "Jito-Solana",
+      "labelZh": "Jito-Solana",
+      "type": "protocol",
+      "parent": "validator-client",
+      "group": "infrastructure",
+      "summaryZh": "Jito-Solana 是在參考客戶端上加入區塊引擎的分叉，驗證者可接收交易包並賺取小費。二○二六年十月的版本被用來度過新共識機制的切換。",
+      "url": "https://github.com/jito-foundation/jito-solana",
+      "tags": [
+        "validator",
+        "mev"
+      ]
+    },
+    {
+      "id": "frankendancer",
+      "label": "Frankendancer",
+      "labelZh": "Frankendancer",
+      "type": "protocol",
+      "parent": "validator-client",
+      "group": "infrastructure",
+      "summaryZh": "Frankendancer 把獨立客戶端的網路與收塊，接到參考客戶端的共識執行，已經在主網出塊。它是完整重寫普及之前，驗證者實際在跑的混合客戶端。",
+      "url": "https://github.com/firedancer-io/firedancer",
+      "tags": [
+        "validator"
+      ]
+    },
+    {
+      "id": "paladin",
+      "label": "Paladin",
+      "labelZh": "Paladin",
+      "type": "protocol",
+      "parent": "validator-client",
+      "group": "infrastructure",
+      "summaryZh": "Paladin 是區塊引擎客戶端的分叉，加強交易包過濾，並提供降低夾擊與搶跑的保護路徑，同時仍然參加 Solana 的共識。",
+      "url": "https://www.paladin.one/",
+      "tags": [
+        "validator",
+        "mev"
+      ]
+    },
+    {
+      "id": "pyth",
+      "label": "Pyth",
+      "labelZh": "Pyth",
+      "type": "protocol",
+      "parent": "oracle",
+      "group": "infrastructure",
+      "summaryZh": "Pyth 是 Solana 上最主要的第一方價格預言機，由交易所與做市商直接供數。應用在同一筆交易裡拉入簽章報價，並檢查信心區間與新鮮度。",
+      "url": "https://www.pyth.network/",
+      "tags": [
+        "oracle"
+      ]
+    },
+    {
+      "id": "switchboard",
+      "label": "Switchboard",
+      "labelZh": "Switchboard",
+      "type": "protocol",
+      "parent": "oracle",
+      "group": "infrastructure",
+      "summaryZh": "Switchboard 曾是可自訂餵價的去中心化預言機，借貸、流動性質押與永續合約都用過。核心團隊於二○二六年九月停止支援，並建議改接 Pyth 或 RedStone。",
+      "url": "https://switchboard.xyz/",
+      "tags": [
+        "oracle"
+      ]
+    },
+    {
+      "id": "chainlink",
+      "label": "Chainlink",
+      "labelZh": "Chainlink",
+      "type": "protocol",
+      "parent": "oracle",
+      "group": "infrastructure",
+      "summaryZh": "Chainlink 在主網與開發網提供資料餵價，用鏈下報告把多個來源合成價格。程式與帳戶分開存放，這套餵價不依賴以太坊上的合約。",
+      "url": "https://chain.link/",
+      "tags": [
+        "oracle"
+      ]
+    },
+    {
+      "id": "redstone",
+      "label": "RedStone",
+      "labelZh": "RedStone",
+      "type": "protocol",
+      "parent": "oracle",
+      "group": "infrastructure",
+      "summaryZh": "RedStone 是拉取式預言機，把簽過名的價格附在交易裡上鏈。先前那家可自訂餵價的服務停運時，它被列為 Solana 協議的替代來源。",
+      "url": "https://www.redstone.finance/",
+      "tags": [
+        "oracle"
+      ]
+    },
+    {
+      "id": "wormhole",
+      "label": "Wormhole",
+      "labelZh": "Wormhole",
+      "type": "protocol",
+      "parent": "bridge",
+      "group": "infrastructure",
+      "summaryZh": "Wormhole 是發跡於 Solana 的跨鏈訊息層，由一組守護者驗證訊息，可移動資產與任意資料。面向使用者的轉帳介面則另有專頁。",
+      "url": "https://wormhole.com/",
+      "tags": [
+        "bridge"
+      ]
+    },
+    {
+      "id": "portal",
+      "label": "Portal",
+      "labelZh": "Portal",
+      "type": "protocol",
+      "parent": "bridge",
+      "group": "infrastructure",
+      "summaryZh": "Portal 是跨鏈訊息層的代幣橋介面，用來在數十條鏈之間轉移穩定幣、以太幣與原生幣。底層訊息仍由守護者網路驗證。",
+      "url": "https://portalbridge.com/",
+      "tags": [
+        "bridge"
+      ]
+    },
+    {
+      "id": "debridge",
+      "label": "deBridge",
+      "labelZh": "deBridge",
+      "type": "protocol",
+      "parent": "bridge",
+      "group": "infrastructure",
+      "summaryZh": "deBridge 用意圖與零鎖倉流動性做跨鏈兌換，Solana 上的路線以原生資產結算，不靠大型資金池長期保管跨鏈資產。",
+      "url": "https://debridge.com/",
+      "tags": [
+        "bridge"
+      ]
+    },
+    {
+      "id": "allbridge",
+      "label": "Allbridge",
+      "labelZh": "Allbridge",
+      "type": "protocol",
+      "parent": "bridge",
+      "group": "infrastructure",
+      "summaryZh": "Allbridge 以流動性池連接 Solana 與多條網路的穩定幣。現行產品是新核心；舊版已標示棄用，並預計二○二六年十一月停止服務。",
+      "url": "https://allbridge.io",
+      "tags": [
+        "bridge",
+        "stablecoin"
+      ]
+    },
+    {
+      "id": "layerzero",
+      "label": "LayerZero",
+      "labelZh": "LayerZero",
+      "type": "protocol",
+      "parent": "bridge",
+      "group": "infrastructure",
+      "summaryZh": "LayerZero 已在主網提供跨鏈訊息，讓代幣與應用以全鏈形式接到以太坊及多個二層網路，無須為每一條鏈各寫一套發行邏輯。",
+      "url": "https://layerzero.network/",
+      "tags": [
+        "bridge"
+      ]
+    },
+    {
+      "id": "hyperlane",
+      "label": "Hyperlane",
+      "labelZh": "Hyperlane",
+      "type": "protocol",
+      "parent": "bridge",
+      "group": "infrastructure",
+      "summaryZh": "Hyperlane 是可自訂驗證方式的跨鏈訊息框架，支援 Solana 與其他虛擬機。開發者能自行部署橋與多鏈資產，無須核心團隊逐條核准。",
+      "url": "https://www.hyperlane.xyz/",
+      "tags": [
+        "bridge"
+      ]
+    },
+    {
+      "id": "mayan",
+      "label": "Mayan",
+      "labelZh": "Mayan",
+      "type": "protocol",
+      "parent": "bridge",
+      "group": "infrastructure",
+      "summaryZh": "Mayan 是面向 Solana 的跨鏈兌換協議，透過競價決定由誰完成結算，並使用既有的跨鏈訊息層傳遞指令與資產。",
+      "url": "https://mayan.finance",
+      "tags": [
+        "bridge"
+      ]
+    },
+    {
+      "id": "across",
+      "label": "Across",
+      "labelZh": "Across",
+      "type": "protocol",
+      "parent": "bridge",
+      "group": "infrastructure",
+      "summaryZh": "Across 是意圖式跨鏈橋，中繼者先墊付資金，稍後再完成結算。二○二六年的跨鏈比較已把它列為可以進出 Solana 的選項。",
+      "url": "https://across.to",
+      "tags": [
+        "bridge"
+      ]
+    },
+    {
+      "id": "yellowstone",
+      "label": "Yellowstone gRPC",
+      "labelZh": "Yellowstone gRPC",
+      "type": "protocol",
+      "parent": "indexer",
+      "group": "infrastructure",
+      "summaryZh": "Yellowstone 由節點供應商維護的即時串流介面，直接從驗證者記憶體推出帳戶、交易與槽位更新。索引器與交易系統用它取代輪詢。",
+      "url": "https://github.com/rpcpool/yellowstone-grpc",
+      "tags": [
+        "indexer",
+        "streaming"
+      ]
+    },
+    {
+      "id": "shyft",
+      "label": "Shyft",
+      "labelZh": "Shyft",
+      "type": "protocol",
+      "parent": "indexer",
+      "group": "infrastructure",
+      "summaryZh": "Shyft 提供即時串流與解析後的鏈上資料，並在多個地區做故障轉移。索引器與高頻讀取可以不必自己架設插件節點。",
+      "url": "https://shyft.to/",
+      "tags": [
+        "indexer",
+        "streaming"
+      ]
+    },
+    {
+      "id": "the-graph",
+      "label": "The Graph",
+      "labelZh": "The Graph",
+      "type": "protocol",
+      "parent": "indexer",
+      "group": "infrastructure",
+      "summaryZh": "The Graph 讓開發者把鏈上事件做成子圖，再用查詢語言讀取。應用可用它整理歷史交易與協議狀態，而不必自己掃描節點。",
+      "url": "https://thegraph.com/",
+      "tags": [
+        "indexer"
+      ]
+    },
+    {
+      "id": "sns",
+      "label": "Solana Name Service",
+      "labelZh": "Solana 域名服務",
+      "type": "protocol",
+      "parent": "identity",
+      "group": "infrastructure",
+      "summaryZh": "Solana Name Service（SNS，由 Bonfida 團隊打造）發行 .sol 鏈上域名，將人類可讀名稱映射至錢包地址，廣泛整合於 Phantom、Solflare、Jupiter、區塊鏈瀏覽器與 Seeker 手機生態。",
+      "url": "https://www.sns.id/",
+      "tags": [
+        "identity",
+        "domains"
+      ]
+    },
+    {
+      "id": "all-domains",
+      "label": "AllDomains",
+      "labelZh": "AllDomains",
+      "type": "protocol",
+      "parent": "identity",
+      "group": "infrastructure",
+      "summaryZh": "AllDomains 是 Solana 上的多後綴鏈上域名服務，允許使用者與社群註冊專屬可讀後綴並綁定錢包地址，作為錢包轉帳與社群身分辨識入口。",
+      "url": "https://alldomains.id",
+      "tags": [
+        "identity",
+        "domains"
+      ]
+    },
+    {
+      "id": "sas",
+      "label": "Solana Attestation Service",
+      "labelZh": "Solana 憑證服務",
+      "type": "protocol",
+      "parent": "identity",
+      "group": "infrastructure",
+      "summaryZh": "Solana 憑證服務（SAS）是主網上的開放鏈上認證協議，發行方可將 KYC 合規狀態、地區資格或會員身分簽署為可重用憑證，讓應用直接查驗而不必重複收集敏感資料。",
+      "url": "https://solana.com/news/solana-attestation-service",
+      "tags": [
+        "identity",
+        "attestation"
+      ]
+    },
+    {
+      "id": "civic",
+      "label": "Civic",
+      "labelZh": "Civic",
+      "type": "protocol",
+      "parent": "identity",
+      "group": "infrastructure",
+      "summaryZh": "Civic 是 Solana 鏈上身分與認證基礎設施，旗下 Civic Auth 支援以社交帳號一鍵登入並建立嵌入式 Solana 錢包，同時深度參與 Solana 憑證服務（SAS）標準。",
+      "url": "https://www.civic.com/",
+      "tags": [
+        "identity",
+        "auth"
+      ]
+    },
+    {
+      "id": "solana-web3",
+      "label": "Solana web3.js",
+      "labelZh": "Solana web3.js",
+      "type": "protocol",
+      "parent": "sdk",
+      "group": "developer",
+      "summaryZh": "Solana web3.js 是官方 JavaScript 軟體開發套件，廣泛用於瀏覽器與 Node.js 應用組裝交易、讀取帳戶狀態及呼叫 RPC 節點。",
+      "url": "https://solana.com/docs/clients/official/javascript",
+      "tags": [
+        "sdk",
+        "javascript"
+      ]
+    },
+    {
+      "id": "solana-kit",
+      "label": "Solana Kit",
+      "labelZh": "Solana Kit",
+      "type": "protocol",
+      "parent": "sdk",
+      "group": "developer",
+      "summaryZh": "Solana Kit 是官方建議的 TypeScript 工具組，用插件組合遠端呼叫、簽章者與錢包標準。二○二六年的文件把新應用導向這套，而不是舊的類別式介面。",
+      "url": "https://github.com/anza-xyz/kit",
+      "tags": [
+        "sdk",
+        "typescript"
+      ]
+    },
+    {
+      "id": "gill",
+      "label": "Gill",
+      "labelZh": "Gill",
+      "type": "protocol",
+      "parent": "sdk",
+      "group": "developer",
+      "summaryZh": "Gill 是建在官方工具組上的 JavaScript 客戶端，減少交易組裝的樣板程式，並提供介面框架綁定。它的型別與底層工具組互通。",
+      "url": "https://github.com/gillsdk/gill",
+      "tags": [
+        "sdk",
+        "typescript"
+      ]
+    },
+    {
+      "id": "wallet-adapter",
+      "label": "Wallet Adapter",
+      "labelZh": "Wallet Adapter",
+      "type": "protocol",
+      "parent": "sdk",
+      "group": "developer",
+      "summaryZh": "Wallet Adapter 是瀏覽器連接各家錢包的舊式前端套件，讓網頁叫起擴充功能簽章。新專案被建議改走工具組的錢包插件與統一錢包標準。",
+      "url": "https://github.com/anza-xyz/wallet-adapter",
+      "tags": [
+        "sdk",
+        "wallet"
+      ]
+    },
+    {
+      "id": "mobile-wallet-adapter",
+      "label": "Mobile Wallet Adapter",
+      "labelZh": "行動錢包轉接器",
+      "type": "protocol",
+      "parent": "sdk",
+      "group": "developer",
+      "summaryZh": "行動錢包轉接器是手機端的錢包連線協議，讓應用叫起系統裡的硬體保管錢包完成簽章，無須為每一款手機錢包各寫一套整合。",
+      "url": "https://github.com/solana-mobile/mobile-wallet-adapter",
+      "tags": [
+        "sdk",
+        "mobile"
+      ]
+    },
+    {
+      "id": "codama",
+      "label": "Codama",
+      "labelZh": "Codama",
+      "type": "protocol",
+      "parent": "sdk",
+      "group": "developer",
+      "summaryZh": "Codama 讀取程式框架或自訂的介面描述，產生相容新工具組的多語言客戶端。它接替早期的產生器，用來取代手寫指令組裝。",
+      "url": "https://github.com/codama-idl/codama",
+      "tags": [
+        "sdk",
+        "idl"
+      ]
+    },
+    {
+      "id": "anchor",
+      "label": "Anchor",
+      "labelZh": "Anchor",
+      "type": "protocol",
+      "parent": "framework",
+      "group": "developer",
+      "summaryZh": "Anchor 是撰寫鏈上程式最常用的框架，負責帳戶驗證、介面描述與測試流程。官方腳本客戶端仍綁定舊版函式庫，接新工具組時要另走產生器。",
+      "url": "https://www.anchor-lang.com/",
+      "tags": [
+        "framework",
+        "rust"
+      ]
+    },
+    {
+      "id": "pinocchio",
+      "label": "Pinocchio",
+      "labelZh": "Pinocchio",
+      "type": "protocol",
+      "parent": "framework",
+      "group": "developer",
+      "summaryZh": "Pinocchio 是輕量的鏈上程式庫，用來寫更省計算單位的原生程式。新的代幣程式實作以它重寫，並通過安全審查，適合在意交易費用的團隊。",
+      "url": "https://github.com/anza-xyz/pinocchio",
+      "tags": [
+        "framework",
+        "rust"
+      ]
+    },
+    {
+      "id": "solscan",
+      "label": "Solscan",
+      "labelZh": "Solscan",
+      "type": "protocol",
+      "parent": "explorer",
+      "group": "developer",
+      "summaryZh": "Solscan 是 Solana 最常用的區塊瀏覽器，可查交易、帳戶、代幣持有人與程式活動，使用者也常把它當作核對鏈上事實的第一站。",
+      "url": "https://solscan.io/",
+      "tags": [
+        "explorer"
+      ]
+    },
+    {
+      "id": "solanafm",
+      "label": "SolanaFM",
+      "labelZh": "SolanaFM",
+      "type": "protocol",
+      "parent": "explorer",
+      "group": "developer",
+      "summaryZh": "SolanaFM 是另一個區塊瀏覽器，除了交易與帳戶，還能把代幣流向畫成圖，方便分辨大額轉帳是歸集到同一人，還是散到許多地址。",
+      "url": "https://solana.fm",
+      "tags": [
+        "explorer"
+      ]
+    },
+    {
+      "id": "solana-explorer",
+      "label": "Solana Explorer",
+      "labelZh": "Solana Explorer",
+      "type": "protocol",
+      "parent": "explorer",
+      "group": "developer",
+      "summaryZh": "Solana Explorer 是基金會維護的官方瀏覽器，用來查叢集、交易與帳戶。代幣搜尋會彙總自動風險掃描與數家名單來源，而不是只靠單一審核。",
+      "url": "https://explorer.solana.com",
+      "tags": [
+        "explorer"
+      ]
+    },
+    {
+      "id": "orb",
+      "label": "Orb",
+      "labelZh": "Orb",
+      "type": "protocol",
+      "parent": "explorer",
+      "group": "developer",
+      "summaryZh": "Orb 是介面較緊湊的區塊瀏覽器，用來查看交易、帳戶與代幣，作為最大瀏覽器與官方瀏覽器之外的另一個讀鏈入口。",
+      "url": "https://orbmarkets.io/",
+      "tags": [
+        "explorer"
+      ]
+    },
+    {
+      "id": "solana-beach",
+      "label": "Solana Beach",
+      "labelZh": "Solana Beach",
+      "type": "protocol",
+      "parent": "explorer",
+      "group": "developer",
+      "summaryZh": "Solana Beach 是長期運作的區塊瀏覽器，可查看區塊、驗證者與帳戶，補上官方瀏覽器以外的另一種鏈上閱讀方式，方便交叉核對。",
+      "url": "https://solanabeach.io/",
+      "tags": [
+        "explorer"
+      ]
+    },
+    {
+      "id": "xray",
+      "label": "XRAY",
+      "labelZh": "XRAY",
+      "type": "protocol",
+      "parent": "explorer",
+      "group": "developer",
+      "summaryZh": "XRAY 是節點公司做的交易瀏覽器，把原始指令解析成可讀動作，方便除錯兌換、非同質化代幣與程式呼叫，而不只看一串帳戶。",
+      "url": "https://xray.helius.xyz/",
+      "tags": [
+        "explorer"
+      ]
+    },
+    {
+      "id": "ottersec",
+      "label": "OtterSec",
+      "labelZh": "OtterSec",
+      "type": "protocol",
+      "parent": "security",
+      "group": "developer",
+      "summaryZh": "OtterSec 是生態裡的主要審計團隊，持續審查參考客戶端與代幣、運行時變更。二○二六年九月仍公開了對新版本客戶端的審查報告。",
+      "url": "https://osec.io/",
+      "tags": [
+        "security",
+        "audit"
+      ]
+    },
+    {
+      "id": "neodyme",
+      "label": "Neodyme",
+      "labelZh": "Neodyme",
+      "type": "protocol",
+      "parent": "security",
+      "group": "developer",
+      "summaryZh": "Neodyme 長期審計運行時、代幣程式與輕量程式庫。二○二五年完成新代幣實作的審查，二○二六年仍針對參考客戶端的新版本發布報告。",
+      "url": "https://neodyme.io/",
+      "tags": [
+        "security",
+        "audit"
+      ]
+    },
+    {
+      "id": "sec3",
+      "label": "Sec3",
+      "labelZh": "Sec3",
+      "type": "protocol",
+      "parent": "security",
+      "group": "developer",
+      "summaryZh": "Sec3 做鏈上程式的安全研究與自動化分析，並提供專案監控視圖，協助團隊在升級權限與程式變更時及早發現風險。",
+      "url": "https://sec3.dev/",
+      "tags": [
+        "security",
+        "audit"
+      ]
+    },
+    {
+      "id": "zellic",
+      "label": "Zellic",
+      "labelZh": "Zellic",
+      "type": "protocol",
+      "parent": "security",
+      "group": "developer",
+      "summaryZh": "Zellic 審計鏈上程式與客戶端維護團隊的系統元件，包含輕量程式庫與代幣實作，審查報告收錄於公開清單，供其他團隊查核。",
+      "url": "https://www.zellic.io/",
+      "tags": [
+        "security",
+        "audit"
+      ]
+    },
+    {
+      "id": "halborn",
+      "label": "Halborn",
+      "labelZh": "Halborn",
+      "type": "protocol",
+      "parent": "security",
+      "group": "developer",
+      "summaryZh": "Halborn 審計過運行時與質押池等核心程式，報告留在客戶端團隊的公開庫。它是較早同時覆蓋客戶端與程式庫的安全廠商。",
+      "url": "https://www.halborn.com/",
+      "tags": [
+        "security",
+        "audit"
+      ]
+    },
+    {
+      "id": "ackee",
+      "label": "Ackee",
+      "labelZh": "Ackee",
+      "type": "protocol",
+      "parent": "security",
+      "group": "developer",
+      "summaryZh": "Ackee 提供鏈上程式審計，並維護可對指令與帳戶邊界做自動攻擊的模糊測試工具，讓團隊在上線前先找出異常路徑。",
+      "url": "https://ackee.xyz/",
+      "tags": [
+        "security",
+        "audit"
+      ]
+    },
+    {
+      "id": "immunefi",
+      "label": "Immunefi",
+      "labelZh": "Immunefi",
+      "type": "protocol",
+      "parent": "security",
+      "group": "developer",
+      "summaryZh": "Immunefi 是漏洞賞金平台，鏈上協議與基礎設施把獎池放在這裡，讓外部研究員回報可利用的程式缺陷與經濟攻擊，而不是只靠私下聯繫。",
+      "url": "https://immunefi.com/",
+      "tags": [
+        "security",
+        "bounty"
+      ]
+    },
+    {
+      "id": "rugcheck",
+      "label": "RugCheck",
+      "labelZh": "RugCheck",
+      "type": "protocol",
+      "parent": "security",
+      "group": "developer",
+      "summaryZh": "RugCheck 自動掃描代幣的鑄造權、凍結權、持倉集中度與流動性。官方瀏覽器會讀取這些結果，在搜尋頁顯示風險訊號。",
+      "url": "https://rugcheck.xyz/",
+      "tags": [
+        "security",
+        "token"
+      ]
+    },
+    {
+      "id": "blowfish",
+      "label": "Blowfish",
+      "labelZh": "Blowfish",
+      "type": "protocol",
+      "parent": "security",
+      "group": "developer",
+      "summaryZh": "Blowfish 在使用者簽章前模擬交易，標出異常授權、仿冒代幣與可疑轉帳，供錢包攔截釣魚與盜幣，而不是等資產轉走後才追查。",
+      "url": "https://blowfish.xyz/",
+      "tags": [
+        "security",
+        "wallet"
+      ]
+    },
+    {
+      "id": "blockaid",
+      "label": "Blockaid",
+      "labelZh": "Blockaid",
+      "type": "protocol",
+      "parent": "security",
+      "group": "developer",
+      "summaryZh": "Blockaid 提供交易模擬與惡意互動偵測。多鏈錢包在確認前用它判斷 Solana 的交易會不會轉走資產，或授予過寬的權限。",
+      "url": "https://blockaid.io/",
+      "tags": [
+        "security",
+        "wallet"
+      ]
+    },
+    {
+      "id": "birdeye",
+      "label": "Birdeye",
+      "labelZh": "Birdeye",
+      "type": "protocol",
+      "parent": "data-api",
+      "group": "developer",
+      "summaryZh": "Birdeye 是面向 Solana 的市場資料介面，提供價格、成交、持有人與錢包標籤，也能把地址對到鏈上名稱與已知實體，適合行情與持倉分析。",
+      "url": "https://birdeye.so",
+      "tags": [
+        "data-api",
+        "market"
+      ]
+    },
+    {
+      "id": "dexscreen",
+      "label": "DEX Screener",
+      "labelZh": "DEX Screener",
+      "type": "protocol",
+      "parent": "data-api",
+      "group": "developer",
+      "summaryZh": "DEX Screener 即時索引並顯示 Solana 各大去中心化交易所與發幣平台的交易對 K 線、流動性池深度、成交量與大戶買賣明細，是觀測鏈上新幣行情的核心終端。",
+      "url": "https://dexscreener.com",
+      "tags": [
+        "data-api",
+        "market"
+      ]
+    },
+    {
+      "id": "dune",
+      "label": "Dune",
+      "labelZh": "Dune",
+      "type": "protocol",
+      "parent": "data-api",
+      "group": "developer",
+      "summaryZh": "Dune 用查詢語言讀取已解碼的交易、代幣與應用活動，社群儀表板可以重用。它適合研究與覆盤，而不是低延遲下單。",
+      "url": "https://dune.com/",
+      "tags": [
+        "data-api",
+        "analytics"
+      ]
+    },
+    {
+      "id": "solana-tracker",
+      "label": "Solana Tracker",
+      "labelZh": "Solana Tracker",
+      "type": "protocol",
+      "parent": "data-api",
+      "group": "developer",
+      "summaryZh": "Solana Tracker 提供代幣、持有人與損益的資料介面，並能解析鏈上名稱與地址查找表。二○二六年仍在更新索引引擎與即時串流。",
+      "url": "https://www.solanatracker.io/",
+      "tags": [
+        "data-api"
+      ]
+    },
+    {
+      "id": "bitquery",
+      "label": "Bitquery",
+      "labelZh": "Bitquery",
+      "type": "protocol",
+      "parent": "data-api",
+      "group": "developer",
+      "summaryZh": "Bitquery 以查詢語言提供歷史與即時鏈上資料，可查交易、轉帳與程式活動，作為不想自建索引器時的現成資料介面。",
+      "url": "https://bitquery.io/",
+      "tags": [
+        "data-api",
+        "graphql"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "source": "phantom",
+      "target": "jupiter",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "phantom",
+      "target": "raydium",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "phantom",
+      "target": "orca",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "phantom",
+      "target": "magic-eden",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "phantom",
+      "target": "tensor",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "phantom",
+      "target": "marinade",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "phantom",
+      "target": "jito",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "phantom",
+      "target": "drift",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "phantom",
+      "target": "sanctum",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "phantom",
+      "target": "xstocks",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "solflare",
+      "target": "jupiter",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "solflare",
+      "target": "jito",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "solflare",
+      "target": "marinade",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "solflare",
+      "target": "sanctum",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "solflare",
+      "target": "xstocks",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "backpack",
+      "target": "jupiter",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "backpack",
+      "target": "magic-eden",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "backpack",
+      "target": "tensor",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "fuse",
+      "target": "jupiter",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "glow",
+      "target": "jupiter",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "jupiter",
+      "target": "pyth",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "drift",
+      "target": "pyth",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "kamino",
+      "target": "pyth",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "raydium",
+      "target": "pyth",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "helius",
+      "target": "magic-eden",
+      "relation": "powers"
+    },
+    {
+      "source": "portal",
+      "target": "wormhole",
+      "relation": "built-on"
+    },
+    {
+      "source": "mayan",
+      "target": "wormhole",
+      "relation": "built-on"
+    },
+    {
+      "source": "pyth",
+      "target": "wormhole",
+      "relation": "integrates"
+    },
+    {
+      "source": "portal",
+      "target": "circle",
+      "relation": "integrates"
+    },
+    {
+      "source": "wormhole",
+      "target": "render",
+      "relation": "integrates"
+    },
+    {
+      "source": "wormhole",
+      "target": "debridge",
+      "relation": "competes"
+    },
+    {
+      "source": "debridge",
+      "target": "allbridge",
+      "relation": "competes"
+    },
+    {
+      "source": "layerzero",
+      "target": "wormhole",
+      "relation": "competes"
+    },
+    {
+      "source": "hyperlane",
+      "target": "wormhole",
+      "relation": "competes"
+    },
+    {
+      "source": "across",
+      "target": "debridge",
+      "relation": "competes"
+    },
+    {
+      "source": "pyth",
+      "target": "switchboard",
+      "relation": "competes"
+    },
+    {
+      "source": "redstone",
+      "target": "pyth",
+      "relation": "competes"
+    },
+    {
+      "source": "chainlink",
+      "target": "pyth",
+      "relation": "competes"
+    },
+    {
+      "source": "firedancer",
+      "target": "agave",
+      "relation": "competes"
+    },
+    {
+      "source": "frankendancer",
+      "target": "firedancer",
+      "relation": "built-on"
+    },
+    {
+      "source": "frankendancer",
+      "target": "agave",
+      "relation": "built-on"
+    },
+    {
+      "source": "jito-solana",
+      "target": "agave",
+      "relation": "built-on"
+    },
+    {
+      "source": "paladin",
+      "target": "jito-solana",
+      "relation": "built-on"
+    },
+    {
+      "source": "jito-solana",
+      "target": "jito",
+      "relation": "integrates"
+    },
+    {
+      "source": "gill",
+      "target": "solana-kit",
+      "relation": "built-on"
+    },
+    {
+      "source": "anchor",
+      "target": "solana-web3",
+      "relation": "integrates"
+    },
+    {
+      "source": "codama",
+      "target": "anchor",
+      "relation": "integrates"
+    },
+    {
+      "source": "fuse",
+      "target": "squads",
+      "relation": "built-on"
+    },
+    {
+      "source": "seeker",
+      "target": "seed-vault",
+      "relation": "integrates"
+    },
+    {
+      "source": "sms",
+      "target": "seed-vault",
+      "relation": "integrates"
+    },
+    {
+      "source": "mobile-wallet-adapter",
+      "target": "seed-vault",
+      "relation": "integrates"
+    },
+    {
+      "source": "triton",
+      "target": "yellowstone",
+      "relation": "powers"
+    },
+    {
+      "source": "helius",
+      "target": "yellowstone",
+      "relation": "integrates"
+    },
+    {
+      "source": "shyft",
+      "target": "yellowstone",
+      "relation": "integrates"
+    },
+    {
+      "source": "phantom",
+      "target": "ledger",
+      "relation": "integrates"
+    },
+    {
+      "source": "solflare",
+      "target": "ledger",
+      "relation": "integrates"
+    },
+    {
+      "source": "backpack",
+      "target": "ledger",
+      "relation": "integrates"
+    },
+    {
+      "source": "okx-wallet",
+      "target": "ledger",
+      "relation": "integrates"
+    },
+    {
+      "source": "coinbase-wallet",
+      "target": "ledger",
+      "relation": "integrates"
+    },
+    {
+      "source": "solflare",
+      "target": "keystone",
+      "relation": "integrates"
+    },
+    {
+      "source": "dapp-store",
+      "target": "jupiter",
+      "relation": "lists"
+    },
+    {
+      "source": "dapp-store",
+      "target": "magic-eden",
+      "relation": "lists"
+    },
+    {
+      "source": "dapp-store",
+      "target": "helium",
+      "relation": "lists"
+    },
+    {
+      "source": "dapp-store",
+      "target": "tensor",
+      "relation": "lists"
+    },
+    {
+      "source": "dapp-store",
+      "target": "raydium",
+      "relation": "lists"
+    },
+    {
+      "source": "dexscreen",
+      "target": "raydium",
+      "relation": "lists"
+    },
+    {
+      "source": "dexscreen",
+      "target": "orca",
+      "relation": "lists"
+    },
+    {
+      "source": "dexscreen",
+      "target": "meteora",
+      "relation": "lists"
+    },
+    {
+      "source": "dexscreen",
+      "target": "pumpswap",
+      "relation": "lists"
+    },
+    {
+      "source": "dexscreen",
+      "target": "pump-fun",
+      "relation": "lists"
+    },
+    {
+      "source": "dexscreen",
+      "target": "jupiter",
+      "relation": "integrates"
+    },
+    {
+      "source": "birdeye",
+      "target": "jupiter",
+      "relation": "integrates"
+    },
+    {
+      "source": "birdeye",
+      "target": "raydium",
+      "relation": "integrates"
+    },
+    {
+      "source": "birdeye",
+      "target": "orca",
+      "relation": "integrates"
+    },
+    {
+      "source": "birdeye",
+      "target": "meteora",
+      "relation": "integrates"
+    },
+    {
+      "source": "birdeye",
+      "target": "pumpswap",
+      "relation": "integrates"
+    },
+    {
+      "source": "birdeye",
+      "target": "dexscreen",
+      "relation": "competes"
+    },
+    {
+      "source": "birdeye",
+      "target": "solana-tracker",
+      "relation": "competes"
+    },
+    {
+      "source": "solana-tracker",
+      "target": "raydium",
+      "relation": "integrates"
+    },
+    {
+      "source": "solana-tracker",
+      "target": "pumpswap",
+      "relation": "integrates"
+    },
+    {
+      "source": "solana-tracker",
+      "target": "pump-fun",
+      "relation": "integrates"
+    },
+    {
+      "source": "solana-tracker",
+      "target": "jupiter",
+      "relation": "integrates"
+    },
+    {
+      "source": "dune",
+      "target": "jupiter",
+      "relation": "integrates"
+    },
+    {
+      "source": "dune",
+      "target": "raydium",
+      "relation": "integrates"
+    },
+    {
+      "source": "dune",
+      "target": "pump-fun",
+      "relation": "integrates"
+    },
+    {
+      "source": "dune",
+      "target": "bitquery",
+      "relation": "competes"
+    },
+    {
+      "source": "bitquery",
+      "target": "raydium",
+      "relation": "integrates"
+    },
+    {
+      "source": "bitquery",
+      "target": "jupiter",
+      "relation": "integrates"
+    },
+    {
+      "source": "bitquery",
+      "target": "pump-fun",
+      "relation": "integrates"
+    },
+    {
+      "source": "sns",
+      "target": "social",
+      "relation": "also-in"
+    },
+    {
+      "source": "all-domains",
+      "target": "social",
+      "relation": "also-in"
+    },
+    {
+      "source": "civic",
+      "target": "social",
+      "relation": "also-in"
+    },
+    {
+      "source": "all-domains",
+      "target": "sns",
+      "relation": "competes"
+    },
+    {
+      "source": "sns",
+      "target": "seeker",
+      "relation": "integrates"
+    },
+    {
+      "source": "sns",
+      "target": "jupiter",
+      "relation": "integrates"
+    },
+    {
+      "source": "sns",
+      "target": "solflare",
+      "relation": "integrates"
+    },
+    {
+      "source": "solscan",
+      "target": "solanafm",
+      "relation": "competes"
+    },
+    {
+      "source": "helius",
+      "target": "quicknode",
+      "relation": "competes"
+    },
+    {
+      "source": "helius",
+      "target": "triton",
+      "relation": "competes"
+    },
+    {
+      "source": "phantom",
+      "target": "solflare",
+      "relation": "competes"
+    },
+    {
+      "source": "phantom",
+      "target": "backpack",
+      "relation": "competes"
+    },
+    {
+      "source": "solana-explorer",
+      "target": "rugcheck",
+      "relation": "integrates"
+    },
+    {
+      "source": "wallet-adapter",
+      "target": "phantom",
+      "relation": "integrates"
+    },
+    {
+      "source": "wallet-adapter",
+      "target": "solflare",
+      "relation": "integrates"
+    },
+    {
+      "source": "wallet-adapter",
+      "target": "backpack",
+      "relation": "integrates"
+    },
+    {
+      "source": "civic",
+      "target": "sas",
+      "relation": "integrates"
+    },
+    {
+      "source": "phantom",
+      "target": "sns",
+      "relation": "integrates"
+    },
+    {
+      "source": "xray",
+      "target": "helius",
+      "relation": "built-on"
+    },
+    {
+      "source": "helius",
+      "target": "syndica",
+      "relation": "competes"
+    },
+    {
+      "source": "quicknode",
+      "target": "alchemy",
+      "relation": "competes"
+    }
+  ]
+}

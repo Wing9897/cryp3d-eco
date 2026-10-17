@@ -1,0 +1,1930 @@
+{
+  "domain": "defi",
+  "nodes": [
+    {
+      "id": "raydium",
+      "label": "Raydium",
+      "labelZh": "Raydium",
+      "type": "protocol",
+      "parent": "amm",
+      "group": "defi",
+      "summaryZh": "Raydium 是 Solana 上同時經營恆定乘積做市與集中流動性的現貨交易所，並以 LaunchLab 讓新幣沿曲線籌資，畢業後把流動性接到自家公開市場。",
+      "url": "https://raydium.io",
+      "tags": [
+        "amm",
+        "clmm",
+        "launchpad"
+      ]
+    },
+    {
+      "id": "orca",
+      "label": "Orca",
+      "labelZh": "Orca",
+      "type": "protocol",
+      "parent": "clmm",
+      "group": "defi",
+      "summaryZh": "Orca 是 Solana 主要的集中流動性交易所，以 Whirlpool 區間池讓做市人把資金放在自選價格帶，是現貨兌換的核心流動性來源。",
+      "url": "https://www.orca.so",
+      "tags": [
+        "clmm",
+        "whirlpool"
+      ]
+    },
+    {
+      "id": "meteora",
+      "label": "Meteora",
+      "labelZh": "Meteora",
+      "type": "protocol",
+      "parent": "clmm",
+      "group": "defi",
+      "summaryZh": "Meteora 以離散區間做市為主，同時提供動態池、自動金庫，以及新幣使用的聯合曲線，是 Solana 現貨與發幣流動性的重要層。",
+      "url": "https://app.meteora.ag/",
+      "tags": [
+        "clmm",
+        "dlmm",
+        "launchpad",
+        "yield"
+      ]
+    },
+    {
+      "id": "pumpswap",
+      "label": "PumpSwap",
+      "labelZh": "PumpSwap",
+      "type": "protocol",
+      "parent": "amm",
+      "group": "defi",
+      "summaryZh": "PumpSwap 是 Pump.fun 體系的自動做市商，承接發幣曲線畢業後的代幣，讓新幣離開曲線後仍能在公開池持續交易，並繼續接受聚合器路由。",
+      "url": "https://swap.pump.fun",
+      "tags": [
+        "amm",
+        "memecoin"
+      ]
+    },
+    {
+      "id": "humidiFi",
+      "label": "HumidiFi",
+      "labelZh": "HumidiFi",
+      "type": "protocol",
+      "parent": "amm",
+      "group": "defi",
+      "summaryZh": "HumidiFi 是 Solana 上的專有自動做市商，由運營方依市場狀況主動更新報價，成交多經由聚合器路由，而不是公開存入的曲線池。",
+      "url": "https://humidifi.xyz/",
+      "tags": [
+        "amm",
+        "prop-amm"
+      ]
+    },
+    {
+      "id": "obric",
+      "label": "Obric",
+      "labelZh": "Obric",
+      "type": "protocol",
+      "parent": "amm",
+      "group": "defi",
+      "summaryZh": "Obric 是 Solana 上的專有自動做市商，以運營方自有資金主動報價，主要服務聚合器轉來的主流交易對流量，且不開放一般人直接存入做市。",
+      "url": "https://obric.xyz",
+      "tags": [
+        "amm",
+        "prop-amm"
+      ]
+    },
+    {
+      "id": "alphaq",
+      "label": "AlphaQ",
+      "labelZh": "AlphaQ",
+      "type": "protocol",
+      "parent": "amm",
+      "group": "defi",
+      "summaryZh": "AlphaQ 是 Solana 上的專有自動做市商，報價由運營方動態調整，流動性不靠散戶存入曲線，而是接入聚合器的兌換路徑。",
+      "url": "https://www.alphaq.xyz/",
+      "tags": [
+        "amm",
+        "prop-amm"
+      ]
+    },
+    {
+      "id": "aquifer",
+      "label": "Aquifer",
+      "labelZh": "Aquifer",
+      "type": "protocol",
+      "parent": "amm",
+      "group": "defi",
+      "summaryZh": "Aquifer 是 Solana 上的自動做市協議，以鏈上池子提供代幣兌換，並被路由軟體納入報價，補上長尾交易對的流動性。",
+      "url": "https://aquiferdex.io/",
+      "tags": [
+        "amm"
+      ]
+    },
+    {
+      "id": "fluxbeam",
+      "label": "FluxBeam",
+      "labelZh": "FluxBeam",
+      "type": "protocol",
+      "parent": "amm",
+      "group": "defi",
+      "summaryZh": "FluxBeam 是支援較新代幣標準的 Solana 自動做市商，方便含轉帳手續費或特殊權限的代幣建立兌換池並被路由使用。",
+      "url": "https://fluxbeam.xyz",
+      "tags": [
+        "amm",
+        "token-2022"
+      ]
+    },
+    {
+      "id": "bonkswap",
+      "label": "BonkSwap",
+      "labelZh": "BonkSwap",
+      "type": "protocol",
+      "parent": "amm",
+      "group": "defi",
+      "summaryZh": "BonkSwap 是與 Bonk 社群相關的 Solana 自動做市商，提供代幣兌換池，規模小於 Raydium 與 Orca 等主流交易所，仍可被路由軟體納入長尾代幣的兌換報價。",
+      "url": "https://bonkswap.io",
+      "tags": [
+        "amm"
+      ]
+    },
+    {
+      "id": "dooar",
+      "label": "Dooar",
+      "labelZh": "Dooar",
+      "type": "protocol",
+      "parent": "amm",
+      "group": "defi",
+      "summaryZh": "Dooar 是 Solana 上的自動做市商，用兌換池為長尾代幣提供流動性，交易者與聚合器都可以在這些池子取得報價。",
+      "url": "https://beta.dooar.com/swap",
+      "tags": [
+        "amm"
+      ]
+    },
+    {
+      "id": "defituna",
+      "label": "DefiTuna",
+      "labelZh": "DefiTuna",
+      "type": "protocol",
+      "parent": "amm",
+      "group": "defi",
+      "summaryZh": "DefiTuna 把自動做市、借貸與倉位管理放在同一套 Solana 程式裡，做市人可以借入資產，放大自己的流動性倉位，價格不利時由協議清算。",
+      "url": "https://defituna.com",
+      "tags": [
+        "amm",
+        "lending"
+      ]
+    },
+    {
+      "id": "pancakeswap",
+      "label": "PancakeSwap",
+      "labelZh": "PancakeSwap",
+      "type": "protocol",
+      "parent": "clmm",
+      "group": "defi",
+      "summaryZh": "PancakeSwap 把集中流動性做市部署到 Solana，沿用區間報價，熟悉這個多鏈品牌的人可以在這條鏈上直接兌換現貨。",
+      "url": "https://pancakeswap.finance/swap",
+      "tags": [
+        "clmm",
+        "amm"
+      ]
+    },
+    {
+      "id": "byreal",
+      "label": "Byreal",
+      "labelZh": "Byreal",
+      "type": "protocol",
+      "parent": "clmm",
+      "group": "defi",
+      "summaryZh": "Byreal 是 Solana 上的集中流動性交易所，用價格區間池報價現貨，服務想把中心化交易所的兌換需求搬到鏈上的使用者。",
+      "url": "https://www.byreal.io/",
+      "tags": [
+        "clmm"
+      ]
+    },
+    {
+      "id": "saros",
+      "label": "Saros",
+      "labelZh": "Saros",
+      "type": "protocol",
+      "parent": "clmm",
+      "group": "defi",
+      "summaryZh": "Saros 在 Solana 同時提供集中流動性區間池與較早期的恆定乘積池，用來為主流交易所以外的長尾代幣報價。",
+      "url": "https://dlmm.saros.xyz/",
+      "tags": [
+        "clmm",
+        "amm"
+      ]
+    },
+    {
+      "id": "manifest",
+      "label": "Manifest",
+      "labelZh": "Manifest",
+      "type": "protocol",
+      "parent": "orderbook-dex",
+      "group": "defi",
+      "summaryZh": "Manifest 是免手續費的 Solana 現貨訂單簿，成交不必另找機器人結算，創建市場的租金很低，並支援較新代幣標準與跨市場訂單。",
+      "url": "https://manifest.trade/",
+      "tags": [
+        "orderbook",
+        "spot"
+      ]
+    },
+    {
+      "id": "openbook",
+      "label": "OpenBook",
+      "labelZh": "OpenBook",
+      "type": "protocol",
+      "parent": "orderbook-dex",
+      "group": "defi",
+      "summaryZh": "OpenBook 是社群維護的 Solana 鏈上訂單簿，由早期 Serum 分叉演進而來，讓買賣單在鏈上撮合，並作為可組合的公共流動性層。",
+      "url": "https://www.openbook.ag/",
+      "tags": [
+        "orderbook",
+        "spot"
+      ]
+    },
+    {
+      "id": "phoenix",
+      "label": "Phoenix",
+      "labelZh": "Phoenix",
+      "type": "protocol",
+      "parent": "perps",
+      "group": "defi",
+      "summaryZh": "Phoenix 由 Ellipsis Labs 打造。它早期是現貨訂單簿，成交不必另找機器人結算；二零二六年起，主產品改為全鏈上永續合約交易所。",
+      "url": "https://phoenix.trade",
+      "tags": [
+        "perps",
+        "orderbook"
+      ]
+    },
+    {
+      "id": "jupiter",
+      "label": "Jupiter",
+      "labelZh": "Jupiter",
+      "type": "protocol",
+      "parent": "aggregator",
+      "group": "defi",
+      "summaryZh": "Jupiter 是 Solana 的兌換聚合入口，替用戶在多家交易所間找報價，並延伸到永續合約、借貸、質押代幣與美元穩定幣。",
+      "url": "https://jup.ag",
+      "tags": [
+        "aggregator",
+        "perps",
+        "lending",
+        "liquid-staking",
+        "stablecoin"
+      ]
+    },
+    {
+      "id": "dflow",
+      "label": "DFlow",
+      "labelZh": "DFlow",
+      "type": "protocol",
+      "parent": "aggregator",
+      "group": "defi",
+      "summaryZh": "DFlow 是 Solana 兌換聚合器，把訂單路由到傳統池與專有做市商，並能在同一筆交易裡依最新報價改走較優路徑。",
+      "url": "https://dflow.net/",
+      "tags": [
+        "aggregator",
+        "prop-amm"
+      ]
+    },
+    {
+      "id": "titan",
+      "label": "Titan",
+      "labelZh": "Titan",
+      "type": "protocol",
+      "parent": "aggregator",
+      "group": "defi",
+      "summaryZh": "Titan 是 Solana 的交易聚合介面，會比較多條路由的報價再執行兌換，也提供條件單，用來減少成交時的中間價差。",
+      "url": "https://titan.exchange",
+      "tags": [
+        "aggregator"
+      ]
+    },
+    {
+      "id": "kamino",
+      "label": "Kamino",
+      "labelZh": "Kamino",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "Kamino 是 Solana 規模最大的借貸協議之一，提供隔離資金市場與槓桿循環，並用自動金庫管理集中流動性倉位。",
+      "url": "https://kamino.com/",
+      "tags": [
+        "lending",
+        "yield",
+        "vaults"
+      ]
+    },
+    {
+      "id": "save",
+      "label": "Save",
+      "labelZh": "Save",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "Save 由 Solend 改名而來，是 Solana 上線較早的借貸協議，用隔離資金池承接長尾抵押品，並另外發行質押代幣，持有人可把這顆收據再拿去抵押。",
+      "url": "https://www.save.finance/",
+      "tags": [
+        "lending",
+        "liquid-staking"
+      ]
+    },
+    {
+      "id": "loopscale",
+      "label": "Loopscale",
+      "labelZh": "Loopscale",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "Loopscale 用訂單簿撮合固定利率、固定期限的貸款，是 Solana 上的信貸協議，抵押範圍包含較一般貨幣市場少見的資產。",
+      "url": "https://loopscale.com",
+      "tags": [
+        "lending",
+        "credit",
+        "fixed-rate"
+      ]
+    },
+    {
+      "id": "project-0",
+      "label": "Project 0",
+      "labelZh": "Project 0",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "Project 0 是 Solana 上的非託管主經紀，建立在 marginfi 貸款程式之上，把 Kamino、Drift 等場所的部位合成同一個保證金帳戶，使用者可以用跨場所的部位一起借款。",
+      "url": "https://app.0.xyz",
+      "tags": [
+        "lending",
+        "margin"
+      ]
+    },
+    {
+      "id": "marginfi",
+      "label": "marginfi",
+      "labelZh": "marginfi",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "marginfi 是 Solana 早期的主流借貸協議，獨立應用已經併入 Project 0，但鏈上貸款程式與質押代幣裡仍留有存款，舊倉位不會因為介面改版而消失。",
+      "url": "https://app.marginfi.com",
+      "tags": [
+        "lending",
+        "liquid-staking"
+      ]
+    },
+    {
+      "id": "omnipair",
+      "label": "Omnipair",
+      "labelZh": "Omnipair",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "Omnipair 是 Solana 上規模較小的配對式借貸協議，每個市場只處理一對資產的存款與借款，不像大型貨幣市場共用一個池。",
+      "url": "https://www.omnipair.fi/",
+      "tags": [
+        "lending"
+      ]
+    },
+    {
+      "id": "sharky",
+      "label": "Sharky",
+      "labelZh": "Sharky",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "Sharky 是以非同質化代幣為抵押的 Solana 借貸協議，讓藏家借出流動性，或把收藏品押給資金池以換取可動用的資產。",
+      "url": "https://sharky.fi",
+      "tags": [
+        "lending",
+        "nft"
+      ]
+    },
+    {
+      "id": "citrus",
+      "label": "Citrus",
+      "labelZh": "Citrus",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "Citrus 是 Famous Foxes 推出的 Solana 非同質化代幣借貸協議，針對特定收藏提供貸款，讓藏品在鎖定期內成為抵押，借款與還款都在鏈上完成且不經託管方。",
+      "url": "https://citrus.famousfoxes.com",
+      "tags": [
+        "lending",
+        "nft"
+      ]
+    },
+    {
+      "id": "lavarage",
+      "label": "Lavarage",
+      "labelZh": "Lavarage",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "Lavarage 是 Solana 的現貨保證金層，放款人提供資本，交易者借入後經由 Jupiter 買進真實代幣，而不是持有合成永續部位。",
+      "url": "https://lavarage.xyz/",
+      "tags": [
+        "lending",
+        "margin"
+      ]
+    },
+    {
+      "id": "jito",
+      "label": "Jito",
+      "labelZh": "Jito",
+      "type": "protocol",
+      "parent": "liquid-staking",
+      "group": "defi",
+      "summaryZh": "Jito 發行流動性質押代幣 jitoSOL，把驗證者報酬與區塊抽成做進收據，並提供再質押金庫，讓其他網路借用這份經濟安全。",
+      "url": "https://jito.network",
+      "tags": [
+        "liquid-staking",
+        "restaking",
+        "mev"
+      ]
+    },
+    {
+      "id": "marinade",
+      "label": "Marinade",
+      "labelZh": "Marinade",
+      "type": "protocol",
+      "parent": "liquid-staking",
+      "group": "defi",
+      "summaryZh": "Marinade 把 SOL 分散委託給大量驗證者，發行可轉讓的 mSOL，是強調委託去中心化的 Solana 流動性質押協議，持有人可把收據拿到借貸與做市市場繼續使用。",
+      "url": "https://marinade.finance",
+      "tags": [
+        "liquid-staking"
+      ]
+    },
+    {
+      "id": "sanctum",
+      "label": "Sanctum",
+      "labelZh": "Sanctum",
+      "type": "protocol",
+      "parent": "liquid-staking",
+      "group": "defi",
+      "summaryZh": "Sanctum 是 Solana 質押代幣的流動性層，用 Infinity 池讓多種質押收據即時互兌，並經營儲備與驗證者代幣的相關收益，減少單一質押代幣缺乏退出流動性的問題。",
+      "url": "https://www.sanctum.so",
+      "tags": [
+        "liquid-staking",
+        "yield",
+        "lst-liquidity"
+      ]
+    },
+    {
+      "id": "blazestake",
+      "label": "BlazeStake",
+      "labelZh": "BlazeStake",
+      "type": "protocol",
+      "parent": "liquid-staking",
+      "group": "defi",
+      "summaryZh": "BlazeStake 發行 bSOL，把 Solana 委託轉成流動性質押代幣，持有人在解除質押之前就能把部位轉去借貸或做市，因此不必先把代幣換回原生 SOL。",
+      "url": "https://stake.solblaze.org/",
+      "tags": [
+        "liquid-staking"
+      ]
+    },
+    {
+      "id": "jpool",
+      "label": "JPool",
+      "labelZh": "JPool",
+      "type": "protocol",
+      "parent": "liquid-staking",
+      "group": "defi",
+      "summaryZh": "JPool 是 Solana 流動性質押池，發行可轉讓的質押收據，讓委託人不必等到解除週期結束才能把部位交給其他協議使用。",
+      "url": "https://app.jpool.one",
+      "tags": [
+        "liquid-staking"
+      ]
+    },
+    {
+      "id": "the-vault",
+      "label": "The Vault",
+      "labelZh": "The Vault",
+      "type": "protocol",
+      "parent": "liquid-staking",
+      "group": "defi",
+      "summaryZh": "The Vault 發行 Solana 流動性質押代幣，並自備解除質押池，持有人可以靠池中流動性提早換回 SOL，不必乾等一個週期。",
+      "url": "https://thevault.finance",
+      "tags": [
+        "liquid-staking"
+      ]
+    },
+    {
+      "id": "binance-staked-sol",
+      "label": "Binance Staked SOL",
+      "labelZh": "幣安質押 SOL",
+      "type": "protocol",
+      "parent": "liquid-staking",
+      "group": "defi",
+      "summaryZh": "幣安質押 SOL 是交易所發行的 Solana 流動性質押代幣，把託管中的質押部位做成可在鏈上轉讓與組合的收據。",
+      "url": "https://www.binance.com/en/solana-staking",
+      "tags": [
+        "liquid-staking",
+        "exchange-lst"
+      ]
+    },
+    {
+      "id": "bybit-staked-sol",
+      "label": "Bybit Staked SOL",
+      "labelZh": "Bybit 質押 SOL",
+      "type": "protocol",
+      "parent": "liquid-staking",
+      "group": "defi",
+      "summaryZh": "Bybit 質押 SOL 是交易所發行的 Solana 流動性質押收據，讓集中託管的委託部位可以在鏈上持有、轉讓並接入其他協議。",
+      "url": "https://www.bybit.com/en/web3/staking/BybitSOL",
+      "tags": [
+        "liquid-staking",
+        "exchange-lst"
+      ]
+    },
+    {
+      "id": "definity",
+      "label": "Definity",
+      "labelZh": "Definity",
+      "type": "protocol",
+      "parent": "liquid-staking",
+      "group": "defi",
+      "summaryZh": "Definity 是 Solana 流動性質押協議，發行可轉讓的質押收據，讓委託人在保留驗證者收益的同時把部位用到其他鏈上市場。",
+      "url": "https://www.definity.finance/",
+      "tags": [
+        "liquid-staking"
+      ]
+    },
+    {
+      "id": "sol-strategies",
+      "label": "SOL Strategies",
+      "labelZh": "SOL Strategies",
+      "type": "protocol",
+      "parent": "liquid-staking",
+      "group": "defi",
+      "summaryZh": "SOL Strategies 把上市機構委託的 Solana 做成可流通的質押代幣，讓這部分機構部位能以收據形式在鏈上轉移與組合。",
+      "url": "https://app.solstrategies.io",
+      "tags": [
+        "liquid-staking",
+        "institutional"
+      ]
+    },
+    {
+      "id": "jagpool",
+      "label": "JagPool",
+      "labelZh": "JagPool",
+      "type": "protocol",
+      "parent": "liquid-staking",
+      "group": "defi",
+      "summaryZh": "JagPool 是 Solana 流動性質押池，發行可轉讓的質押收據，讓委託人把驗證者收益保持在還能進入其他協議的代幣裡。",
+      "url": "https://www.jagpool.xyz/",
+      "tags": [
+        "liquid-staking"
+      ]
+    },
+    {
+      "id": "raiku",
+      "label": "Raiku",
+      "labelZh": "Raiku",
+      "type": "protocol",
+      "parent": "liquid-staking",
+      "group": "defi",
+      "summaryZh": "Raiku 提供 Solana 質押與流動收據，讓委託人不必把 SOL 鎖到解除週期結束，就能以代幣形式持有並轉移質押部位。",
+      "url": "https://stake.raiku.com",
+      "tags": [
+        "liquid-staking"
+      ]
+    },
+    {
+      "id": "hubra",
+      "label": "Hubra",
+      "labelZh": "Hubra",
+      "type": "protocol",
+      "parent": "liquid-staking",
+      "group": "defi",
+      "summaryZh": "Hubra 發行 Solana 質押收據，並附帶收益池，讓委託人在鎖倉期間仍能轉讓部位，或參加協議裡的收益安排，鎖倉與額外收益可以同時存在。",
+      "url": "https://www.hubra.app",
+      "tags": [
+        "liquid-staking",
+        "yield"
+      ]
+    },
+    {
+      "id": "stronghold",
+      "label": "Stronghold",
+      "labelZh": "Stronghold",
+      "type": "protocol",
+      "parent": "liquid-staking",
+      "group": "defi",
+      "summaryZh": "Stronghold 發行 Solana 流動性質押代幣，讓想繼續累積驗證者收益的委託人，不必把部位鎖到完全不能轉移，收據本身也能進入其他協議。",
+      "url": "https://strongholdsol.com/",
+      "tags": [
+        "liquid-staking"
+      ]
+    },
+    {
+      "id": "japan-sol",
+      "label": "Japan SOL",
+      "labelZh": "Japan SOL",
+      "type": "protocol",
+      "parent": "liquid-staking",
+      "group": "defi",
+      "summaryZh": "Japan SOL 是面向日本使用者的 Solana 流動性質押代幣，把在地社群的質押部位做成可以在鏈上持有和轉讓的收據。",
+      "url": "https://japansol.com/",
+      "tags": [
+        "liquid-staking"
+      ]
+    },
+    {
+      "id": "pico",
+      "label": "Pico",
+      "labelZh": "Pico",
+      "type": "protocol",
+      "parent": "liquid-staking",
+      "group": "defi",
+      "summaryZh": "Pico 是規模較小的 Solana 流動性質押協議，仍然發行可轉讓的質押收據，讓委託人在解除週期結束前移動部位。",
+      "url": "https://pico-sol.com",
+      "tags": [
+        "liquid-staking"
+      ]
+    },
+    {
+      "id": "solayer",
+      "label": "Solayer",
+      "labelZh": "Solayer",
+      "type": "protocol",
+      "parent": "restaking",
+      "group": "defi",
+      "summaryZh": "Solayer 是 Solana 再質押協議，接受 SOL 與流動性質押代幣來保障節點服務，同時發行可在鏈上流通的美元向收據，再質押與美元部位因此留在同一處。",
+      "url": "https://solayer.org",
+      "tags": [
+        "restaking",
+        "stablecoin"
+      ]
+    },
+    {
+      "id": "fragmetric",
+      "label": "Fragmetric",
+      "labelZh": "Fragmetric",
+      "type": "protocol",
+      "parent": "restaking",
+      "group": "defi",
+      "summaryZh": "Fragmetric 是 Solana 原生的流動再質押協議，把存款配置到 Jito、Solayer 等再質押層，並發行可交易的 fragSOL，使用者只需持有一種收據就能分到多層再質押收益。",
+      "url": "https://fragmetric.xyz",
+      "tags": [
+        "restaking",
+        "liquid-staking"
+      ]
+    },
+    {
+      "id": "kyros",
+      "label": "Kyros",
+      "labelZh": "Kyros",
+      "type": "protocol",
+      "parent": "restaking",
+      "group": "defi",
+      "summaryZh": "Kyros 是 Solana 流動再質押協議，發行 kySOL 並接入 Jito 的再質押框架，持有人還能到收益市場交易這份報酬，再質押收益於是變成可定價的部位。",
+      "url": "https://kyros.fi",
+      "tags": [
+        "restaking",
+        "liquid-staking"
+      ]
+    },
+    {
+      "id": "renzo",
+      "label": "Renzo",
+      "labelZh": "Renzo",
+      "type": "protocol",
+      "parent": "restaking",
+      "group": "defi",
+      "summaryZh": "Renzo 把跨鏈再質押收據部署到 Solana，讓使用者以流動代幣參與再質押，目前這條鏈上的規模小於 Solayer 等原生協議。",
+      "url": "https://app.renzoprotocol.com/restake",
+      "tags": [
+        "restaking"
+      ]
+    },
+    {
+      "id": "adrastea",
+      "label": "Adrastea",
+      "labelZh": "Adrastea",
+      "type": "protocol",
+      "parent": "restaking",
+      "group": "defi",
+      "summaryZh": "Adrastea 在 Solana 同時做驗證者委託與流動再質押，兩種部位都會收成可轉讓收據，方便繼續拿到其他協議使用。",
+      "url": "https://adrastea.fi/",
+      "tags": [
+        "restaking",
+        "liquid-staking"
+      ]
+    },
+    {
+      "id": "drift",
+      "label": "Drift",
+      "labelZh": "Drift",
+      "type": "protocol",
+      "parent": "perps",
+      "group": "defi",
+      "summaryZh": "Drift 曾是 Solana 主要的永續合約與保證金協議。二零二六年四月事件後交易程式暫停，質押代幣仍在，團隊改以 Velocity 重新部署。",
+      "url": "https://app.drift.trade",
+      "tags": [
+        "perps",
+        "liquid-staking"
+      ]
+    },
+    {
+      "id": "velocity",
+      "label": "Velocity",
+      "labelZh": "Velocity",
+      "type": "protocol",
+      "parent": "perps",
+      "group": "defi",
+      "summaryZh": "Velocity 是 Drift 事件後重新部署的 Solana 永續合約與貨幣市場，以 USDT 結算，並把多種抵押品放在同一個保證金帳戶，存款在作為保證金時仍可累積貨幣市場利息。",
+      "url": "https://velocity.exchange/",
+      "tags": [
+        "perps",
+        "lending"
+      ]
+    },
+    {
+      "id": "flash-trade",
+      "label": "Flash Trade",
+      "labelZh": "Flash Trade",
+      "type": "protocol",
+      "parent": "perps",
+      "group": "defi",
+      "summaryZh": "Flash Trade 是以流動性池當對手盤的 Solana 永續合約協議，交易者向池子開倉。二零二六年其成交已明顯低於龍頭場所。",
+      "url": "https://www.flash.trade",
+      "tags": [
+        "perps",
+        "pool"
+      ]
+    },
+    {
+      "id": "adrena",
+      "label": "Adrena",
+      "labelZh": "Adrena",
+      "type": "protocol",
+      "parent": "perps",
+      "group": "defi",
+      "summaryZh": "Adrena 用資產池當 Solana 永續合約的對手盤，交易者向池子建立槓桿部位，目前鎖倉與成交都小於 Jupiter 與 Phoenix，它屬於由資產池承接的永續合約。",
+      "url": "https://www.adrena.trade",
+      "tags": [
+        "perps",
+        "pool"
+      ]
+    },
+    {
+      "id": "gmtrade",
+      "label": "GMTrade",
+      "labelZh": "GMTrade",
+      "type": "protocol",
+      "parent": "perps",
+      "group": "defi",
+      "summaryZh": "GMTrade 是 Solana 上採用流動性池當對手盤的永續合約交易所，交易者對池子開倉，池子承擔價格風險並收取費用。",
+      "url": "https://gmtrade.xyz",
+      "tags": [
+        "perps",
+        "pool"
+      ]
+    },
+    {
+      "id": "bulk",
+      "label": "Bulk",
+      "labelZh": "Bulk",
+      "type": "protocol",
+      "parent": "perps",
+      "group": "defi",
+      "summaryZh": "Bulk 是把訂單簿嵌進驗證者流程的 Solana 永續合約交易所，以鏈上撮合降低延遲，讓槓桿部位在保證金帳戶裡結算。",
+      "url": "https://www.bulk.trade/",
+      "tags": [
+        "perps",
+        "orderbook"
+      ]
+    },
+    {
+      "id": "pacifica",
+      "label": "Pacifica",
+      "labelZh": "Pacifica",
+      "type": "protocol",
+      "parent": "perps",
+      "group": "defi",
+      "summaryZh": "Pacifica 是以訂單簿撮合的 Solana 永續合約交易所，覆蓋較多市場，二零二六年的衍生品成交量在鏈上場所中名列前茅。",
+      "url": "https://app.pacifica.fi",
+      "tags": [
+        "perps",
+        "orderbook"
+      ]
+    },
+    {
+      "id": "turboflow",
+      "label": "TurboFlow",
+      "labelZh": "TurboFlow",
+      "type": "protocol",
+      "parent": "perps",
+      "group": "defi",
+      "summaryZh": "TurboFlow 是 Solana 上的永續合約協議，交易者以保證金建立槓桿部位，保證金不足時由清算機制維持市場清償能力。",
+      "url": "https://www.tf.xyz/",
+      "tags": [
+        "perps"
+      ]
+    },
+    {
+      "id": "bumpin",
+      "label": "Bumpin",
+      "labelZh": "Bumpin",
+      "type": "protocol",
+      "parent": "perps",
+      "group": "defi",
+      "summaryZh": "Bumpin 是 Solana 上的衍生品交易協議，交易者用保證金表達價格方向，部位在鏈上結算，並受協議的清算規則約束。",
+      "url": "https://www.bumpin.trade/",
+      "tags": [
+        "perps"
+      ]
+    },
+    {
+      "id": "parcl",
+      "label": "Parcl",
+      "labelZh": "Parcl",
+      "type": "protocol",
+      "parent": "perps",
+      "group": "defi",
+      "summaryZh": "Parcl 是以房地產指數為標的的 Solana 永續合約協議，讓交易者對城市房價建立槓桿部位，而不是只交易加密資產。",
+      "url": "https://www.parcl.co",
+      "tags": [
+        "perps",
+        "rwa"
+      ]
+    },
+    {
+      "id": "deriverse",
+      "label": "Deriverse",
+      "labelZh": "Deriverse",
+      "type": "protocol",
+      "parent": "perps",
+      "group": "defi",
+      "summaryZh": "Deriverse 是全鏈上、自託管的 Solana 現貨與永續合約交易所，買賣與槓桿部位都在鏈上結算，不把資產交給託管方。",
+      "url": "https://deriverse.io",
+      "tags": [
+        "perps",
+        "spot"
+      ]
+    },
+    {
+      "id": "exponent",
+      "label": "Exponent",
+      "labelZh": "Exponent",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Exponent 是 Solana 的收益交易協議，把生息代幣拆成到期前的固定收益與變動收益，讓兩邊可以分開定價與轉讓。",
+      "url": "https://www.exponent.finance/",
+      "tags": [
+        "yield",
+        "fixed-rate"
+      ]
+    },
+    {
+      "id": "ratex",
+      "label": "RateX",
+      "labelZh": "RateX",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "RateX 是 Solana 上的收益交易所，使用者既能用槓桿交易生息資產的變動收益，也能把未來利率鎖成固定報酬。",
+      "url": "https://app.rate-x.io",
+      "tags": [
+        "yield",
+        "fixed-rate"
+      ]
+    },
+    {
+      "id": "lulo",
+      "label": "Lulo",
+      "labelZh": "Lulo",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Lulo 是 Solana 的穩定幣收益聚合器，會把存款自動分到多個借貸協議並隨利率再平衡，它本身並不直接放貸。",
+      "url": "https://lulo.fi/",
+      "tags": [
+        "yield",
+        "aggregator"
+      ]
+    },
+    {
+      "id": "carrot",
+      "label": "Carrot",
+      "labelZh": "Carrot",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Carrot 是 Solana 上的收益與借貸產品，試著把存款導向收益較高的場所。二零二六年鏈上規模仍然很小，目前更適合小額試驗而不是大額配置。",
+      "url": "https://use.deficarrot.com",
+      "tags": [
+        "yield",
+        "lending"
+      ]
+    },
+    {
+      "id": "hawkfi",
+      "label": "HawkFi",
+      "labelZh": "HawkFi",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "HawkFi 幫使用者管理 Solana 上的集中流動性倉位，依價格區間自動調整放在 Orca、Raydium 與 Meteora 的做市資金，減少做市人手動搬移區間的操作。",
+      "url": "https://www.hawkfi.ag/",
+      "tags": [
+        "yield",
+        "clmm",
+        "automation"
+      ]
+    },
+    {
+      "id": "neutral-trade",
+      "label": "Neutral Trade",
+      "labelZh": "Neutral Trade",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Neutral Trade 是 Solana 上的鏈上資管協議，資金配置在市場中性與基差策略，目標是賺取價差而不是單邊押注幣價，淨曝險會盡量維持在已對沖的狀態。",
+      "url": "https://www.neutral.trade/",
+      "tags": [
+        "yield",
+        "basis"
+      ]
+    },
+    {
+      "id": "vectis",
+      "label": "Vectis",
+      "labelZh": "Vectis",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Vectis 是 Solana 上的收益協議，把存款放進策略金庫，讓持有人取得整理後的鏈上報酬，而不必自己在多個池子間搬資金。",
+      "url": "https://vectis.finance",
+      "tags": [
+        "yield",
+        "vaults"
+      ]
+    },
+    {
+      "id": "quarry",
+      "label": "Quarry",
+      "labelZh": "Quarry",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Quarry 是 Solana 早期的流動性挖礦協議，用額外的獎勵代幣補貼做市與存款，現在仍有資金留在這些獎勵池，早期的流動性激勵因此還沒完全退出。",
+      "url": "https://quarry.so",
+      "tags": [
+        "yield",
+        "farm"
+      ]
+    },
+    {
+      "id": "reflect",
+      "label": "Reflect",
+      "labelZh": "Reflect",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Reflect 把 Solana 上的一筆收益拆成幾個風險層級，先承擔損失的層級換取較高報酬，順位較後的層級則較保守。",
+      "url": "https://tranches.reflect.money/",
+      "tags": [
+        "yield",
+        "tranching"
+      ]
+    },
+    {
+      "id": "perena",
+      "label": "Perena",
+      "labelZh": "Perena",
+      "type": "protocol",
+      "parent": "stablecoin",
+      "group": "defi",
+      "summaryZh": "Perena 在 Solana 發行收益型穩定幣 USD*，並經營 Numeraire 穩定幣自動做市池，將資金分散配置於對沖部位、擔保借貸與代幣化資產。",
+      "url": "https://perena.org/",
+      "tags": [
+        "stablecoin",
+        "yield",
+        "amm"
+      ]
+    },
+    {
+      "id": "hylo",
+      "label": "Hylo",
+      "labelZh": "Hylo",
+      "type": "protocol",
+      "parent": "stablecoin",
+      "group": "defi",
+      "summaryZh": "Hylo 是採用雙代幣結構的 Solana 穩定幣協議，把美元部位與波動部位分開，並提供對應的槓桿與質押類收據。",
+      "url": "https://hylo.so",
+      "tags": [
+        "stablecoin",
+        "liquid-staking"
+      ]
+    },
+    {
+      "id": "solstice",
+      "label": "Solstice",
+      "labelZh": "Solstice",
+      "type": "protocol",
+      "parent": "stablecoin",
+      "group": "defi",
+      "summaryZh": "Solstice 是 Solana 上的收益型穩定幣協議，以基差與對沖一類市場中性策略支持美元部位，讓持有人累積策略報酬。",
+      "url": "https://solstice.finance/",
+      "tags": [
+        "stablecoin",
+        "yield",
+        "basis"
+      ]
+    },
+    {
+      "id": "unitas",
+      "label": "Unitas",
+      "labelZh": "Unitas",
+      "type": "protocol",
+      "parent": "stablecoin",
+      "group": "defi",
+      "summaryZh": "Unitas 在 Solana 發行名為 USDu 的美元穩定幣，以基差交易一類市場中性策略支持錨定，讓持有人保留美元部位，錨定來自交易策略而不是銀行存款。",
+      "url": "https://app.unitas.so",
+      "tags": [
+        "stablecoin",
+        "basis"
+      ]
+    },
+    {
+      "id": "solomon",
+      "label": "Solomon",
+      "labelZh": "Solomon",
+      "type": "protocol",
+      "parent": "stablecoin",
+      "group": "defi",
+      "summaryZh": "Solomon 在 Solana 發行名為 USDv 的美元穩定幣，走基差與市場中性路線，用來持有錨定美元的鏈上部位，用來多一種以策略支持的美元資產。",
+      "url": "https://solomonlabs.org/",
+      "tags": [
+        "stablecoin",
+        "basis"
+      ]
+    },
+    {
+      "id": "nirvana",
+      "label": "Nirvana",
+      "labelZh": "Nirvana",
+      "type": "protocol",
+      "parent": "stablecoin",
+      "group": "defi",
+      "summaryZh": "Nirvana 是 Solana 上的儲備貨幣協議，靠協議準備金與風險分擔代幣維持穩定資產，把錨定機制留在鏈上，而不是只依賴銀行帳戶裡的法幣。",
+      "url": "https://www.nirvana.finance/",
+      "tags": [
+        "stablecoin",
+        "reserve"
+      ]
+    },
+    {
+      "id": "tether",
+      "label": "Tether",
+      "labelZh": "Tether",
+      "type": "protocol",
+      "parent": "stablecoin",
+      "group": "defi",
+      "summaryZh": "Tether 在 Solana 原生發行美元穩定幣 USDT（泰達幣），是現貨交易對、借貸抵押、跨境匯款與加密金融卡儲值最廣泛使用的美元穩定幣之一。",
+      "url": "https://tether.to",
+      "tags": [
+        "stablecoin",
+        "usdt",
+        "payments"
+      ]
+    },
+    {
+      "id": "circle",
+      "label": "Circle",
+      "labelZh": "Circle",
+      "type": "protocol",
+      "parent": "stablecoin",
+      "group": "defi",
+      "summaryZh": "Circle 在 Solana 原生發行美元穩定幣 USDC 與歐元穩定幣 EURC，並透過跨鏈傳輸協議（CCTP）與 Visa、Stripe 等全球結算網路，成為 Solana 交易、支付結算與加密卡最核心的合規清算資產。",
+      "url": "https://www.circle.com",
+      "tags": [
+        "stablecoin",
+        "usdc",
+        "payments"
+      ]
+    },
+    {
+      "id": "paypal",
+      "label": "PayPal",
+      "labelZh": "PayPal",
+      "type": "protocol",
+      "parent": "stablecoin",
+      "group": "defi",
+      "summaryZh": "全球支付機構 PayPal 在 Solana 上部署原生美元穩定幣 PYUSD，善用 Token Extensions 標準支援合規與商業收付，並深度串接 Venmo、Solana Pay、Kamino、Jupiter 與 KAST、Sphere 等支付與加密卡生態。",
+      "url": "https://www.paypal.com/pyusd",
+      "tags": [
+        "stablecoin",
+        "pyusd",
+        "payments"
+      ]
+    },
+    {
+      "id": "ethena",
+      "label": "Ethena",
+      "labelZh": "Ethena",
+      "type": "protocol",
+      "parent": "stablecoin",
+      "group": "defi",
+      "summaryZh": "Ethena 用對沖後的加密資產部位支持合成穩定幣 USDe，並在 Solana 發行可流通的美元代幣，供兌換與抵押使用，合成美元因此能進入這條鏈的資金市場。",
+      "url": "https://ethena.fi",
+      "tags": [
+        "stablecoin",
+        "synthetic"
+      ]
+    },
+    {
+      "id": "sky",
+      "label": "Sky",
+      "labelZh": "Sky",
+      "type": "protocol",
+      "parent": "stablecoin",
+      "group": "defi",
+      "summaryZh": "Sky 前身為 MakerDAO，在 Solana 部署原生美元穩定幣 USDS 與生息代幣 sUSDS，供借貸市場與兌換池作為抵押和報價資產。",
+      "url": "https://sky.money",
+      "tags": [
+        "stablecoin",
+        "usds"
+      ]
+    },
+    {
+      "id": "global-dollar",
+      "label": "Global Dollar",
+      "labelZh": "Global Dollar",
+      "type": "protocol",
+      "parent": "stablecoin",
+      "group": "defi",
+      "summaryZh": "Global Dollar（全球美元網路）由 Paxos 聯合多家金融科技與交易平台發行美元穩定幣 USDG，在 Solana 上提供合規機構級美元結算與收益共享機制。",
+      "url": "https://www.globaldollar.com",
+      "tags": [
+        "stablecoin",
+        "usdg"
+      ]
+    },
+    {
+      "id": "agora",
+      "label": "Agora",
+      "labelZh": "Agora",
+      "type": "protocol",
+      "parent": "stablecoin",
+      "group": "defi",
+      "summaryZh": "Agora 發行美元穩定幣 AUSD，儲備以現金與短天期政府債券為主，並在 Solana 上提供可轉移、可兌換的代幣，方便在借貸與兌換市場裡當作美元。",
+      "url": "https://www.agora.finance/",
+      "tags": [
+        "stablecoin",
+        "ausd"
+      ]
+    },
+    {
+      "id": "pump-fun",
+      "label": "Pump.fun",
+      "labelZh": "Pump.fun",
+      "type": "protocol",
+      "parent": "launchpad",
+      "group": "defi",
+      "summaryZh": "Pump.fun 是 Solana 規模最大的代幣與迷因幣發射台，任何人皆可沿聯合曲線發行與買賣新幣；募滿門檻畢業後，流動性會自動遷入旗下 PumpSwap 公開做市池並被聚合器與各大交易終端即時路由。",
+      "url": "https://pump.fun",
+      "tags": [
+        "launchpad",
+        "meme"
+      ]
+    },
+    {
+      "id": "believe",
+      "label": "Believe",
+      "labelZh": "Believe",
+      "type": "protocol",
+      "parent": "launchpad",
+      "group": "defi",
+      "summaryZh": "Believe 讓創作者用社群貼文在 Solana 發起代幣，交易沿著曲線進行，代幣畢業之後，流動性會接到 Meteora，畢業後的流動性不再留在原來的曲線。",
+      "url": "https://believe.app",
+      "tags": [
+        "launchpad",
+        "memecoin"
+      ]
+    },
+    {
+      "id": "heaven",
+      "label": "Heaven",
+      "labelZh": "Heaven",
+      "type": "protocol",
+      "parent": "launchpad",
+      "group": "defi",
+      "summaryZh": "Heaven 同時是 Solana 的發幣台與自動做市商，讓新代幣從曲線交易留在自家流動性裡，而不必立刻遷到外部交易所。",
+      "url": "https://heaven.xyz",
+      "tags": [
+        "launchpad",
+        "amm"
+      ]
+    },
+    {
+      "id": "dual",
+      "label": "Dual Finance",
+      "labelZh": "Dual Finance",
+      "type": "protocol",
+      "parent": "options",
+      "group": "defi",
+      "summaryZh": "Dual Finance 是 Solana 上的結構型選擇權協議，使用者存入資產並賣出隱含選擇權，以權利金換取附條件的收益，收益能否保住取決於到期時的價格條件。",
+      "url": "https://beta.dual.finance",
+      "tags": [
+        "options",
+        "structured"
+      ]
+    },
+    {
+      "id": "katana",
+      "label": "Katana",
+      "labelZh": "Katana",
+      "type": "protocol",
+      "parent": "options",
+      "group": "defi",
+      "summaryZh": "Katana 是 Solana 上的選擇權金庫，把備兌賣出或價差一類選擇權策略包成可存入的份額，讓存款人收取權利金收益。",
+      "url": "https://app.katana.so",
+      "tags": [
+        "options",
+        "vaults"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "source": "raydium",
+      "target": "clmm",
+      "relation": "also-in"
+    },
+    {
+      "source": "raydium",
+      "target": "launchpad",
+      "relation": "also-in"
+    },
+    {
+      "source": "meteora",
+      "target": "amm",
+      "relation": "also-in"
+    },
+    {
+      "source": "meteora",
+      "target": "launchpad",
+      "relation": "also-in"
+    },
+    {
+      "source": "meteora",
+      "target": "yield",
+      "relation": "also-in"
+    },
+    {
+      "source": "pancakeswap",
+      "target": "amm",
+      "relation": "also-in"
+    },
+    {
+      "source": "saros",
+      "target": "amm",
+      "relation": "also-in"
+    },
+    {
+      "source": "phoenix",
+      "target": "orderbook-dex",
+      "relation": "also-in"
+    },
+    {
+      "source": "jupiter",
+      "target": "perps",
+      "relation": "also-in"
+    },
+    {
+      "source": "jupiter",
+      "target": "lending",
+      "relation": "also-in"
+    },
+    {
+      "source": "jupiter",
+      "target": "liquid-staking",
+      "relation": "also-in"
+    },
+    {
+      "source": "jupiter",
+      "target": "stablecoin",
+      "relation": "also-in"
+    },
+    {
+      "source": "jupiter",
+      "target": "launchpad",
+      "relation": "also-in"
+    },
+    {
+      "source": "kamino",
+      "target": "yield",
+      "relation": "also-in"
+    },
+    {
+      "source": "save",
+      "target": "liquid-staking",
+      "relation": "also-in"
+    },
+    {
+      "source": "marginfi",
+      "target": "liquid-staking",
+      "relation": "also-in"
+    },
+    {
+      "source": "jito",
+      "target": "restaking",
+      "relation": "also-in"
+    },
+    {
+      "source": "sanctum",
+      "target": "yield",
+      "relation": "also-in"
+    },
+    {
+      "source": "solayer",
+      "target": "stablecoin",
+      "relation": "also-in"
+    },
+    {
+      "source": "solayer",
+      "target": "liquid-staking",
+      "relation": "also-in"
+    },
+    {
+      "source": "fragmetric",
+      "target": "liquid-staking",
+      "relation": "also-in"
+    },
+    {
+      "source": "kyros",
+      "target": "liquid-staking",
+      "relation": "also-in"
+    },
+    {
+      "source": "adrastea",
+      "target": "liquid-staking",
+      "relation": "also-in"
+    },
+    {
+      "source": "drift",
+      "target": "liquid-staking",
+      "relation": "also-in"
+    },
+    {
+      "source": "velocity",
+      "target": "lending",
+      "relation": "also-in"
+    },
+    {
+      "source": "defituna",
+      "target": "lending",
+      "relation": "also-in"
+    },
+    {
+      "source": "carrot",
+      "target": "lending",
+      "relation": "also-in"
+    },
+    {
+      "source": "hawkfi",
+      "target": "clmm",
+      "relation": "also-in"
+    },
+    {
+      "source": "perena",
+      "target": "yield",
+      "relation": "also-in"
+    },
+    {
+      "source": "perena",
+      "target": "amm",
+      "relation": "also-in"
+    },
+    {
+      "source": "hylo",
+      "target": "liquid-staking",
+      "relation": "also-in"
+    },
+    {
+      "source": "solstice",
+      "target": "yield",
+      "relation": "also-in"
+    },
+    {
+      "source": "ondo",
+      "target": "stablecoin",
+      "relation": "also-in"
+    },
+    {
+      "source": "ondo",
+      "target": "yield",
+      "relation": "also-in"
+    },
+    {
+      "source": "paypal",
+      "target": "payments",
+      "relation": "also-in"
+    },
+    {
+      "source": "paypal",
+      "target": "card-finance",
+      "relation": "also-in"
+    },
+    {
+      "source": "circle",
+      "target": "payments",
+      "relation": "also-in"
+    },
+    {
+      "source": "tether",
+      "target": "payments",
+      "relation": "also-in"
+    },
+    {
+      "source": "pump-fun",
+      "target": "meme",
+      "relation": "also-in"
+    },
+    {
+      "source": "pumpswap",
+      "target": "meme",
+      "relation": "also-in"
+    },
+    {
+      "source": "heaven",
+      "target": "amm",
+      "relation": "also-in"
+    },
+    {
+      "source": "jupiter",
+      "target": "raydium",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "jupiter",
+      "target": "orca",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "jupiter",
+      "target": "meteora",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "jupiter",
+      "target": "pumpswap",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "jupiter",
+      "target": "humidiFi",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "jupiter",
+      "target": "manifest",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "jupiter",
+      "target": "fluxbeam",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "dflow",
+      "target": "humidiFi",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "dflow",
+      "target": "raydium",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "dflow",
+      "target": "meteora",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "dflow",
+      "target": "orca",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "dflow",
+      "target": "pump-fun",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "titan",
+      "target": "humidiFi",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "titan",
+      "target": "orca",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "titan",
+      "target": "raydium",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "lavarage",
+      "target": "jupiter",
+      "relation": "integrates"
+    },
+    {
+      "source": "jupiter",
+      "target": "titan",
+      "relation": "competes"
+    },
+    {
+      "source": "jupiter",
+      "target": "dflow",
+      "relation": "competes"
+    },
+    {
+      "source": "dflow",
+      "target": "titan",
+      "relation": "competes"
+    },
+    {
+      "source": "raydium",
+      "target": "orca",
+      "relation": "competes"
+    },
+    {
+      "source": "raydium",
+      "target": "meteora",
+      "relation": "competes"
+    },
+    {
+      "source": "orca",
+      "target": "meteora",
+      "relation": "competes"
+    },
+    {
+      "source": "humidiFi",
+      "target": "obric",
+      "relation": "competes"
+    },
+    {
+      "source": "manifest",
+      "target": "openbook",
+      "relation": "competes"
+    },
+    {
+      "source": "phoenix",
+      "target": "bulk",
+      "relation": "competes"
+    },
+    {
+      "source": "phoenix",
+      "target": "velocity",
+      "relation": "competes"
+    },
+    {
+      "source": "gmtrade",
+      "target": "pacifica",
+      "relation": "competes"
+    },
+    {
+      "source": "flash-trade",
+      "target": "adrena",
+      "relation": "competes"
+    },
+    {
+      "source": "kamino",
+      "target": "save",
+      "relation": "competes"
+    },
+    {
+      "source": "kamino",
+      "target": "project-0",
+      "relation": "competes"
+    },
+    {
+      "source": "jito",
+      "target": "marinade",
+      "relation": "competes"
+    },
+    {
+      "source": "jito",
+      "target": "binance-staked-sol",
+      "relation": "competes"
+    },
+    {
+      "source": "exponent",
+      "target": "ratex",
+      "relation": "competes"
+    },
+    {
+      "source": "tether",
+      "target": "circle",
+      "relation": "competes"
+    },
+    {
+      "source": "ethena",
+      "target": "tether",
+      "relation": "competes"
+    },
+    {
+      "source": "sky",
+      "target": "circle",
+      "relation": "competes"
+    },
+    {
+      "source": "kamino",
+      "target": "jito",
+      "relation": "integrates"
+    },
+    {
+      "source": "kamino",
+      "target": "marinade",
+      "relation": "integrates"
+    },
+    {
+      "source": "kamino",
+      "target": "sanctum",
+      "relation": "integrates"
+    },
+    {
+      "source": "save",
+      "target": "jito",
+      "relation": "integrates"
+    },
+    {
+      "source": "lulo",
+      "target": "kamino",
+      "relation": "integrates"
+    },
+    {
+      "source": "lulo",
+      "target": "save",
+      "relation": "integrates"
+    },
+    {
+      "source": "lulo",
+      "target": "jupiter",
+      "relation": "integrates"
+    },
+    {
+      "source": "carrot",
+      "target": "kamino",
+      "relation": "integrates"
+    },
+    {
+      "source": "project-0",
+      "target": "kamino",
+      "relation": "integrates"
+    },
+    {
+      "source": "project-0",
+      "target": "drift",
+      "relation": "integrates"
+    },
+    {
+      "source": "project-0",
+      "target": "jupiter",
+      "relation": "integrates"
+    },
+    {
+      "source": "project-0",
+      "target": "marginfi",
+      "relation": "built-on"
+    },
+    {
+      "source": "hawkfi",
+      "target": "orca",
+      "relation": "integrates"
+    },
+    {
+      "source": "hawkfi",
+      "target": "raydium",
+      "relation": "integrates"
+    },
+    {
+      "source": "hawkfi",
+      "target": "meteora",
+      "relation": "integrates"
+    },
+    {
+      "source": "exponent",
+      "target": "fragmetric",
+      "relation": "integrates"
+    },
+    {
+      "source": "exponent",
+      "target": "kyros",
+      "relation": "integrates"
+    },
+    {
+      "source": "exponent",
+      "target": "jito",
+      "relation": "integrates"
+    },
+    {
+      "source": "ratex",
+      "target": "fragmetric",
+      "relation": "integrates"
+    },
+    {
+      "source": "ratex",
+      "target": "kyros",
+      "relation": "integrates"
+    },
+    {
+      "source": "fragmetric",
+      "target": "jito",
+      "relation": "built-on"
+    },
+    {
+      "source": "fragmetric",
+      "target": "solayer",
+      "relation": "integrates"
+    },
+    {
+      "source": "kyros",
+      "target": "jito",
+      "relation": "built-on"
+    },
+    {
+      "source": "solayer",
+      "target": "jito",
+      "relation": "integrates"
+    },
+    {
+      "source": "solayer",
+      "target": "marinade",
+      "relation": "integrates"
+    },
+    {
+      "source": "sanctum",
+      "target": "jito",
+      "relation": "lists"
+    },
+    {
+      "source": "sanctum",
+      "target": "marinade",
+      "relation": "lists"
+    },
+    {
+      "source": "sanctum",
+      "target": "blazestake",
+      "relation": "lists"
+    },
+    {
+      "source": "sanctum",
+      "target": "helius",
+      "relation": "integrates"
+    },
+    {
+      "source": "pump-fun",
+      "target": "pumpswap",
+      "relation": "lists"
+    },
+    {
+      "source": "believe",
+      "target": "meteora",
+      "relation": "lists"
+    },
+    {
+      "source": "kamino",
+      "target": "circle",
+      "relation": "integrates"
+    },
+    {
+      "source": "kamino",
+      "target": "paypal",
+      "relation": "integrates"
+    },
+    {
+      "source": "jupiter",
+      "target": "circle",
+      "relation": "integrates"
+    },
+    {
+      "source": "sharky",
+      "target": "magic-eden",
+      "relation": "integrates"
+    },
+    {
+      "source": "sharky",
+      "target": "tensor",
+      "relation": "integrates"
+    },
+    {
+      "source": "citrus",
+      "target": "tensor",
+      "relation": "integrates"
+    },
+    {
+      "source": "jupiter",
+      "target": "pyth",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "drift",
+      "target": "pyth",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "phoenix",
+      "target": "pyth",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "kamino",
+      "target": "pyth",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "kamino",
+      "target": "switchboard",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "save",
+      "target": "switchboard",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "save",
+      "target": "pyth",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "marginfi",
+      "target": "pyth",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "project-0",
+      "target": "pyth",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "loopscale",
+      "target": "pyth",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "loopscale",
+      "target": "switchboard",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "loopscale",
+      "target": "chainlink",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "loopscale",
+      "target": "redstone",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "gmtrade",
+      "target": "pyth",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "parcl",
+      "target": "pyth",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "phantom",
+      "target": "jupiter",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "solflare",
+      "target": "jupiter",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "backpack",
+      "target": "jupiter",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "seeker",
+      "target": "jupiter",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "phantom",
+      "target": "kamino",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "solflare",
+      "target": "drift",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "backpack",
+      "target": "drift",
+      "relation": "wallet-support"
+    }
+  ]
+}

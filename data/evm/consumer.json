@@ -1,0 +1,2453 @@
+{
+  "domain": "consumer",
+  "nodes": [
+    {
+      "id": "opensea",
+      "label": "OpenSea",
+      "labelZh": "OpenSea",
+      "type": "protocol",
+      "parent": "nft-marketplace",
+      "group": "consumer",
+      "summaryZh": "OpenSea 是覆蓋多條 EVM 鏈的 NFT 市集，收藏品用訂單簿掛單與成交，也支援創作者上架與版稅設定。買家可以瀏覽多鏈掛單，再用自己的錢包成交。",
+      "url": "https://opensea.io/",
+      "tags": [
+        "nft",
+        "marketplace"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "blur",
+      "label": "Blur",
+      "labelZh": "Blur",
+      "type": "protocol",
+      "parent": "nft-marketplace",
+      "group": "consumer",
+      "summaryZh": "Blur 面向專業 NFT 交易者，提供集合出價、批量掃貨與借貸，成交速度與手續費是它和綜合市集的主要差別。",
+      "url": "https://blur.io/",
+      "tags": [
+        "nft",
+        "marketplace"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "zora",
+      "label": "Zora",
+      "labelZh": "Zora",
+      "type": "protocol",
+      "parent": "nft-marketplace",
+      "group": "consumer",
+      "summaryZh": "Zora 提供創作者鑄造與交易協議，作品可以在它的網路與介面上發行，二級交易把收益分給創作者。鑄造與轉售的收益規則寫在它的合約裡。",
+      "url": "https://zora.co/",
+      "tags": [
+        "nft",
+        "creator"
+      ],
+      "chains": [
+        "ethereum",
+        "base"
+      ]
+    },
+    {
+      "id": "foundation",
+      "label": "Foundation",
+      "labelZh": "Foundation",
+      "type": "protocol",
+      "parent": "nft-marketplace",
+      "group": "consumer",
+      "summaryZh": "Foundation 是邀請制的數位藝術市集，創作者在以太坊上拍賣作品，收藏者用錢包出價與持有。作品以拍賣成交，收藏紀錄留在以太坊上。",
+      "url": "https://foundation.app",
+      "tags": [
+        "nft",
+        "art"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "manifold",
+      "label": "Manifold",
+      "labelZh": "Manifold",
+      "type": "protocol",
+      "parent": "nft-marketplace",
+      "group": "consumer",
+      "summaryZh": "Manifold 讓創作者部署自己的鑄造合約並自訂版稅與聲明頁，作品不必鎖在單一市集的標準合約裡。創作者保留合約控制權，不把鑄造權交給市集。",
+      "url": "https://manifold.xyz",
+      "tags": [
+        "nft",
+        "creator"
+      ],
+      "chains": [
+        "ethereum",
+        "base"
+      ]
+    },
+    {
+      "id": "sudoswap",
+      "label": "Sudoswap",
+      "labelZh": "Sudoswap",
+      "type": "protocol",
+      "parent": "nft-marketplace",
+      "group": "consumer",
+      "summaryZh": "Sudoswap 用自動做市池交易 NFT，掛單變成池子曲線而不是一張張訂單，適合同質化較高的集合。池子的兩邊可以是同一集合的代幣與指定資產。",
+      "url": "https://sudoswap.xyz",
+      "tags": [
+        "nft",
+        "amm"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "superrare",
+      "label": "SuperRare",
+      "labelZh": "SuperRare",
+      "type": "protocol",
+      "parent": "nft-marketplace",
+      "group": "consumer",
+      "summaryZh": "SuperRare 是策展型的數位藝術市集，作品以單件為主，藝術家在以太坊上鑄造並由收藏者競標。單件作品的作者與收藏歷史可以在鏈上追溯。",
+      "url": "https://superrare.com",
+      "tags": [
+        "nft",
+        "art"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "artblocks",
+      "label": "Art Blocks",
+      "labelZh": "Art Blocks",
+      "type": "protocol",
+      "parent": "nft-marketplace",
+      "group": "consumer",
+      "summaryZh": "Art Blocks 在鏈上生成藝術，收藏者鑄造時才決定圖像輸出，作品合約與生成腳本都留在以太坊上。圖像不是事先上傳，而是在鑄造當下計算出來。",
+      "url": "https://www.artblocks.io",
+      "tags": [
+        "nft",
+        "generative"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "rarible",
+      "label": "Rarible",
+      "labelZh": "Rarible",
+      "type": "protocol",
+      "parent": "nft-marketplace",
+      "group": "consumer",
+      "summaryZh": "Rarible 是多鏈 NFT 市集與聚合介面，創作者可以鑄造，買家也能在同一頁看不同來源的掛單。聚合頁面讓同一收藏能對到多個市場的價格。",
+      "url": "https://rarible.com",
+      "tags": [
+        "nft",
+        "marketplace"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "highlight",
+      "label": "Highlight",
+      "labelZh": "Highlight",
+      "type": "protocol",
+      "parent": "nft-marketplace",
+      "group": "consumer",
+      "summaryZh": "Highlight 讓創作者在以太坊二層上做鑄造與會員收藏，合約工具用來發行系列、門檻與後續空投。系列可以設定持有門檻，以及之後的會員福利。",
+      "url": "https://highlight.xyz",
+      "tags": [
+        "nft",
+        "creator"
+      ],
+      "chains": [
+        "ethereum",
+        "base"
+      ]
+    },
+    {
+      "id": "immutable",
+      "label": "Immutable",
+      "labelZh": "Immutable",
+      "type": "protocol",
+      "parent": "gaming",
+      "group": "consumer",
+      "summaryZh": "Immutable 是面向遊戲的 EVM 網路與發行平台，工作室用它鑄造道具、處理交易，玩家用錢包持有遊戲資產。遊戲方用它的工具鑄造道具，並處理玩家之間的交易。",
+      "url": "https://www.immutable.com/",
+      "tags": [
+        "gaming",
+        "l2"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "axie",
+      "label": "Axie Infinity",
+      "labelZh": "Axie Infinity",
+      "type": "protocol",
+      "parent": "gaming",
+      "group": "consumer",
+      "summaryZh": "Axie Infinity 是鏈上養成對戰遊戲，寵物與道具是代幣，經濟與戰鬥結算跑在其 EVM 側鏈上。繁殖、對戰與土地都綁在可以轉移的遊戲資產上。",
+      "url": "https://axieinfinity.com",
+      "tags": [
+        "gaming"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "pixels",
+      "label": "Pixels",
+      "labelZh": "Pixels",
+      "type": "protocol",
+      "parent": "gaming",
+      "group": "consumer",
+      "summaryZh": "Pixels 是開放式的鏈上農場遊戲，土地與資源寫進合約，玩家的生產與交易留在它所部署的網路上。土地產出的資源可以再拿到遊戲市場裡交易。",
+      "url": "https://www.pixels.xyz",
+      "tags": [
+        "gaming"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "sandbox",
+      "label": "The Sandbox",
+      "labelZh": "The Sandbox",
+      "type": "protocol",
+      "parent": "gaming",
+      "group": "consumer",
+      "summaryZh": "The Sandbox 出售虛擬土地與創作工具，地塊是以太坊上的 NFT，創作者在地塊裡搭建可進入的體驗。創作者在土地上搭建場景，其他人可以進入參觀。",
+      "url": "https://www.sandbox.game",
+      "tags": [
+        "gaming",
+        "metaverse"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "decentraland",
+      "label": "Decentraland",
+      "labelZh": "Decentraland",
+      "type": "protocol",
+      "parent": "gaming",
+      "group": "consumer",
+      "summaryZh": "Decentraland 是由土地 NFT 組成的虛擬世界，地塊座標與所有權在以太坊上，場景由持有人自行布建。場景內容由土地持有人決定，座標固定在地圖上。",
+      "url": "https://decentraland.org",
+      "tags": [
+        "gaming",
+        "metaverse"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "parallel",
+      "label": "Parallel",
+      "labelZh": "Parallel",
+      "type": "protocol",
+      "parent": "gaming",
+      "group": "consumer",
+      "summaryZh": "Parallel 是鏈上集換式卡牌遊戲，卡牌是 NFT，對戰與收藏用錢包持有，發行落在 EVM 網路上。卡牌放在玩家錢包，不存在遊戲公司的中央資料庫。",
+      "url": "https://parallel.life",
+      "tags": [
+        "gaming",
+        "cards"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "gods-unchained",
+      "label": "Gods Unchained",
+      "labelZh": "Gods Unchained",
+      "type": "protocol",
+      "parent": "gaming",
+      "group": "consumer",
+      "summaryZh": "Gods Unchained 是集換式卡牌遊戲，卡牌可以在玩家之間交易，遊戲資產發行在 Immutable 的網路上。卡牌可以離開客戶端，在市場上轉給其他玩家。",
+      "url": "https://godsunchained.com",
+      "tags": [
+        "gaming",
+        "cards"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "illuvium",
+      "label": "Illuvium",
+      "labelZh": "Illuvium",
+      "type": "protocol",
+      "parent": "gaming",
+      "group": "consumer",
+      "summaryZh": "Illuvium 是開放世界與自動對戰遊戲，生物與土地等資產做成 NFT，經濟結算接在 EVM 網路上。生物與土地分開發行，兩者都是玩家能持有的資產。",
+      "url": "https://illuvium.io",
+      "tags": [
+        "gaming"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "treasure",
+      "label": "Treasure",
+      "labelZh": "Treasure",
+      "type": "protocol",
+      "parent": "gaming",
+      "group": "consumer",
+      "summaryZh": "Treasure 是遊戲發行與資產網絡，工作室共用一套市場與代幣工具，玩家的遊戲道具可以在協議市場裡交易。",
+      "url": "https://treasure.lol",
+      "tags": [
+        "gaming",
+        "marketplace"
+      ],
+      "chains": [
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "farcaster",
+      "label": "Farcaster",
+      "labelZh": "Farcaster",
+      "type": "protocol",
+      "parent": "social",
+      "group": "consumer",
+      "summaryZh": "Farcaster 是去中心化社交協議，帳號識別與簽名留在使用者手上，多個客戶端可以讀同一套身分與貼文。客戶端可以更換，帳號不必跟著單一應用走。",
+      "url": "https://farcaster.xyz/",
+      "tags": [
+        "social"
+      ],
+      "chains": [
+        "ethereum",
+        "base"
+      ]
+    },
+    {
+      "id": "lens",
+      "label": "Lens",
+      "labelZh": "Lens",
+      "type": "protocol",
+      "parent": "social",
+      "group": "consumer",
+      "summaryZh": "Lens 把個人檔案、關注與內容做成可攜的鏈上社交圖，應用可以共用同一套帳號，使用者不必在每個產品重新註冊。",
+      "url": "https://lens.xyz",
+      "tags": [
+        "social"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "paragraph",
+      "label": "Paragraph",
+      "labelZh": "Paragraph",
+      "type": "protocol",
+      "parent": "social",
+      "group": "consumer",
+      "summaryZh": "Paragraph 是鏈上電子報與出版工具，創作者用錢包收款與發行，文章也可以對到 Farcaster 等社交身分。付費訂閱可以直接進入創作者的錢包。",
+      "url": "https://paragraph.com",
+      "tags": [
+        "social",
+        "creator"
+      ],
+      "chains": [
+        "base"
+      ]
+    },
+    {
+      "id": "ens",
+      "label": "ENS",
+      "labelZh": "ENS",
+      "type": "protocol",
+      "parent": "identity",
+      "group": "infrastructure",
+      "summaryZh": "ENS 把 .eth 名稱註冊在以太坊上，名稱可以解析成地址與個人資料，錢包、轉帳與社交帳號都用它顯示可讀身分。",
+      "url": "https://ens.domains",
+      "tags": [
+        "domain",
+        "identity"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "world",
+      "label": "World",
+      "labelZh": "World",
+      "type": "protocol",
+      "parent": "identity",
+      "group": "infrastructure",
+      "summaryZh": "World 前稱 Worldcoin，用 World ID 證明某人是獨一無二的真人，證明可以接到錢包，而不必公開姓名。證明只表示人的獨特性，不把姓名公開到鏈上。",
+      "url": "https://world.org/",
+      "tags": [
+        "identity",
+        "proof-of-personhood"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "visa",
+      "label": "Visa",
+      "labelZh": "Visa",
+      "type": "protocol",
+      "parent": "payments",
+      "group": "consumer",
+      "summaryZh": "Visa 是全球卡組織，負責授權與清算卡交易。多張加密簽帳卡走它的受理網路，在一般商店把消費換成法幣結算。",
+      "url": "https://www.visa.com",
+      "tags": [
+        "card-network",
+        "payments"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "mastercard",
+      "label": "Mastercard",
+      "labelZh": "Mastercard",
+      "type": "protocol",
+      "parent": "payments",
+      "group": "consumer",
+      "summaryZh": "Mastercard 是全球卡組織，提供卡交易的授權與清算。加密卡若掛在它的標誌下，消費會經由這套受理網路結算。",
+      "url": "https://www.mastercard.com",
+      "tags": [
+        "card-network",
+        "payments"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "stripe",
+      "label": "Stripe",
+      "labelZh": "Stripe",
+      "type": "protocol",
+      "parent": "payments",
+      "group": "consumer",
+      "summaryZh": "Stripe 是網路收單與支付基礎設施，商戶可以用它收款，也支援穩定幣相關的結算產品與加密支付流程。",
+      "url": "https://stripe.com",
+      "tags": [
+        "payments",
+        "acquiring"
+      ],
+      "chains": [
+        "ethereum",
+        "base"
+      ]
+    },
+    {
+      "id": "paypal",
+      "label": "PayPal",
+      "labelZh": "PayPal",
+      "type": "protocol",
+      "parent": "payments",
+      "group": "consumer",
+      "summaryZh": "PayPal 是線上支付公司，並發行美元穩定幣 PYUSD，讓付款餘額與鏈上美元可以出現在同一個品牌底下。穩定幣由合作發行方鑄造，PayPal 提供使用入口。",
+      "url": "https://www.paypal.com",
+      "tags": [
+        "payments",
+        "pyusd"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "moonpay",
+      "label": "MoonPay",
+      "labelZh": "MoonPay",
+      "type": "protocol",
+      "parent": "payments",
+      "group": "consumer",
+      "summaryZh": "MoonPay 提供法幣出入金，使用者用銀行卡或轉帳購買加密資產，應用也可以把這套結帳嵌進自己的產品。",
+      "url": "https://www.moonpay.com",
+      "tags": [
+        "onramp",
+        "payments"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "transak",
+      "label": "Transak",
+      "labelZh": "Transak",
+      "type": "protocol",
+      "parent": "payments",
+      "group": "consumer",
+      "summaryZh": "Transak 提供嵌入式法幣出入口，錢包與應用用它讓使用者以本地支付方式買入或賣出加密資產。可用的支付方式依國家而異，買到的資產直接進入錢包。",
+      "url": "https://transak.com",
+      "tags": [
+        "onramp",
+        "payments"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "sablier",
+      "label": "Sablier",
+      "labelZh": "Sablier",
+      "type": "protocol",
+      "parent": "payments",
+      "group": "consumer",
+      "summaryZh": "Sablier 在以太坊上做代幣串流，薪資、助成與歸屬可以按秒釋放，收款人不必等一筆整額轉帳。尚未釋放的部分留在合約裡，不能提前整筆提走。",
+      "url": "https://sablier.com",
+      "tags": [
+        "streaming",
+        "payments"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "superfluid",
+      "label": "Superfluid",
+      "labelZh": "Superfluid",
+      "type": "protocol",
+      "parent": "payments",
+      "group": "consumer",
+      "summaryZh": "Superfluid 讓代幣餘額按時間連續流動，訂閱、薪資與金庫撥款可以寫成一條持續結算的資金流。餘額隨時間變動，收款人可以隨時領取已經流過的部分。",
+      "url": "https://superfluid.org/",
+      "tags": [
+        "streaming",
+        "payments"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "request",
+      "label": "Request Network",
+      "labelZh": "Request Network",
+      "type": "protocol",
+      "parent": "payments",
+      "group": "consumer",
+      "summaryZh": "Request Network 在鏈上建立付款請求與發票，付款狀態可以核對，用來做加密貨幣的請款與對帳。請款狀態公開，付款方與收款方都能事後核對。",
+      "url": "https://request.network",
+      "tags": [
+        "invoicing",
+        "payments"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "bridge-xyz",
+      "label": "Bridge",
+      "labelZh": "Bridge",
+      "type": "protocol",
+      "parent": "payments",
+      "group": "consumer",
+      "summaryZh": "Bridge 提供穩定幣支付與換匯基礎設施，企業用它在法幣與鏈上美元之間移動資金，並接到現有的支付流程。",
+      "url": "https://bridge.xyz",
+      "tags": [
+        "stablecoin",
+        "payments"
+      ],
+      "chains": [
+        "ethereum",
+        "base"
+      ]
+    },
+    {
+      "id": "etherfi-cash",
+      "label": "ether.fi Cash",
+      "labelZh": "ether.fi Cash",
+      "type": "protocol",
+      "parent": "card-finance",
+      "group": "consumer",
+      "summaryZh": "ether.fi Cash 是掛在 Visa 受理網路上的加密信用卡，支出對到使用者的鏈上帳戶，現金回饋與會員層級由 ether.fi 設定。虛擬卡可以先開通，實體卡再依地區寄出。",
+      "url": "https://www.ether.fi",
+      "tags": [
+        "card",
+        "visa"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "plasma-one",
+      "label": "Plasma One",
+      "labelZh": "Plasma One",
+      "type": "protocol",
+      "parent": "card-finance",
+      "group": "consumer",
+      "summaryZh": "Plasma One 是 Plasma 推出的個人金融與卡片產品，用來把鏈上美元餘額接到日常消費與帳戶功能。消費對到鏈上美元餘額，而不是先轉進交易所帳戶。",
+      "url": "https://www.plasma.org",
+      "tags": [
+        "card",
+        "neobank"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "gnosis-pay",
+      "label": "Gnosis Pay",
+      "labelZh": "Gnosis Pay",
+      "type": "protocol",
+      "parent": "card-finance",
+      "group": "consumer",
+      "summaryZh": "Gnosis Pay 把 Safe 智慧帳戶接到簽帳卡，消費從鏈上餘額結算，卡片走卡組織的一般商店受理網路。支出使用帳戶裡的資金，卡片服務本身不保管助記詞。",
+      "url": "https://gnosispay.com",
+      "tags": [
+        "card",
+        "safe"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "monerium",
+      "label": "Monerium",
+      "labelZh": "Monerium",
+      "type": "protocol",
+      "parent": "card-finance",
+      "group": "consumer",
+      "summaryZh": "Monerium 發行可贖回歐元的鏈上電子貨幣，並提供 IBAN，讓歐元銀行轉帳和鏈上餘額可以互相進出。銀行電匯與鏈上歐元可以按發行規則互相兌換。",
+      "url": "https://monerium.com",
+      "tags": [
+        "iban",
+        "eure"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "livepeer",
+      "label": "Livepeer",
+      "labelZh": "Livepeer",
+      "type": "protocol",
+      "parent": "depin",
+      "group": "consumer",
+      "summaryZh": "Livepeer 協調去中心化的影片轉碼，節點營運者提供 GPU，付費用戶取得轉碼服務，報酬以鏈上代幣結算。轉碼工作分給有空的節點，需求方不必自建轉碼機房。",
+      "url": "https://livepeer.org",
+      "tags": [
+        "depin",
+        "video"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "dimo",
+      "label": "DIMO",
+      "labelZh": "DIMO",
+      "type": "protocol",
+      "parent": "depin",
+      "group": "consumer",
+      "summaryZh": "DIMO 讓車主分享車輛資料並取得報酬，裝置與駕駛證明接到鏈上身分，資料使用者付費取得經過同意的讀取。",
+      "url": "https://dimo.org",
+      "tags": [
+        "depin",
+        "mobility"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "aethir",
+      "label": "Aethir",
+      "labelZh": "Aethir",
+      "type": "protocol",
+      "parent": "depin",
+      "group": "consumer",
+      "summaryZh": "Aethir 把分散的 GPU 收成可租用的算力網路，需求方在鏈上支付，供應方依實際提供的計算領取報酬。租用方按使用量付費，供應方依交付的算力結算。",
+      "url": "https://aethir.com",
+      "tags": [
+        "depin",
+        "gpu"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "weatherxm",
+      "label": "WeatherXM",
+      "labelZh": "WeatherXM",
+      "type": "protocol",
+      "parent": "depin",
+      "group": "consumer",
+      "summaryZh": "WeatherXM 獎勵人們部署氣象站，觀測資料匯總後提供給需要天氣數據的一方，設備貢獻記錄在鏈上。站點貢獻可以對到獎勵，資料再提供給需要天氣的一方。",
+      "url": "https://weatherxm.com",
+      "tags": [
+        "depin",
+        "sensors"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "storj",
+      "label": "Storj",
+      "labelZh": "Storj",
+      "type": "protocol",
+      "parent": "depin",
+      "group": "consumer",
+      "summaryZh": "Storj 把檔案切分存到全球節點，使用者付費取得儲存與頻寬，節點營運者依實際存放與傳輸領取報酬。",
+      "url": "https://www.storj.io",
+      "tags": [
+        "depin",
+        "storage"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "filecoin",
+      "label": "Filecoin",
+      "labelZh": "Filecoin",
+      "type": "protocol",
+      "parent": "depin",
+      "group": "consumer",
+      "summaryZh": "Filecoin 是去中心化儲存網路，並提供 EVM 相容的執行環境，儲存合約與相關應用可以在這套環境裡部署。儲存證明用來確認檔案仍被節點持續保存。",
+      "url": "https://filecoin.io",
+      "tags": [
+        "depin",
+        "storage"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "golem",
+      "label": "Golem",
+      "labelZh": "Golem",
+      "type": "protocol",
+      "parent": "depin",
+      "group": "consumer",
+      "summaryZh": "Golem 讓人出租閒置算力並在以太坊上結算，需求方把運算工作派到供應者，完成後以鏈上支付報酬。運算結果驗收之後才完成付款，避免只支付未交付的工作。",
+      "url": "https://www.golem.network",
+      "tags": [
+        "depin",
+        "compute"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "ondo",
+      "label": "Ondo",
+      "labelZh": "Ondo",
+      "type": "protocol",
+      "parent": "rwa",
+      "group": "consumer",
+      "summaryZh": "Ondo 把短天期美國國庫券與相關基金做成鏈上代幣，持有人取得代幣化的國債曝險，可在支援的協議裡轉移。",
+      "url": "https://ondo.finance",
+      "tags": [
+        "rwa",
+        "treasuries"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "centrifuge",
+      "label": "Centrifuge",
+      "labelZh": "Centrifuge",
+      "type": "protocol",
+      "parent": "rwa",
+      "group": "consumer",
+      "summaryZh": "Centrifuge 把信貸、發票與其他鏈下資產做成鏈上融資池，借款方以真實世界現金流當底層，投資人持有池份額。",
+      "url": "https://centrifuge.io",
+      "tags": [
+        "rwa",
+        "credit"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "securitize",
+      "label": "Securitize",
+      "labelZh": "Securitize",
+      "type": "protocol",
+      "parent": "rwa",
+      "group": "consumer",
+      "summaryZh": "Securitize 是合規的證券代幣平台，基金與股權可以在它的架構上發行，並在允許的錢包之間轉移。代幣轉移受合格投資人與司法管轄的限制。",
+      "url": "https://securitize.io",
+      "tags": [
+        "rwa",
+        "securities"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "superstate",
+      "label": "Superstate",
+      "labelZh": "Superstate",
+      "type": "protocol",
+      "parent": "rwa",
+      "group": "consumer",
+      "summaryZh": "Superstate 發行鏈上的國債與證券基金份額，合格投資人持有代幣化份額，資產對應傳統市場的短天期工具。",
+      "url": "https://superstate.com",
+      "tags": [
+        "rwa",
+        "treasuries"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "backed",
+      "label": "Backed",
+      "labelZh": "Backed",
+      "type": "protocol",
+      "parent": "rwa",
+      "group": "consumer",
+      "summaryZh": "Backed 發行追蹤公開證券的代幣，合格用戶可以在鏈上持有對應股票或 ETF 的曝險，並在支援的場所轉移。代幣追蹤標的證券，贖回要符合合格投資人條件。",
+      "url": "https://backed.fi",
+      "tags": [
+        "rwa",
+        "equities"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "openeden",
+      "label": "OpenEden",
+      "labelZh": "OpenEden",
+      "type": "protocol",
+      "parent": "rwa",
+      "group": "consumer",
+      "summaryZh": "OpenEden 把短天期美國國庫券做成鏈上金庫代幣，收益反映底層國債，代幣可以在 DeFi 協議裡被接受為抵押。金庫代幣可以被其他協議接受為生息抵押品。",
+      "url": "https://openeden.com",
+      "tags": [
+        "rwa",
+        "treasuries"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "dinari",
+      "label": "Dinari",
+      "labelZh": "Dinari",
+      "type": "protocol",
+      "parent": "rwa",
+      "group": "consumer",
+      "summaryZh": "Dinari 提供代幣化美股的發行與交易基礎設施，把上市股票的曝險做成可以在合規框架下持有的鏈上資產。",
+      "url": "https://dinari.com",
+      "tags": [
+        "rwa",
+        "equities"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "midas",
+      "label": "Midas",
+      "labelZh": "Midas",
+      "type": "protocol",
+      "parent": "rwa",
+      "group": "consumer",
+      "summaryZh": "Midas 發行追蹤美股與相關權益的鏈上憑證，讓合格使用者以代幣形式持有公開市場資產的曝險。持有與轉移都要符合它設定的合格使用者規則。",
+      "url": "https://midas.app",
+      "tags": [
+        "rwa",
+        "equities"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "four-meme",
+      "label": "Four.meme",
+      "labelZh": "Four.meme",
+      "type": "protocol",
+      "parent": "meme",
+      "group": "consumer",
+      "summaryZh": "Four.meme 是 BNB Chain 上的迷因幣發射台，新幣沿曲線交易，達到條件後再遷入公開的現貨池。曲線階段的價格隨買入量上升，達標後才進入公開池。",
+      "url": "https://four.meme",
+      "tags": [
+        "meme",
+        "launchpad"
+      ],
+      "chains": [
+        "bnb"
+      ]
+    },
+    {
+      "id": "banana-gun",
+      "label": "Banana Gun",
+      "labelZh": "Banana Gun",
+      "type": "protocol",
+      "parent": "meme",
+      "group": "consumer",
+      "summaryZh": "Banana Gun 是給鏈上交易者用的終端與機器人，用來快速買入新池、設定滑點與管理多個 EVM 網路上的部位。下單速度與授權管理是它和一般兌換網站的差別。",
+      "url": "https://bananagun.io",
+      "tags": [
+        "terminal",
+        "bot"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "maestro",
+      "label": "Maestro",
+      "labelZh": "Maestro",
+      "type": "protocol",
+      "parent": "meme",
+      "group": "consumer",
+      "summaryZh": "Maestro 提供鏈上交易機器人與終端，交易者用它追蹤新幣、下單與管理錢包，成交回到所選網路的交易所。",
+      "url": "https://www.maestrobots.com",
+      "tags": [
+        "terminal",
+        "bot"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "defined",
+      "label": "Defined",
+      "labelZh": "Defined",
+      "type": "protocol",
+      "parent": "meme",
+      "group": "consumer",
+      "summaryZh": "Defined 是多鏈行情終端，即時列出新池、成交與價格，交易者用它發現長尾代幣而不是只看綜合報價站。新池出現時可以按成交額與時間排序查看。",
+      "url": "https://defined.fi",
+      "tags": [
+        "terminal"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "geckoterminal",
+      "label": "GeckoTerminal",
+      "labelZh": "GeckoTerminal",
+      "type": "protocol",
+      "parent": "meme",
+      "group": "consumer",
+      "summaryZh": "GeckoTerminal 追蹤去中心化交易所的資金池與價格，涵蓋多條 EVM 鏈，用來查看新池深度與即時成交。池子頁面同時顯示價格、成交量與流動性深度。",
+      "url": "https://www.geckoterminal.com",
+      "tags": [
+        "terminal"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "snapshot",
+      "label": "Snapshot",
+      "labelZh": "Snapshot",
+      "type": "protocol",
+      "parent": "dao",
+      "group": "consumer",
+      "summaryZh": "Snapshot 是鏈下投票介面，提案用錢包簽名表決，投票權通常按持倉快照計算，結果再交由多簽或合約執行。",
+      "url": "https://snapshot.org",
+      "tags": [
+        "governance",
+        "voting"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "tally",
+      "label": "Tally",
+      "labelZh": "Tally",
+      "type": "protocol",
+      "parent": "dao",
+      "group": "consumer",
+      "summaryZh": "Tally 提供鏈上治理介面，代幣持有人在這裡提案、投票與委託，投票結果直接寫進治理合約。委託投票讓沒有時間表決的人把權利交給代表。",
+      "url": "https://www.tally.xyz",
+      "tags": [
+        "governance",
+        "onchain"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "aragon",
+      "label": "Aragon",
+      "labelZh": "Aragon",
+      "type": "protocol",
+      "parent": "dao",
+      "group": "consumer",
+      "summaryZh": "Aragon 提供 DAO 與治理合約框架，組織可以用它建立投票、權限與金庫規則，不必從零撰寫治理程式。組織可以調整投票規則，不必整份應用重寫。",
+      "url": "https://aragon.org",
+      "tags": [
+        "dao",
+        "framework"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "gnosis",
+      "label": "Gnosis",
+      "labelZh": "Gnosis",
+      "type": "protocol",
+      "parent": "dao",
+      "group": "consumer",
+      "summaryZh": "Gnosis 推動 Gnosis Chain 與相關治理，也是 Safe 多簽的出身機構，協議金庫與組織支出許多仍沿用這套工具。這條鏈上的應用與以太坊主網共用同一套合約工具。",
+      "url": "https://www.gnosis.io/",
+      "tags": [
+        "dao",
+        "chain"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "gitcoin",
+      "label": "Gitcoin",
+      "labelZh": "Gitcoin",
+      "type": "protocol",
+      "parent": "dao",
+      "group": "consumer",
+      "summaryZh": "Gitcoin 運作公共財的二次方助成與輪次，捐款人用錢包支持開源與以太坊生態專案，匹配資金按規則分配。",
+      "url": "https://gitcoin.co",
+      "tags": [
+        "grants",
+        "public-goods"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "kleros",
+      "label": "Kleros",
+      "labelZh": "Kleros",
+      "type": "protocol",
+      "parent": "dao",
+      "group": "consumer",
+      "summaryZh": "Kleros 是去中心化仲裁法院，質押陪審員表決爭議，結果可以回寫合約，用來處理鏈上協議無法自動判斷的糾紛。",
+      "url": "https://kleros.io",
+      "tags": [
+        "arbitration"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "polymarket",
+      "label": "Polymarket",
+      "labelZh": "Polymarket",
+      "type": "protocol",
+      "parent": "dao",
+      "group": "consumer",
+      "summaryZh": "Polymarket 是運行在 Polygon 上的預測市場，事件結果做成可買賣的份額，結算使用樂觀預言機處理爭議。份額價格反映市場對該事件發生機率的判斷。",
+      "url": "https://polymarket.com",
+      "tags": [
+        "prediction",
+        "polygon"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "huma",
+      "label": "Huma",
+      "labelZh": "Huma",
+      "type": "protocol",
+      "parent": "rwa",
+      "group": "consumer",
+      "summaryZh": "Huma 把真實世界的應收帳款與支付流水做成鏈上收益，存款人在以太坊提供美元流動性，報酬來自鏈下付款而不是代幣排放。",
+      "url": "https://app.huma.finance",
+      "tags": [
+        "rwa",
+        "credit"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "clearpool",
+      "label": "Clearpool",
+      "labelZh": "Clearpool",
+      "type": "protocol",
+      "parent": "rwa",
+      "group": "consumer",
+      "summaryZh": "Clearpool 在以太坊把機構信用與國債收益做成資金池，存款人提供穩定幣，報酬來自借款機構或短債，而不是加密貨幣價格。",
+      "url": "https://vaults.clearpool.finance/",
+      "tags": [
+        "rwa",
+        "credit"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "opentrade",
+      "label": "OpenTrade",
+      "labelZh": "OpenTrade",
+      "type": "protocol",
+      "parent": "rwa",
+      "group": "consumer",
+      "summaryZh": "OpenTrade 讓金融業者在以太坊上架合規的穩定幣收益產品，底層對應短債等傳統資產，投資人用錢包認購與贖回。",
+      "url": "https://www.opentrade.io",
+      "tags": [
+        "rwa"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "usd-ai",
+      "label": "USD.AI",
+      "labelZh": "USD.AI",
+      "type": "protocol",
+      "parent": "rwa",
+      "group": "consumer",
+      "summaryZh": "USD.AI 在 Arbitrum 發行由實體基礎設施貸款支持的生息美元，持有人取得鏈下設備融資的收益，而不是純鏈上排放。",
+      "url": "https://usd.ai/",
+      "tags": [
+        "rwa",
+        "stablecoin"
+      ],
+      "chains": [
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "anemoy",
+      "label": "Anemoy",
+      "labelZh": "Anemoy",
+      "type": "protocol",
+      "parent": "rwa",
+      "group": "consumer",
+      "summaryZh": "Anemoy 透過 Centrifuge 把基金份額做成鏈上代幣，投資人在以太坊與 Base 持有代幣化資產組合，申贖沿用合規名冊。申贖仍要符合發行文件上的限制。",
+      "url": "https://www.anemoy.io",
+      "tags": [
+        "rwa",
+        "fund"
+      ],
+      "chains": [
+        "ethereum",
+        "base"
+      ]
+    },
+    {
+      "id": "re-protocol",
+      "label": "Re",
+      "labelZh": "Re",
+      "type": "protocol",
+      "parent": "rwa",
+      "group": "consumer",
+      "summaryZh": "Re 把再保險風險做成鏈上資金池，存款人以穩定幣承擔受監管再保合約的部位，並領取對應收益，池子在以太坊、Base 與 Arbitrum。",
+      "url": "https://app.re.xyz",
+      "tags": [
+        "rwa",
+        "insurance"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "brickken",
+      "label": "Brickken",
+      "labelZh": "Brickken",
+      "type": "protocol",
+      "parent": "rwa",
+      "group": "consumer",
+      "summaryZh": "Brickken 讓企業把股權或實體資產做成代幣來募資，投資人名冊與轉讓限制留在鏈上，發行網路包含以太坊、幣安鏈與 Base。",
+      "url": "https://www.brickken.com",
+      "tags": [
+        "rwa"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base"
+      ]
+    },
+    {
+      "id": "tangible",
+      "label": "Tangible",
+      "labelZh": "Tangible",
+      "type": "protocol",
+      "parent": "rwa",
+      "group": "consumer",
+      "summaryZh": "Tangible 把房地產等實體資產做成可交易憑證，並發行由出租收益支持的美元代幣，市場開在以太坊、Base 與 Arbitrum。申贖仍要符合發行文件上的限制。",
+      "url": "https://www.tangible.store",
+      "tags": [
+        "rwa",
+        "real-estate"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "theo",
+      "label": "Theo",
+      "labelZh": "Theo",
+      "type": "protocol",
+      "parent": "rwa",
+      "group": "consumer",
+      "summaryZh": "Theo 在以太坊發行由代幣化美債與對沖黃金部位支持的生息美元，持有人質押後領取底層短債與套息策略的報酬。",
+      "url": "https://app.theo.xyz/",
+      "tags": [
+        "rwa",
+        "stablecoin"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "kaio",
+      "label": "KAIO",
+      "labelZh": "KAIO",
+      "type": "protocol",
+      "parent": "rwa",
+      "group": "consumer",
+      "summaryZh": "KAIO 前身是 Libre，在以太坊幫受監管基金進入無需許可的市場，份額轉讓仍受合規限制，方便機構資產被其他協議使用。",
+      "url": "https://www.kaio.xyz/",
+      "tags": [
+        "rwa"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "estate",
+      "label": "Estate",
+      "labelZh": "Estate",
+      "type": "protocol",
+      "parent": "rwa",
+      "group": "consumer",
+      "summaryZh": "Estate 在 Arbitrum 把海外房地產拆成可持有的份額，投資人用錢包取得部分所有權，標的與權益對應鏈下的資產持有結構。",
+      "url": "https://www.estateprotocol.com",
+      "tags": [
+        "rwa",
+        "real-estate"
+      ],
+      "chains": [
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "goldfinch",
+      "label": "Goldfinch",
+      "labelZh": "Goldfinch",
+      "type": "protocol",
+      "parent": "rwa",
+      "group": "consumer",
+      "summaryZh": "Goldfinch 在以太坊做真實世界信貸，存款人提供美元流動性給鏈下借款人，收益來自還款而不是加密資產的價格波動。",
+      "url": "https://goldfinch.finance",
+      "tags": [
+        "rwa",
+        "credit"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "buidl",
+      "label": "BUIDL",
+      "labelZh": "BUIDL",
+      "type": "protocol",
+      "parent": "rwa",
+      "group": "consumer",
+      "summaryZh": "BUIDL 是貝萊德的代幣化美元流動性基金，資產配置在美國國庫券與隔夜回購，份額由 Securitize 在以太坊、幣安鏈與 Arbitrum 登記。",
+      "url": "https://www.blackrock.com/corporate/compliance/scams-and-fraud/blackrock-token-addresses",
+      "tags": [
+        "rwa",
+        "treasury"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "metamask-card",
+      "label": "MetaMask Card",
+      "labelZh": "MetaMask Card",
+      "type": "protocol",
+      "parent": "card-finance",
+      "group": "consumer",
+      "summaryZh": "MetaMask Card 讓人用自託管錢包裡的穩定幣在萬事達卡商戶消費，扣款可走 Base，資產在刷卡當下才換成法幣。刷卡當下才把鏈上餘額換成法幣。",
+      "url": "https://metamask.io/card",
+      "tags": [
+        "card"
+      ],
+      "chains": [
+        "base"
+      ]
+    },
+    {
+      "id": "holyheld",
+      "label": "Holyheld",
+      "labelZh": "Holyheld",
+      "type": "protocol",
+      "parent": "card-finance",
+      "group": "consumer",
+      "summaryZh": "Holyheld 提供連到自託管錢包的加密卡，消費時從以太坊地址支付，使用者不必先把資產充進交易所帳戶。",
+      "url": "https://holyheld.com/",
+      "tags": [
+        "card"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "llamapay",
+      "label": "LlamaPay",
+      "labelZh": "LlamaPay",
+      "type": "protocol",
+      "parent": "payments",
+      "group": "consumer",
+      "summaryZh": "LlamaPay 按秒計算薪資與撥款，收款人隨時提領已累積的金額，付款人只要保持餘額，合約部署在這四條 EVM 鏈上。",
+      "url": "https://llamapay.io",
+      "tags": [
+        "streaming"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "streamflow",
+      "label": "Streamflow",
+      "labelZh": "Streamflow",
+      "type": "protocol",
+      "parent": "payments",
+      "group": "consumer",
+      "summaryZh": "Streamflow 在以太坊與幣安鏈上做代幣發放與鎖倉，團隊用它按時間表發放激勵，收款人依合約進度領取代幣。",
+      "url": "https://streamflow.finance",
+      "tags": [
+        "vesting"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb"
+      ]
+    },
+    {
+      "id": "flexa",
+      "label": "Flexa",
+      "labelZh": "Flexa",
+      "type": "protocol",
+      "parent": "payments",
+      "group": "consumer",
+      "summaryZh": "Flexa 在以太坊用抵押的支付網路讓商家接受加密資產，顧客付款後由網路換成商家可結算的餘額，不必商家自己保管私鑰。",
+      "url": "https://amp.xyz/",
+      "tags": [
+        "payments"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "gondi",
+      "label": "Gondi",
+      "labelZh": "Gondi",
+      "type": "protocol",
+      "parent": "nft-marketplace",
+      "group": "consumer",
+      "summaryZh": "Gondi 是以太坊上的收藏品借貸市場，持有人抵押代幣借出流動性，出借人報價利率，倉位可以再融資而無須先還清。",
+      "url": "https://www.gondi.xyz",
+      "tags": [
+        "nft",
+        "lending"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "nftx",
+      "label": "NFTX",
+      "labelZh": "NFTX",
+      "type": "protocol",
+      "parent": "nft-marketplace",
+      "group": "consumer",
+      "summaryZh": "NFTX 把同一系列的收藏品做成可兌換的同質化代幣，持有人可以用代幣進出底層資產，金庫開在以太坊與 Arbitrum。",
+      "url": "https://nftx.io",
+      "tags": [
+        "nft"
+      ],
+      "chains": [
+        "ethereum",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "element",
+      "label": "Element",
+      "labelZh": "Element",
+      "type": "protocol",
+      "parent": "nft-marketplace",
+      "group": "consumer",
+      "summaryZh": "Element 是多鏈收藏品市集，在以太坊與幣安鏈提供掛單與集合報價，買家用錢包完成交割，版稅依集合規則處理。",
+      "url": "https://element.market",
+      "tags": [
+        "nft",
+        "marketplace"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb"
+      ]
+    },
+    {
+      "id": "sound",
+      "label": "Sound",
+      "labelZh": "Sound",
+      "type": "protocol",
+      "parent": "nft-marketplace",
+      "group": "consumer",
+      "summaryZh": "Sound 讓音樂人在以太坊與 Base 發行歌曲收藏，聽眾直接向創作者購買，版本與收益規則寫在合約裡，不必經過傳統唱片公司。",
+      "url": "https://www.sound.xyz",
+      "tags": [
+        "music",
+        "nft"
+      ],
+      "chains": [
+        "ethereum",
+        "base"
+      ]
+    },
+    {
+      "id": "magic-eden",
+      "label": "Magic Eden",
+      "labelZh": "Magic Eden",
+      "type": "protocol",
+      "parent": "nft-marketplace",
+      "group": "consumer",
+      "summaryZh": "Magic Eden 的市集也交易以太坊與 Base 上的收藏品，提供掛單、集合報價與發行，買家用同一套錢包介面跨鏈瀏覽。",
+      "url": "https://magiceden.io",
+      "tags": [
+        "nft",
+        "marketplace"
+      ],
+      "chains": [
+        "ethereum",
+        "base"
+      ]
+    },
+    {
+      "id": "predict-fun",
+      "label": "Predict",
+      "labelZh": "Predict",
+      "type": "protocol",
+      "parent": "dao",
+      "group": "consumer",
+      "summaryZh": "Predict 是幣安鏈上的預測市場，體育、加密與公共事件做成可買賣的結果份額，閒置保證金還能放進收益市場。",
+      "url": "https://predict.fun",
+      "tags": [
+        "prediction"
+      ],
+      "chains": [
+        "bnb"
+      ]
+    },
+    {
+      "id": "opinion",
+      "label": "Opinion",
+      "labelZh": "Opinion",
+      "type": "protocol",
+      "parent": "dao",
+      "group": "consumer",
+      "summaryZh": "Opinion 在幣安鏈把總經數據與新聞事件做成可交易的標準化合約，價格反映市場判斷，結算使用鏈上預言流程。",
+      "url": "https://app.opinion.trade",
+      "tags": [
+        "prediction"
+      ],
+      "chains": [
+        "bnb"
+      ]
+    },
+    {
+      "id": "overtime",
+      "label": "Overtime",
+      "labelZh": "Overtime",
+      "type": "protocol",
+      "parent": "dao",
+      "group": "consumer",
+      "summaryZh": "Overtime 是鏈上體育博彩與賽事選擇權市場，賠率與結算走智能合約，賽果使用 Chainlink 資料，部署在這四條 EVM 鏈。提案、投票與執行結果留在鏈上。",
+      "url": "https://www.overtimemarkets.xyz",
+      "tags": [
+        "prediction",
+        "sports"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "agora",
+      "label": "Agora",
+      "labelZh": "Agora",
+      "type": "protocol",
+      "parent": "dao",
+      "group": "consumer",
+      "summaryZh": "Agora 提供鏈上治理介面，組織在以太坊提案、投票與執行，Uniswap 等協議用它管理參數與金庫支出，投票權對應持幣或委託。",
+      "url": "https://www.agora.xyz",
+      "tags": [
+        "governance"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "hats",
+      "label": "Hats",
+      "labelZh": "Hats",
+      "type": "protocol",
+      "parent": "dao",
+      "group": "consumer",
+      "summaryZh": "Hats 把組織角色做成可授予與撤銷的鏈上帽子，權限跟著角色走，用在以太坊、Base 與 Arbitrum 的金庫與多簽流程。提案、投票與執行結果留在鏈上。",
+      "url": "https://www.hatsprotocol.xyz",
+      "tags": [
+        "roles"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "syndicate",
+      "label": "Syndicate",
+      "labelZh": "Syndicate",
+      "type": "protocol",
+      "parent": "dao",
+      "group": "consumer",
+      "summaryZh": "Syndicate 讓一群人在以太坊與 Base 成立鏈上俱樂部，共同持有資產並投票決策，出資與分配規則由合約執行。提案、投票與執行結果留在鏈上。",
+      "url": "https://syndicate.io",
+      "tags": [
+        "collective"
+      ],
+      "chains": [
+        "ethereum",
+        "base"
+      ]
+    },
+    {
+      "id": "xmtp",
+      "label": "XMTP",
+      "labelZh": "XMTP",
+      "type": "protocol",
+      "parent": "social",
+      "group": "consumer",
+      "summaryZh": "XMTP 是錢包之間的訊息協議，地址持有人可以互傳加密訊息，不同客戶端讀取同一身分，常用在以太坊與 Base 的應用裡。",
+      "url": "https://xmtp.org",
+      "tags": [
+        "messaging"
+      ],
+      "chains": [
+        "ethereum",
+        "base"
+      ]
+    },
+    {
+      "id": "push",
+      "label": "Push",
+      "labelZh": "Push",
+      "type": "protocol",
+      "parent": "social",
+      "group": "consumer",
+      "summaryZh": "Push 在以太坊提供鏈上通知，協議與錢包可以把交易、治理或價格提醒送到地址，使用者不必把通知只放在單一公司的伺服器。",
+      "url": "https://push.org",
+      "tags": [
+        "notifications"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "guild",
+      "label": "Guild",
+      "labelZh": "Guild",
+      "type": "protocol",
+      "parent": "social",
+      "group": "consumer",
+      "summaryZh": "Guild 依代幣、憑證或交易紀錄開放身分與權限，社群用它做門檻，查詢覆蓋以太坊、幣安鏈、Base 與 Arbitrum 上的資產。身分綁在地址，不必另開平台帳號。",
+      "url": "https://guild.xyz",
+      "tags": [
+        "gating"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "layer3",
+      "label": "Layer3",
+      "labelZh": "Layer3",
+      "type": "protocol",
+      "parent": "social",
+      "group": "consumer",
+      "summaryZh": "Layer3 用任務引導使用者試用鏈上應用，完成指定交易後領取憑證或獎勵，活動主要發生在以太坊、Base 與 Arbitrum。身分綁在地址，不必另開平台帳號。",
+      "url": "https://layer3.xyz",
+      "tags": [
+        "quests"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "galxe",
+      "label": "Galxe",
+      "labelZh": "Galxe",
+      "type": "protocol",
+      "parent": "social",
+      "group": "consumer",
+      "summaryZh": "Galxe 承作鏈上任務與憑證發行，專案用它記錄誰完成了指定動作，憑證可鑄在以太坊、幣安鏈、Base 與 Arbitrum。身分綁在地址，不必另開平台帳號。",
+      "url": "https://www.galxe.com",
+      "tags": [
+        "quests",
+        "credentials"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "towns",
+      "label": "Towns",
+      "labelZh": "Towns",
+      "type": "protocol",
+      "parent": "social",
+      "group": "consumer",
+      "summaryZh": "Towns 在 Base 上做加密群組聊天，成員資格與付費規則由合約控制，訊息不放在單一公司的帳號系統裡。身分綁在地址，不必另開平台帳號。",
+      "url": "https://www.towns.com",
+      "tags": [
+        "messaging"
+      ],
+      "chains": [
+        "base"
+      ]
+    },
+    {
+      "id": "bullx",
+      "label": "BullX",
+      "labelZh": "BullX",
+      "type": "protocol",
+      "parent": "meme",
+      "group": "consumer",
+      "summaryZh": "BullX 是給新幣交易者的終端，聚合以太坊、幣安鏈與 Base 的新池與價格，使用者在同一畫面下單並追蹤倉位。",
+      "url": "https://bullx.io",
+      "tags": [
+        "terminal"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base"
+      ]
+    },
+    {
+      "id": "gmgn",
+      "label": "GMGN",
+      "labelZh": "GMGN",
+      "type": "protocol",
+      "parent": "meme",
+      "group": "consumer",
+      "summaryZh": "GMGN 追蹤新發行代幣的價格、持有人與交易，交易者用它在以太坊、幣安鏈與 Base 上篩選迷因幣並快速下單。",
+      "url": "https://gmgn.ai",
+      "tags": [
+        "terminal"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base"
+      ]
+    },
+    {
+      "id": "bankr",
+      "label": "Bankr",
+      "labelZh": "Bankr",
+      "type": "protocol",
+      "parent": "meme",
+      "group": "consumer",
+      "summaryZh": "Bankr 是 Base 上的交易機器人，使用者在社交客戶端用文字下指令兌換或發行代幣，成交走 Base 的現貨池。新池出現後可以從同一畫面下單。",
+      "url": "https://bankr.bot",
+      "tags": [
+        "terminal",
+        "bot"
+      ],
+      "chains": [
+        "base"
+      ]
+    },
+    {
+      "id": "sunflower-land",
+      "label": "Sunflower Land",
+      "labelZh": "Sunflower Land",
+      "type": "protocol",
+      "parent": "gaming",
+      "group": "consumer",
+      "summaryZh": "Sunflower Land 是 Base 上的農場遊戲，土地、作物與工具記在鏈上，玩家用錢包持有進度，產出可以在遊戲內交易。道具與進度都記在玩家的錢包裡。",
+      "url": "https://sunflower-land.com",
+      "tags": [
+        "game"
+      ],
+      "chains": [
+        "base"
+      ]
+    },
+    {
+      "id": "aavegotchi",
+      "label": "Aavegotchi",
+      "labelZh": "Aavegotchi",
+      "type": "protocol",
+      "parent": "gaming",
+      "group": "consumer",
+      "summaryZh": "Aavegotchi 是可收集的鏈上幽靈遊戲，角色與穿戴物是代幣，玩法已遷到 Base，玩家用錢包持有幽靈並參與小遊戲。",
+      "url": "https://www.aavegotchi.com",
+      "tags": [
+        "game",
+        "nft"
+      ],
+      "chains": [
+        "base"
+      ]
+    },
+    {
+      "id": "otherside",
+      "label": "Otherside",
+      "labelZh": "Otherside",
+      "type": "protocol",
+      "parent": "gaming",
+      "group": "consumer",
+      "summaryZh": "Otherside 是 Yuga 在以太坊上的元宇宙遊戲，土地與角色是收藏品，玩家用錢包進入世界並持有遊戲內的資產。道具與進度都記在玩家的錢包裡。",
+      "url": "https://otherside.xyz",
+      "tags": [
+        "game",
+        "metaverse"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "olas",
+      "label": "Olas",
+      "labelZh": "Olas",
+      "type": "protocol",
+      "parent": "depin",
+      "group": "consumer",
+      "summaryZh": "Olas 協調自主服務與代理程式，開發者把可執行的代理註冊上鏈，使用者在以太坊與 Base 上付費呼叫這些服務。",
+      "url": "https://olas.network",
+      "tags": [
+        "agents"
+      ],
+      "chains": [
+        "ethereum",
+        "base"
+      ]
+    },
+    {
+      "id": "elizaos",
+      "label": "ElizaOS",
+      "labelZh": "ElizaOS",
+      "type": "protocol",
+      "parent": "ai",
+      "group": "consumer",
+      "summaryZh": "ElizaOS 的 EVM 外掛讓代理在以太坊、BNB Chain、Base 與 Arbitrum 上轉帳、兌換與跨鏈。代幣合約部署在以太坊、Base 與 BSC。",
+      "url": "https://elizaos.ai",
+      "tags": ["ai", "agents"],
+      "chains": ["ethereum", "bnb", "base", "arbitrum"]
+    },
+    {
+      "id": "arc",
+      "label": "AI Rig Complex",
+      "labelZh": "AI Rig Complex",
+      "type": "protocol",
+      "parent": "ai",
+      "group": "consumer",
+      "summaryZh": "AI Rig Complex 的 Rig 框架官方寫明可把代理接到 Arbitrum，讀取鏈上資料並執行合約。Solana 是另一條它點名的網路。",
+      "url": "https://www.arc.fun",
+      "tags": ["ai", "agents"],
+      "chains": ["arbitrum"]
+    },
+    {
+      "id": "morpheus",
+      "label": "Morpheus",
+      "labelZh": "Morpheus",
+      "type": "protocol",
+      "parent": "ai",
+      "group": "consumer",
+      "summaryZh": "Morpheus 在以太坊上把模型推論做成開放網路。使用者質押 stETH、WETH、USDC 或 USDT 取得 MOR，再用相容一般介面的 API 呼叫模型。",
+      "url": "https://mor.org",
+      "tags": ["ai", "inference"],
+      "chains": ["ethereum"]
+    },
+    {
+      "id": "wayfinder",
+      "label": "Wayfinder",
+      "labelZh": "Wayfinder",
+      "type": "protocol",
+      "parent": "ai",
+      "group": "consumer",
+      "summaryZh": "Wayfinder 提供可自行部署的鏈上代理與 Paths 編排層，用來下單與監控部位。治理代幣 PROMPT 為 ERC-20，產品以 Base 為主。",
+      "url": "https://wayfinder.ai",
+      "tags": ["ai", "agents"],
+      "chains": ["base"]
+    },
+    {
+      "id": "fetch-ai",
+      "label": "Fetch.ai",
+      "labelZh": "Fetch.ai",
+      "type": "protocol",
+      "parent": "ai",
+      "group": "consumer",
+      "summaryZh": "Fetch.ai 提供代理註冊與發現的基礎設施，代理之間用它的代幣在以太坊上支付與結算。",
+      "url": "https://fetch.ai",
+      "tags": ["ai", "agents"],
+      "chains": ["ethereum"]
+    }
+  ],
+  "links": [
+    {
+      "source": "opensea",
+      "target": "blur",
+      "relation": "competes"
+    },
+    {
+      "source": "opensea",
+      "target": "rarible",
+      "relation": "competes"
+    },
+    {
+      "source": "blur",
+      "target": "sudoswap",
+      "relation": "competes"
+    },
+    {
+      "source": "zora",
+      "target": "foundation",
+      "relation": "competes"
+    },
+    {
+      "source": "foundation",
+      "target": "superrare",
+      "relation": "competes"
+    },
+    {
+      "source": "highlight",
+      "target": "zora",
+      "relation": "competes"
+    },
+    {
+      "source": "opensea",
+      "target": "artblocks",
+      "relation": "lists"
+    },
+    {
+      "source": "blur",
+      "target": "artblocks",
+      "relation": "lists"
+    },
+    {
+      "source": "gods-unchained",
+      "target": "immutable",
+      "relation": "built-on"
+    },
+    {
+      "source": "axie",
+      "target": "pixels",
+      "relation": "competes"
+    },
+    {
+      "source": "sandbox",
+      "target": "decentraland",
+      "relation": "competes"
+    },
+    {
+      "source": "parallel",
+      "target": "gods-unchained",
+      "relation": "competes"
+    },
+    {
+      "source": "illuvium",
+      "target": "axie",
+      "relation": "competes"
+    },
+    {
+      "source": "farcaster",
+      "target": "lens",
+      "relation": "competes"
+    },
+    {
+      "source": "farcaster",
+      "target": "ens",
+      "relation": "integrates"
+    },
+    {
+      "source": "paragraph",
+      "target": "farcaster",
+      "relation": "integrates"
+    },
+    {
+      "source": "clanker",
+      "target": "farcaster",
+      "relation": "integrates"
+    },
+    {
+      "source": "paypal",
+      "target": "stablecoin",
+      "relation": "also-in"
+    },
+    {
+      "source": "monerium",
+      "target": "stablecoin",
+      "relation": "also-in"
+    },
+    {
+      "source": "stripe",
+      "target": "circle",
+      "relation": "integrates"
+    },
+    {
+      "source": "stripe",
+      "target": "bridge-xyz",
+      "relation": "integrates"
+    },
+    {
+      "source": "paypal",
+      "target": "stripe",
+      "relation": "competes"
+    },
+    {
+      "source": "moonpay",
+      "target": "transak",
+      "relation": "competes"
+    },
+    {
+      "source": "sablier",
+      "target": "superfluid",
+      "relation": "competes"
+    },
+    {
+      "source": "visa",
+      "target": "mastercard",
+      "relation": "competes"
+    },
+    {
+      "source": "etherfi-cash",
+      "target": "etherfi",
+      "relation": "integrates"
+    },
+    {
+      "source": "etherfi-cash",
+      "target": "visa",
+      "relation": "integrates"
+    },
+    {
+      "source": "gnosis-pay",
+      "target": "safe",
+      "relation": "built-on"
+    },
+    {
+      "source": "gnosis-pay",
+      "target": "visa",
+      "relation": "integrates"
+    },
+    {
+      "source": "plasma-one",
+      "target": "etherfi-cash",
+      "relation": "competes"
+    },
+    {
+      "source": "gnosis-pay",
+      "target": "etherfi-cash",
+      "relation": "competes"
+    },
+    {
+      "source": "polymarket",
+      "target": "uma",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "ondo",
+      "target": "superstate",
+      "relation": "competes"
+    },
+    {
+      "source": "ondo",
+      "target": "centrifuge",
+      "relation": "competes"
+    },
+    {
+      "source": "securitize",
+      "target": "ondo",
+      "relation": "competes"
+    },
+    {
+      "source": "backed",
+      "target": "dinari",
+      "relation": "competes"
+    },
+    {
+      "source": "openeden",
+      "target": "ondo",
+      "relation": "competes"
+    },
+    {
+      "source": "midas",
+      "target": "ondo",
+      "relation": "competes"
+    },
+    {
+      "source": "storj",
+      "target": "filecoin",
+      "relation": "competes"
+    },
+    {
+      "source": "golem",
+      "target": "aethir",
+      "relation": "competes"
+    },
+    {
+      "source": "snapshot",
+      "target": "tally",
+      "relation": "competes"
+    },
+    {
+      "source": "aragon",
+      "target": "snapshot",
+      "relation": "integrates"
+    },
+    {
+      "source": "kleros",
+      "target": "uma",
+      "relation": "competes"
+    },
+    {
+      "source": "geckoterminal",
+      "target": "uniswap",
+      "relation": "lists"
+    },
+    {
+      "source": "defined",
+      "target": "uniswap",
+      "relation": "lists"
+    },
+    {
+      "source": "geckoterminal",
+      "target": "defined",
+      "relation": "competes"
+    },
+    {
+      "source": "banana-gun",
+      "target": "maestro",
+      "relation": "competes"
+    },
+    {
+      "source": "banana-gun",
+      "target": "uniswap",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "maestro",
+      "target": "uniswap",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "four-meme",
+      "target": "pinksale",
+      "relation": "competes"
+    },
+    {
+      "source": "four-meme",
+      "target": "clanker",
+      "relation": "competes"
+    },
+    {
+      "source": "huma",
+      "target": "goldfinch",
+      "relation": "competes"
+    },
+    {
+      "source": "clearpool",
+      "target": "maple",
+      "relation": "competes"
+    },
+    {
+      "source": "opentrade",
+      "target": "ondo",
+      "relation": "competes"
+    },
+    {
+      "source": "usd-ai",
+      "target": "ondo",
+      "relation": "competes"
+    },
+    {
+      "source": "anemoy",
+      "target": "centrifuge",
+      "relation": "built-on"
+    },
+    {
+      "source": "re-protocol",
+      "target": "nexus",
+      "relation": "competes"
+    },
+    {
+      "source": "brickken",
+      "target": "securitize",
+      "relation": "competes"
+    },
+    {
+      "source": "tangible",
+      "target": "centrifuge",
+      "relation": "competes"
+    },
+    {
+      "source": "theo",
+      "target": "ondo",
+      "relation": "competes"
+    },
+    {
+      "source": "kaio",
+      "target": "securitize",
+      "relation": "competes"
+    },
+    {
+      "source": "estate",
+      "target": "tangible",
+      "relation": "competes"
+    },
+    {
+      "source": "goldfinch",
+      "target": "maple",
+      "relation": "competes"
+    },
+    {
+      "source": "buidl",
+      "target": "securitize",
+      "relation": "integrates"
+    },
+    {
+      "source": "buidl",
+      "target": "circle",
+      "relation": "integrates"
+    },
+    {
+      "source": "metamask-card",
+      "target": "metamask",
+      "relation": "built-on"
+    },
+    {
+      "source": "metamask-card",
+      "target": "mastercard",
+      "relation": "integrates"
+    },
+    {
+      "source": "holyheld",
+      "target": "gnosis-pay",
+      "relation": "competes"
+    },
+    {
+      "source": "llamapay",
+      "target": "sablier",
+      "relation": "competes"
+    },
+    {
+      "source": "streamflow",
+      "target": "sablier",
+      "relation": "competes"
+    },
+    {
+      "source": "flexa",
+      "target": "circle",
+      "relation": "integrates"
+    },
+    {
+      "source": "gondi",
+      "target": "blur",
+      "relation": "competes"
+    },
+    {
+      "source": "nftx",
+      "target": "sudoswap",
+      "relation": "competes"
+    },
+    {
+      "source": "element",
+      "target": "opensea",
+      "relation": "competes"
+    },
+    {
+      "source": "sound",
+      "target": "zora",
+      "relation": "competes"
+    },
+    {
+      "source": "magic-eden",
+      "target": "opensea",
+      "relation": "competes"
+    },
+    {
+      "source": "predict-fun",
+      "target": "polymarket",
+      "relation": "competes"
+    },
+    {
+      "source": "opinion",
+      "target": "predict-fun",
+      "relation": "competes"
+    },
+    {
+      "source": "overtime",
+      "target": "chainlink",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "overtime",
+      "target": "polymarket",
+      "relation": "competes"
+    },
+    {
+      "source": "agora",
+      "target": "tally",
+      "relation": "competes"
+    },
+    {
+      "source": "hats",
+      "target": "safe",
+      "relation": "integrates"
+    },
+    {
+      "source": "syndicate",
+      "target": "safe",
+      "relation": "integrates"
+    },
+    {
+      "source": "xmtp",
+      "target": "push",
+      "relation": "competes"
+    },
+    {
+      "source": "push",
+      "target": "xmtp",
+      "relation": "competes"
+    },
+    {
+      "source": "guild",
+      "target": "ens",
+      "relation": "integrates"
+    },
+    {
+      "source": "layer3",
+      "target": "galxe",
+      "relation": "competes"
+    },
+    {
+      "source": "galxe",
+      "target": "layer3",
+      "relation": "competes"
+    },
+    {
+      "source": "towns",
+      "target": "farcaster",
+      "relation": "competes"
+    },
+    {
+      "source": "bullx",
+      "target": "maestro",
+      "relation": "competes"
+    },
+    {
+      "source": "bullx",
+      "target": "uniswap",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "gmgn",
+      "target": "dexscreener",
+      "relation": "competes"
+    },
+    {
+      "source": "gmgn",
+      "target": "pancakeswap",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "bankr",
+      "target": "farcaster",
+      "relation": "integrates"
+    },
+    {
+      "source": "bankr",
+      "target": "uniswap",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "sunflower-land",
+      "target": "pixels",
+      "relation": "competes"
+    },
+    {
+      "source": "aavegotchi",
+      "target": "aave",
+      "relation": "integrates"
+    },
+    {
+      "source": "otherside",
+      "target": "sandbox",
+      "relation": "competes"
+    },
+    {
+      "source": "olas",
+      "target": "virtuals",
+      "relation": "competes"
+    },
+    {
+      "source": "virtuals",
+      "target": "ai",
+      "relation": "also-in"
+    },
+    {
+      "source": "olas",
+      "target": "ai",
+      "relation": "also-in"
+    },
+    {
+      "source": "elizaos",
+      "target": "lifi",
+      "relation": "integrates"
+    },
+    {
+      "source": "elizaos",
+      "target": "bebop",
+      "relation": "integrates"
+    },
+    {
+      "source": "elizaos",
+      "target": "sdk",
+      "relation": "also-in"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+node_modules
+dist
+.DS_Store
+*.local
+
+# cache/logos/ 是要一併提交的 Logo，不要忽略。
+!cache/
+!cache/logos/
+!cache/logos/**

@@ -1,0 +1,506 @@
+{
+  "domain": "core",
+  "nodes": [
+    {
+      "id": "solana",
+      "label": "Solana",
+      "labelZh": "索拉納",
+      "type": "root",
+      "parent": null,
+      "group": "core",
+      "summaryZh": "索拉納是高吞吐的公鏈，以歷史證明與並行執行把確認時間和手續費壓低。金融、基礎設施、消費應用與開發工具都從這個根節點長出。",
+      "url": "https://solana.com",
+      "tags": ["公鏈", "歷史證明"]
+    },
+    {
+      "id": "defi",
+      "label": "DeFi",
+      "labelZh": "去中心化金融",
+      "type": "pillar",
+      "parent": "solana",
+      "group": "defi",
+      "summaryZh": "去中心化金融是索拉納上兌換、借貸、質押與衍生品的總柱。低延遲讓做市、清算與槓桿可以在鏈上連續發生，而不必久等區塊。",
+      "url": "https://solana.com/solutions/defi",
+      "tags": ["金融", "交易"]
+    },
+    {
+      "id": "infrastructure",
+      "label": "Infrastructure",
+      "labelZh": "基礎設施",
+      "type": "pillar",
+      "parent": "solana",
+      "group": "infrastructure",
+      "summaryZh": "基礎設施這根柱托住錢包、節點、預言機與跨鏈橋。應用要簽名、讀寫帳本或取得鏈外價格，都得先經過這一層。",
+      "url": "https://solana.com/docs",
+      "tags": ["節點", "錢包"]
+    },
+    {
+      "id": "consumer",
+      "label": "Consumer",
+      "labelZh": "應用消費",
+      "type": "pillar",
+      "parent": "solana",
+      "group": "consumer",
+      "summaryZh": "應用消費把鏈上能力做成一般人會打開的產品，涵蓋市集、遊戲、社群、支付網路、加密金融卡與實體資產。它是索拉納接觸日常使用者的一面。",
+      "url": "https://solana.com/solutions/consumer",
+      "tags": ["應用", "使用者"]
+    },
+    {
+      "id": "developer",
+      "label": "Developer",
+      "labelZh": "開發者",
+      "type": "pillar",
+      "parent": "solana",
+      "group": "developer",
+      "summaryZh": "開發者支柱收斂程式庫、框架、瀏覽器、安全工具與資料介面。新專案能不能又快又安全地在索拉納上線，關鍵就在這一柱。",
+      "url": "https://solana.com/developers",
+      "tags": ["工具", "程式"]
+    },
+    {
+      "id": "cefi",
+      "label": "CeFi",
+      "labelZh": "中心化金融",
+      "type": "pillar",
+      "parent": "solana",
+      "group": "cefi",
+      "summaryZh": "中心化金融是交易所、託管主經紀與合規券商這一柱。幣留在機構帳簿或合格託管裡撮合、充提與結算，和用戶自己簽名的鏈上協議分開。",
+      "url": "https://solana.com/solutions/institutional",
+      "tags": ["交易所", "託管"]
+    },
+    {
+      "id": "amm",
+      "label": "AMM",
+      "labelZh": "自動做市商 (AMM)",
+      "type": "category",
+      "parent": "defi",
+      "group": "defi",
+      "summaryZh": "自動做市商用流動性池與定價曲線讓人不必掛單就能兌換。在索拉納上池子更新快、手續費低，涵蓋傳統恆定乘積池與主動報價的專有做市商（Prop AMM）。",
+      "url": "https://solana.com/solutions/defi",
+      "tags": ["現貨", "流動性池"]
+    },
+    {
+      "id": "clmm",
+      "label": "CLMM",
+      "labelZh": "集中流動性 (CLMM)",
+      "type": "category",
+      "parent": "defi",
+      "group": "defi",
+      "summaryZh": "集中流動性讓做市者把資金放在特定價格區間或離散價格桶（DLMM），大幅提高資本效率。索拉納手續費低，區間可高頻調整，適合主流與波動交易對。",
+      "url": "https://solana.com/solutions/defi",
+      "tags": ["區間做市", "資本效率"]
+    },
+    {
+      "id": "orderbook-dex",
+      "label": "Orderbook DEX",
+      "labelZh": "訂單簿交易所",
+      "type": "category",
+      "parent": "defi",
+      "group": "defi",
+      "summaryZh": "訂單簿交易所把買賣掛單集中撮合，價格由限價委託而非曲線決定。索拉納能在鏈上高頻更新中央限價訂單簿（CLOB），提供接近中心化交易所的撮合體驗。",
+      "url": "https://solana.com/solutions/defi",
+      "tags": ["限價單", "鏈上撮合"]
+    },
+    {
+      "id": "aggregator",
+      "label": "DEX Aggregator",
+      "labelZh": "交易聚合器",
+      "type": "category",
+      "parent": "defi",
+      "group": "defi",
+      "summaryZh": "交易聚合器同時搜尋自動做市商、集中流動性池、訂單簿與專有做市商，替使用者拆單並挑出最優成交路徑，是索拉納現貨兌換的核心流量入口。",
+      "url": "https://solana.com/solutions/defi",
+      "tags": ["路由拆單", "最優報價"]
+    },
+    {
+      "id": "lending",
+      "label": "Lending & Borrowing",
+      "labelZh": "借貸協議",
+      "type": "category",
+      "parent": "defi",
+      "group": "defi",
+      "summaryZh": "借貸協議讓人存入資產賺取利息，或以超額抵押借出流動性與槓桿部位。索拉納確認快，利率曲線、保證金健康因子與清算都能即時更新。",
+      "url": "https://solana.com/solutions/defi",
+      "tags": ["抵押借貸", "貨幣市場"]
+    },
+    {
+      "id": "liquid-staking",
+      "label": "Liquid Staking (LST)",
+      "labelZh": "流動性質押 (LST)",
+      "type": "category",
+      "parent": "defi",
+      "group": "defi",
+      "summaryZh": "流動性質押把驗證者質押換成可轉讓的生息憑證代幣（LST），驗證者獎勵與 MEV 收益持續累積，同時資金仍可投入借貸、做市與再質押。",
+      "url": "https://solana.com/solutions/defi",
+      "tags": ["質押憑證", "生息資產"]
+    },
+    {
+      "id": "restaking",
+      "label": "Restaking",
+      "labelZh": "再質押網路",
+      "type": "category",
+      "parent": "defi",
+      "group": "defi",
+      "summaryZh": "再質押網路讓已質押的 SOL 或流動性質押代幣（LST）再次為節點服務、預言機與主動驗證服務（AVS）提供經濟安全，疊加多層質押報酬。",
+      "url": "https://solana.com/solutions/defi",
+      "tags": ["共享安全", "流動再質押"]
+    },
+    {
+      "id": "perps",
+      "label": "Perpetuals",
+      "labelZh": "永續合約衍生品",
+      "type": "category",
+      "parent": "defi",
+      "group": "defi",
+      "summaryZh": "永續合約衍生品透過資金費率將合約價格錨定現貨，支援多空雙向槓桿交易而無到期交割。索拉納的高吞吐支撐鏈上訂單簿與流動性池模式的衍生品結算。",
+      "url": "https://solana.com/solutions/defi",
+      "tags": ["衍生品", "槓桿交易"]
+    },
+    {
+      "id": "yield",
+      "label": "Yield & Vaults",
+      "labelZh": "收益聚合與金庫",
+      "type": "category",
+      "parent": "defi",
+      "group": "defi",
+      "summaryZh": "收益聚合與金庫將做市、借貸、基差套利與利率拆分包裝成自動化策略金庫，讓存款人一鍵配置固定利率、變動收益或市場中性報酬。",
+      "url": "https://solana.com/solutions/defi",
+      "tags": ["策略金庫", "利率衍生品"]
+    },
+    {
+      "id": "stablecoin",
+      "label": "Stablecoins",
+      "labelZh": "穩定幣與發行商",
+      "type": "category",
+      "parent": "defi",
+      "group": "defi",
+      "summaryZh": "穩定幣與發行商提供錨定法幣或結合對沖策略的數位美元與歐元，是索拉納交易計價、借貸抵押、跨境支付與加密金融卡結算的核心現金層。",
+      "url": "https://solana.com/solutions/stablecoins",
+      "tags": ["數位美元", "結算資產"]
+    },
+    {
+      "id": "launchpad",
+      "label": "Token Launchpad",
+      "labelZh": "代幣發射台",
+      "type": "category",
+      "parent": "defi",
+      "group": "defi",
+      "summaryZh": "代幣發射台提供新代幣的聯合曲線發行、公平定價與初始流動性遷移機制，募滿門檻後自動將流動性注入公開自動做市池。",
+      "url": "https://solana.com/solutions/defi",
+      "tags": ["代幣發行", "聯合曲線"]
+    },
+    {
+      "id": "options",
+      "label": "Options & Structured",
+      "labelZh": "選擇權與結構化產品",
+      "type": "category",
+      "parent": "defi",
+      "group": "defi",
+      "summaryZh": "選擇權與結構化產品透過鏈上選擇權金庫與附條件收益合約，為索拉納上的現貨與衍生品部位提供避險、備兌賣出與權利金增強策略。",
+      "url": "https://solana.com/solutions/defi",
+      "tags": ["選擇權", "結構化金庫"]
+    },
+    {
+      "id": "wallet",
+      "label": "Wallets",
+      "labelZh": "加密錢包",
+      "type": "category",
+      "parent": "infrastructure",
+      "group": "infrastructure",
+      "summaryZh": "加密錢包負責保管私鑰、模擬並簽署交易，涵蓋瀏覽器與行動端自託管錢包、智慧帳戶以及冷儲存硬體簽章裝置，是進入索拉納生態的第一入口。",
+      "url": "https://solana.com/wallets",
+      "tags": ["自託管", "硬體簽章"]
+    },
+    {
+      "id": "mobile",
+      "label": "Mobile & Hardware",
+      "labelZh": "行動裝置與硬體",
+      "type": "category",
+      "parent": "infrastructure",
+      "group": "infrastructure",
+      "summaryZh": "行動裝置與硬體將安全元件金鑰保管（Seed Vault）、原生應用商店與行動錢包深度整合進智慧型手機，打造不依賴傳統應用商店抽成的原生行動 Web3 生態。",
+      "url": "https://solanamobile.com/",
+      "tags": ["加密手機", "安全晶片"]
+    },
+    {
+      "id": "rpc",
+      "label": "RPC & Nodes",
+      "labelZh": "RPC 與節點服務",
+      "type": "category",
+      "parent": "infrastructure",
+      "group": "infrastructure",
+      "summaryZh": "RPC 與節點服務透過高可用遠端呼叫、低延遲專線與質押加權交易轉發，替前端應用與高頻做市系統提供穩定的鏈上讀寫能力。",
+      "url": "https://solana.com/rpc",
+      "tags": ["節點端點", "高頻串流"]
+    },
+    {
+      "id": "validator-client",
+      "label": "Validator Clients",
+      "labelZh": "驗證者客戶端",
+      "type": "category",
+      "parent": "infrastructure",
+      "group": "infrastructure",
+      "summaryZh": "驗證者客戶端是執行共識、重播交易、打包區塊並參與投票的核心底層軟體。索拉納具備多客戶端架構，兼顧超高吞吐與網路韌性。",
+      "url": "https://docs.anza.xyz",
+      "tags": ["共識引擎", "多客戶端"]
+    },
+    {
+      "id": "oracle",
+      "label": "Oracles",
+      "labelZh": "預言機網路",
+      "type": "category",
+      "parent": "infrastructure",
+      "group": "infrastructure",
+      "summaryZh": "預言機網路把鏈外毫秒級市場報價、匯率與驗證數據送上索拉納，為借貸清算、永續合約與真實世界資產提供高頻且防篡改的價格基準。",
+      "url": "https://solana.com/ecosystem",
+      "tags": ["價格餵價", "鏈下數據"]
+    },
+    {
+      "id": "bridge",
+      "label": "Cross-Chain Bridges",
+      "labelZh": "跨鏈橋與互操作",
+      "type": "category",
+      "parent": "infrastructure",
+      "group": "infrastructure",
+      "summaryZh": "跨鏈橋與互操作協議在索拉納與以太坊、L2 及其他公鏈之間傳遞資產與跨鏈指令，涵蓋守護者訊息驗證、全鏈代幣標準與意圖式即時跨鏈兌換。",
+      "url": "https://solana.com/ecosystem",
+      "tags": ["跨鏈通訊", "資產橋接"]
+    },
+    {
+      "id": "indexer",
+      "label": "Indexers",
+      "labelZh": "鏈上資料索引",
+      "type": "category",
+      "parent": "infrastructure",
+      "group": "infrastructure",
+      "summaryZh": "鏈上資料索引從驗證者記憶體即時串流帳戶變更與區塊事件，並整理為結構化資料庫與查詢介面，免去應用自行掃描原始帳本的負擔。",
+      "url": "https://solana.com/docs/rpc",
+      "tags": ["即時串流", "狀態索引"]
+    },
+    {
+      "id": "identity",
+      "label": "DID & Identity",
+      "labelZh": "去中心化身分與域名",
+      "type": "category",
+      "parent": "infrastructure",
+      "group": "infrastructure",
+      "summaryZh": "去中心化身分與域名將人類可讀域名（如 .sol）、鏈上憑證認證（Attestation）與單一登入綁定至錢包地址，讓轉帳、社交與合規驗證更加直覺。",
+      "url": "https://solana.com/ecosystem",
+      "tags": ["鏈上域名", "身分憑證"]
+    },
+    {
+      "id": "sdk",
+      "label": "SDK & Tooling",
+      "labelZh": "開發套件 (SDK)",
+      "type": "category",
+      "parent": "developer",
+      "group": "developer",
+      "summaryZh": "開發套件把交易組裝、帳戶序列化、錢包轉接與客戶端程式碼生成封裝成模組化程式庫，協助前端與後端團隊快速串接索拉納網路。",
+      "url": "https://solana.com/docs/clients/official/javascript",
+      "tags": ["客戶端庫", "錢包轉接"]
+    },
+    {
+      "id": "framework",
+      "label": "Smart Contract Frameworks",
+      "labelZh": "合約開發框架",
+      "type": "category",
+      "parent": "developer",
+      "group": "developer",
+      "summaryZh": "合約開發框架提供帳戶安全檢查、介面描述（IDL）生成與測試部署工具，涵蓋主流開發框架與極致節省計算單位的零拷貝輕量庫。",
+      "url": "https://solana.com/developers",
+      "tags": ["鏈上程式", "Rust 框架"]
+    },
+    {
+      "id": "explorer",
+      "label": "Block Explorers",
+      "labelZh": "區塊鏈瀏覽器",
+      "type": "category",
+      "parent": "developer",
+      "group": "developer",
+      "summaryZh": "區塊鏈瀏覽器將原始區塊、內部指令、代幣流向與程式狀態解析為人類可讀的視圖，是使用者的查帳工具與開發者的鏈上除錯起點。",
+      "url": "https://explorer.solana.com",
+      "tags": ["交易查詢", "指令解析"]
+    },
+    {
+      "id": "security",
+      "label": "Security & Audits",
+      "labelZh": "安全審計與風控",
+      "type": "category",
+      "parent": "developer",
+      "group": "developer",
+      "summaryZh": "安全審計與風控涵蓋智慧合約程式碼審計、模糊測試、漏洞賞金平台、代幣權限風險掃描，以及錢包簽章前的惡意交易攔截。",
+      "url": "https://solana.com/developers",
+      "tags": ["合約審計", "交易模擬"]
+    },
+    {
+      "id": "data-api",
+      "label": "Analytics & Data API",
+      "labelZh": "數據分析與行情終端",
+      "type": "category",
+      "parent": "developer",
+      "group": "developer",
+      "summaryZh": "數據分析與行情終端提供即時去中心化交易所 K 線、流動性池監控、聰明錢包追蹤、SQL 鏈上研究儀表板與結構化行情 API。",
+      "url": "https://solana.com/docs/rpc",
+      "tags": ["行情分析", "鏈上數據"]
+    },
+    {
+      "id": "nft-marketplace",
+      "label": "NFT & Digital Assets",
+      "labelZh": "NFT 市集與數位資產",
+      "type": "category",
+      "parent": "consumer",
+      "group": "consumer",
+      "summaryZh": "NFT 市集與數位資產涵蓋數位收藏品交易平台、專業掃貨終端與壓縮資產發行標準，支撐藝術創作、遊戲道具與品牌會員憑證的高頻流通。",
+      "url": "https://solana.com/solutions/consumer",
+      "tags": ["數位收藏", "資產標準"]
+    },
+    {
+      "id": "gaming",
+      "label": "GameFi & Gaming",
+      "labelZh": "鏈遊與遊戲生態",
+      "type": "category",
+      "parent": "consumer",
+      "group": "consumer",
+      "summaryZh": "鏈遊與遊戲生態把遊戲資產、經濟循環、賽季競技與掌上遊戲硬體搬上索拉納，利用高速低費特性實現流暢的鏈上互動體驗。",
+      "url": "https://solana.com/solutions/consumer",
+      "tags": ["鏈上遊戲", "遊戲硬體"]
+    },
+    {
+      "id": "social",
+      "label": "SocialFi & Creator",
+      "labelZh": "社交與創作者平台",
+      "type": "category",
+      "parent": "consumer",
+      "group": "consumer",
+      "summaryZh": "社交與創作者平台將鏈上訂閱、數位作品空投、嵌入式互動連結（Blinks）與社群管理工具結合，讓創作者與粉絲直接建立可驗證的價值連結。",
+      "url": "https://solana.com/solutions/consumer",
+      "tags": ["創作者經濟", "鏈上社交"]
+    },
+    {
+      "id": "payments",
+      "label": "Payments & Settlement",
+      "labelZh": "支付與結算網路",
+      "type": "category",
+      "parent": "consumer",
+      "group": "consumer",
+      "summaryZh": "支付與結算網路匯聚全球卡組織鏈上 USDC 結算（Visa、Mastercard）、傳統支付巨頭（Stripe）、商家收單協議（Solana Pay、MoonPay Commerce）、企業跨境清算（Sphere）與薪資流支付（Zebec）。",
+      "url": "https://solana.com/solutions/payments-tooling",
+      "tags": ["支付收單", "穩定幣結算", "PayFi"]
+    },
+    {
+      "id": "card-finance",
+      "label": "Crypto Cards & Neobanks",
+      "labelZh": "加密卡與數位銀行",
+      "type": "category",
+      "parent": "consumer",
+      "group": "consumer",
+      "summaryZh": "加密卡與數位銀行涵蓋支援索拉納穩定幣與生息資產的 Visa / Mastercard 簽帳卡、鏈上數位銀行帳戶（IBAN）以及企業級發卡基礎設施（如 KAST、RedotPay、SolCard、Rain、Reap 等）。",
+      "url": "https://solana.com/solutions/payments-tooling",
+      "tags": ["加密簽帳卡", "數位銀行", "發卡基建"]
+    },
+    {
+      "id": "depin",
+      "label": "DePIN",
+      "labelZh": "去中心化實體基建 (DePIN)",
+      "type": "category",
+      "parent": "consumer",
+      "group": "consumer",
+      "summaryZh": "去中心化實體基礎設施網路（DePIN）透過代幣激勵全球參與者貢獻無線電信熱點、GPU 渲染與 AI 算力、行車地圖影像、高精度定位與網路頻寬。",
+      "url": "https://solana.com/solutions/depin",
+      "tags": ["實體基建", "算力與感測"]
+    },
+    {
+      "id": "rwa",
+      "label": "RWA",
+      "labelZh": "真實世界資產 (RWA)",
+      "type": "category",
+      "parent": "consumer",
+      "group": "consumer",
+      "summaryZh": "真實世界資產（RWA）將美國國庫券、貨幣市場基金、上市美股、主權債券、貿易融資與再保險收益代幣化，讓傳統機構級金融資產在索拉納上全天候結算與組合。",
+      "url": "https://solana.com/solutions/tokenization",
+      "tags": ["代幣化國債", "鏈上美股", "機構資產"]
+    },
+    {
+      "id": "meme",
+      "label": "Meme & Trading Terminals",
+      "labelZh": "迷因生態與交易終端",
+      "type": "category",
+      "parent": "consumer",
+      "group": "consumer",
+      "summaryZh": "迷因生態與交易終端涵蓋索拉納最具代表性的社群迷因資產，以及專為高頻掃鏈、新幣狙擊、聰明錢包跟單與毫秒級路由打造的專業鏈上交易終端。",
+      "url": "https://solana.com/ecosystem",
+      "tags": ["交易終端", "迷因文化", "鏈上狙擊"]
+    },
+    {
+      "id": "dao",
+      "label": "DAO & Governance",
+      "labelZh": "DAO 治理與金庫管理",
+      "type": "category",
+      "parent": "consumer",
+      "group": "consumer",
+      "summaryZh": "DAO 治理與金庫管理提供多簽智慧帳戶金庫、鏈上提案投票標準與預測市場治理（Futarchy），協助協議團隊與社群透明地管理資產與決策。",
+      "url": "https://solana.com/ecosystem",
+      "tags": ["多簽金庫", "鏈上治理"]
+    },
+    {
+      "id": "cex",
+      "label": "Centralized Exchange",
+      "labelZh": "中心化交易所",
+      "type": "category",
+      "parent": "cefi",
+      "group": "cefi",
+      "summaryZh": "中心化交易所用平台內部帳簿撮合現貨與合約，並對 Solana 網路開放充值與提現。使用者的幣先留在交易所託管，而不是自己的錢包。",
+      "url": "https://solana.com/solutions/institutional",
+      "tags": ["現貨", "充提"]
+    },
+    {
+      "id": "custody-prime",
+      "label": "Custody & Prime",
+      "labelZh": "託管與主經紀",
+      "type": "category",
+      "parent": "cefi",
+      "group": "cefi",
+      "summaryZh": "託管與主經紀替機構保管私鑰、處理結算，並提供融資、質押與交易所外結算。交易不必把全部 Solana 資產預存進交易所熱錢包。",
+      "url": "https://solana.com/solutions/institutional",
+      "tags": ["合格託管", "結算"]
+    },
+    {
+      "id": "broker-dealer",
+      "label": "Broker-Dealer",
+      "labelZh": "合規經紀／券商",
+      "type": "category",
+      "parent": "cefi",
+      "group": "cefi",
+      "summaryZh": "合規經紀與券商在受監管帳戶裡買賣 SOL 等加密資產，通常連著法幣出入金。這和只做鏈上自託管的協議不是同一種入口。",
+      "url": "https://solana.com/solutions/institutional",
+      "tags": ["券商", "法幣"]
+    },
+    {
+      "id": "ai",
+      "label": "AI Agents",
+      "labelZh": "人工智慧與代理",
+      "type": "category",
+      "parent": "consumer",
+      "group": "consumer",
+      "summaryZh": "人工智慧與代理把模型接到 Solana 錢包與程式，讓代理代為轉帳、兌換或執行指令。這一層收的是代理框架，不算力租用網路本身。",
+      "url": "https://solana.com/solutions/consumer",
+      "tags": ["代理", "框架"]
+    }
+  ],
+  "links": [
+    {
+      "source": "card-finance",
+      "target": "payments",
+      "relation": "integrates"
+    },
+    {
+      "source": "card-finance",
+      "target": "stablecoin",
+      "relation": "integrates"
+    },
+    {
+      "source": "payments",
+      "target": "stablecoin",
+      "relation": "integrates"
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "domain": "cefi",
+  "nodes": [
+    {
+      "id": "binance",
+      "label": "Binance",
+      "labelZh": "Binance",
+      "type": "protocol",
+      "parent": "cex",
+      "group": "cefi",
+      "summaryZh": "幣安用內部帳簿撮合現貨與合約，並對以太坊、BNB Chain、Arbitrum 與 Base 開放充值與提現。幣先留在交易所託管。",
+      "url": "https://www.binance.com",
+      "tags": ["cex"],
+      "chains": ["ethereum", "bnb", "arbitrum", "base"]
+    },
+    {
+      "id": "coinbase",
+      "label": "Coinbase",
+      "labelZh": "Coinbase",
+      "type": "protocol",
+      "parent": "cex",
+      "group": "cefi",
+      "summaryZh": "Coinbase 上架以太幣與 EVM 代幣，充提涵蓋以太坊、其自家的 Base，以及 Arbitrum。法幣進出走受監管通道，和 Coinbase Wallet 分開。",
+      "url": "https://www.coinbase.com",
+      "tags": ["cex"],
+      "chains": ["ethereum", "base", "arbitrum"]
+    },
+    {
+      "id": "okx",
+      "label": "OKX",
+      "labelZh": "OKX",
+      "type": "protocol",
+      "parent": "cex",
+      "group": "cefi",
+      "summaryZh": "OKX 提供現貨與合約，並對以太坊、BNB Chain、Arbitrum 與 Base 開放充值與提現。成交在交易所帳簿內，不走鏈上訂單簿。",
+      "url": "https://www.okx.com",
+      "tags": ["cex"],
+      "chains": ["ethereum", "bnb", "arbitrum", "base"]
+    },
+    {
+      "id": "kraken",
+      "label": "Kraken",
+      "labelZh": "Kraken",
+      "type": "protocol",
+      "parent": "cex",
+      "group": "cefi",
+      "summaryZh": "Kraken 上架以太幣現貨，充提走以太坊與 Arbitrum。客戶在交易所帳戶內買賣，與鏈上自動做市商分開。",
+      "url": "https://www.kraken.com",
+      "tags": ["cex"],
+      "chains": ["ethereum", "arbitrum"]
+    },
+    {
+      "id": "bybit",
+      "label": "Bybit",
+      "labelZh": "Bybit",
+      "type": "protocol",
+      "parent": "cex",
+      "group": "cefi",
+      "summaryZh": "Bybit 提供現貨與合約，並對以太坊、BNB Chain、Arbitrum 與 Base 開放充值與提現。部位留在 Bybit 帳戶。",
+      "url": "https://www.bybit.com",
+      "tags": ["cex"],
+      "chains": ["ethereum", "bnb", "arbitrum", "base"]
+    },
+    {
+      "id": "anchorage",
+      "label": "Anchorage Digital",
+      "labelZh": "Anchorage Digital",
+      "type": "protocol",
+      "parent": "custody-prime",
+      "group": "cefi",
+      "summaryZh": "Anchorage Digital 是美國聯邦特許的數位資產銀行，官方質押頁列以太坊，穩定幣文件另列 BNB Chain 上的受支持資產，供機構託管與結算。",
+      "url": "https://www.anchorage.com",
+      "tags": ["custody", "prime"],
+      "chains": ["ethereum", "bnb"]
+    },
+    {
+      "id": "bitgo",
+      "label": "BitGo",
+      "labelZh": "BitGo",
+      "type": "protocol",
+      "parent": "custody-prime",
+      "group": "cefi",
+      "summaryZh": "BitGo 以合格託管做主經紀的底層，保管以太坊、BNB Chain、Arbitrum 與 Base 上的資產，並可用場外結算對接交易場所。",
+      "url": "https://www.bitgo.com",
+      "tags": ["custody", "prime"],
+      "chains": ["ethereum", "bnb", "arbitrum", "base"]
+    },
+    {
+      "id": "falconx",
+      "label": "FalconX",
+      "labelZh": "FalconX",
+      "type": "protocol",
+      "parent": "custody-prime",
+      "group": "cefi",
+      "summaryZh": "FalconX 是機構主經紀。官方託管頁寫明可質押以太坊，並把託管、融資與結算放在同一套機構流程裡。",
+      "url": "https://www.falconx.io",
+      "tags": ["prime", "custody"],
+      "chains": ["ethereum"]
+    },
+    {
+      "id": "copper",
+      "label": "Copper",
+      "labelZh": "Copper",
+      "type": "protocol",
+      "parent": "custody-prime",
+      "group": "cefi",
+      "summaryZh": "Copper 用多方計算保管機構資產，ClearLoop 讓以太坊等部位留在託管帳戶裡對接交易所，到結算才搬動。",
+      "url": "https://copper.co",
+      "tags": ["custody", "settlement"],
+      "chains": ["ethereum"]
+    },
+    {
+      "id": "coinbase-prime",
+      "label": "Coinbase Prime",
+      "labelZh": "Coinbase Prime",
+      "type": "protocol",
+      "parent": "custody-prime",
+      "group": "cefi",
+      "summaryZh": "Coinbase Prime 對機構提供託管、交易與融資。官方質押名單包含 Ether，託管披露也涵蓋 Base 上的資產，與散戶 Coinbase 交易所分開。",
+      "url": "https://www.coinbase.com/prime",
+      "tags": ["prime", "custody"],
+      "chains": ["ethereum", "base"]
+    },
+    {
+      "id": "robinhood",
+      "label": "Robinhood",
+      "labelZh": "Robinhood",
+      "type": "protocol",
+      "parent": "broker-dealer",
+      "group": "cefi",
+      "summaryZh": "Robinhood Crypto 在券商帳戶裡買賣以太幣，官方支援頁把 ETH 列為可交易並可轉出。這和支援多條第二層的 Robinhood Wallet 不是同一個產品。",
+      "url": "https://robinhood.com",
+      "tags": ["broker"],
+      "chains": ["ethereum"]
+    },
+    {
+      "id": "fidelity",
+      "label": "Fidelity",
+      "labelZh": "Fidelity",
+      "type": "protocol",
+      "parent": "broker-dealer",
+      "group": "cefi",
+      "summaryZh": "Fidelity Crypto 讓客戶在券商帳戶旁直接買賣以太幣。Fidelity Digital Assets 以國家信託銀行保管比特幣、以太幣與 Solana。",
+      "url": "https://www.fidelity.com/crypto",
+      "tags": ["broker", "custody"],
+      "chains": ["ethereum"]
+    },
+    {
+      "id": "etoro",
+      "label": "eToro",
+      "labelZh": "eToro",
+      "type": "protocol",
+      "parent": "broker-dealer",
+      "group": "cefi",
+      "summaryZh": "eToro 是受監管的多資產券商，官方加密頁把以太幣列為可交易資產，客戶在券商帳戶裡下單。",
+      "url": "https://www.etoro.com",
+      "tags": ["broker"],
+      "chains": ["ethereum"]
+    },
+    {
+      "id": "revolut",
+      "label": "Revolut",
+      "labelZh": "Revolut",
+      "type": "protocol",
+      "parent": "broker-dealer",
+      "group": "cefi",
+      "summaryZh": "Revolut 在應用內買賣並質押以太幣，官方頁寫明可質押 ETH，也能把代幣轉到外部錢包。",
+      "url": "https://www.revolut.com",
+      "tags": ["broker"],
+      "chains": ["ethereum"]
+    }
+  ],
+  "links": [
+    {
+      "source": "fireblocks",
+      "target": "custody-prime",
+      "relation": "also-in"
+    },
+    {
+      "source": "fidelity",
+      "target": "custody-prime",
+      "relation": "also-in"
+    }
+  ]
+}

@@ -1,0 +1,4628 @@
+{
+  "domain": "defi",
+  "nodes": [
+    {
+      "id": "uniswap",
+      "label": "Uniswap",
+      "labelZh": "Uniswap",
+      "type": "protocol",
+      "parent": "clmm",
+      "group": "defi",
+      "summaryZh": "Uniswap 是 EVM 現貨交易的核心協議，集中流動性池讓做市人把資金放在自選價格區間，舊版恆定乘積池仍在承接長尾代幣。",
+      "url": "https://uniswap.org",
+      "tags": [
+        "clmm",
+        "amm"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "curve",
+      "label": "Curve",
+      "labelZh": "Curve",
+      "type": "protocol",
+      "parent": "amm",
+      "group": "defi",
+      "summaryZh": "Curve 以穩定幣與同類資產的低滑點曲線聞名，並發行 crvUSD、經營借貸市場，是以太坊上美元流動性的主要池層。",
+      "url": "https://curve.finance",
+      "tags": [
+        "amm",
+        "stableswap"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "balancer",
+      "label": "Balancer",
+      "labelZh": "Balancer",
+      "type": "protocol",
+      "parent": "amm",
+      "group": "defi",
+      "summaryZh": "Balancer 提供加權與穩定池，一個池可以放進多種資產並自訂權重，也被其他協議拿來做指數與流動性引導。",
+      "url": "https://balancer.fi/",
+      "tags": [
+        "amm",
+        "weighted"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "sushi",
+      "label": "Sushi",
+      "labelZh": "Sushi",
+      "type": "protocol",
+      "parent": "amm",
+      "group": "defi",
+      "summaryZh": "Sushi 是跨多條 EVM 鏈的現貨交易所，同時經營恆定乘積池與集中流動性池，並提供站內兌換路由。同一套介面可以換多條鏈上的代幣。",
+      "url": "https://sushi.com/",
+      "tags": [
+        "amm",
+        "clmm"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "pancakeswap",
+      "label": "PancakeSwap",
+      "labelZh": "PancakeSwap",
+      "type": "protocol",
+      "parent": "amm",
+      "group": "defi",
+      "summaryZh": "PancakeSwap 以 BNB Chain 為主場，並擴到以太坊與多個二層，現貨池之外還有集中流動性與永續合約。永續合約與預測也做在同一站內。",
+      "url": "https://pancakeswap.finance/",
+      "tags": [
+        "amm",
+        "clmm"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "aerodrome",
+      "label": "Aerodrome",
+      "labelZh": "Aerodrome",
+      "type": "protocol",
+      "parent": "amm",
+      "group": "defi",
+      "summaryZh": "Aerodrome 是 Base 上的主要現貨交易所，用投票鎖倉引導手續費，並以區間池與發射活動承接新的流動性。流動性投票決定哪一個池子獲得排放。",
+      "url": "https://aerodrome.finance/",
+      "tags": [
+        "amm",
+        "ve33"
+      ],
+      "chains": [
+        "base"
+      ]
+    },
+    {
+      "id": "camelot",
+      "label": "Camelot",
+      "labelZh": "Camelot",
+      "type": "protocol",
+      "parent": "amm",
+      "group": "defi",
+      "summaryZh": "Camelot 是 Arbitrum 上的現貨交易所，同時提供傳統池與集中流動性，並讓專案用自訂費用結構引導做市。專案可以自訂做市獎勵與交易費率。",
+      "url": "https://camelot.exchange/",
+      "tags": [
+        "amm",
+        "clmm"
+      ],
+      "chains": [
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "fluid",
+      "label": "Fluid",
+      "labelZh": "Fluid",
+      "type": "protocol",
+      "parent": "amm",
+      "group": "defi",
+      "summaryZh": "Fluid 把兌換與借貸放在同一套流動性層，存款可以同時被拿去做市與抵押，提高資金在以太坊上的周轉。",
+      "url": "https://fluid.io/",
+      "tags": [
+        "amm",
+        "lending"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "maverick",
+      "label": "Maverick",
+      "labelZh": "Maverick",
+      "type": "protocol",
+      "parent": "clmm",
+      "group": "defi",
+      "summaryZh": "Maverick 用可跟著價格移動的流動性區間做市，做市人不必手動搬倉，池子也能被包成可程式化的路由。流動性會跟著價格區間一起移動。",
+      "url": "https://www.mav.xyz",
+      "tags": [
+        "clmm"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "kyberswap",
+      "label": "KyberSwap",
+      "labelZh": "KyberSwap",
+      "type": "protocol",
+      "parent": "aggregator",
+      "group": "defi",
+      "summaryZh": "KyberSwap 同時做交易聚合與集中流動性池，把多個來源的報價收成一條兌換路徑，也在多條 EVM 鏈提供彈性池。",
+      "url": "https://kyberswap.com",
+      "tags": [
+        "aggregator",
+        "clmm"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "velodrome",
+      "label": "Velodrome",
+      "labelZh": "Velodrome",
+      "type": "protocol",
+      "parent": "amm",
+      "group": "defi",
+      "summaryZh": "Velodrome 是 Optimism 系的現貨交易所，用鎖倉投票把排放導向特定池，並提供傳統池與集中流動性兩種市場。排放由鎖倉投票分配到各個池。",
+      "url": "https://velodrome.finance/",
+      "tags": [
+        "amm",
+        "ve33"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "quickswap",
+      "label": "QuickSwap",
+      "labelZh": "QuickSwap",
+      "type": "protocol",
+      "parent": "amm",
+      "group": "defi",
+      "summaryZh": "QuickSwap 是 Polygon 上長期經營的現貨交易所，提供自動做市與集中流動性，服務該網路上的代幣兌換。它承接 Polygon 上的日常代幣兌換。",
+      "url": "https://quickswap.exchange/",
+      "tags": [
+        "amm",
+        "clmm"
+      ],
+      "chains": [
+        "base"
+      ]
+    },
+    {
+      "id": "syncswap",
+      "label": "SyncSwap",
+      "labelZh": "SyncSwap",
+      "type": "protocol",
+      "parent": "amm",
+      "group": "defi",
+      "summaryZh": "SyncSwap 在 zkSync、Linea 與 Scroll 等網路提供現貨池，讓這些二層上的代幣有本地的兌換流動性。這些二層的本地代幣主要靠它提供兌換深度。",
+      "url": "https://syncswap.xyz/",
+      "tags": [
+        "amm"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "dodo",
+      "label": "DODO",
+      "labelZh": "DODO",
+      "type": "protocol",
+      "parent": "amm",
+      "group": "defi",
+      "summaryZh": "DODO 使用主動做市報價而不是純恆定乘積，資金可以集中在掛鉤價格附近，並在多條 EVM 鏈提供兌換池。做市資金集中在掛鉤價附近。",
+      "url": "https://dodoex.io/",
+      "tags": [
+        "amm",
+        "pmm"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "pharaoh",
+      "label": "Pharaoh",
+      "labelZh": "Pharaoh",
+      "type": "protocol",
+      "parent": "clmm",
+      "group": "defi",
+      "summaryZh": "Pharaoh 是 Avalanche 上的現貨交易所，提供集中流動性與區間池，用投票排放把做市資金導向特定交易對。投票決定排放流向哪一個交易對。",
+      "url": "https://www.phar.gg/",
+      "tags": [
+        "clmm",
+        "ve33"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "lfj",
+      "label": "LFJ",
+      "labelZh": "LFJ",
+      "type": "protocol",
+      "parent": "clmm",
+      "group": "defi",
+      "summaryZh": "LFJ 原名 Trader Joe，用流動性帳本在 Avalanche 與 Arbitrum 做集中報價，一個交易對由多個價格桶組成。價格桶讓報價集中在活躍區間，主流與長尾交易對都能開池。",
+      "url": "https://lfj.gg/",
+      "tags": [
+        "clmm",
+        "liquidity-book"
+      ],
+      "chains": [
+        "bnb",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "ambient",
+      "label": "Ambient",
+      "labelZh": "Ambient",
+      "type": "protocol",
+      "parent": "clmm",
+      "group": "defi",
+      "summaryZh": "Ambient 把多種交易對放在同一份合約裡做集中流動性，減少分開部署池子的成本，並在以太坊上提供現貨兌換。",
+      "url": "https://ambient.finance",
+      "tags": [
+        "clmm"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "thena",
+      "label": "Thena",
+      "labelZh": "Thena",
+      "type": "protocol",
+      "parent": "amm",
+      "group": "defi",
+      "summaryZh": "Thena 是 BNB Chain 上的投票引導交易所，鎖倉代幣決定排放流向，池子承接該鏈的現貨兌換與做市。做市人依排放與手續費選擇要進入的池。",
+      "url": "https://thena.fi",
+      "tags": [
+        "amm",
+        "ve33"
+      ],
+      "chains": [
+        "bnb"
+      ]
+    },
+    {
+      "id": "cowswap",
+      "label": "CoW Swap",
+      "labelZh": "CoW Swap",
+      "type": "protocol",
+      "parent": "aggregator",
+      "group": "defi",
+      "summaryZh": "CoW Swap 用批量拍賣撮合訂單，同一批次裡的交易可以互相成交，剩餘需求再路由到其他交易所，用來降低被夾單的損失。",
+      "url": "https://cow.fi",
+      "tags": [
+        "aggregator",
+        "intent"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "1inch",
+      "label": "1inch",
+      "labelZh": "1inch",
+      "type": "protocol",
+      "parent": "aggregator",
+      "group": "defi",
+      "summaryZh": "1inch 聚合多家交易所與請求報價，把一筆兌換拆到多條路徑，也提供意圖式成交，是 EVM 上常用的兌換入口。",
+      "url": "https://1inch.com/",
+      "tags": [
+        "aggregator"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "velora",
+      "label": "Velora",
+      "labelZh": "Velora",
+      "type": "protocol",
+      "parent": "aggregator",
+      "group": "defi",
+      "summaryZh": "Velora 前身是 ParaSwap，現在做意圖式的跨鏈兌換，使用者簽的是想要的結果，執行方再去各池完成成交。路徑由執行方完成，使用者只簽署想要的結果。",
+      "url": "https://www.velora.xyz/",
+      "tags": [
+        "aggregator",
+        "intent"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "matcha",
+      "label": "Matcha",
+      "labelZh": "Matcha",
+      "type": "protocol",
+      "parent": "aggregator",
+      "group": "defi",
+      "summaryZh": "Matcha 是 0x 的兌換介面，向多個流動性來源詢價並挑路徑，成交與授權仍由使用者的錢包簽署。報價會同時詢問多家做市來源。",
+      "url": "https://matcha.xyz",
+      "tags": [
+        "aggregator"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "zero-x",
+      "label": "0x",
+      "labelZh": "0x",
+      "type": "protocol",
+      "parent": "aggregator",
+      "group": "defi",
+      "summaryZh": "0x 提供專業做市商與交易所共用的兌換協議，Matcha 建立在它上面，其他應用也可以直接呼叫同一套流動性。",
+      "url": "https://0x.org/",
+      "tags": [
+        "aggregator",
+        "protocol"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "openocean",
+      "label": "OpenOcean",
+      "labelZh": "OpenOcean",
+      "type": "protocol",
+      "parent": "aggregator",
+      "group": "defi",
+      "summaryZh": "OpenOcean 聚合多條鏈上的交易所報價，把 EVM 現貨兌換收成一筆交易，並在路徑裡比較不同池子的價格。路徑比較會納入多個自動做市池的價格。",
+      "url": "https://openocean.finance",
+      "tags": [
+        "aggregator"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "bebop",
+      "label": "Bebop",
+      "labelZh": "Bebop",
+      "type": "protocol",
+      "parent": "aggregator",
+      "group": "defi",
+      "summaryZh": "Bebop 用請求報價與意圖成交做現貨兌換，做市商直接對使用者報價，結算回到鏈上，減少公開內存池裡的搶跑。",
+      "url": "https://bebop.xyz",
+      "tags": [
+        "aggregator",
+        "rfq"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "jumper",
+      "label": "Jumper",
+      "labelZh": "Jumper",
+      "type": "protocol",
+      "parent": "aggregator",
+      "group": "defi",
+      "summaryZh": "Jumper 是 LI.FI 的兌換與跨鏈介面，使用者指定要換到的資產和目標鏈，底層路由再拆給橋與交易所。過橋與兌換可以收成同一筆操作。",
+      "url": "https://jumper.xyz",
+      "tags": [
+        "aggregator",
+        "bridge"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "hashflow",
+      "label": "Hashflow",
+      "labelZh": "Hashflow",
+      "type": "protocol",
+      "parent": "orderbook-dex",
+      "group": "defi",
+      "summaryZh": "Hashflow 讓專業做市商用請求報價成交，價格不靠公開曲線，結算仍回到鏈上，並常被聚合器納入路徑。報價來自做市商，而不是公開曲線。",
+      "url": "https://hashflow.com",
+      "tags": [
+        "rfq",
+        "orderbook"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "orderly",
+      "label": "Orderly",
+      "labelZh": "Orderly",
+      "type": "protocol",
+      "parent": "orderbook-dex",
+      "group": "defi",
+      "summaryZh": "Orderly 提供跨鏈的訂單簿交易基礎設施，現貨與永續可以共用同一套撮合，結算落在它所支援的網路上。",
+      "url": "https://orderly.network",
+      "tags": [
+        "orderbook",
+        "perps"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "synthetix",
+      "label": "Synthetix",
+      "labelZh": "Synthetix",
+      "type": "protocol",
+      "parent": "perps",
+      "group": "defi",
+      "summaryZh": "Synthetix 在以太坊主網提供永續合約，撮合在鏈下完成，保證金與結算留在主網，讓槓桿交易不必離開以太坊。",
+      "url": "https://synthetix.io/",
+      "tags": [
+        "perps",
+        "orderbook"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "gmx",
+      "label": "GMX",
+      "labelZh": "GMX",
+      "type": "protocol",
+      "parent": "perps",
+      "group": "defi",
+      "summaryZh": "GMX 用多資產資金池承做現貨兌換與永續合約，交易者直接對池子開槓桿，流動性提供者賺取手續費與資金費。",
+      "url": "https://gmx.io",
+      "tags": [
+        "perps",
+        "amm"
+      ],
+      "chains": [
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "gains",
+      "label": "Gains Network",
+      "labelZh": "Gains Network",
+      "type": "protocol",
+      "parent": "perps",
+      "group": "defi",
+      "summaryZh": "Gains Network 的 gTrade 提供合成槓桿交易，報價來自預言機，抵押品池承擔交易對手風險，市場不依賴傳統訂單簿深度。",
+      "url": "https://gains.trade/",
+      "tags": [
+        "perps",
+        "synthetic"
+      ],
+      "chains": [
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "aevo",
+      "label": "Aevo",
+      "labelZh": "Aevo",
+      "type": "protocol",
+      "parent": "options",
+      "group": "defi",
+      "summaryZh": "Aevo 在自建的二層上撮合選擇權與永續合約，結算回到以太坊安全假設，同一個保證金帳戶可以同時持有多種部位。",
+      "url": "https://www.aevo.xyz/",
+      "tags": [
+        "options",
+        "perps"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "apex",
+      "label": "ApeX",
+      "labelZh": "ApeX",
+      "type": "protocol",
+      "parent": "perps",
+      "group": "defi",
+      "summaryZh": "ApeX 在多條 EVM 網路上提供永續合約，採用鏈下撮合與鏈上結算，讓槓桿交易有接近中心化交易所的下單體驗。",
+      "url": "https://www.apex.exchange",
+      "tags": [
+        "perps"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "aave",
+      "label": "Aave",
+      "labelZh": "Aave",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "Aave 是 EVM 上規模最大的資金池借貸協議，存款人提供流動性，借款人超額抵押借出資產，並發行穩定幣 GHO。市場分布在以太坊與多個二層網路。",
+      "url": "https://aave.com",
+      "tags": [
+        "lending",
+        "gho"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "morpho",
+      "label": "Morpho",
+      "labelZh": "Morpho",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "Morpho 把借貸做成獨立市場與策展金庫，風險參數由各金庫管理人設定，存款人自行選擇要承擔哪一種抵押組合。",
+      "url": "https://morpho.org",
+      "tags": [
+        "lending",
+        "vaults"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "spark",
+      "label": "Spark",
+      "labelZh": "Spark",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "Spark 是 Sky 生態的借貸與美元儲蓄層，承接穩定幣存款，並把流動性配置到鏈上市場與短天期資產。美元存款可以進入協議提供的儲蓄利率。",
+      "url": "https://spark.finance/",
+      "tags": [
+        "lending",
+        "savings"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "compound",
+      "label": "Compound",
+      "labelZh": "Compound",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "Compound 是以太坊早期的資金池借貸協議，第三版把每個市場收成單一抵押資產，利率由使用率自動調整。",
+      "url": "https://www.compound.xyz/",
+      "tags": [
+        "lending"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "euler",
+      "label": "Euler",
+      "labelZh": "Euler",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "Euler 提供模組化借貸市場，抵押與清算參數可以按資產分開設定，讓長尾代幣也能建立獨立的借貸池。",
+      "url": "https://www.euler.finance",
+      "tags": [
+        "lending"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "maple",
+      "label": "Maple",
+      "labelZh": "Maple",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "Maple 做機構向的鏈上信貸，借款方與資金池由管理人審核，存款人賺取信貸利息，資產以穩定幣為主。違約風險由資金池與管理人一起承擔。",
+      "url": "https://maple.finance/",
+      "tags": [
+        "lending",
+        "credit"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "venus",
+      "label": "Venus",
+      "labelZh": "Venus",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "Venus 是 BNB Chain 上的主要資金池借貸協議，也擴到其他 EVM 網路，存款與借款沿用超額抵押模型。利率隨資金池使用率升降，抵押不足就會被清算。",
+      "url": "https://venus.io",
+      "tags": [
+        "lending"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "lista",
+      "label": "Lista",
+      "labelZh": "Lista",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "Lista 在 BNB Chain 提供借貸、流動性質押與抵押發行，把質押憑證和穩定幣借貸放在同一套協議裡。質押憑證可以直接留在協議裡當抵押品。",
+      "url": "https://lista.org/",
+      "tags": [
+        "lending",
+        "lst"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb"
+      ]
+    },
+    {
+      "id": "dolomite",
+      "label": "Dolomite",
+      "labelZh": "Dolomite",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "Dolomite 把借貸和保證金交易放在一起，存款部位可以直接拿來開槓桿，不必先提到另一個交易所。槓桿部位和存款共用同一個帳戶。",
+      "url": "https://dolomite.io",
+      "tags": [
+        "lending",
+        "margin"
+      ],
+      "chains": [
+        "ethereum",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "moonwell",
+      "label": "Moonwell",
+      "labelZh": "Moonwell",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "Moonwell 是 Base 與 Optimism 上的借貸協議，用資金池提供存款利息與抵押借款，服務這些二層上的主流資產。主要服務 Base 與 Optimism 上的主流資產。",
+      "url": "https://moonwell.fi",
+      "tags": [
+        "lending"
+      ],
+      "chains": [
+        "ethereum",
+        "base"
+      ]
+    },
+    {
+      "id": "benqi",
+      "label": "BENQI",
+      "labelZh": "BENQI",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "BENQI 在 Avalanche 同時經營借貸市場與流動性質押，質押憑證可以留在鏈上繼續當抵押品使用。質押憑證可以再拿去當作借貸抵押。",
+      "url": "https://benqi.fi",
+      "tags": [
+        "lending",
+        "lst"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "gearbox",
+      "label": "Gearbox",
+      "labelZh": "Gearbox",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "Gearbox 提供信用帳戶，用戶在額度內把槓桿資金直接送到其他協議，而不是只借出一種資產再手動搬運。",
+      "url": "https://www.gearbox.finance/",
+      "tags": [
+        "lending",
+        "leverage"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "silo",
+      "label": "Silo",
+      "labelZh": "Silo",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "Silo 為每種資產建立隔離借貸市場，一種抵押品出問題時，損失不會自動蔓延到協議裡的其他資金池。",
+      "url": "https://www.silo.finance",
+      "tags": [
+        "lending",
+        "isolated"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "inverse",
+      "label": "Inverse Finance",
+      "labelZh": "Inverse Finance",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "Inverse Finance 的 FiRM 用固定利率與隔離市場提供借貸，借款人鎖定期限內的利息，而不是完全跟著浮動利率走。借款人在期限內支付事先約定的利息。",
+      "url": "https://inverse.finance",
+      "tags": [
+        "lending",
+        "fixed-rate"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "alchemix",
+      "label": "Alchemix",
+      "labelZh": "Alchemix",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "Alchemix 讓人用生息存款抵押，借出對應的合成資產，存款產生的收益會自動拿去償還借款。借款會跟著底層收益減少，不必手動分期償還。",
+      "url": "https://alchemix.fi/",
+      "tags": [
+        "lending",
+        "self-repaying"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "defisaver",
+      "label": "DeFi Saver",
+      "labelZh": "DeFi Saver",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "DeFi Saver 是借貸部位的管理工具，可以設定自動償還、加倉與清算保護，用來操作 Aave 這類資金池部位。條件達成時，合約會代為調整部位。",
+      "url": "https://defisaver.com/",
+      "tags": [
+        "lending",
+        "automation"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "lido",
+      "label": "Lido",
+      "labelZh": "Lido",
+      "type": "protocol",
+      "parent": "liquid-staking",
+      "group": "defi",
+      "summaryZh": "Lido 是以太坊最大的流動性質押協議，質押者收到 stETH，驗證者獎勵持續計入餘額，憑證可以在其他協議裡使用。",
+      "url": "https://lido.fi/",
+      "tags": [
+        "lst",
+        "steth"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "rocket-pool",
+      "label": "Rocket Pool",
+      "labelZh": "Rocket Pool",
+      "type": "protocol",
+      "parent": "liquid-staking",
+      "group": "defi",
+      "summaryZh": "Rocket Pool 讓節點營運者用較低門檻參與驗證，並發行 rETH 給不想自己跑節點的質押者，獎勵反映在代幣匯率上。",
+      "url": "https://rocketpool.net",
+      "tags": [
+        "lst",
+        "reth"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "etherfi",
+      "label": "ether.fi",
+      "labelZh": "ether.fi",
+      "type": "protocol",
+      "parent": "liquid-staking",
+      "group": "defi",
+      "summaryZh": "ether.fi 提供原生流動性質押與再質押，存款人取得 weETH，驗證者金鑰安排與再質押選擇由協議協調。持有人可以把憑證再送進其他協議使用。",
+      "url": "https://www.ether.fi",
+      "tags": [
+        "lst",
+        "lrt"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "stakewise",
+      "label": "StakeWise",
+      "labelZh": "StakeWise",
+      "type": "protocol",
+      "parent": "liquid-staking",
+      "group": "defi",
+      "summaryZh": "StakeWise 用金庫把質押拆開，用戶可以選擇驗證者組合並取得 osETH，報酬與罰沒範圍跟所選金庫有關。不同金庫對應不同的驗證者組合。",
+      "url": "https://stakewise.io/",
+      "tags": [
+        "lst",
+        "oseth"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "liquid-collective",
+      "label": "Liquid Collective",
+      "labelZh": "Liquid Collective",
+      "type": "protocol",
+      "parent": "liquid-staking",
+      "group": "defi",
+      "summaryZh": "Liquid Collective 面向機構的以太坊流動性質押，發行 LsETH，由一組專業節點營運者負責驗證者運作。節點由機構級營運者負責，份額以代幣表示。",
+      "url": "https://liquidcollective.io",
+      "tags": [
+        "lst",
+        "institutional"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "meth",
+      "label": "mETH Protocol",
+      "labelZh": "mETH Protocol",
+      "type": "protocol",
+      "parent": "liquid-staking",
+      "group": "defi",
+      "summaryZh": "mETH Protocol 發行 Mantle 生態的以太坊質押憑證 mETH，質押獎勵累積在代幣上，並可拿到其他 EVM 協議使用。憑證可以轉進其他 EVM 協議繼續使用。",
+      "url": "https://www.methprotocol.xyz/",
+      "tags": [
+        "lst",
+        "meth"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "swell",
+      "label": "Swell",
+      "labelZh": "Swell",
+      "type": "protocol",
+      "parent": "liquid-staking",
+      "group": "defi",
+      "summaryZh": "Swell 同時提供以太坊流動性質押與再質押憑證，存款人不必自己操作驗證者，憑證可以留在 DeFi 裡周轉。再質押收益疊加在原本的質押獎勵之上。",
+      "url": "https://www.swellnetwork.io/",
+      "tags": [
+        "lst",
+        "lrt"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "stader",
+      "label": "Stader",
+      "labelZh": "Stader",
+      "type": "protocol",
+      "parent": "liquid-staking",
+      "group": "defi",
+      "summaryZh": "Stader 在以太坊發行 ETHx 流動性質押憑證，並在其他網路有各自的質押產品，以太坊這條線服務不想鎖定提款的質押者。",
+      "url": "https://staderlabs.com",
+      "tags": [
+        "lst",
+        "ethx"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb"
+      ]
+    },
+    {
+      "id": "origin",
+      "label": "Origin",
+      "labelZh": "Origin",
+      "type": "protocol",
+      "parent": "liquid-staking",
+      "group": "defi",
+      "summaryZh": "Origin 的 OETH 把多種以太坊質押憑證收成一個生息代幣，獎勵來自底層質押，持有人不必自己配置每一種憑證。",
+      "url": "https://www.originprotocol.com",
+      "tags": [
+        "lst",
+        "oeth"
+      ],
+      "chains": [
+        "ethereum",
+        "base"
+      ]
+    },
+    {
+      "id": "eigenlayer",
+      "label": "EigenLayer",
+      "labelZh": "EigenLayer",
+      "type": "protocol",
+      "parent": "restaking",
+      "group": "defi",
+      "summaryZh": "EigenLayer 讓已質押的以太幣與質押憑證再去擔保其他服務，營運者若失職可被罰沒，是以太坊再質押的底層市場。",
+      "url": "https://www.eigencloud.xyz",
+      "tags": [
+        "restaking",
+        "avs"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "symbiotic",
+      "label": "Symbiotic",
+      "labelZh": "Symbiotic",
+      "type": "protocol",
+      "parent": "restaking",
+      "group": "defi",
+      "summaryZh": "Symbiotic 是另一套共享安全市場，網路可以自訂抵押資產與罰沒規則，金庫接受的擔保不限於單一質押憑證。",
+      "url": "https://symbiotic.fi",
+      "tags": [
+        "restaking"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "kelp",
+      "label": "Kelp",
+      "labelZh": "Kelp",
+      "type": "protocol",
+      "parent": "restaking",
+      "group": "defi",
+      "summaryZh": "Kelp 把再質押收成流動憑證 rsETH，存款人不必自己挑營運者與服務，憑證仍可在借貸和兌換市場裡使用。憑證匯率反映再質押累積的獎勵。",
+      "url": "https://kerneldao.com",
+      "tags": [
+        "lrt",
+        "rseth"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "renzo",
+      "label": "Renzo",
+      "labelZh": "Renzo",
+      "type": "protocol",
+      "parent": "restaking",
+      "group": "defi",
+      "summaryZh": "Renzo 發行流動再質押憑證 ezETH，把以太幣或質押憑證送進再質押市場，獎勵累積在憑證上並保持可轉移。憑證可以轉讓，或再送進其他協議。",
+      "url": "https://www.renzoprotocol.com",
+      "tags": [
+        "lrt",
+        "ezeth"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "puffer",
+      "label": "Puffer",
+      "labelZh": "Puffer",
+      "type": "protocol",
+      "parent": "restaking",
+      "group": "defi",
+      "summaryZh": "Puffer 從原生驗證者質押出發，再把部位接到再質押，並用降低罰沒的節點設計吸引不想自己跑驗證者的存款人。",
+      "url": "https://www.puffer.fi/",
+      "tags": [
+        "lrt",
+        "pufeth"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "mellow",
+      "label": "Mellow",
+      "labelZh": "Mellow",
+      "type": "protocol",
+      "parent": "restaking",
+      "group": "defi",
+      "summaryZh": "Mellow 提供再質押金庫，管理人決定把抵押送到哪些營運者與網路，存款人持有金庫份額而不是直接操作底層部位。",
+      "url": "https://mellow.finance/",
+      "tags": [
+        "lrt",
+        "vaults"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "lombard",
+      "label": "Lombard",
+      "labelZh": "Lombard",
+      "type": "protocol",
+      "parent": "restaking",
+      "group": "defi",
+      "summaryZh": "Lombard 在以太坊上發行比特幣質押憑證 LBTC，讓比特幣部位以代幣形式進入 EVM 的借貸與兌換市場。比特幣部位因此能進入以太坊上的應用。",
+      "url": "https://www.lombard.finance",
+      "tags": [
+        "btc",
+        "lrt"
+      ],
+      "chains": [
+        "ethereum",
+        "base"
+      ]
+    },
+    {
+      "id": "pendle",
+      "label": "Pendle",
+      "labelZh": "Pendle",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Pendle 把生息資產拆成到期前的本金與收益兩部分，交易者可以鎖定利率，或單獨買賣未來收益。到期前的本金與收益可以分開買賣。",
+      "url": "https://pendle.finance/",
+      "tags": [
+        "yield",
+        "rates"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "convex",
+      "label": "Convex",
+      "labelZh": "Convex",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Convex 幫 Curve 的流動性提供者鎖定投票權並集中排放獎勵，存款人不必自己長時間鎖倉也能領取提高後的收益。",
+      "url": "https://www.convexfinance.com/",
+      "tags": [
+        "yield",
+        "curve"
+      ],
+      "chains": [
+        "ethereum",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "yearn",
+      "label": "Yearn",
+      "labelZh": "Yearn",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Yearn 把兌換、借貸與做市收成自動化金庫，策略由管理人維護，存款人持有份額，收益反映在份額價值上。",
+      "url": "https://yearn.fi/",
+      "tags": [
+        "yield",
+        "vaults"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "beefy",
+      "label": "Beefy",
+      "labelZh": "Beefy",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Beefy 在多條 EVM 鏈自動複投農場獎勵，把需要頻繁領取再質押的收益收成一筆金庫份額。複投由金庫代為執行，減少手動領取。",
+      "url": "https://beefy.com",
+      "tags": [
+        "yield",
+        "autocompound"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "aura",
+      "label": "Aura",
+      "labelZh": "Aura",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Aura 集中 Balancer 的投票鎖倉與排放，流動性提供者把部位存進來，由協議代為提高獎勵，模式接近 Curve 上的 Convex。投票權集中後，再按存款比例分配獎勵。",
+      "url": "https://aura.finance",
+      "tags": [
+        "yield",
+        "balancer"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "stake-dao",
+      "label": "Stake DAO",
+      "labelZh": "Stake DAO",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Stake DAO 提供投票鎖定與收益策略，幫流動性提供者集中治理權，並在 Curve 等協議上分配提高後的排放。鎖定的治理權用來提高流動性獎勵。",
+      "url": "https://stakedao.org/",
+      "tags": [
+        "yield",
+        "governance"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "spectra",
+      "label": "Spectra",
+      "labelZh": "Spectra",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Spectra 提供固定利率與收益交易市場，把生息資產拆開定價，讓人在到期前鎖定或轉讓未來收益。交易者可以提前鎖定一段期間的利率。",
+      "url": "https://www.spectra.finance",
+      "tags": [
+        "yield",
+        "rates"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "enzyme",
+      "label": "Enzyme",
+      "labelZh": "Enzyme",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Enzyme 是鏈上資產管理協議，經理人建立基金金庫，投資人申購份額，持倉與調倉都留在合約裡可查。外界可以核對金庫目前持有哪些資產。",
+      "url": "https://enzyme.finance/",
+      "tags": [
+        "yield",
+        "asset-management"
+      ],
+      "chains": [
+        "ethereum",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "infinifi",
+      "label": "infiniFi",
+      "labelZh": "infiniFi",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "infiniFi 把穩定幣存款配置到多層收益策略，存款人持有份額，底層部位由協議在鏈上市場之間安排。份額價值跟著底層策略的盈虧變動。",
+      "url": "https://infinifi.xyz",
+      "tags": [
+        "yield",
+        "stablecoin"
+      ],
+      "chains": [
+        "ethereum",
+        "base"
+      ]
+    },
+    {
+      "id": "yield-basis",
+      "label": "Yield Basis",
+      "labelZh": "Yield Basis",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Yield Basis 圍繞 Curve 的穩定幣部位做槓桿流動性策略，把做市倉位的價格曝險壓低，讓收益更接近手續費本身。策略想留下手續費，並壓低幣價波動的影響。",
+      "url": "https://yieldbasis.com/",
+      "tags": [
+        "yield",
+        "curve"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "concrete",
+      "label": "Concrete",
+      "labelZh": "Concrete",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Concrete 提供機構向的鏈上收益金庫，把存款配置到借貸、做市與短天期策略，份額可在支援的網路上持有。",
+      "url": "https://concrete.xyz",
+      "tags": [
+        "yield",
+        "vaults"
+      ],
+      "chains": [
+        "ethereum",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "veda",
+      "label": "Veda",
+      "labelZh": "Veda",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Veda 為其他協議代管收益金庫，存款策略、角色權限與結算寫在鏈上，讓發行方不必自己從零做資產管理合約。",
+      "url": "https://veda.tech",
+      "tags": [
+        "yield",
+        "vaults"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "upshift",
+      "label": "Upshift",
+      "labelZh": "Upshift",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Upshift 提供鏈上收益金庫，存款人把穩定幣或主流資產存入策略，報酬來自借貸、做市與相關配置。存款人持有金庫份額，而不是自己管理每一筆底層倉位。",
+      "url": "https://www.upshift.finance",
+      "tags": [
+        "yield",
+        "vaults"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base"
+      ]
+    },
+    {
+      "id": "gauntlet",
+      "label": "Gauntlet",
+      "labelZh": "Gauntlet",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Gauntlet 為借貸市場做風險參數與金庫策展，在 Morpho 等協議上管理抵押組合，存款人選擇的是它維護的風險檔。",
+      "url": "https://www.gauntlet.xyz",
+      "tags": [
+        "curator",
+        "risk"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "steakhouse",
+      "label": "Steakhouse",
+      "labelZh": "Steakhouse",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Steakhouse 在 Morpho 等借貸協議上策展金庫，把穩定幣存款配置到一組經過篩選的抵押市場，並公開金庫規則。金庫規則與持倉可以在鏈上核對。",
+      "url": "https://www.steakhouse.financial/",
+      "tags": [
+        "curator",
+        "vaults"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "arrakis",
+      "label": "Arrakis",
+      "labelZh": "Arrakis",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Arrakis 幫做市人管理 Uniswap 的區間流動性，自動調整價格帶，專案方也能用它維持自己代幣的池子深度。價格區間由管理人的策略代為調整。",
+      "url": "https://arrakis.finance/",
+      "tags": [
+        "liquidity-manager",
+        "uniswap"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "treehouse",
+      "label": "Treehouse",
+      "labelZh": "Treehouse",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Treehouse 做鏈上利率基準與相關收益市場，把浮動質押或借貸利率收成可以定價、對沖的利率部位。利率部位可以拿來對沖浮動收益。",
+      "url": "https://www.treehouse.finance/",
+      "tags": [
+        "yield",
+        "rates"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "sky",
+      "label": "Sky",
+      "labelZh": "Sky",
+      "type": "protocol",
+      "parent": "stablecoin",
+      "group": "defi",
+      "summaryZh": "Sky 前身是 Maker，以超額抵押發行美元穩定幣，並提供儲蓄利率。國庫券等鏈下資產也納入準備與配置。儲蓄利率直接反映在穩定幣存款上。",
+      "url": "https://sky.money/",
+      "tags": [
+        "stablecoin",
+        "cdp"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "ethena",
+      "label": "Ethena",
+      "labelZh": "Ethena",
+      "type": "protocol",
+      "parent": "stablecoin",
+      "group": "defi",
+      "summaryZh": "Ethena 發行合成美元 USDe，用對沖後的現貨與永續部位維持價格，質押後的 sUSDe 累積這套策略的收益。質押後的憑證把這套收益做成可轉移餘額。",
+      "url": "https://ethena.fi",
+      "tags": [
+        "stablecoin",
+        "basis"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "circle",
+      "label": "Circle",
+      "labelZh": "Circle",
+      "type": "protocol",
+      "parent": "stablecoin",
+      "group": "defi",
+      "summaryZh": "Circle 發行美元穩定幣 USDC，準備金與發行規則由公司營運，USDC 是 EVM 借貸、支付與交易所最常用的現金資產之一。發行與贖回透過 Circle 的帳戶體系處理。",
+      "url": "https://www.circle.com",
+      "tags": [
+        "stablecoin",
+        "usdc"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "tether",
+      "label": "Tether",
+      "labelZh": "Tether",
+      "type": "protocol",
+      "parent": "stablecoin",
+      "group": "defi",
+      "summaryZh": "Tether 發行美元穩定幣 USDT，流通量長期居前，在以太坊與多條 EVM 網路上被當成計價與結算資產。它也是許多交易對的計價貨幣，轉帳不必經過銀行。",
+      "url": "https://tether.to",
+      "tags": [
+        "stablecoin",
+        "usdt"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "frax",
+      "label": "Frax",
+      "labelZh": "Frax",
+      "type": "protocol",
+      "parent": "stablecoin",
+      "group": "defi",
+      "summaryZh": "Frax 經營美元穩定幣、以太坊質押憑證與借貸市場，穩定幣、frxETH 與 Fraxlend 都在同一品牌下。質押憑證與穩定幣可以在同一品牌下搭配使用。",
+      "url": "https://frax.com/",
+      "tags": [
+        "stablecoin",
+        "lst"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "liquity",
+      "label": "Liquity",
+      "labelZh": "Liquity",
+      "type": "protocol",
+      "parent": "stablecoin",
+      "group": "defi",
+      "summaryZh": "Liquity 用以太幣超額抵押發行穩定幣，借款利率與清算由合約執行，不靠治理投票隨時改參數。抵押率不足時，部位會按合約規則清算。",
+      "url": "https://www.liquity.org/",
+      "tags": [
+        "stablecoin",
+        "cdp"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "usual",
+      "label": "Usual",
+      "labelZh": "Usual",
+      "type": "protocol",
+      "parent": "stablecoin",
+      "group": "defi",
+      "summaryZh": "Usual 發行由真實世界資產支持的美元穩定幣 USD0，把短天期國債收益接進可以在 DeFi 裡轉移的代幣。持有人取得的是鏈上可轉移的美元餘額。",
+      "url": "https://usual.money",
+      "tags": [
+        "stablecoin",
+        "rwa"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "falcon",
+      "label": "Falcon",
+      "labelZh": "Falcon",
+      "type": "protocol",
+      "parent": "stablecoin",
+      "group": "defi",
+      "summaryZh": "Falcon Finance 用對沖策略發行合成美元，存款人把加密資產換成穩定餘額，收益來自基差與相關部位。價格錨定依賴對沖部位持續有效。",
+      "url": "https://falcon.finance",
+      "tags": [
+        "stablecoin",
+        "basis"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "m0",
+      "label": "M0",
+      "labelZh": "M0",
+      "type": "protocol",
+      "parent": "stablecoin",
+      "group": "defi",
+      "summaryZh": "M0 是穩定幣發行基礎設施，讓合格發行方在共用標準上鑄造美元代幣，而不是每家都從零做一套合約。",
+      "url": "https://www.m0.org/",
+      "tags": [
+        "stablecoin",
+        "issuance"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "pinksale",
+      "label": "PinkSale",
+      "labelZh": "PinkSale",
+      "type": "protocol",
+      "parent": "launchpad",
+      "group": "defi",
+      "summaryZh": "PinkSale 是多鏈代幣發射台，專案用預售與流動性鎖定發新幣，結束後把初始流動性放到公開交易所。預售結束後，通常會把流動性鎖進交易所。",
+      "url": "https://www.pinksale.finance",
+      "tags": [
+        "launchpad"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb"
+      ]
+    },
+    {
+      "id": "juicebox",
+      "label": "Juicebox",
+      "labelZh": "Juicebox",
+      "type": "protocol",
+      "parent": "launchpad",
+      "group": "defi",
+      "summaryZh": "Juicebox 讓專案在以太坊上開設鏈上募資金庫，支持者投入資金並取得代幣，支出規則寫在專案設定裡。支持者依專案規則領取代幣或參與退款。",
+      "url": "https://juicebox.money/",
+      "tags": [
+        "launchpad",
+        "crowdfund"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "clanker",
+      "label": "Clanker",
+      "labelZh": "Clanker",
+      "type": "protocol",
+      "parent": "launchpad",
+      "group": "defi",
+      "summaryZh": "Clanker 在 Base 上用社群客戶端發新幣，代幣沿曲線或池子開始交易，是 Farcaster 社群常用的發射工具。發射常常從社交客戶端裡的指令開始。",
+      "url": "https://clanker.world",
+      "tags": [
+        "launchpad",
+        "base"
+      ],
+      "chains": [
+        "base"
+      ]
+    },
+    {
+      "id": "virtuals",
+      "label": "Virtuals",
+      "labelZh": "Virtuals",
+      "type": "protocol",
+      "parent": "launchpad",
+      "group": "defi",
+      "summaryZh": "Virtuals 讓代理與創作者代幣在 Base 等網路上發行並交易，發射後的流動性留在鏈上池裡繼續換手。代幣交易留在鏈上池，不經過中心化掛牌。",
+      "url": "https://virtuals.io",
+      "tags": [
+        "launchpad",
+        "agents"
+      ],
+      "chains": [
+        "base"
+      ]
+    },
+    {
+      "id": "flaunch",
+      "label": "Flaunch",
+      "labelZh": "Flaunch",
+      "type": "protocol",
+      "parent": "launchpad",
+      "group": "defi",
+      "summaryZh": "Flaunch 在 Base 上提供迷因與創作者代幣的發射與交易，新幣先在平台池裡定價，再進入更廣的現貨市場。早期價格由平台池決定，之後才流向外部市場。",
+      "url": "https://flaunch.gg",
+      "tags": [
+        "launchpad",
+        "meme"
+      ],
+      "chains": [
+        "base"
+      ]
+    },
+    {
+      "id": "derive",
+      "label": "Derive",
+      "labelZh": "Derive",
+      "type": "protocol",
+      "parent": "options",
+      "group": "defi",
+      "summaryZh": "Derive 前身是 Lyra，在以太坊上提供選擇權與衍生品交易，權利金與結算留在鏈上，交易者用保證金帳戶持有部位。",
+      "url": "https://www.derive.xyz",
+      "tags": [
+        "options"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "rysk",
+      "label": "Rysk",
+      "labelZh": "Rysk",
+      "type": "protocol",
+      "parent": "options",
+      "group": "defi",
+      "summaryZh": "Rysk 提供鏈上選擇權金庫與結構化賣權策略，做市與對沖部位寫在合約裡，交易者買的是打包後的波動率曝險。",
+      "url": "https://app.rysk.finance",
+      "tags": [
+        "options",
+        "vaults"
+      ],
+      "chains": [
+        "ethereum",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "pancake-infinity",
+      "label": "PancakeSwap Infinity",
+      "labelZh": "PancakeSwap Infinity",
+      "type": "protocol",
+      "parent": "clmm",
+      "group": "defi",
+      "summaryZh": "PancakeSwap Infinity 把資產會計與集中流動性、區間帳本池拆開，池子可以掛上鉤子合約，改手續費或做市規則，現已部署在幣安鏈與 Base。",
+      "url": "https://pancakeswap.finance/",
+      "tags": [
+        "clmm",
+        "hooks"
+      ],
+      "chains": [
+        "bnb",
+        "base"
+      ]
+    },
+    {
+      "id": "ekubo",
+      "label": "Ekubo",
+      "labelZh": "Ekubo",
+      "type": "protocol",
+      "parent": "clmm",
+      "group": "defi",
+      "summaryZh": "Ekubo 用單一合約承載集中流動性池，做市人把資金放在自選價格區間，並能加掛擴充模組調整池子行為，這套部署在以太坊。",
+      "url": "https://ekubo.org/",
+      "tags": [
+        "clmm"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "ramses",
+      "label": "Ramses",
+      "labelZh": "Ramses",
+      "type": "protocol",
+      "parent": "clmm",
+      "group": "defi",
+      "summaryZh": "Ramses 是 Arbitrum 上的投票鎖倉交易所，同時有傳統池與集中流動性池，鎖倉投票決定排放流向哪一個交易對。做市區間可以由使用者自行設定。",
+      "url": "https://ramses.xyz",
+      "tags": [
+        "clmm",
+        "ve33"
+      ],
+      "chains": [
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "woofi",
+      "label": "WOOFi",
+      "labelZh": "WOOFi",
+      "type": "protocol",
+      "parent": "amm",
+      "group": "defi",
+      "summaryZh": "WOOFi 用做市商報價與鏈上池子完成現貨兌換，並提供跨鏈交換與永續交易，流動性鋪在以太坊、幣安鏈、Base 與 Arbitrum。",
+      "url": "https://woofi.com",
+      "tags": [
+        "amm",
+        "perps"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "hydrex",
+      "label": "Hydrex",
+      "labelZh": "Hydrex",
+      "type": "protocol",
+      "parent": "amm",
+      "group": "defi",
+      "summaryZh": "Hydrex 是 Base 上的投票鎖倉現貨交易所，用排放引導流動性，讓新資金留在 Base 的交易對裡，而不是只靠一次性獎勵。",
+      "url": "https://www.hydrex.fi",
+      "tags": [
+        "amm",
+        "ve33"
+      ],
+      "chains": [
+        "base"
+      ]
+    },
+    {
+      "id": "angstrom",
+      "label": "Angstrom",
+      "labelZh": "Angstrom",
+      "type": "protocol",
+      "parent": "clmm",
+      "group": "defi",
+      "summaryZh": "Angstrom 建在 Uniswap 第四版鉤子上，把原本外流的套利利潤留在池子裡，做市人在以太坊上除了手續費還能分到這部分價差。",
+      "url": "https://angstrom.xyz/",
+      "tags": [
+        "clmm",
+        "hooks"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "biswap",
+      "label": "Biswap",
+      "labelZh": "Biswap",
+      "type": "protocol",
+      "parent": "amm",
+      "group": "defi",
+      "summaryZh": "Biswap 是幣安鏈上的現貨交易所，用恆定乘積池兌換代幣，流動性提供者拿走大部分交易手續費，並可再領取平台排放。",
+      "url": "https://biswap.org/",
+      "tags": [
+        "amm"
+      ],
+      "chains": [
+        "bnb"
+      ]
+    },
+    {
+      "id": "shibaswap",
+      "label": "ShibaSwap",
+      "labelZh": "ShibaSwap",
+      "type": "protocol",
+      "parent": "amm",
+      "group": "defi",
+      "summaryZh": "ShibaSwap 是 Shiba 生態的現貨交易所，在以太坊提供兌換、流動性挖礦與質押，交易對圍繞社群代幣與主流資產。兌換路徑與手續費由池子合約決定。",
+      "url": "https://shibaswap.com",
+      "tags": [
+        "amm"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "clipper",
+      "label": "Clipper",
+      "labelZh": "Clipper",
+      "type": "protocol",
+      "parent": "amm",
+      "group": "defi",
+      "summaryZh": "Clipper 專門服務較小額的現貨兌換，用自營庫存報價，減少小單在大池子裡的滑點，部署在以太坊、Base 與 Arbitrum。兌換路徑與手續費由池子合約決定。",
+      "url": "https://clipper.exchange",
+      "tags": [
+        "amm"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "bancor",
+      "label": "Bancor",
+      "labelZh": "Bancor",
+      "type": "protocol",
+      "parent": "amm",
+      "group": "defi",
+      "summaryZh": "Bancor 是以太坊上早期的自動做市協議，用鏈上池子完成代幣兌換，第三版仍維持可交易的流動性，供長尾資產換手。",
+      "url": "https://app.bancor.network/",
+      "tags": [
+        "amm"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "odos",
+      "label": "Odos",
+      "labelZh": "Odos",
+      "type": "protocol",
+      "parent": "aggregator",
+      "group": "defi",
+      "summaryZh": "Odos 是現貨聚合器，一次搜尋多個交易所與拆單路徑，替使用者挑出成交價格，路由覆蓋以太坊、幣安鏈、Base 與 Arbitrum。",
+      "url": "https://app.odos.xyz",
+      "tags": [
+        "aggregator"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "gamma",
+      "label": "Gamma",
+      "labelZh": "Gamma",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Gamma 幫做市人管理集中流動性倉位，依策略在價格區間內再平衡，金庫部署在以太坊、幣安鏈、Base 與 Arbitrum 的現貨池上。",
+      "url": "https://www.gamma.xyz",
+      "tags": [
+        "alm",
+        "vaults"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "gammaswap",
+      "label": "GammaSwap",
+      "labelZh": "GammaSwap",
+      "type": "protocol",
+      "parent": "options",
+      "group": "defi",
+      "summaryZh": "GammaSwap 讓人在自動做市倉位上做多或做空波動率，把無常損失拆成可交易的曝險，市場開在以太坊、Base 與 Arbitrum。權利金與結算都留在鏈上合約。",
+      "url": "https://app.gammaswap.com/",
+      "tags": [
+        "options",
+        "volatility"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "cap",
+      "label": "Cap",
+      "labelZh": "Cap",
+      "type": "protocol",
+      "parent": "stablecoin",
+      "group": "defi",
+      "summaryZh": "Cap 發行美元穩定幣 cUSD，並用生息的質押版本把收益分給持有人，擔保與鑄造規則寫在以太坊合約裡，供其他協議當抵押。",
+      "url": "https://cap.app/",
+      "tags": [
+        "stablecoin"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "termmax",
+      "label": "TermMax",
+      "labelZh": "TermMax",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "TermMax 提供有到期日的固定利率借貸，存款人進金庫領取收益，借款人一次設定槓桿，市場開在以太坊、幣安鏈、Base 與 Arbitrum。",
+      "url": "https://ts.finance/termmax/",
+      "tags": [
+        "lending",
+        "fixed-rate"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "term-finance",
+      "label": "Term Finance",
+      "labelZh": "Term Finance",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "Term Finance 用拍賣撮合固定期限、固定利率的抵押貸款，借款與出借在到期前鎖定價格，市場在以太坊、Base 與 Arbitrum。利率與清算條件都寫在合約裡。",
+      "url": "https://term.finance",
+      "tags": [
+        "lending",
+        "fixed-rate"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "flux",
+      "label": "Flux",
+      "labelZh": "Flux",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "Flux 是以太坊上的貨幣市場，接受受限制轉讓的代幣化資產當抵押，讓機構債券類頭寸也能存入借出穩定幣。",
+      "url": "https://fluxfinance.com",
+      "tags": [
+        "lending",
+        "rwa"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "40-acres",
+      "label": "40 Acres",
+      "labelZh": "40 Acres",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "40 Acres 在 Base 提供自我償還、不以清算為主的貸款，借款人用資產產生的收益慢慢還款，不必隨時補保證金。利率與清算條件都寫在合約裡。",
+      "url": "https://www.40acres.finance/",
+      "tags": [
+        "lending"
+      ],
+      "chains": [
+        "base"
+      ]
+    },
+    {
+      "id": "resupply",
+      "label": "Resupply",
+      "labelZh": "Resupply",
+      "type": "protocol",
+      "parent": "stablecoin",
+      "group": "defi",
+      "summaryZh": "Resupply 以現有借貸市場的流動性為基礎發行穩定幣，借款人抵押生息頭寸鑄幣，協議運行在以太坊，把美元信用再轉一層。",
+      "url": "https://resupply.fi/",
+      "tags": [
+        "stablecoin"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "folks",
+      "label": "Folks",
+      "labelZh": "Folks",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "Folks 把存款與借款做成跨鏈貨幣市場，同一套頭寸可以在多條鏈之間調用，池子覆蓋以太坊、幣安鏈、Base 與 Arbitrum。",
+      "url": "https://xapp.folks.finance",
+      "tags": [
+        "lending"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "unitus",
+      "label": "Unitus",
+      "labelZh": "Unitus",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "Unitus 是多鏈貨幣市場，存款人提供流動性、借款人超額抵押借出資產，利率由池子利用率決定，部署在這四條 EVM 鏈上。",
+      "url": "https://unitus.finance/",
+      "tags": [
+        "lending"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "exactly",
+      "label": "Exactly",
+      "labelZh": "Exactly",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "Exactly 同時提供固定利率與浮動利率的借貸池，使用者可以交換資金的時間價值，市場開在以太坊與 Base。利率與清算條件都寫在合約裡。",
+      "url": "https://exact.ly",
+      "tags": [
+        "lending",
+        "fixed-rate"
+      ],
+      "chains": [
+        "ethereum",
+        "base"
+      ]
+    },
+    {
+      "id": "native",
+      "label": "Native",
+      "labelZh": "Native",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "Native 用單邊資金池把資產借給做市商，讓鏈上現貨有更深的報價，信用池部署在以太坊、幣安鏈、Base 與 Arbitrum。利率與清算條件都寫在合約裡。",
+      "url": "https://native.org",
+      "tags": [
+        "lending",
+        "rfq"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "extra-finance",
+      "label": "Extra Finance",
+      "labelZh": "Extra Finance",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Extra Finance 在 Base 提供槓桿流動性挖礦，存款人借出資產，農夫把借來的資金疊進做市倉位，放大手續費與獎勵。策略把複利留在同一座金庫裡。",
+      "url": "https://app.extrafi.io/",
+      "tags": [
+        "leverage",
+        "yield"
+      ],
+      "chains": [
+        "base"
+      ]
+    },
+    {
+      "id": "origami",
+      "label": "Origami",
+      "labelZh": "Origami",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Origami 在以太坊把槓桿做成自動策略，存款人不必自己循環借貸，合約依設定疊加曝險並處理再平衡與清算邊界。",
+      "url": "https://origami.finance",
+      "tags": [
+        "leverage",
+        "vaults"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "deltaprime",
+      "label": "DeltaPrime",
+      "labelZh": "DeltaPrime",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "DeltaPrime 在 Arbitrum 讓使用者以抵押品借出額外資金，再自己配置到其他協議，用同一套保證金放大收益。利率與清算條件都寫在合約裡。",
+      "url": "https://deltaprime.io",
+      "tags": [
+        "lending",
+        "leverage"
+      ],
+      "chains": [
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "wildcat",
+      "label": "Wildcat",
+      "labelZh": "Wildcat",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "Wildcat 讓借款人在以太坊開設不足額抵押的信用額度，出借人依市場自訂條款放款，違約與還款條件寫在該市場合約裡。",
+      "url": "https://wildcat.finance",
+      "tags": [
+        "credit"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "3jane",
+      "label": "3Jane",
+      "labelZh": "3Jane",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "3Jane 在以太坊提供以信用為基礎的美元資金池，符合條件的借款人可取得無抵押額度，用來周轉交易或營運資金。",
+      "url": "https://www.3jane.xyz/",
+      "tags": [
+        "credit"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "olympus",
+      "label": "Olympus",
+      "labelZh": "Olympus",
+      "type": "protocol",
+      "parent": "lending",
+      "group": "defi",
+      "summaryZh": "Olympus 經營準備金與治理代幣，並用 Cooler 貸款讓持有人抵押治理資產借出穩定幣，整套系統部署在以太坊。利率與清算條件都寫在合約裡。",
+      "url": "https://www.olympusdao.finance",
+      "tags": [
+        "lending",
+        "reserve"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "ostium",
+      "label": "Ostium",
+      "labelZh": "Ostium",
+      "type": "protocol",
+      "parent": "perps",
+      "group": "defi",
+      "summaryZh": "Ostium 在 Arbitrum 提供外匯、金屬、能源與其他真實世界價格的永續合約，交易用錢包保證金結算，不必經過傳統券商帳戶。",
+      "url": "https://www.ostium.io/",
+      "tags": [
+        "perps",
+        "rwa"
+      ],
+      "chains": [
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "contango",
+      "label": "Contango",
+      "labelZh": "Contango",
+      "type": "protocol",
+      "parent": "perps",
+      "group": "defi",
+      "summaryZh": "Contango 把借貸市場循環出多空部位，交易者用它做槓桿質押或利率套利，倉位開在以太坊、幣安鏈、Base 與 Arbitrum。部位用保證金持有且沒有到期日。",
+      "url": "https://contango.xyz",
+      "tags": [
+        "perps",
+        "leverage"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "mux",
+      "label": "MUX",
+      "labelZh": "MUX",
+      "type": "protocol",
+      "parent": "perps",
+      "group": "defi",
+      "summaryZh": "MUX 在幣安鏈與 Arbitrum 提供槓桿永續交易，並把多個場所的流動性聚在同一張下單介面，用來降低交易者的成交成本。",
+      "url": "https://mux.network/",
+      "tags": [
+        "perps"
+      ],
+      "chains": [
+        "bnb",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "hegic",
+      "label": "Hegic",
+      "labelZh": "Hegic",
+      "type": "protocol",
+      "parent": "options",
+      "group": "defi",
+      "summaryZh": "Hegic 用資金池承做以太幣與比特幣的買權和賣權，買家支付權利金、池子當對手方，合約部署在以太坊與 Arbitrum。",
+      "url": "https://www.hegic.co",
+      "tags": [
+        "options"
+      ],
+      "chains": [
+        "ethereum",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "deri",
+      "label": "Deri",
+      "labelZh": "Deri",
+      "type": "protocol",
+      "parent": "options",
+      "group": "defi",
+      "summaryZh": "Deri 讓使用者在鏈上交易與對沖風險曝險，用保證金持有衍生品部位，市場開在幣安鏈、Base 與 Arbitrum。權利金與結算都留在鏈上合約。",
+      "url": "https://deri.io/",
+      "tags": [
+        "options"
+      ],
+      "chains": [
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "boros",
+      "label": "Boros",
+      "labelZh": "Boros",
+      "type": "protocol",
+      "parent": "perps",
+      "group": "defi",
+      "summaryZh": "Boros 由 Pendle 推出，在 Arbitrum 用保證金交易資金費率與收益率，讓交易者對利率走勢建立多空部位。部位用保證金持有且沒有到期日。",
+      "url": "https://boros.pendle.finance",
+      "tags": [
+        "rates",
+        "perps"
+      ],
+      "chains": [
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "kyan",
+      "label": "Kyan",
+      "labelZh": "Kyan",
+      "type": "protocol",
+      "parent": "options",
+      "group": "defi",
+      "summaryZh": "Kyan 前身是 Premia 團隊的新交易場所，在 Arbitrum 提供選擇權與永續，帳戶用投資組合保證金同時持有多腿部位。權利金與結算都留在鏈上合約。",
+      "url": "https://app.kyan.blue/",
+      "tags": [
+        "options",
+        "perps"
+      ],
+      "chains": [
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "usdd",
+      "label": "USDD",
+      "labelZh": "USDD",
+      "type": "protocol",
+      "parent": "stablecoin",
+      "group": "defi",
+      "summaryZh": "USDD 是以加密資產準備維持美元價格的穩定幣，除了原有網路，也在以太坊與幣安鏈上流通，供兌換與抵押使用。",
+      "url": "https://usdd.io/",
+      "tags": [
+        "stablecoin"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb"
+      ]
+    },
+    {
+      "id": "frankencoin",
+      "label": "Frankencoin",
+      "labelZh": "Frankencoin",
+      "type": "protocol",
+      "parent": "stablecoin",
+      "group": "defi",
+      "summaryZh": "Frankencoin 是以太坊上錨定瑞士法郎的超額抵押穩定幣，鑄造不依賴外部報價，清算由持有人挑戰抵押品是否充足。",
+      "url": "https://frankencoin.com",
+      "tags": [
+        "stablecoin"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "fx-protocol",
+      "label": "f(x)",
+      "labelZh": "f(x)",
+      "type": "protocol",
+      "parent": "stablecoin",
+      "group": "defi",
+      "summaryZh": "f(x) 把以太幣與比特幣的曝險拆成槓桿與穩定收益兩側，穩定幣持有人領取另一側付出的資金成本，協議在以太坊運作。",
+      "url": "https://fx.aladdin.club",
+      "tags": [
+        "stablecoin",
+        "leverage"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "resolv",
+      "label": "Resolv",
+      "labelZh": "Resolv",
+      "type": "protocol",
+      "parent": "stablecoin",
+      "group": "defi",
+      "summaryZh": "Resolv 發行由以太幣對沖部位支持的美元穩定幣 USR，價格靠現貨與永續的中性倉維持，並另有保險池吸收虧損，部署在以太坊。",
+      "url": "https://app.resolv.xyz",
+      "tags": [
+        "stablecoin"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "aegis",
+      "label": "Aegis",
+      "labelZh": "Aegis",
+      "type": "protocol",
+      "parent": "stablecoin",
+      "group": "defi",
+      "summaryZh": "Aegis 用現貨與永續的資金費率套利維持 YUSD 的美元價格，收益來自費率而非新發行，合約在以太坊與幣安鏈。",
+      "url": "https://app.aegis.im",
+      "tags": [
+        "stablecoin"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb"
+      ]
+    },
+    {
+      "id": "reserve",
+      "label": "Reserve",
+      "labelZh": "Reserve",
+      "type": "protocol",
+      "parent": "stablecoin",
+      "group": "defi",
+      "summaryZh": "Reserve 讓人用一籃子資產發行自己的準備貨幣，代幣保持足額抵押，並可帶有收益，部署在以太坊、幣安鏈、Base 與 Arbitrum。",
+      "url": "https://reserve.org",
+      "tags": [
+        "stablecoin",
+        "index"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "angle",
+      "label": "Angle",
+      "labelZh": "Angle",
+      "type": "protocol",
+      "parent": "stablecoin",
+      "group": "defi",
+      "summaryZh": "Angle 發行歐元與美元穩定幣，並用轉換器讓抵押資產鑄成掛鉤代幣，流通在以太坊、幣安鏈與 Arbitrum，供兌換與支付使用。",
+      "url": "https://app.angle.money",
+      "tags": [
+        "stablecoin"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "yuzu",
+      "label": "Yuzu",
+      "labelZh": "Yuzu",
+      "type": "protocol",
+      "parent": "stablecoin",
+      "group": "defi",
+      "summaryZh": "Yuzu 在以太坊發行由鏈上策略超額支持的穩定幣，質押後改領生息版本，第一損失資金池負責吸收策略虧損。",
+      "url": "https://app.yuzu.money",
+      "tags": [
+        "stablecoin",
+        "yield"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "lorenzo",
+      "label": "Lorenzo",
+      "labelZh": "Lorenzo",
+      "type": "protocol",
+      "parent": "stablecoin",
+      "group": "defi",
+      "summaryZh": "Lorenzo 接受主流穩定幣鑄出生息的 sUSD1+，收益來自協議配置的策略，代幣在以太坊與幣安鏈流通，餘額隨時間上升。",
+      "url": "https://lorenzo-protocol.xyz/home",
+      "tags": [
+        "stablecoin",
+        "yield"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb"
+      ]
+    },
+    {
+      "id": "equilibria",
+      "label": "Equilibria",
+      "labelZh": "Equilibria",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Equilibria 把 Pendle 的鎖倉投票權做成可轉讓憑證，流動性提供者用來提高獎勵，金庫覆蓋以太坊、幣安鏈、Base 與 Arbitrum。策略把複利留在同一座金庫裡。",
+      "url": "https://equilibria.fi/home",
+      "tags": [
+        "yield",
+        "pendle"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "penpie",
+      "label": "Penpie",
+      "labelZh": "Penpie",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Penpie 聚合 Pendle 的鎖倉票權，讓存款人分享提高後的收益，不必自己鎖倉，市場開在以太坊、幣安鏈、Base 與 Arbitrum。策略把複利留在同一座金庫裡。",
+      "url": "https://www.pendle.magpiexyz.io/stake",
+      "tags": [
+        "yield",
+        "pendle"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "harvest",
+      "label": "Harvest",
+      "labelZh": "Harvest",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Harvest 把做市與借貸獎勵收成自動複利策略，存款人把資產放進金庫即可，策略部署在以太坊、Base 與 Arbitrum。策略把複利留在同一座金庫裡。",
+      "url": "https://harvest.finance/",
+      "tags": [
+        "vaults"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "badger",
+      "label": "Badger",
+      "labelZh": "Badger",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Badger 幫比特幣持有人在以太坊、幣安鏈與 Arbitrum 上參與收益策略，把封裝比特幣放進金庫，領取做市或借貸報酬。",
+      "url": "https://badger.com/",
+      "tags": [
+        "btc",
+        "vaults"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "superform",
+      "label": "Superform",
+      "labelZh": "Superform",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Superform 把多條鏈上的收益金庫收成一個入口，存款人直接存入或讓金庫自動調倉，覆蓋以太坊、幣安鏈、Base 與 Arbitrum。",
+      "url": "https://app.superform.xyz",
+      "tags": [
+        "vaults"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "vfat",
+      "label": "vfat",
+      "labelZh": "vfat",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "vfat 用智慧帳戶把進場、複利與再平衡收成一筆交易，農夫不必分步操作多個協議，支援以太坊、幣安鏈、Base 與 Arbitrum。",
+      "url": "https://vfat.io/yield",
+      "tags": [
+        "vaults"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "yo",
+      "label": "YO",
+      "labelZh": "YO",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "YO 是跨鏈收益優化金庫，依風險設定在多個市場之間再平衡，存款人不必自己搬倉，部署在以太坊、Base 與 Arbitrum。",
+      "url": "https://app.yo.xyz",
+      "tags": [
+        "vaults"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "index-coop",
+      "label": "Index Coop",
+      "labelZh": "Index Coop",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Index Coop 發行足額抵押的加密指數代幣，成分與權重按方法調整，持有人一次買進一籃子資產，產品在以太坊、Base 與 Arbitrum。",
+      "url": "https://www.indexcoop.com/",
+      "tags": [
+        "index"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "toros",
+      "label": "Toros",
+      "labelZh": "Toros",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Toros 提供自動化收益與槓桿金庫，存款人用一筆交易取得打包策略，金庫開在以太坊、Base 與 Arbitrum，部位由合約再平衡。",
+      "url": "https://toros.finance",
+      "tags": [
+        "vaults"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "pooltogether",
+      "label": "PoolTogether",
+      "labelZh": "PoolTogether",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "PoolTogether 把存款收益集中成獎金，本金留在金庫裡，中獎者拿走利息，未中獎的人仍可提回本金，部署在以太坊、Base 與 Arbitrum。",
+      "url": "https://pooltogether.com/",
+      "tags": [
+        "prize"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "concentrator",
+      "label": "Concentrator",
+      "labelZh": "Concentrator",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Concentrator 幫 Curve 與 Convex 的質押者提高獎勵，把鎖倉票權集中使用，存款人在以太坊用一個入口領取加強後的收益。策略把複利留在同一座金庫裡。",
+      "url": "https://concentrator.aladdin.club/",
+      "tags": [
+        "yield"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "noon",
+      "label": "Noon",
+      "labelZh": "Noon",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Noon 在以太坊做中性收益策略，盡量拿掉價格方向的曝險，並把治理代幣的效用導回存款人，收益按規則分配。",
+      "url": "https://app.noon.capital",
+      "tags": [
+        "yield"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "strata",
+      "label": "Strata",
+      "labelZh": "Strata",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Strata 在以太坊把收益拆成優先與次順位兩層，優先層領取較穩的報酬，次順位承擔虧損，用來包裝不同風險的策略。",
+      "url": "https://strata.markets",
+      "tags": [
+        "tranching"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "sierra",
+      "label": "Sierra",
+      "labelZh": "Sierra",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Sierra 發行生息的流動收益代幣，把多種收益來源收成一枚可轉移資產，持有人在以太坊不必自己輪替底層策略。",
+      "url": "https://sierra.money/",
+      "tags": [
+        "yield"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "royco",
+      "label": "Royco",
+      "labelZh": "Royco",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Royco 是激勵市場，專案把獎勵掛到指定的鏈上動作，參與者完成存款或質押後領取，市場開在以太坊、Base 與 Arbitrum。",
+      "url": "https://www.royco.org",
+      "tags": [
+        "incentives"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "steer",
+      "label": "Steer",
+      "labelZh": "Steer",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Steer 用鏈下計算執行鏈上自動化，幫集中流動性倉位再平衡並派發獎勵，策略跑在以太坊、幣安鏈、Base 與 Arbitrum。策略把複利留在同一座金庫裡。",
+      "url": "https://app.steer.finance",
+      "tags": [
+        "alm"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "ichi",
+      "label": "ICHI",
+      "labelZh": "ICHI",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "ICHI 管理集中流動性策略，讓專案用單邊資產建立做市倉位，金庫部署在以太坊、幣安鏈、Base 與 Arbitrum 的現貨池。策略把複利留在同一座金庫裡。",
+      "url": "https://www.ichi.org",
+      "tags": [
+        "alm"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "lagoon",
+      "label": "Lagoon",
+      "labelZh": "Lagoon",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Lagoon 提供異步存取的金庫標準，策展人管理配置，存款人按週期進出，金庫可開在以太坊、幣安鏈、Base 與 Arbitrum。策略把複利留在同一座金庫裡。",
+      "url": "https://lagoon.finance",
+      "tags": [
+        "vaults"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "aera",
+      "label": "Aera",
+      "labelZh": "Aera",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Aera 是給組織金庫用的鏈上資產管理協議，依既定風險規則調整持倉，部署在以太坊、Base 與 Arbitrum，由 Gauntlet 團隊推出。策略把複利留在同一座金庫裡。",
+      "url": "https://www.aera.finance",
+      "tags": [
+        "treasury"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "grove",
+      "label": "Grove",
+      "labelZh": "Grove",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "Grove 屬於 Sky 生態的資金配置層，把準備金部署到代幣化國債、借貸市場與流動性池，配置發生在以太坊與 Base。",
+      "url": "https://data.grove.finance/",
+      "tags": [
+        "allocator"
+      ],
+      "chains": [
+        "ethereum",
+        "base"
+      ]
+    },
+    {
+      "id": "ipor",
+      "label": "IPOR",
+      "labelZh": "IPOR",
+      "type": "protocol",
+      "parent": "yield",
+      "group": "defi",
+      "summaryZh": "IPOR 提供利率指數與收益金庫，存款人透過 Fusion 金庫參與利率市場，產品部署在以太坊、Base 與 Arbitrum。策略把複利留在同一座金庫裡。",
+      "url": "https://app.ipor.io/fusion",
+      "tags": [
+        "rates",
+        "vaults"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "wbeth",
+      "label": "wBETH",
+      "labelZh": "wBETH",
+      "type": "protocol",
+      "parent": "liquid-staking",
+      "group": "defi",
+      "summaryZh": "wBETH 是幣安質押以太幣的流動憑證，餘額對應質押本金與累積獎勵，代幣可在以太坊與幣安鏈上轉移、做市或當抵押。",
+      "url": "https://www.binance.com/en/wbeth",
+      "tags": [
+        "lst"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb"
+      ]
+    },
+    {
+      "id": "cbeth",
+      "label": "cbETH",
+      "labelZh": "cbETH",
+      "type": "protocol",
+      "parent": "liquid-staking",
+      "group": "defi",
+      "summaryZh": "cbETH 是 Coinbase 發給質押客戶的以太幣憑證，代表質押本金與累積獎勵，可在以太坊上轉讓，不必等解除質押。憑證可轉移，不必等到解除質押。",
+      "url": "https://www.coinbase.com/price/coinbase-wrapped-staked-eth",
+      "tags": [
+        "lst"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "stakestone",
+      "label": "StakeStone",
+      "labelZh": "StakeStone",
+      "type": "protocol",
+      "parent": "liquid-staking",
+      "group": "defi",
+      "summaryZh": "StakeStone 發行流動性質押代幣 STONE，把以太幣質押報酬做成可轉移資產，並把流動性延伸到多條鏈，主合約在以太坊。",
+      "url": "https://stakestone.io/",
+      "tags": [
+        "lst"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "bedrock",
+      "label": "Bedrock",
+      "labelZh": "Bedrock",
+      "type": "protocol",
+      "parent": "restaking",
+      "group": "defi",
+      "summaryZh": "Bedrock 把比特幣與以太幣做成可轉移的流動再質押憑證，持有人保留生息頭寸，憑證流通於以太坊、幣安鏈、Base 與 Arbitrum。",
+      "url": "https://app.bedrock.technology/",
+      "tags": [
+        "lrt",
+        "btc"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "solv",
+      "label": "Solv",
+      "labelZh": "Solv",
+      "type": "protocol",
+      "parent": "liquid-staking",
+      "group": "defi",
+      "summaryZh": "Solv 把比特幣做成流動憑證，並提供基差與對沖等生息策略，持有人不必自己操作交易所帳戶，產品在以太坊、幣安鏈、Base 與 Arbitrum。",
+      "url": "https://solv.finance/",
+      "tags": [
+        "btc",
+        "lst"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "dinero",
+      "label": "Dinero",
+      "labelZh": "Dinero",
+      "type": "protocol",
+      "parent": "liquid-staking",
+      "group": "defi",
+      "summaryZh": "Dinero 在以太坊發行質押憑證 pxETH，並搭配自有穩定幣，把驗證者收益做成可組合資產，供借貸與做市繼續使用。",
+      "url": "https://dinero.xyz",
+      "tags": [
+        "lst"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "stakelink",
+      "label": "stake.link",
+      "labelZh": "stake.link",
+      "type": "protocol",
+      "parent": "liquid-staking",
+      "group": "defi",
+      "summaryZh": "stake.link 在以太坊提供流動性質押，存款人取得可轉移憑證並持續累積驗證者獎勵，資金不必鎖到解除質押為止。",
+      "url": "https://stake.link/staking-pools",
+      "tags": [
+        "lst"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "nodedao",
+      "label": "NodeDAO",
+      "labelZh": "NodeDAO",
+      "type": "protocol",
+      "parent": "liquid-staking",
+      "group": "defi",
+      "summaryZh": "NodeDAO 營運以太坊驗證者並發行流動性質押憑證，存款人把以太幣換成可轉移代幣，獎勵反映在憑證價值裡。",
+      "url": "https://www.nodedao.com",
+      "tags": [
+        "lst"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "yieldnest",
+      "label": "YieldNest",
+      "labelZh": "YieldNest",
+      "type": "protocol",
+      "parent": "restaking",
+      "group": "defi",
+      "summaryZh": "YieldNest 把再質押收成風險分層的流動憑證，存款人不必自己挑選每個驗證服務，策略部署在以太坊與幣安鏈。",
+      "url": "https://yieldnest.finance/",
+      "tags": [
+        "lrt"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb"
+      ]
+    },
+    {
+      "id": "eigenpie",
+      "label": "Eigenpie",
+      "labelZh": "Eigenpie",
+      "type": "protocol",
+      "parent": "restaking",
+      "group": "defi",
+      "summaryZh": "Eigenpie 接受流動性質押以太幣，再存進 EigenLayer 並發回可轉移憑證，讓存款人同時保留流動性與再質押收益，主場在以太坊。",
+      "url": "https://www.eigenlayer.magpiexyz.io",
+      "tags": [
+        "lrt"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "pumpbtc",
+      "label": "PumpBTC",
+      "labelZh": "PumpBTC",
+      "type": "protocol",
+      "parent": "restaking",
+      "group": "defi",
+      "summaryZh": "PumpBTC 把比特幣做成帶有再質押收益的流動憑證，持有人不必自己運作驗證設施，代幣在以太坊、幣安鏈、Base 與 Arbitrum 流通。",
+      "url": "https://pumpbtc.xyz/",
+      "tags": [
+        "lrt",
+        "btc"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "flap",
+      "label": "Flap",
+      "labelZh": "Flap",
+      "type": "protocol",
+      "parent": "launchpad",
+      "group": "defi",
+      "summaryZh": "Flap 用聯合曲線在幣安鏈與 Base 發行新代幣，創建者一筆交易就能開盤，交易先在曲線上進行，再視進度轉到公開池。",
+      "url": "https://flap.sh/board",
+      "tags": [
+        "launchpad",
+        "meme"
+      ],
+      "chains": [
+        "bnb",
+        "base"
+      ]
+    },
+    {
+      "id": "dxsale",
+      "label": "DxSale",
+      "labelZh": "DxSale",
+      "type": "protocol",
+      "parent": "launchpad",
+      "group": "defi",
+      "summaryZh": "DxSale 提供代幣預售、流動性鎖倉與發射工具，專案可以在以太坊、幣安鏈、Base 與 Arbitrum 上建立初始資金池。發行曲線與初始流動性由合約執行。",
+      "url": "https://dx.app",
+      "tags": [
+        "launchpad"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "legion",
+      "label": "Legion",
+      "labelZh": "Legion",
+      "type": "protocol",
+      "parent": "launchpad",
+      "group": "defi",
+      "summaryZh": "Legion 在以太坊承作代幣募資與分配，投資人依規則認購新專案，交割與額度由合約執行，不必只靠鏈下表格登記。",
+      "url": "https://legion.cc",
+      "tags": [
+        "launchpad"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "bio-protocol",
+      "label": "Bio",
+      "labelZh": "Bio",
+      "type": "protocol",
+      "parent": "launchpad",
+      "group": "defi",
+      "summaryZh": "Bio 在以太坊與 Base 為科學與生技專案籌資，支持者用代幣參與研究組織，資金與治理規則留在鏈上可查。",
+      "url": "https://www.bio.xyz/",
+      "tags": [
+        "launchpad"
+      ],
+      "chains": [
+        "ethereum",
+        "base"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "source": "uniswap",
+      "target": "amm",
+      "relation": "also-in"
+    },
+    {
+      "source": "sushi",
+      "target": "clmm",
+      "relation": "also-in"
+    },
+    {
+      "source": "pancakeswap",
+      "target": "clmm",
+      "relation": "also-in"
+    },
+    {
+      "source": "pancakeswap",
+      "target": "perps",
+      "relation": "also-in"
+    },
+    {
+      "source": "aerodrome",
+      "target": "clmm",
+      "relation": "also-in"
+    },
+    {
+      "source": "aerodrome",
+      "target": "launchpad",
+      "relation": "also-in"
+    },
+    {
+      "source": "camelot",
+      "target": "clmm",
+      "relation": "also-in"
+    },
+    {
+      "source": "fluid",
+      "target": "lending",
+      "relation": "also-in"
+    },
+    {
+      "source": "kyberswap",
+      "target": "clmm",
+      "relation": "also-in"
+    },
+    {
+      "source": "velodrome",
+      "target": "clmm",
+      "relation": "also-in"
+    },
+    {
+      "source": "quickswap",
+      "target": "clmm",
+      "relation": "also-in"
+    },
+    {
+      "source": "curve",
+      "target": "lending",
+      "relation": "also-in"
+    },
+    {
+      "source": "curve",
+      "target": "stablecoin",
+      "relation": "also-in"
+    },
+    {
+      "source": "aave",
+      "target": "stablecoin",
+      "relation": "also-in"
+    },
+    {
+      "source": "spark",
+      "target": "yield",
+      "relation": "also-in"
+    },
+    {
+      "source": "etherfi",
+      "target": "restaking",
+      "relation": "also-in"
+    },
+    {
+      "source": "etherfi",
+      "target": "yield",
+      "relation": "also-in"
+    },
+    {
+      "source": "swell",
+      "target": "restaking",
+      "relation": "also-in"
+    },
+    {
+      "source": "frax",
+      "target": "liquid-staking",
+      "relation": "also-in"
+    },
+    {
+      "source": "frax",
+      "target": "lending",
+      "relation": "also-in"
+    },
+    {
+      "source": "lista",
+      "target": "liquid-staking",
+      "relation": "also-in"
+    },
+    {
+      "source": "benqi",
+      "target": "liquid-staking",
+      "relation": "also-in"
+    },
+    {
+      "source": "sky",
+      "target": "lending",
+      "relation": "also-in"
+    },
+    {
+      "source": "sky",
+      "target": "rwa",
+      "relation": "also-in"
+    },
+    {
+      "source": "ethena",
+      "target": "yield",
+      "relation": "also-in"
+    },
+    {
+      "source": "usual",
+      "target": "rwa",
+      "relation": "also-in"
+    },
+    {
+      "source": "maple",
+      "target": "rwa",
+      "relation": "also-in"
+    },
+    {
+      "source": "synthetix",
+      "target": "orderbook-dex",
+      "relation": "also-in"
+    },
+    {
+      "source": "aevo",
+      "target": "perps",
+      "relation": "also-in"
+    },
+    {
+      "source": "aevo",
+      "target": "orderbook-dex",
+      "relation": "also-in"
+    },
+    {
+      "source": "orderly",
+      "target": "perps",
+      "relation": "also-in"
+    },
+    {
+      "source": "gmx",
+      "target": "amm",
+      "relation": "also-in"
+    },
+    {
+      "source": "derive",
+      "target": "perps",
+      "relation": "also-in"
+    },
+    {
+      "source": "clanker",
+      "target": "meme",
+      "relation": "also-in"
+    },
+    {
+      "source": "virtuals",
+      "target": "meme",
+      "relation": "also-in"
+    },
+    {
+      "source": "flaunch",
+      "target": "meme",
+      "relation": "also-in"
+    },
+    {
+      "source": "pinksale",
+      "target": "meme",
+      "relation": "also-in"
+    },
+    {
+      "source": "juicebox",
+      "target": "dao",
+      "relation": "also-in"
+    },
+    {
+      "source": "lombard",
+      "target": "bridge",
+      "relation": "also-in"
+    },
+    {
+      "source": "aerodrome",
+      "target": "velodrome",
+      "relation": "built-on"
+    },
+    {
+      "source": "convex",
+      "target": "curve",
+      "relation": "built-on"
+    },
+    {
+      "source": "aura",
+      "target": "balancer",
+      "relation": "built-on"
+    },
+    {
+      "source": "yield-basis",
+      "target": "curve",
+      "relation": "built-on"
+    },
+    {
+      "source": "arrakis",
+      "target": "uniswap",
+      "relation": "built-on"
+    },
+    {
+      "source": "etherfi",
+      "target": "eigenlayer",
+      "relation": "built-on"
+    },
+    {
+      "source": "renzo",
+      "target": "eigenlayer",
+      "relation": "built-on"
+    },
+    {
+      "source": "puffer",
+      "target": "eigenlayer",
+      "relation": "built-on"
+    },
+    {
+      "source": "kelp",
+      "target": "eigenlayer",
+      "relation": "built-on"
+    },
+    {
+      "source": "swell",
+      "target": "eigenlayer",
+      "relation": "built-on"
+    },
+    {
+      "source": "gauntlet",
+      "target": "morpho",
+      "relation": "built-on"
+    },
+    {
+      "source": "steakhouse",
+      "target": "morpho",
+      "relation": "built-on"
+    },
+    {
+      "source": "matcha",
+      "target": "zero-x",
+      "relation": "built-on"
+    },
+    {
+      "source": "jumper",
+      "target": "lifi",
+      "relation": "built-on"
+    },
+    {
+      "source": "spark",
+      "target": "sky",
+      "relation": "integrates"
+    },
+    {
+      "source": "yearn",
+      "target": "convex",
+      "relation": "integrates"
+    },
+    {
+      "source": "yearn",
+      "target": "curve",
+      "relation": "integrates"
+    },
+    {
+      "source": "beefy",
+      "target": "pendle",
+      "relation": "integrates"
+    },
+    {
+      "source": "pendle",
+      "target": "ethena",
+      "relation": "integrates"
+    },
+    {
+      "source": "pendle",
+      "target": "lido",
+      "relation": "integrates"
+    },
+    {
+      "source": "pendle",
+      "target": "etherfi",
+      "relation": "integrates"
+    },
+    {
+      "source": "eigenlayer",
+      "target": "lido",
+      "relation": "integrates"
+    },
+    {
+      "source": "lido",
+      "target": "ssv",
+      "relation": "integrates"
+    },
+    {
+      "source": "lido",
+      "target": "obol",
+      "relation": "integrates"
+    },
+    {
+      "source": "origin",
+      "target": "lido",
+      "relation": "integrates"
+    },
+    {
+      "source": "mellow",
+      "target": "symbiotic",
+      "relation": "integrates"
+    },
+    {
+      "source": "defisaver",
+      "target": "aave",
+      "relation": "integrates"
+    },
+    {
+      "source": "maple",
+      "target": "circle",
+      "relation": "integrates"
+    },
+    {
+      "source": "aave",
+      "target": "chainlink",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "compound",
+      "target": "chainlink",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "gmx",
+      "target": "chainlink",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "gains",
+      "target": "chainlink",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "venus",
+      "target": "chainlink",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "sky",
+      "target": "chronicle",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "spark",
+      "target": "chronicle",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "cowswap",
+      "target": "uniswap",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "cowswap",
+      "target": "balancer",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "cowswap",
+      "target": "curve",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "1inch",
+      "target": "uniswap",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "1inch",
+      "target": "curve",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "1inch",
+      "target": "pancakeswap",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "1inch",
+      "target": "hashflow",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "velora",
+      "target": "uniswap",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "velora",
+      "target": "curve",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "kyberswap",
+      "target": "uniswap",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "openocean",
+      "target": "uniswap",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "bebop",
+      "target": "uniswap",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "rocket-pool",
+      "target": "lido",
+      "relation": "competes"
+    },
+    {
+      "source": "stakewise",
+      "target": "lido",
+      "relation": "competes"
+    },
+    {
+      "source": "liquid-collective",
+      "target": "lido",
+      "relation": "competes"
+    },
+    {
+      "source": "origin",
+      "target": "lido",
+      "relation": "competes"
+    },
+    {
+      "source": "meth",
+      "target": "lido",
+      "relation": "competes"
+    },
+    {
+      "source": "stader",
+      "target": "lido",
+      "relation": "competes"
+    },
+    {
+      "source": "aave",
+      "target": "morpho",
+      "relation": "competes"
+    },
+    {
+      "source": "aave",
+      "target": "compound",
+      "relation": "competes"
+    },
+    {
+      "source": "compound",
+      "target": "morpho",
+      "relation": "competes"
+    },
+    {
+      "source": "euler",
+      "target": "aave",
+      "relation": "competes"
+    },
+    {
+      "source": "spark",
+      "target": "aave",
+      "relation": "competes"
+    },
+    {
+      "source": "venus",
+      "target": "lista",
+      "relation": "competes"
+    },
+    {
+      "source": "dolomite",
+      "target": "aave",
+      "relation": "competes"
+    },
+    {
+      "source": "moonwell",
+      "target": "aave",
+      "relation": "competes"
+    },
+    {
+      "source": "silo",
+      "target": "aave",
+      "relation": "competes"
+    },
+    {
+      "source": "uniswap",
+      "target": "curve",
+      "relation": "competes"
+    },
+    {
+      "source": "pancakeswap",
+      "target": "uniswap",
+      "relation": "competes"
+    },
+    {
+      "source": "aerodrome",
+      "target": "uniswap",
+      "relation": "competes"
+    },
+    {
+      "source": "balancer",
+      "target": "uniswap",
+      "relation": "competes"
+    },
+    {
+      "source": "sushi",
+      "target": "uniswap",
+      "relation": "competes"
+    },
+    {
+      "source": "camelot",
+      "target": "uniswap",
+      "relation": "competes"
+    },
+    {
+      "source": "fluid",
+      "target": "uniswap",
+      "relation": "competes"
+    },
+    {
+      "source": "fluid",
+      "target": "aave",
+      "relation": "competes"
+    },
+    {
+      "source": "maverick",
+      "target": "uniswap",
+      "relation": "competes"
+    },
+    {
+      "source": "quickswap",
+      "target": "uniswap",
+      "relation": "competes"
+    },
+    {
+      "source": "thena",
+      "target": "pancakeswap",
+      "relation": "competes"
+    },
+    {
+      "source": "pharaoh",
+      "target": "lfj",
+      "relation": "competes"
+    },
+    {
+      "source": "gmx",
+      "target": "gains",
+      "relation": "competes"
+    },
+    {
+      "source": "gmx",
+      "target": "synthetix",
+      "relation": "competes"
+    },
+    {
+      "source": "aevo",
+      "target": "derive",
+      "relation": "competes"
+    },
+    {
+      "source": "rysk",
+      "target": "derive",
+      "relation": "competes"
+    },
+    {
+      "source": "apex",
+      "target": "gmx",
+      "relation": "competes"
+    },
+    {
+      "source": "orderly",
+      "target": "gmx",
+      "relation": "competes"
+    },
+    {
+      "source": "symbiotic",
+      "target": "eigenlayer",
+      "relation": "competes"
+    },
+    {
+      "source": "kelp",
+      "target": "renzo",
+      "relation": "competes"
+    },
+    {
+      "source": "puffer",
+      "target": "renzo",
+      "relation": "competes"
+    },
+    {
+      "source": "spectra",
+      "target": "pendle",
+      "relation": "competes"
+    },
+    {
+      "source": "stake-dao",
+      "target": "convex",
+      "relation": "competes"
+    },
+    {
+      "source": "enzyme",
+      "target": "yearn",
+      "relation": "competes"
+    },
+    {
+      "source": "beefy",
+      "target": "yearn",
+      "relation": "competes"
+    },
+    {
+      "source": "falcon",
+      "target": "ethena",
+      "relation": "competes"
+    },
+    {
+      "source": "liquity",
+      "target": "sky",
+      "relation": "competes"
+    },
+    {
+      "source": "frax",
+      "target": "sky",
+      "relation": "competes"
+    },
+    {
+      "source": "circle",
+      "target": "tether",
+      "relation": "competes"
+    },
+    {
+      "source": "virtuals",
+      "target": "clanker",
+      "relation": "competes"
+    },
+    {
+      "source": "flaunch",
+      "target": "clanker",
+      "relation": "competes"
+    },
+    {
+      "source": "pancake-infinity",
+      "target": "pancakeswap",
+      "relation": "built-on"
+    },
+    {
+      "source": "pancake-infinity",
+      "target": "uniswap",
+      "relation": "competes"
+    },
+    {
+      "source": "pancake-infinity",
+      "target": "amm",
+      "relation": "also-in"
+    },
+    {
+      "source": "ekubo",
+      "target": "uniswap",
+      "relation": "competes"
+    },
+    {
+      "source": "ramses",
+      "target": "camelot",
+      "relation": "competes"
+    },
+    {
+      "source": "ramses",
+      "target": "amm",
+      "relation": "also-in"
+    },
+    {
+      "source": "woofi",
+      "target": "perps",
+      "relation": "also-in"
+    },
+    {
+      "source": "woofi",
+      "target": "uniswap",
+      "relation": "competes"
+    },
+    {
+      "source": "hydrex",
+      "target": "aerodrome",
+      "relation": "competes"
+    },
+    {
+      "source": "angstrom",
+      "target": "uniswap",
+      "relation": "built-on"
+    },
+    {
+      "source": "angstrom",
+      "target": "cowswap",
+      "relation": "competes"
+    },
+    {
+      "source": "biswap",
+      "target": "pancakeswap",
+      "relation": "competes"
+    },
+    {
+      "source": "shibaswap",
+      "target": "uniswap",
+      "relation": "competes"
+    },
+    {
+      "source": "clipper",
+      "target": "uniswap",
+      "relation": "competes"
+    },
+    {
+      "source": "bancor",
+      "target": "uniswap",
+      "relation": "competes"
+    },
+    {
+      "source": "odos",
+      "target": "uniswap",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "odos",
+      "target": "curve",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "odos",
+      "target": "pancakeswap",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "odos",
+      "target": "balancer",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "gamma",
+      "target": "uniswap",
+      "relation": "integrates"
+    },
+    {
+      "source": "gammaswap",
+      "target": "uniswap",
+      "relation": "integrates"
+    },
+    {
+      "source": "gammaswap",
+      "target": "hegic",
+      "relation": "competes"
+    },
+    {
+      "source": "cap",
+      "target": "lending",
+      "relation": "also-in"
+    },
+    {
+      "source": "termmax",
+      "target": "aave",
+      "relation": "competes"
+    },
+    {
+      "source": "term-finance",
+      "target": "termmax",
+      "relation": "competes"
+    },
+    {
+      "source": "flux",
+      "target": "ondo",
+      "relation": "integrates"
+    },
+    {
+      "source": "40-acres",
+      "target": "moonwell",
+      "relation": "competes"
+    },
+    {
+      "source": "resupply",
+      "target": "curve",
+      "relation": "integrates"
+    },
+    {
+      "source": "resupply",
+      "target": "lending",
+      "relation": "also-in"
+    },
+    {
+      "source": "folks",
+      "target": "aave",
+      "relation": "competes"
+    },
+    {
+      "source": "unitus",
+      "target": "aave",
+      "relation": "competes"
+    },
+    {
+      "source": "exactly",
+      "target": "aave",
+      "relation": "competes"
+    },
+    {
+      "source": "native",
+      "target": "aggregator",
+      "relation": "also-in"
+    },
+    {
+      "source": "extra-finance",
+      "target": "aerodrome",
+      "relation": "integrates"
+    },
+    {
+      "source": "origami",
+      "target": "aave",
+      "relation": "integrates"
+    },
+    {
+      "source": "deltaprime",
+      "target": "gmx",
+      "relation": "integrates"
+    },
+    {
+      "source": "wildcat",
+      "target": "maple",
+      "relation": "competes"
+    },
+    {
+      "source": "3jane",
+      "target": "wildcat",
+      "relation": "competes"
+    },
+    {
+      "source": "olympus",
+      "target": "dao",
+      "relation": "also-in"
+    },
+    {
+      "source": "olympus",
+      "target": "sky",
+      "relation": "competes"
+    },
+    {
+      "source": "ostium",
+      "target": "gmx",
+      "relation": "competes"
+    },
+    {
+      "source": "contango",
+      "target": "aave",
+      "relation": "integrates"
+    },
+    {
+      "source": "contango",
+      "target": "morpho",
+      "relation": "integrates"
+    },
+    {
+      "source": "mux",
+      "target": "gmx",
+      "relation": "competes"
+    },
+    {
+      "source": "hegic",
+      "target": "derive",
+      "relation": "competes"
+    },
+    {
+      "source": "deri",
+      "target": "hegic",
+      "relation": "competes"
+    },
+    {
+      "source": "boros",
+      "target": "pendle",
+      "relation": "built-on"
+    },
+    {
+      "source": "kyan",
+      "target": "derive",
+      "relation": "competes"
+    },
+    {
+      "source": "kyan",
+      "target": "perps",
+      "relation": "also-in"
+    },
+    {
+      "source": "usdd",
+      "target": "circle",
+      "relation": "competes"
+    },
+    {
+      "source": "frankencoin",
+      "target": "liquity",
+      "relation": "competes"
+    },
+    {
+      "source": "fx-protocol",
+      "target": "yield",
+      "relation": "also-in"
+    },
+    {
+      "source": "fx-protocol",
+      "target": "curve",
+      "relation": "integrates"
+    },
+    {
+      "source": "resolv",
+      "target": "ethena",
+      "relation": "competes"
+    },
+    {
+      "source": "aegis",
+      "target": "ethena",
+      "relation": "competes"
+    },
+    {
+      "source": "reserve",
+      "target": "yield",
+      "relation": "also-in"
+    },
+    {
+      "source": "angle",
+      "target": "circle",
+      "relation": "competes"
+    },
+    {
+      "source": "yuzu",
+      "target": "yield",
+      "relation": "also-in"
+    },
+    {
+      "source": "lorenzo",
+      "target": "yield",
+      "relation": "also-in"
+    },
+    {
+      "source": "equilibria",
+      "target": "pendle",
+      "relation": "integrates"
+    },
+    {
+      "source": "penpie",
+      "target": "pendle",
+      "relation": "integrates"
+    },
+    {
+      "source": "penpie",
+      "target": "equilibria",
+      "relation": "competes"
+    },
+    {
+      "source": "harvest",
+      "target": "yearn",
+      "relation": "competes"
+    },
+    {
+      "source": "badger",
+      "target": "wbtc",
+      "relation": "integrates"
+    },
+    {
+      "source": "superform",
+      "target": "morpho",
+      "relation": "integrates"
+    },
+    {
+      "source": "superform",
+      "target": "yearn",
+      "relation": "integrates"
+    },
+    {
+      "source": "vfat",
+      "target": "beefy",
+      "relation": "competes"
+    },
+    {
+      "source": "yo",
+      "target": "yearn",
+      "relation": "competes"
+    },
+    {
+      "source": "index-coop",
+      "target": "reserve",
+      "relation": "competes"
+    },
+    {
+      "source": "toros",
+      "target": "synthetix",
+      "relation": "integrates"
+    },
+    {
+      "source": "pooltogether",
+      "target": "aave",
+      "relation": "integrates"
+    },
+    {
+      "source": "concentrator",
+      "target": "convex",
+      "relation": "integrates"
+    },
+    {
+      "source": "concentrator",
+      "target": "curve",
+      "relation": "integrates"
+    },
+    {
+      "source": "noon",
+      "target": "ethena",
+      "relation": "competes"
+    },
+    {
+      "source": "strata",
+      "target": "pendle",
+      "relation": "competes"
+    },
+    {
+      "source": "sierra",
+      "target": "stablecoin",
+      "relation": "also-in"
+    },
+    {
+      "source": "royco",
+      "target": "eigenlayer",
+      "relation": "integrates"
+    },
+    {
+      "source": "steer",
+      "target": "uniswap",
+      "relation": "integrates"
+    },
+    {
+      "source": "ichi",
+      "target": "uniswap",
+      "relation": "integrates"
+    },
+    {
+      "source": "ichi",
+      "target": "gamma",
+      "relation": "competes"
+    },
+    {
+      "source": "lagoon",
+      "target": "superform",
+      "relation": "competes"
+    },
+    {
+      "source": "aera",
+      "target": "gauntlet",
+      "relation": "integrates"
+    },
+    {
+      "source": "grove",
+      "target": "sky",
+      "relation": "integrates"
+    },
+    {
+      "source": "grove",
+      "target": "morpho",
+      "relation": "integrates"
+    },
+    {
+      "source": "grove",
+      "target": "rwa",
+      "relation": "also-in"
+    },
+    {
+      "source": "ipor",
+      "target": "pendle",
+      "relation": "competes"
+    },
+    {
+      "source": "wbeth",
+      "target": "lido",
+      "relation": "competes"
+    },
+    {
+      "source": "cbeth",
+      "target": "lido",
+      "relation": "competes"
+    },
+    {
+      "source": "stakestone",
+      "target": "lido",
+      "relation": "competes"
+    },
+    {
+      "source": "bedrock",
+      "target": "lombard",
+      "relation": "competes"
+    },
+    {
+      "source": "bedrock",
+      "target": "liquid-staking",
+      "relation": "also-in"
+    },
+    {
+      "source": "solv",
+      "target": "lombard",
+      "relation": "competes"
+    },
+    {
+      "source": "solv",
+      "target": "yield",
+      "relation": "also-in"
+    },
+    {
+      "source": "dinero",
+      "target": "lido",
+      "relation": "competes"
+    },
+    {
+      "source": "dinero",
+      "target": "stablecoin",
+      "relation": "also-in"
+    },
+    {
+      "source": "stakelink",
+      "target": "lido",
+      "relation": "competes"
+    },
+    {
+      "source": "nodedao",
+      "target": "rocket-pool",
+      "relation": "competes"
+    },
+    {
+      "source": "yieldnest",
+      "target": "eigenlayer",
+      "relation": "integrates"
+    },
+    {
+      "source": "yieldnest",
+      "target": "renzo",
+      "relation": "competes"
+    },
+    {
+      "source": "eigenpie",
+      "target": "eigenlayer",
+      "relation": "integrates"
+    },
+    {
+      "source": "eigenpie",
+      "target": "renzo",
+      "relation": "competes"
+    },
+    {
+      "source": "pumpbtc",
+      "target": "lombard",
+      "relation": "competes"
+    },
+    {
+      "source": "pumpbtc",
+      "target": "liquid-staking",
+      "relation": "also-in"
+    },
+    {
+      "source": "flap",
+      "target": "four-meme",
+      "relation": "competes"
+    },
+    {
+      "source": "flap",
+      "target": "meme",
+      "relation": "also-in"
+    },
+    {
+      "source": "dxsale",
+      "target": "pinksale",
+      "relation": "competes"
+    },
+    {
+      "source": "legion",
+      "target": "juicebox",
+      "relation": "competes"
+    },
+    {
+      "source": "bio-protocol",
+      "target": "juicebox",
+      "relation": "competes"
+    },
+    {
+      "source": "uniswap",
+      "target": "agora",
+      "relation": "integrates"
+    },
+    {
+      "source": "matcha",
+      "target": "uniswap",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "matcha",
+      "target": "curve",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "matcha",
+      "target": "balancer",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "matcha",
+      "target": "pancakeswap",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "matcha",
+      "target": "sushi",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "matcha",
+      "target": "dodo",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "matcha",
+      "target": "bancor",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "matcha",
+      "target": "shibaswap",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "matcha",
+      "target": "maverick",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "matcha",
+      "target": "biswap",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "matcha",
+      "target": "woofi",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "matcha",
+      "target": "quickswap",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "matcha",
+      "target": "velodrome",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "matcha",
+      "target": "camelot",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "matcha",
+      "target": "aerodrome",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "zero-x",
+      "target": "uniswap",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "zero-x",
+      "target": "curve",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "zero-x",
+      "target": "balancer",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "zero-x",
+      "target": "pancakeswap",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "zero-x",
+      "target": "sushi",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "zero-x",
+      "target": "dodo",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "zero-x",
+      "target": "bancor",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "zero-x",
+      "target": "shibaswap",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "zero-x",
+      "target": "maverick",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "zero-x",
+      "target": "biswap",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "zero-x",
+      "target": "woofi",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "zero-x",
+      "target": "quickswap",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "zero-x",
+      "target": "velodrome",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "zero-x",
+      "target": "camelot",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "zero-x",
+      "target": "aerodrome",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "jumper",
+      "target": "uniswap",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "spark",
+      "target": "chainlink",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "spark",
+      "target": "redstone",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "moonwell",
+      "target": "chainlink",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "benqi",
+      "target": "chainlink",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "euler",
+      "target": "chainlink",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "euler",
+      "target": "chronicle",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "euler",
+      "target": "pyth",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "euler",
+      "target": "redstone",
+      "relation": "uses-oracle"
+    }
+  ]
+}

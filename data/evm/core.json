@@ -1,0 +1,531 @@
+{
+  "domain": "core",
+  "nodes": [
+    {
+      "id": "evm",
+      "label": "EVM",
+      "labelZh": "以太坊虛擬機",
+      "type": "root",
+      "parent": null,
+      "group": "core",
+      "summaryZh": "以太坊虛擬機是智能合約的共同執行環境，主網與多數第二層都沿用這套介面。金融、基礎設施、消費應用與開發工具從這個根節點長出。",
+      "url": "https://ethereum.org",
+      "tags": ["虛擬機", "智能合約"]
+    },
+    {
+      "id": "defi",
+      "label": "DeFi",
+      "labelZh": "去中心化金融",
+      "type": "pillar",
+      "parent": "evm",
+      "group": "defi",
+      "summaryZh": "去中心化金融是 EVM 上兌換、借貸、質押與衍生品的總柱。合約可以互相呼叫，流動性不必鎖死在單一應用裡。",
+      "url": "https://ethereum.org/defi",
+      "tags": ["金融", "交易"]
+    },
+    {
+      "id": "infrastructure",
+      "label": "Infrastructure",
+      "labelZh": "基礎設施",
+      "type": "pillar",
+      "parent": "evm",
+      "group": "infrastructure",
+      "summaryZh": "基礎設施這根柱托住錢包、節點、預言機與跨鏈橋。應用要簽名、讀寫帳本或取得鏈外價格，都得先經過這一層。",
+      "url": "https://ethereum.org/developers/docs/nodes-and-clients/",
+      "tags": ["節點", "錢包"]
+    },
+    {
+      "id": "consumer",
+      "label": "Consumer",
+      "labelZh": "應用消費",
+      "type": "pillar",
+      "parent": "evm",
+      "group": "consumer",
+      "summaryZh": "應用消費把鏈上能力做成一般人會打開的產品，涵蓋市集、遊戲、社群、支付、加密卡與代幣化資產，是日常使用者進入 EVM 的一面。",
+      "url": "https://ethereum.org/apps",
+      "tags": ["應用", "使用者"]
+    },
+    {
+      "id": "developer",
+      "label": "Developer",
+      "labelZh": "開發者",
+      "type": "pillar",
+      "parent": "evm",
+      "group": "developer",
+      "summaryZh": "開發者支柱收斂程式庫、合約框架、瀏覽器、安全工具與資料介面。新專案能不能安全上線，關鍵就在這一柱。",
+      "url": "https://ethereum.org/developers",
+      "tags": ["工具", "程式"]
+    },
+    {
+      "id": "cefi",
+      "label": "CeFi",
+      "labelZh": "中心化金融",
+      "type": "pillar",
+      "parent": "evm",
+      "group": "cefi",
+      "summaryZh": "中心化金融是交易所、託管主經紀與合規券商這一柱。幣留在機構帳簿或合格託管裡撮合、充提與結算，和用戶自己簽名的鏈上協議分開。",
+      "url": "https://ethereum.org/defi",
+      "tags": ["交易所", "託管"]
+    },
+    {
+      "id": "amm",
+      "label": "AMM",
+      "labelZh": "自動做市商 (AMM)",
+      "type": "category",
+      "parent": "defi",
+      "group": "defi",
+      "summaryZh": "自動做市商用流動性池與定價曲線讓人不必掛單就能兌換。EVM 上同時有恆定乘積、穩定幣曲線與加權池。",
+      "url": "https://ethereum.org/defi",
+      "tags": ["現貨", "流動性池"]
+    },
+    {
+      "id": "clmm",
+      "label": "CLMM",
+      "labelZh": "集中流動性 (CLMM)",
+      "type": "category",
+      "parent": "defi",
+      "group": "defi",
+      "summaryZh": "集中流動性讓做市者把資金放在特定價格區間，提高資本效率。Uniswap 第三版之後，這類池成為 EVM 現貨的主流。",
+      "url": "https://ethereum.org/defi",
+      "tags": ["區間做市", "資本效率"]
+    },
+    {
+      "id": "orderbook-dex",
+      "label": "Orderbook DEX",
+      "labelZh": "訂單簿交易所",
+      "type": "category",
+      "parent": "defi",
+      "group": "defi",
+      "summaryZh": "訂單簿交易所用限價委託撮合，而不是只靠曲線定價。EVM 上常見鏈下撮合、鏈上結算，或請求報價的做市模式。",
+      "url": "https://ethereum.org/defi",
+      "tags": ["限價單", "鏈上撮合"]
+    },
+    {
+      "id": "aggregator",
+      "label": "DEX Aggregator",
+      "labelZh": "交易聚合器",
+      "type": "category",
+      "parent": "defi",
+      "group": "defi",
+      "summaryZh": "交易聚合器同時搜尋各交易所與請求報價，替使用者拆單並挑出成交路徑，是 EVM 現貨兌換的主要入口。",
+      "url": "https://ethereum.org/defi",
+      "tags": ["路由拆單", "最優報價"]
+    },
+    {
+      "id": "lending",
+      "label": "Lending & Borrowing",
+      "labelZh": "借貸協議",
+      "type": "category",
+      "parent": "defi",
+      "group": "defi",
+      "summaryZh": "借貸協議讓人存入資產賺取利息，或以超額抵押借出流動性。利率、抵押率與清算都寫在合約裡，由存款人共同提供資金池。",
+      "url": "https://ethereum.org/defi",
+      "tags": ["抵押借貸", "貨幣市場"]
+    },
+    {
+      "id": "liquid-staking",
+      "label": "Liquid Staking (LST)",
+      "labelZh": "流動性質押 (LST)",
+      "type": "category",
+      "parent": "defi",
+      "group": "defi",
+      "summaryZh": "流動性質押把驗證者質押換成可轉讓的生息憑證，獎勵持續累積，資金仍可拿去借貸、做市或再質押。",
+      "url": "https://ethereum.org/staking",
+      "tags": ["質押憑證", "生息資產"]
+    },
+    {
+      "id": "restaking",
+      "label": "Restaking",
+      "labelZh": "再質押網路",
+      "type": "category",
+      "parent": "defi",
+      "group": "defi",
+      "summaryZh": "再質押讓已質押的以太幣或流動性質押憑證，再為其他網路服務提供經濟保證，並疊加一層報酬與罰沒風險。",
+      "url": "https://ethereum.org/staking",
+      "tags": ["共享安全", "流動再質押"]
+    },
+    {
+      "id": "perps",
+      "label": "Perpetuals",
+      "labelZh": "永續合約衍生品",
+      "type": "category",
+      "parent": "defi",
+      "group": "defi",
+      "summaryZh": "永續合約用資金費率把合約價格錨定現貨，支援多空槓桿且沒有到期日。EVM 上有資金池與訂單簿兩種做法。",
+      "url": "https://ethereum.org/defi",
+      "tags": ["衍生品", "槓桿交易"]
+    },
+    {
+      "id": "yield",
+      "label": "Yield & Vaults",
+      "labelZh": "收益聚合與金庫",
+      "type": "category",
+      "parent": "defi",
+      "group": "defi",
+      "summaryZh": "收益聚合與金庫把做市、借貸與利率拆分收成策略，存款人用一筆交易配置固定或浮動報酬，不必自己在多個協議之間搬資金。",
+      "url": "https://ethereum.org/defi",
+      "tags": ["策略金庫", "利率"]
+    },
+    {
+      "id": "stablecoin",
+      "label": "Stablecoins",
+      "labelZh": "穩定幣與發行商",
+      "type": "category",
+      "parent": "defi",
+      "group": "defi",
+      "summaryZh": "穩定幣與發行商提供錨定法幣或用對沖維持價格的數位美元，是 EVM 上計價、抵押、支付與結算的現金層。",
+      "url": "https://ethereum.org/defi",
+      "tags": ["數位美元", "結算資產"]
+    },
+    {
+      "id": "launchpad",
+      "label": "Token Launchpad",
+      "labelZh": "代幣發射台",
+      "type": "category",
+      "parent": "defi",
+      "group": "defi",
+      "summaryZh": "代幣發射台提供新幣的曲線發行、募資與初始流動性。募滿之後，交易通常會遷到公開的自動做市池。",
+      "url": "https://ethereum.org/defi",
+      "tags": ["代幣發行", "聯合曲線"]
+    },
+    {
+      "id": "options",
+      "label": "Options & Structured",
+      "labelZh": "選擇權與結構化產品",
+      "type": "category",
+      "parent": "defi",
+      "group": "defi",
+      "summaryZh": "選擇權與結構化產品用權利金與到期結算，讓交易者為現貨或永續部位避險，或把收益拆成不同風險檔。",
+      "url": "https://ethereum.org/defi",
+      "tags": ["選擇權", "結構化"]
+    },
+    {
+      "id": "wallet",
+      "label": "Wallets",
+      "labelZh": "加密錢包",
+      "type": "category",
+      "parent": "infrastructure",
+      "group": "infrastructure",
+      "summaryZh": "加密錢包負責保管金鑰、模擬並簽署交易，涵蓋瀏覽器擴充、手機應用與多簽智慧帳戶，是進入 EVM 的第一入口。",
+      "url": "https://ethereum.org/apps",
+      "tags": ["自託管", "簽署"]
+    },
+    {
+      "id": "mobile",
+      "label": "Mobile & Hardware",
+      "labelZh": "行動裝置與硬體",
+      "type": "category",
+      "parent": "infrastructure",
+      "group": "infrastructure",
+      "summaryZh": "行動裝置與硬體把金鑰放在離線簽章器或安全元件裡，交易仍由手機或瀏覽器發起，私鑰不必暴露在連網電腦上。",
+      "url": "https://ethereum.org/apps",
+      "tags": ["硬體簽章", "冷儲存"]
+    },
+    {
+      "id": "rpc",
+      "label": "RPC & Nodes",
+      "labelZh": "RPC 與節點服務",
+      "type": "category",
+      "parent": "infrastructure",
+      "group": "infrastructure",
+      "summaryZh": "RPC 與節點服務提供高可用的遠端呼叫，讓錢包、交易所與索引器讀取狀態並送出交易，而不必自己運行全節點。",
+      "url": "https://ethereum.org/developers/docs/nodes-and-clients/",
+      "tags": ["節點端點", "讀寫"]
+    },
+    {
+      "id": "validator-client",
+      "label": "Validator Clients",
+      "labelZh": "驗證者客戶端",
+      "type": "category",
+      "parent": "infrastructure",
+      "group": "infrastructure",
+      "summaryZh": "驗證者客戶端執行共識與區塊，分成執行層與共識層。以太坊用多套客戶端並存，降低單一實作出錯時的全網風險。",
+      "url": "https://ethereum.org/developers/docs/nodes-and-clients/",
+      "tags": ["共識", "多客戶端"]
+    },
+    {
+      "id": "oracle",
+      "label": "Oracles",
+      "labelZh": "預言機網路",
+      "type": "category",
+      "parent": "infrastructure",
+      "group": "infrastructure",
+      "summaryZh": "預言機網路把鏈外價格、匯率與事件結果送上鏈，借貸清算、永續合約與預測市場都靠這組報價當基準。",
+      "url": "https://ethereum.org/developers",
+      "tags": ["價格餵價", "鏈外數據"]
+    },
+    {
+      "id": "bridge",
+      "label": "Cross-Chain Bridges",
+      "labelZh": "跨鏈橋與互操作",
+      "type": "category",
+      "parent": "infrastructure",
+      "group": "infrastructure",
+      "summaryZh": "跨鏈橋與互操作協議在以太坊、第二層與其他鏈之間傳遞資產與訊息，涵蓋官方橋、意圖兌換與通用訊息層。",
+      "url": "https://ethereum.org/developers",
+      "tags": ["跨鏈通訊", "資產橋接"]
+    },
+    {
+      "id": "indexer",
+      "label": "Indexers",
+      "labelZh": "鏈上資料索引",
+      "type": "category",
+      "parent": "infrastructure",
+      "group": "infrastructure",
+      "summaryZh": "鏈上資料索引把區塊、日誌與合約事件整理成可查詢的介面，應用就不必自己從創世區塊掃描原始帳本。",
+      "url": "https://ethereum.org/developers",
+      "tags": ["事件索引", "查詢"]
+    },
+    {
+      "id": "identity",
+      "label": "DID & Identity",
+      "labelZh": "去中心化身分與域名",
+      "type": "category",
+      "parent": "infrastructure",
+      "group": "infrastructure",
+      "summaryZh": "去中心化身分與域名把可讀名稱、證明與登入綁到地址，轉帳、社交與人機驗證不必只靠一長串十六進位。",
+      "url": "https://ethereum.org/apps",
+      "tags": ["鏈上域名", "身分證明"]
+    },
+    {
+      "id": "sdk",
+      "label": "SDK & Tooling",
+      "labelZh": "開發套件 (SDK)",
+      "type": "category",
+      "parent": "developer",
+      "group": "developer",
+      "summaryZh": "開發套件把交易組裝、合約呼叫與錢包連線封裝成程式庫，前端與後端可以用同一套介面接上 EVM 網路。",
+      "url": "https://ethereum.org/developers",
+      "tags": ["客戶端庫", "錢包連線"]
+    },
+    {
+      "id": "framework",
+      "label": "Smart Contract Frameworks",
+      "labelZh": "合約開發框架",
+      "type": "category",
+      "parent": "developer",
+      "group": "developer",
+      "summaryZh": "合約開發框架提供編譯、測試、部署與可升級合約的工具，並附上經過審計沿用的標準合約程式庫。",
+      "url": "https://ethereum.org/developers",
+      "tags": ["智能合約", "測試部署"]
+    },
+    {
+      "id": "explorer",
+      "label": "Block Explorers",
+      "labelZh": "區塊鏈瀏覽器",
+      "type": "category",
+      "parent": "developer",
+      "group": "developer",
+      "summaryZh": "區塊鏈瀏覽器把區塊、交易、代幣流向與合約狀態譯成人看的頁面，是查帳與除錯時最先打開的工具。",
+      "url": "https://ethereum.org/developers",
+      "tags": ["交易查詢", "合約"]
+    },
+    {
+      "id": "security",
+      "label": "Security & Audits",
+      "labelZh": "安全審計與風控",
+      "type": "category",
+      "parent": "developer",
+      "group": "developer",
+      "summaryZh": "安全審計與風控涵蓋合約審計、漏洞賞金、競賽審查，以及上線前後的交易模擬與異常監控，用來降低資金被盜的機會。",
+      "url": "https://ethereum.org/developers",
+      "tags": ["合約審計", "賞金"]
+    },
+    {
+      "id": "data-api",
+      "label": "Analytics & Data API",
+      "labelZh": "數據分析與行情終端",
+      "type": "category",
+      "parent": "developer",
+      "group": "developer",
+      "summaryZh": "數據分析與行情終端提供鎖倉、手續費、資金流向與 SQL 查詢，研究人員與做市團隊用它看整條鏈的活動。",
+      "url": "https://ethereum.org/developers",
+      "tags": ["行情分析", "鏈上數據"]
+    },
+    {
+      "id": "nft-marketplace",
+      "label": "NFT & Digital Assets",
+      "labelZh": "NFT 市集與數位資產",
+      "type": "category",
+      "parent": "consumer",
+      "group": "consumer",
+      "summaryZh": "NFT 市集與數位資產涵蓋收藏品交易、創作者鑄造與鏈上訂單簿，藝術、會員憑證與遊戲道具都在這裡流通。",
+      "url": "https://ethereum.org/apps",
+      "tags": ["數位收藏", "市集"]
+    },
+    {
+      "id": "gaming",
+      "label": "GameFi & Gaming",
+      "labelZh": "鏈遊與遊戲生態",
+      "type": "category",
+      "parent": "consumer",
+      "group": "consumer",
+      "summaryZh": "鏈遊與遊戲生態把道具、競技與發行網絡放上 EVM 或其二層，玩家用錢包持有資產，工作室用合約結算。",
+      "url": "https://ethereum.org/apps",
+      "tags": ["鏈上遊戲", "道具"]
+    },
+    {
+      "id": "social",
+      "label": "SocialFi & Creator",
+      "labelZh": "社交與創作者平台",
+      "type": "category",
+      "parent": "consumer",
+      "group": "consumer",
+      "summaryZh": "社交與創作者平台把帳號、貼文與訂閱綁到錢包，讀者與粉絲關係可以帶到不同客戶端，不鎖在單一公司資料庫。",
+      "url": "https://ethereum.org/apps",
+      "tags": ["創作者", "鏈上社交"]
+    },
+    {
+      "id": "payments",
+      "label": "Payments & Settlement",
+      "labelZh": "支付與結算網路",
+      "type": "category",
+      "parent": "consumer",
+      "group": "consumer",
+      "summaryZh": "支付與結算網路把穩定幣接上卡組織、收單與串流付款，讓商家、薪資與鏈上金庫可以用同一種美元餘額結算。",
+      "url": "https://ethereum.org/apps",
+      "tags": ["支付收單", "穩定幣結算"]
+    },
+    {
+      "id": "card-finance",
+      "label": "Crypto Cards & Neobanks",
+      "labelZh": "加密卡與數位銀行",
+      "type": "category",
+      "parent": "consumer",
+      "group": "consumer",
+      "summaryZh": "加密卡與數位銀行讓人用鏈上餘額或抵押借貸在一般商店刷卡，並提供虛擬卡、法幣帳戶這類日常金融入口。",
+      "url": "https://ethereum.org/apps",
+      "tags": ["加密卡", "數位銀行"]
+    },
+    {
+      "id": "depin",
+      "label": "DePIN",
+      "labelZh": "去中心化實體基建 (DePIN)",
+      "type": "category",
+      "parent": "consumer",
+      "group": "consumer",
+      "summaryZh": "去中心化實體基建用代幣獎勵協調算力、儲存、頻寬、感測與地圖，貢獻硬體的人依工作量在鏈上領取報酬。",
+      "url": "https://ethereum.org/apps",
+      "tags": ["實體基建", "算力與儲存"]
+    },
+    {
+      "id": "rwa",
+      "label": "RWA",
+      "labelZh": "真實世界資產 (RWA)",
+      "type": "category",
+      "parent": "consumer",
+      "group": "consumer",
+      "summaryZh": "真實世界資產把國庫券、基金份額、信貸與股票權益做成鏈上代幣，讓傳統資產能在 EVM 上結算與組合。",
+      "url": "https://ethereum.org/defi",
+      "tags": ["代幣化國債", "機構資產"]
+    },
+    {
+      "id": "meme",
+      "label": "Meme & Trading Terminals",
+      "labelZh": "迷因生態與交易終端",
+      "type": "category",
+      "parent": "consumer",
+      "group": "consumer",
+      "summaryZh": "迷因生態與交易終端涵蓋新幣發射與給交易者用的掃鏈介面，強調速度、新池發現與社群敘事，長尾代幣多半先在這裡換手。",
+      "url": "https://ethereum.org/apps",
+      "tags": ["交易終端", "迷因"]
+    },
+    {
+      "id": "dao",
+      "label": "DAO & Governance",
+      "labelZh": "DAO 治理與金庫管理",
+      "type": "category",
+      "parent": "consumer",
+      "group": "consumer",
+      "summaryZh": "DAO 治理與金庫管理提供提案、投票與多簽支出。預測市場也放在這層，因為它把事件結果做成可交易的判斷。",
+      "url": "https://ethereum.org/apps",
+      "tags": ["鏈上治理", "金庫"]
+    },
+    {
+      "id": "cex",
+      "label": "Centralized Exchange",
+      "labelZh": "中心化交易所",
+      "type": "category",
+      "parent": "cefi",
+      "group": "cefi",
+      "summaryZh": "中心化交易所用平台內部帳簿撮合現貨與合約，並對以太坊、BNB Chain、Base 或 Arbitrum 開放充值與提現。使用者的幣先留在交易所託管。",
+      "url": "https://ethereum.org/defi",
+      "tags": ["現貨", "充提"]
+    },
+    {
+      "id": "custody-prime",
+      "label": "Custody & Prime",
+      "labelZh": "託管與主經紀",
+      "type": "category",
+      "parent": "cefi",
+      "group": "cefi",
+      "summaryZh": "託管與主經紀替機構保管私鑰、處理結算，並提供融資、質押與交易所外結算。資產可以留在合格託管，不必全部預存進交易所。",
+      "url": "https://ethereum.org/defi",
+      "tags": ["合格託管", "結算"]
+    },
+    {
+      "id": "broker-dealer",
+      "label": "Broker-Dealer",
+      "labelZh": "合規經紀／券商",
+      "type": "category",
+      "parent": "cefi",
+      "group": "cefi",
+      "summaryZh": "合規經紀與券商在受監管帳戶裡買賣以太幣等加密資產，通常連著法幣出入金。這和只做鏈上自託管的協議不是同一種入口。",
+      "url": "https://ethereum.org/defi",
+      "tags": ["券商", "法幣"]
+    },
+    {
+      "id": "ai",
+      "label": "AI Agents",
+      "labelZh": "人工智慧與代理",
+      "type": "category",
+      "parent": "consumer",
+      "group": "consumer",
+      "summaryZh": "人工智慧與代理把模型接到 EVM 錢包與合約，讓代理代為轉帳、兌換或呼叫推論。這一層收的是代理框架與推論網路，不算力租用本身。",
+      "url": "https://ethereum.org/apps",
+      "tags": ["代理", "推論"]
+    }
+  ],
+  "links": [
+    {
+      "source": "card-finance",
+      "target": "payments",
+      "relation": "integrates"
+    },
+    {
+      "source": "card-finance",
+      "target": "stablecoin",
+      "relation": "integrates"
+    },
+    {
+      "source": "payments",
+      "target": "stablecoin",
+      "relation": "integrates"
+    },
+    {
+      "source": "aggregator",
+      "target": "amm",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "aggregator",
+      "target": "clmm",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "lending",
+      "target": "oracle",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "perps",
+      "target": "oracle",
+      "relation": "uses-oracle"
+    },
+    {
+      "source": "restaking",
+      "target": "liquid-staking",
+      "relation": "integrates"
+    }
+  ]
+}

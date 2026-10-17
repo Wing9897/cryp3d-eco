@@ -1,0 +1,1649 @@
+{
+  "domain": "consumer",
+  "nodes": [
+    {
+      "id": "magic-eden",
+      "label": "Magic Eden",
+      "labelZh": "Magic Eden",
+      "parent": "nft-marketplace",
+      "tags": [
+        "nft",
+        "marketplace"
+      ],
+      "url": "https://magiceden.io",
+      "summaryZh": "這是 Solana 上最主流的 NFT 市集之一，提供集合報價、一級發行與二級交易。買家可選擇是否支付創作者版稅，平台在二零二六年把營運重心放回 Solana。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "tensor",
+      "label": "Tensor",
+      "labelZh": "Tensor",
+      "parent": "nft-marketplace",
+      "tags": [
+        "nft",
+        "marketplace"
+      ],
+      "url": "https://www.tensor.trade",
+      "summaryZh": "面向專業交易者的 Solana NFT 市集，支援集合出價、掃貨與鏈上自動做市。Metaplex 在二零二六年一月把它對 Core 資產的支援標成已完成。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "metaplex",
+      "label": "Metaplex",
+      "labelZh": "Metaplex",
+      "parent": "nft-marketplace",
+      "tags": [
+        "nft",
+        "token"
+      ],
+      "url": "https://www.metaplex.com",
+      "summaryZh": "Solana 的數位資產與代幣發行協議，用來建立 NFT、壓縮資產與代幣發售。官網說明發售完成後，流動性會自動遷入 Raydium 的流動性池。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "mallow",
+      "label": "Mallow",
+      "labelZh": "Mallow",
+      "parent": "nft-marketplace",
+      "tags": [
+        "nft",
+        "art"
+      ],
+      "url": "https://mallow.art",
+      "summaryZh": "Solana 上的數位藝術市集，供創作者鑄造、展示與收藏作品。Metaplex 在二零二六年一月將它對 Core 資產的市集整合標為完成。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "underdog",
+      "label": "Underdog Protocol",
+      "labelZh": "Underdog Protocol",
+      "parent": "nft-marketplace",
+      "tags": [
+        "nft",
+        "creator"
+      ],
+      "url": "https://underdogprotocol.com",
+      "summaryZh": "協助企業把數位資產放進產品的 Solana 發行工具。Metaplex 文件將它列在無程式碼工具中，並標示 Core 資產整合已經完成。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "star-atlas",
+      "label": "Star Atlas",
+      "labelZh": "Star Atlas",
+      "parent": "gaming",
+      "tags": [
+        "game",
+        "space"
+      ],
+      "url": "https://staratlas.com",
+      "summaryZh": "以飛船、資源與領地為核心的 Solana 太空遊戲。瀏覽器中的 SAGE 已能管理艦隊、採集與製造，主遊戲則持續以早期版本推進。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "aurory",
+      "label": "Aurory",
+      "labelZh": "Aurory",
+      "parent": "gaming",
+      "tags": [
+        "game",
+        "nft"
+      ],
+      "url": "https://aurory.io",
+      "summaryZh": "Solana 上的角色對戰與生物收藏遊戲。官方文件把同一套收藏同時列在 Magic Eden 與 Tensor，供玩家進行二級交易與收藏轉移。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "stepn",
+      "label": "STEPN",
+      "labelZh": "STEPN",
+      "parent": "gaming",
+      "tags": [
+        "game",
+        "move"
+      ],
+      "url": "https://www.stepn.com",
+      "summaryZh": "用運動鞋 NFT 獎勵步行、慢跑與跑步的 Solana 生活應用。使用者配戴虛擬球鞋外出運動，即可依活動累積獎勵。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "photo-finish",
+      "label": "Photo Finish LIVE",
+      "labelZh": "Photo Finish LIVE",
+      "parent": "gaming",
+      "tags": [
+        "game",
+        "racing"
+      ],
+      "url": "https://photofinish.live",
+      "summaryZh": "Third Time 製作的虛擬賽馬遊戲，玩家可組馬廄、繁殖賽駒並參加比賽爭奪獎金。官網版權標示二零二六年，產品仍在營運。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "playsolana",
+      "label": "Play Solana",
+      "labelZh": "Play Solana",
+      "parent": "gaming",
+      "tags": [
+        "game",
+        "hardware"
+      ],
+      "url": "https://www.playsolana.com",
+      "summaryZh": "Solana 掌上遊戲機 PSG1 與遊戲商店。官方說明裝置以 Jupiter 錢包作為原生錢包，用來發現、安裝與遊玩鏈上遊戲與應用。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "ev-io",
+      "label": "ev.io",
+      "labelZh": "ev.io",
+      "parent": "gaming",
+      "tags": [
+        "game",
+        "shooter"
+      ],
+      "url": "https://ev.io",
+      "summaryZh": "可在瀏覽器直接開打的多人射擊遊戲，官網仍提供可玩版本。二零二六年的 Solana 遊戲盤點仍把它列為實際可遊玩的作品。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "ore",
+      "label": "ORE",
+      "labelZh": "ORE",
+      "parent": "gaming",
+      "tags": [
+        "game",
+        "mining"
+      ],
+      "url": "https://ore.supply",
+      "summaryZh": "在 Solana 上挖礦、質押並交易的鏈上應用，官網以挖礦、質押與交易為主要入口。Messari 二零二六年第一季報告把它列入應用收入前列。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "dialect",
+      "label": "Dialect",
+      "labelZh": "Dialect",
+      "parent": "social",
+      "tags": [
+        "social",
+        "messaging"
+      ],
+      "url": "https://dialect.to",
+      "summaryZh": "把單擊交易與鏈上通知嵌進既有產品的訊息協議。官網寫明 Phantom、Jupiter、Backpack 與 Tensor 等都在使用這套介面來完成操作。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "drip",
+      "label": "DRiP",
+      "labelZh": "DRiP",
+      "parent": "social",
+      "tags": [
+        "social",
+        "creator"
+      ],
+      "url": "https://drip.haus",
+      "summaryZh": "創作者向支持者持續發送數位收藏的 Solana 平台。官網目前仍在刊登藝術家專題與新作品，屬於創作者與粉絲之間的分發管道。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "access-protocol",
+      "label": "Access Protocol",
+      "labelZh": "Access Protocol",
+      "parent": "social",
+      "tags": [
+        "social",
+        "creator"
+      ],
+      "url": "https://www.accessprotocol.co",
+      "summaryZh": "粉絲質押平台代幣以解鎖創作者內容的 Solana 訂閱協議。它用鏈上質押取代傳統付費牆，讓支持者在閱讀內容時仍保有代幣部位。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "matrica",
+      "label": "Matrica",
+      "labelZh": "Matrica",
+      "parent": "social",
+      "tags": [
+        "social",
+        "nft"
+      ],
+      "url": "https://matrica.io",
+      "summaryZh": "服務 NFT 社群的分析與管理工具，用來經營收藏家社群。Metaplex 在二零二六年一月把它對 Core 資產的支援標成已完成。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "solana-pay",
+      "label": "Solana Pay",
+      "labelZh": "Solana Pay",
+      "parent": "payments",
+      "tags": [
+        "payments",
+        "settlement"
+      ],
+      "url": "https://solanapay.com",
+      "summaryZh": "開放的點對點商家收款協議，讓顧客從 Phantom、Solflare 與 Backpack 等錢包直接以 USDC、PYUSD 或原生代幣即時付給商家，免除傳統中介抽成。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "visa",
+      "label": "Visa",
+      "labelZh": "Visa",
+      "parent": "payments",
+      "tags": [
+        "payments",
+        "settlement",
+        "card-network"
+      ],
+      "url": "https://visa.com",
+      "summaryZh": "全球支付卡結算網路巨頭，官方支援透過 Solana 進行 USDC 跨境收單與發卡機構鏈上清算，並為 KAST、Solayer、Sanctum、Rain、Reap 與 RedotPay 等多款 Solana 加密簽帳卡提供全球商戶受理網路。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "mastercard",
+      "label": "Mastercard",
+      "labelZh": "Mastercard",
+      "parent": "payments",
+      "tags": [
+        "payments",
+        "settlement",
+        "card-network"
+      ],
+      "url": "https://mastercard.com",
+      "summaryZh": "全球支付卡結算網路，將 Mastercard Crypto Credential 憑證標準導入 Solana 生態，並與 Solflare、Zebec Network 及 SolCard 等發卡計畫合作，打通鏈上穩定幣與全球刷卡消費。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "stripe",
+      "label": "Stripe",
+      "labelZh": "Stripe",
+      "parent": "payments",
+      "tags": [
+        "payments",
+        "settlement",
+        "fiat-gateway"
+      ],
+      "url": "https://stripe.com",
+      "summaryZh": "全球線上支付基礎設施巨頭，全面支援 Solana 上的 USDC 商家收單、跨境出金（Payouts）、穩定幣訂閱扣款與法幣入金（Crypto Onramp），並結合旗下 Bridge 拓展穩定幣清算與發卡業務。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "sphere-pay",
+      "label": "Sphere",
+      "labelZh": "Sphere",
+      "parent": "payments",
+      "tags": [
+        "payments",
+        "settlement",
+        "b2b-payfi"
+      ],
+      "url": "https://spherepay.co",
+      "summaryZh": "Solana 原生的企業級穩定幣支付、訂閱扣款與跨境法幣清算基礎設施，透過單一 API 整合法幣出入金、合規審查與全球外匯結算，服務逾百個市場的商戶與錢包。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "zebec",
+      "label": "Zebec Network",
+      "labelZh": "Zebec Network",
+      "parent": "payments",
+      "tags": [
+        "payments",
+        "streaming-pay",
+        "mastercard"
+      ],
+      "url": "https://zebec.io",
+      "summaryZh": "發源於 Solana 的即時薪資流支付與 PayFi 結算網路，同時結合 Mastercard 與 Visa 發行 Zebec Instant / Silver / Carbon 加密簽帳卡，讓鏈上薪資與穩定幣可即時用於全球消費。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "moonpay-commerce",
+      "label": "MoonPay Commerce",
+      "labelZh": "MoonPay Commerce",
+      "parent": "payments",
+      "tags": [
+        "payments",
+        "commerce"
+      ],
+      "url": "https://commerce.moonpay.com",
+      "summaryZh": "原名 Helio 的 Solana 電商結帳與訂閱收款平台，現由 MoonPay 營運，為 Shopify、Discord 與各類網站提供 Solana Pay 穩定幣與代幣收單整合方案。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "crossmint",
+      "label": "Crossmint",
+      "labelZh": "Crossmint",
+      "parent": "payments",
+      "tags": [
+        "payments",
+        "wallet"
+      ],
+      "url": "https://www.crossmint.com",
+      "summaryZh": "提供企業級穩定幣收付、信用卡結帳铸造與嵌入式錢包接口的平台，協助品牌與金融科技應用在 Solana 上無縫整合匯款與穩定幣結算。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "tiplink",
+      "label": "TipLink",
+      "labelZh": "TipLink",
+      "parent": "payments",
+      "tags": [
+        "payments",
+        "wallet"
+      ],
+      "url": "https://tiplink.io",
+      "summaryZh": "讓人用一條分享連結或 Google 帳號就能發送與領取 Solana 代幣、穩定幣與 NFT 的輕量支付工具，同時相容 Solana Pay 與 Squads 多簽金庫。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "kast",
+      "label": "KAST",
+      "labelZh": "KAST",
+      "parent": "card-finance",
+      "tags": [
+        "visa-card",
+        "neobank",
+        "stablecoin"
+      ],
+      "url": "https://kast.xyz",
+      "summaryZh": "Solana 生態代表性的穩定幣數位銀行與 Visa 簽帳卡平台，支援直接以 USDC、USDT 與 PYUSD 儲值消費並綁定 Apple Pay 與 Google Pay，亦提供 Solana 聯名實體卡與質押回饋。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "solayer-card",
+      "label": "Solayer Emerald Card",
+      "labelZh": "Solayer 翡翠卡",
+      "parent": "card-finance",
+      "tags": [
+        "visa-card",
+        "payfi",
+        "yield"
+      ],
+      "url": "https://solayer.org",
+      "summaryZh": "Solayer 推出的 Solana 鏈上收益 Visa 簽帳卡，將 USDC 與國債生息穩定幣 sUSD 結合，讓使用者在全球支援 Visa 的商戶與 ATM 消費提領時同時享有鏈上收益與生態獎勵。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "sanctum-card",
+      "label": "Sanctum Cloud Card",
+      "labelZh": "Sanctum 雲端卡",
+      "parent": "card-finance",
+      "tags": [
+        "visa-card",
+        "lst",
+        "payfi"
+      ],
+      "url": "https://sanctum.so",
+      "summaryZh": "Sanctum 結合 Solana 流動性質押代幣（LST）收益與 Jupiter 生態打造的加密 Visa 簽帳卡，讓持卡人在日常刷卡消費前仍能持續累積驗證者質押報酬。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "solcard",
+      "label": "SolCard",
+      "labelZh": "SolCard",
+      "parent": "card-finance",
+      "tags": [
+        "visa-card",
+        "mastercard",
+        "payments"
+      ],
+      "url": "https://solcard.cc",
+      "summaryZh": "專為 Solana 生態打造的虛擬與白金實體 Visa / Mastercard 消費卡，支援直接以 SOL、USDC、USDT 與 JITO 等資產快速入金並綁定行動支付。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "redotpay",
+      "label": "RedotPay",
+      "labelZh": "RedotPay",
+      "parent": "card-finance",
+      "tags": [
+        "visa-card",
+        "payments",
+        "payfi"
+      ],
+      "url": "https://redotpay.com",
+      "summaryZh": "總部位於香港的熱門加密貨幣 Visa 簽帳卡與支付應用，完整支援 Solana 網路上的 USDC、USDT 與 SOL 儲值，可在全球上億家商戶進行線上與實體刷卡及 ATM 提領。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "reap",
+      "label": "Reap",
+      "labelZh": "Reap",
+      "parent": "card-finance",
+      "tags": [
+        "corporate-card",
+        "visa-issuer",
+        "b2b-payfi"
+      ],
+      "url": "https://reap.global",
+      "summaryZh": "具備香港與墨西哥 Visa 主會員資格的企業級金融科技平台，提供以 Solana USDC 與 USDT 一比一擔保的企業商務卡、跨境法幣匯款與嵌入式發卡基礎設施。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "rain-cards",
+      "label": "Rain",
+      "labelZh": "Rain",
+      "parent": "card-finance",
+      "tags": [
+        "visa-issuer",
+        "card-infra",
+        "self-custody"
+      ],
+      "url": "https://raincards.xyz",
+      "summaryZh": "具備 Visa 主會員資格的鏈上穩定幣發卡基礎設施，原生支援 Solana 託管與非託管錢包，並以穩定幣與卡組織每日結算，驅動 KAST 等眾多 Solana 消費卡與企業卡專案。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "holyheld",
+      "label": "Holyheld",
+      "labelZh": "Holyheld",
+      "parent": "card-finance",
+      "tags": [
+        "debit-card",
+        "iban",
+        "off-ramp"
+      ],
+      "url": "https://holyheld.com",
+      "summaryZh": "支援 Solana 網路的鏈上簽帳金融卡與專屬歐元 IBAN 數位銀行帳戶服務，讓個人與企業能將自託管錢包內的 Solana 穩定幣無縫轉換為歐洲 SEPA 轉帳與日常刷卡支付。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "helium",
+      "label": "Helium",
+      "labelZh": "Helium",
+      "parent": "depin",
+      "tags": [
+        "depin",
+        "wireless"
+      ],
+      "url": "https://helium.com",
+      "summaryZh": "由社區佈建熱點的無線網路，用 HNT 結算實際傳輸的流量。官網在二零二六年十月仍在更新載波卸載、場館與部署者方案。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "render",
+      "label": "Render Network",
+      "labelZh": "Render Network",
+      "parent": "depin",
+      "tags": [
+        "depin",
+        "gpu"
+      ],
+      "url": "https://rendernetwork.com",
+      "summaryZh": "把閒置 GPU 編成渲染與生成式影像算力的去中心化網路。創作者可按需取得平行渲染，二零二六年仍列入 Solana 的 DePIN 統計。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "hivemapper",
+      "label": "Hivemapper",
+      "labelZh": "Hivemapper",
+      "parent": "depin",
+      "tags": [
+        "depin",
+        "mapping"
+      ],
+      "url": "https://hivemapper.com",
+      "summaryZh": "用行車記錄器收集街景的去中心化地圖，貢獻者依新鮮影像獲得 HONEY。官網與社群更新都說明這個地圖網路建立在 Solana 上。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "grass",
+      "label": "Grass",
+      "labelZh": "Grass",
+      "parent": "depin",
+      "tags": [
+        "depin",
+        "bandwidth"
+      ],
+      "url": "https://www.grass.io",
+      "summaryZh": "讓使用者把閒置的網際網路頻寬分享出去並獲得獎勵。二零二六年的 Solana 生態與 DePIN 名錄仍把它列為主要的頻寬網路。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "geodnet",
+      "label": "GEODNET",
+      "labelZh": "GEODNET",
+      "parent": "depin",
+      "tags": [
+        "depin",
+        "positioning"
+      ],
+      "url": "https://geodnet.com",
+      "summaryZh": "以社區基站提供公分級定位修正，服務無人機、農業與機器人。Messari 二零二六年第一季報告把它列為 Solana DePIN 的收入主力。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "nosana",
+      "label": "Nosana",
+      "labelZh": "Nosana",
+      "parent": "depin",
+      "tags": [
+        "depin",
+        "gpu"
+      ],
+      "url": "https://nosana.com",
+      "summaryZh": "開放的 GPU 租用市場，供人工智慧推論與高效能工作負載按需使用。二零二六年它仍與其他 Solana 算力網路一起被列入 DePIN 統計。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "io-net",
+      "label": "io.net",
+      "labelZh": "io.net",
+      "parent": "depin",
+      "tags": [
+        "depin",
+        "gpu"
+      ],
+      "url": "https://io.net",
+      "summaryZh": "協調分散 GPU 的人工智慧基礎設施。官方問答寫明以 Solana 處理付款與節點協調，並把 Render Network 視為同類型的算力競爭者。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "uprock",
+      "label": "UpRock",
+      "labelZh": "UpRock",
+      "parent": "depin",
+      "tags": [
+        "depin",
+        "bandwidth"
+      ],
+      "url": "https://uprock.com",
+      "summaryZh": "使用者分享網路連線、換取加密獎勵的 DePIN 應用。Syndica 二零二六年四月的 Solana DePIN 報告仍把它列入有實際收入的協議。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "natix",
+      "label": "NATIX",
+      "labelZh": "NATIX",
+      "parent": "depin",
+      "tags": [
+        "depin",
+        "mapping"
+      ],
+      "url": "https://www.natix.network",
+      "summaryZh": "用手機與車載鏡頭蒐集路況影像的實體人工智慧網路，代幣發行在 Solana。官網於二零二六年十月仍在更新數據銷售與設備進展。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "onocoy",
+      "label": "onocoy",
+      "labelZh": "onocoy",
+      "parent": "depin",
+      "tags": [
+        "depin",
+        "positioning"
+      ],
+      "url": "https://www.onocoy.com",
+      "summaryZh": "把既有衛星定位基站接到開放市場，買家按時數取得修正數據，站點則獲得代幣獎勵。二零二六年的 Solana DePIN 名錄仍收錄它。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "xnet",
+      "label": "XNET",
+      "labelZh": "XNET",
+      "parent": "depin",
+      "tags": [
+        "depin",
+        "wireless"
+      ],
+      "url": "https://www.xnet.company",
+      "summaryZh": "以中立宿主網路分擔行動數據的無線基礎設施，官網寫明由 Solana 驅動。部署者依照實際卸載的流量獲得獎勵，而不是只靠裝置上線。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "jambo",
+      "label": "Jambo",
+      "labelZh": "Jambo",
+      "parent": "depin",
+      "tags": [
+        "depin",
+        "mobile"
+      ],
+      "url": "https://www.jambo.technology",
+      "summaryZh": "主打內建錢包與應用商店的手機，讓使用者在裝置上直接接觸鏈上應用。Messari 二零二六年第一季 Solana 報告把它列為 DePIN 應用。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "ondo",
+      "label": "Ondo Finance",
+      "labelZh": "Ondo Finance",
+      "parent": "rwa",
+      "tags": [
+        "rwa",
+        "treasury",
+        "equities",
+        "stablecoin"
+      ],
+      "url": "https://ondo.finance",
+      "summaryZh": "Solana 上規模最大的真實世界資產（RWA）平台之一，發行以美國國庫券與銀行存款擔保的生息美元代幣 USDY、機構級國債基金 OUSG，以及提供鏈上美股與 ETF 曝險的 Ondo Global Markets。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "xstocks",
+      "label": "xStocks",
+      "labelZh": "xStocks",
+      "parent": "rwa",
+      "tags": [
+        "rwa",
+        "equities"
+      ],
+      "url": "https://xstocks.fi",
+      "summaryZh": "由 Backed 發行、以真實股票一比一抵押的美股與 ETF 代幣。Solana 案例寫明它們在 Raydium 提供主要流動性池，並由 Jupiter 聚合報價。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "superstate",
+      "label": "Superstate",
+      "labelZh": "Superstate",
+      "parent": "rwa",
+      "tags": [
+        "rwa",
+        "equities"
+      ],
+      "url": "https://superstate.com",
+      "summaryZh": "把上市公司股份直接做成鏈上股份的轉讓代理平台。Opening Bell 讓合規股份在 Solana 上記帳與移轉，而不是再包一層價格憑證。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "benji",
+      "label": "Franklin Templeton Benji",
+      "labelZh": "富蘭克林 Benji",
+      "parent": "rwa",
+      "tags": [
+        "rwa",
+        "treasury"
+      ],
+      "url": "https://digitalassets.franklintempleton.com/benji/",
+      "summaryZh": "富蘭克林坦伯頓（Franklin Templeton）發行的鏈上美國政府貨幣基金平台 Benji（代幣 FOBXX），每一枚代幣對應一份受監管基金份額，並在 Solana 上原生記帳與轉移。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "huma",
+      "label": "Huma Finance",
+      "labelZh": "Huma Finance",
+      "parent": "rwa",
+      "tags": [
+        "rwa",
+        "credit",
+        "payfi"
+      ],
+      "url": "https://huma.finance",
+      "summaryZh": "Solana 上的指標性 PayFi 與真實世界私人信貸協議，將跨境支付墊款、貿易融資與應收帳款化為鏈上流動性池，讓投資人透過真實商業現金流獲取穩定收益。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "onre",
+      "label": "OnRe",
+      "labelZh": "OnRe",
+      "parent": "rwa",
+      "tags": [
+        "rwa",
+        "insurance",
+        "yield"
+      ],
+      "url": "https://www.onre.finance",
+      "summaryZh": "將受監管再保險業務帶上 Solana 的真實世界資產（RWA）協議，讓鏈上資金參與全球財產與意外再保險承保收益，並與 Squads 等機構級金庫合作保管資產。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "etherfuse",
+      "label": "Etherfuse",
+      "labelZh": "Etherfuse",
+      "parent": "rwa",
+      "tags": [
+        "rwa",
+        "bonds"
+      ],
+      "url": "https://etherfuse.com",
+      "summaryZh": "把墨西哥、巴西與美國等主權債券做成可生息代幣，並提供跨境換匯。Solana 基金會二零二六年的總覽把它列為鏈上主權債發行者。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "securitize",
+      "label": "Securitize",
+      "labelZh": "Securitize",
+      "parent": "rwa",
+      "tags": [
+        "rwa",
+        "funds"
+      ],
+      "url": "https://securitize.io",
+      "summaryZh": "機構級的資產代幣化平台。Solana 基金會寫明 BlackRock 的 BUIDL 等基金透過它，在 Solana 上提供合規、可轉移且可供持有的鏈上份額。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "spiko",
+      "label": "Spiko",
+      "labelZh": "Spiko",
+      "parent": "rwa",
+      "tags": [
+        "rwa",
+        "treasury"
+      ],
+      "url": "https://www.spiko.io",
+      "summaryZh": "面向企業現金管理的歐洲貨幣基金入口，合作對象包含 Amundi。Solana 基金會確認其基金產品已經在 Solana 上線，可用穩定幣申購。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "usyc",
+      "label": "USYC",
+      "labelZh": "USYC",
+      "parent": "rwa",
+      "tags": [
+        "rwa",
+        "treasury"
+      ],
+      "url": "https://www.circle.com/usyc",
+      "summaryZh": "Circle 的代幣化貨幣基金，投資美國國庫券並可用 USDC 近即時申贖。官網把 Solana 列為支援網路，代幣標準包含 SPL 代幣。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "wisdomtree",
+      "label": "WisdomTree",
+      "labelZh": "WisdomTree",
+      "parent": "rwa",
+      "tags": [
+        "rwa",
+        "funds"
+      ],
+      "url": "https://www.wisdomtree.com",
+      "summaryZh": "資產管理公司的鏈上基金套件，涵蓋貨幣市場、股票與固定收益。二零二六年一月起，其連接與零售平台可在 Solana 上持有這些基金。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "bonk",
+      "label": "BONK",
+      "labelZh": "BONK",
+      "parent": "meme",
+      "tags": [
+        "meme",
+        "community"
+      ],
+      "url": "https://bonkcoin.com",
+      "summaryZh": "Solana 上最具代表性的社群迷因代幣與文化品牌，廣泛整合於數百個 Solana DeFi、鏈遊、交易機器人與消費應用中。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "gmgn",
+      "label": "GMGN",
+      "labelZh": "GMGN",
+      "parent": "meme",
+      "tags": [
+        "meme",
+        "terminal"
+      ],
+      "url": "https://gmgn.ai",
+      "summaryZh": "專注於迷因幣掃鏈、聰明錢（Smart Money）地址追蹤、老鼠倉偵測與毫秒級跟單下單的鏈上交易終端，深度整合 Pump.fun、Raydium、PumpSwap 與 Jupiter 路由。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "axiom",
+      "label": "Axiom",
+      "labelZh": "Axiom",
+      "parent": "meme",
+      "tags": [
+        "meme",
+        "terminal"
+      ],
+      "url": "https://axiom.trade",
+      "summaryZh": "由 Y Combinator 支持的 Solana 全功能鏈上交易終端，整合新幣掃鏈、錢包追蹤、Twitter 訊號監控、極速現貨搶購與永續合約交易。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "photon",
+      "label": "Photon",
+      "labelZh": "Photon",
+      "parent": "meme",
+      "tags": [
+        "meme",
+        "terminal"
+      ],
+      "url": "https://photon-sol.tinyastro.io",
+      "summaryZh": "Solana 上普及率極高的網頁端極速交易與打新終端，提供毫秒級 K 線更新、新池即時監控、合約安全檢查與防夾擊（MEV 保護）快速買賣。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "bullx",
+      "label": "BullX",
+      "labelZh": "BullX",
+      "parent": "meme",
+      "tags": [
+        "meme",
+        "terminal"
+      ],
+      "url": "https://bullx.io",
+      "summaryZh": "結合網頁終端與 Telegram 雙端體驗的多鏈與 Solana 迷因交易平台，以 Pump Vision 新幣看板、多錢包管理與自動限價策略聞名。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "padre",
+      "label": "Padre",
+      "labelZh": "Padre",
+      "parent": "meme",
+      "tags": [
+        "meme",
+        "terminal"
+      ],
+      "url": "https://trade.padre.gg",
+      "summaryZh": "Pump.fun 生態重度整合的進階鏈上交易終端，提供新幣即時掃描、自動化條件單與機構級下單執行速度。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "trojan",
+      "label": "Trojan",
+      "labelZh": "Trojan",
+      "parent": "meme",
+      "tags": [
+        "meme",
+        "terminal"
+      ],
+      "url": "https://trojan.com",
+      "summaryZh": "Solana 交易量領先的 Telegram 交易機器人與網頁終端，支援閃電狙擊、自動跟單（Copy Trading）、限價停損與定投策略。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "realms",
+      "label": "Realms",
+      "labelZh": "Realms",
+      "parent": "dao",
+      "tags": [
+        "dao",
+        "governance"
+      ],
+      "url": "https://realms.today",
+      "summaryZh": "在 Solana 上建立組織、提案投票與管理金庫的標準治理平台，底層採用 SPL Governance，支援代幣加權表決與鏈上自動執行。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "squads",
+      "label": "Squads",
+      "labelZh": "Squads",
+      "parent": "dao",
+      "tags": [
+        "dao",
+        "multisig",
+        "wallet"
+      ],
+      "url": "https://squads.so",
+      "summaryZh": "Solana 的企業級多簽金庫與智慧帳戶（Smart Account）標準協議，守護生態數十億美元的協議金庫、程式升級權限與團隊資金，並提供 Fuse 個人智慧錢包。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "metadao",
+      "label": "MetaDAO",
+      "labelZh": "MetaDAO",
+      "parent": "dao",
+      "tags": [
+        "dao",
+        "futarchy",
+        "amm"
+      ],
+      "url": "https://metadao.fi",
+      "summaryZh": "Solana 上的預測市場治理（Futarchy）與募資協議，以條件做市市場的價格共識取代傳統代幣投票，讓市場直接決定提案是否有助於組織價值。",
+      "type": "protocol",
+      "group": "consumer"
+    },
+    {
+      "id": "elizaos",
+      "label": "ElizaOS",
+      "labelZh": "ElizaOS",
+      "type": "protocol",
+      "parent": "ai",
+      "group": "consumer",
+      "summaryZh": "ElizaOS 是開源代理框架。官方 Solana 外掛能轉帳 SOL 與 SPL、透過 Jupiter 兌換並追蹤投資組合，代幣也發行在 Solana。",
+      "url": "https://elizaos.ai",
+      "tags": ["ai", "agents"]
+    },
+    {
+      "id": "sendai",
+      "label": "SendAI",
+      "labelZh": "SendAI",
+      "type": "protocol",
+      "parent": "ai",
+      "group": "consumer",
+      "summaryZh": "SendAI 做 Solana 的代理工具層。官方以 Solana Agent Kit 把轉帳、兌換等鏈上操作接到代理程式，讓模型可以直接對 Solana 下指令。",
+      "url": "https://www.sendai.fun",
+      "tags": ["ai", "agents"]
+    },
+    {
+      "id": "griffain",
+      "label": "Griffain",
+      "labelZh": "Griffain",
+      "type": "protocol",
+      "parent": "ai",
+      "group": "consumer",
+      "summaryZh": "Griffain 是跑在 Solana 上的代理引擎。使用者用自然語言下指令，由專責代理代為執行兌換、質押或其他鏈上操作。",
+      "url": "https://griffain.com",
+      "tags": ["ai", "agents"]
+    },
+    {
+      "id": "arc",
+      "label": "AI Rig Complex",
+      "labelZh": "AI Rig Complex",
+      "type": "protocol",
+      "parent": "ai",
+      "group": "consumer",
+      "summaryZh": "AI Rig Complex 用 Rust 的 Rig 框架編排代理。官方站把 Solana 列為鏈上整合與生態夥伴，代幣發行在 Solana。",
+      "url": "https://www.arc.fun",
+      "tags": ["ai", "agents"]
+    }
+  ],
+  "links": [
+    {
+      "source": "magic-eden",
+      "target": "tensor",
+      "relation": "competes"
+    },
+    {
+      "source": "magic-eden",
+      "target": "metaplex",
+      "relation": "built-on"
+    },
+    {
+      "source": "tensor",
+      "target": "metaplex",
+      "relation": "built-on"
+    },
+    {
+      "source": "mallow",
+      "target": "metaplex",
+      "relation": "integrates"
+    },
+    {
+      "source": "underdog",
+      "target": "metaplex",
+      "relation": "integrates"
+    },
+    {
+      "source": "matrica",
+      "target": "metaplex",
+      "relation": "integrates"
+    },
+    {
+      "source": "magic-eden",
+      "target": "aurory",
+      "relation": "lists"
+    },
+    {
+      "source": "tensor",
+      "target": "aurory",
+      "relation": "lists"
+    },
+    {
+      "source": "solana-pay",
+      "target": "phantom",
+      "relation": "integrates"
+    },
+    {
+      "source": "solana-pay",
+      "target": "solflare",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "solana-pay",
+      "target": "backpack",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "solana-pay",
+      "target": "glow",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "tiplink",
+      "target": "solana-pay",
+      "relation": "integrates"
+    },
+    {
+      "source": "moonpay-commerce",
+      "target": "solana-pay",
+      "relation": "integrates"
+    },
+    {
+      "source": "pump-fun",
+      "target": "pumpswap",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "jupiter",
+      "target": "pump-fun",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "jupiter",
+      "target": "pumpswap",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "xstocks",
+      "target": "raydium",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "jupiter",
+      "target": "xstocks",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "playsolana",
+      "target": "jupiter",
+      "relation": "integrates"
+    },
+    {
+      "source": "metaplex",
+      "target": "helius",
+      "relation": "integrates"
+    },
+    {
+      "source": "metaplex",
+      "target": "raydium",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "io-net",
+      "target": "render",
+      "relation": "competes"
+    },
+    {
+      "source": "nosana",
+      "target": "io-net",
+      "relation": "competes"
+    },
+    {
+      "source": "natix",
+      "target": "hivemapper",
+      "relation": "competes"
+    },
+    {
+      "source": "dialect",
+      "target": "phantom",
+      "relation": "powers"
+    },
+    {
+      "source": "dialect",
+      "target": "jupiter",
+      "relation": "powers"
+    },
+    {
+      "source": "dialect",
+      "target": "backpack",
+      "relation": "powers"
+    },
+    {
+      "source": "dialect",
+      "target": "tensor",
+      "relation": "powers"
+    },
+    {
+      "source": "gmgn",
+      "target": "pump-fun",
+      "relation": "integrates"
+    },
+    {
+      "source": "gmgn",
+      "target": "jupiter",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "gmgn",
+      "target": "raydium",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "gmgn",
+      "target": "pumpswap",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "axiom",
+      "target": "pump-fun",
+      "relation": "integrates"
+    },
+    {
+      "source": "axiom",
+      "target": "jupiter",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "axiom",
+      "target": "raydium",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "axiom",
+      "target": "pumpswap",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "photon",
+      "target": "pump-fun",
+      "relation": "integrates"
+    },
+    {
+      "source": "photon",
+      "target": "raydium",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "photon",
+      "target": "pumpswap",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "photon",
+      "target": "jupiter",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "bullx",
+      "target": "pump-fun",
+      "relation": "integrates"
+    },
+    {
+      "source": "bullx",
+      "target": "raydium",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "bullx",
+      "target": "pumpswap",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "bullx",
+      "target": "jupiter",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "padre",
+      "target": "pump-fun",
+      "relation": "integrates"
+    },
+    {
+      "source": "padre",
+      "target": "raydium",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "padre",
+      "target": "pumpswap",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "padre",
+      "target": "jupiter",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "trojan",
+      "target": "jupiter",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "trojan",
+      "target": "raydium",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "trojan",
+      "target": "pumpswap",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "bonk",
+      "target": "bonkswap",
+      "relation": "integrates"
+    },
+    {
+      "source": "bonk",
+      "target": "jupiter",
+      "relation": "integrates"
+    },
+    {
+      "source": "squads",
+      "target": "tiplink",
+      "relation": "integrates"
+    },
+    {
+      "source": "squads",
+      "target": "wallet",
+      "relation": "also-in"
+    },
+    {
+      "source": "tiplink",
+      "target": "wallet",
+      "relation": "also-in"
+    },
+    {
+      "source": "metadao",
+      "target": "amm",
+      "relation": "also-in"
+    },
+    {
+      "source": "onre",
+      "target": "squads",
+      "relation": "integrates"
+    },
+    {
+      "source": "onre",
+      "target": "yield",
+      "relation": "also-in"
+    },
+    {
+      "source": "huma",
+      "target": "lending",
+      "relation": "also-in"
+    },
+    {
+      "source": "huma",
+      "target": "payments",
+      "relation": "also-in"
+    },
+    {
+      "source": "huma",
+      "target": "circle",
+      "relation": "integrates"
+    },
+    {
+      "source": "usyc",
+      "target": "circle",
+      "relation": "built-on"
+    },
+    {
+      "source": "axiom",
+      "target": "gmgn",
+      "relation": "competes"
+    },
+    {
+      "source": "photon",
+      "target": "axiom",
+      "relation": "competes"
+    },
+    {
+      "source": "photon",
+      "target": "bullx",
+      "relation": "competes"
+    },
+    {
+      "source": "bullx",
+      "target": "gmgn",
+      "relation": "competes"
+    },
+    {
+      "source": "ondo",
+      "target": "xstocks",
+      "relation": "competes"
+    },
+    {
+      "source": "benji",
+      "target": "ondo",
+      "relation": "competes"
+    },
+    {
+      "source": "superstate",
+      "target": "xstocks",
+      "relation": "competes"
+    },
+    {
+      "source": "natix",
+      "target": "phantom",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "realms",
+      "target": "metadao",
+      "relation": "competes"
+    },
+    {
+      "source": "grass",
+      "target": "uprock",
+      "relation": "competes"
+    },
+    {
+      "source": "xnet",
+      "target": "helium",
+      "relation": "competes"
+    },
+    {
+      "source": "onocoy",
+      "target": "geodnet",
+      "relation": "competes"
+    },
+    {
+      "source": "trojan",
+      "target": "axiom",
+      "relation": "competes"
+    },
+    {
+      "source": "usyc",
+      "target": "benji",
+      "relation": "competes"
+    },
+    {
+      "source": "spiko",
+      "target": "usyc",
+      "relation": "competes"
+    },
+    {
+      "source": "wisdomtree",
+      "target": "benji",
+      "relation": "competes"
+    },
+    {
+      "source": "visa",
+      "target": "circle",
+      "relation": "integrates"
+    },
+    {
+      "source": "visa",
+      "target": "solana-pay",
+      "relation": "integrates"
+    },
+    {
+      "source": "visa",
+      "target": "card-finance",
+      "relation": "also-in"
+    },
+    {
+      "source": "visa",
+      "target": "kast",
+      "relation": "powers"
+    },
+    {
+      "source": "visa",
+      "target": "solayer-card",
+      "relation": "powers"
+    },
+    {
+      "source": "visa",
+      "target": "sanctum-card",
+      "relation": "powers"
+    },
+    {
+      "source": "visa",
+      "target": "solcard",
+      "relation": "powers"
+    },
+    {
+      "source": "visa",
+      "target": "redotpay",
+      "relation": "powers"
+    },
+    {
+      "source": "visa",
+      "target": "reap",
+      "relation": "powers"
+    },
+    {
+      "source": "visa",
+      "target": "rain-cards",
+      "relation": "powers"
+    },
+    {
+      "source": "visa",
+      "target": "stripe",
+      "relation": "integrates"
+    },
+    {
+      "source": "mastercard",
+      "target": "card-finance",
+      "relation": "also-in"
+    },
+    {
+      "source": "mastercard",
+      "target": "solflare",
+      "relation": "integrates"
+    },
+    {
+      "source": "mastercard",
+      "target": "zebec",
+      "relation": "powers"
+    },
+    {
+      "source": "mastercard",
+      "target": "solcard",
+      "relation": "powers"
+    },
+    {
+      "source": "mastercard",
+      "target": "visa",
+      "relation": "competes"
+    },
+    {
+      "source": "rain-cards",
+      "target": "kast",
+      "relation": "powers"
+    },
+    {
+      "source": "rain-cards",
+      "target": "circle",
+      "relation": "integrates"
+    },
+    {
+      "source": "reap",
+      "target": "circle",
+      "relation": "integrates"
+    },
+    {
+      "source": "reap",
+      "target": "rain-cards",
+      "relation": "competes"
+    },
+    {
+      "source": "kast",
+      "target": "phantom",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "kast",
+      "target": "solflare",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "kast",
+      "target": "circle",
+      "relation": "integrates"
+    },
+    {
+      "source": "kast",
+      "target": "paypal",
+      "relation": "integrates"
+    },
+    {
+      "source": "kast",
+      "target": "payments",
+      "relation": "also-in"
+    },
+    {
+      "source": "solayer-card",
+      "target": "solayer",
+      "relation": "built-on"
+    },
+    {
+      "source": "solayer-card",
+      "target": "circle",
+      "relation": "integrates"
+    },
+    {
+      "source": "solayer-card",
+      "target": "phantom",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "solayer-card",
+      "target": "yield",
+      "relation": "also-in"
+    },
+    {
+      "source": "sanctum-card",
+      "target": "sanctum",
+      "relation": "built-on"
+    },
+    {
+      "source": "sanctum-card",
+      "target": "jupiter",
+      "relation": "integrates"
+    },
+    {
+      "source": "sanctum-card",
+      "target": "liquid-staking",
+      "relation": "also-in"
+    },
+    {
+      "source": "solcard",
+      "target": "jito",
+      "relation": "integrates"
+    },
+    {
+      "source": "solcard",
+      "target": "redotpay",
+      "relation": "competes"
+    },
+    {
+      "source": "redotpay",
+      "target": "circle",
+      "relation": "integrates"
+    },
+    {
+      "source": "holyheld",
+      "target": "phantom",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "holyheld",
+      "target": "circle",
+      "relation": "integrates"
+    },
+    {
+      "source": "zebec",
+      "target": "circle",
+      "relation": "integrates"
+    },
+    {
+      "source": "zebec",
+      "target": "phantom",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "zebec",
+      "target": "card-finance",
+      "relation": "also-in"
+    },
+    {
+      "source": "sphere-pay",
+      "target": "solana-pay",
+      "relation": "integrates"
+    },
+    {
+      "source": "sphere-pay",
+      "target": "circle",
+      "relation": "integrates"
+    },
+    {
+      "source": "sphere-pay",
+      "target": "paypal",
+      "relation": "integrates"
+    },
+    {
+      "source": "sphere-pay",
+      "target": "jupiter",
+      "relation": "integrates"
+    },
+    {
+      "source": "stripe",
+      "target": "circle",
+      "relation": "integrates"
+    },
+    {
+      "source": "stripe",
+      "target": "solana-pay",
+      "relation": "integrates"
+    },
+    {
+      "source": "paypal",
+      "target": "solana-pay",
+      "relation": "integrates"
+    },
+    {
+      "source": "paypal",
+      "target": "phantom",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "elizaos",
+      "target": "jupiter",
+      "relation": "integrates"
+    },
+    {
+      "source": "elizaos",
+      "target": "sdk",
+      "relation": "also-in"
+    },
+    {
+      "source": "arc",
+      "target": "sendai",
+      "relation": "integrates"
+    }
+  ]
+}

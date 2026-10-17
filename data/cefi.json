@@ -1,0 +1,171 @@
+{
+  "domain": "cefi",
+  "nodes": [
+    {
+      "id": "binance",
+      "label": "Binance",
+      "labelZh": "Binance",
+      "type": "protocol",
+      "parent": "cex",
+      "group": "cefi",
+      "summaryZh": "幣安提供 SOL 現貨與合約，並開放 Solana 網路的 SOL 充值與提現。買賣記在交易所帳簿，幣先由平台託管。",
+      "url": "https://www.binance.com",
+      "tags": ["cex", "sol"]
+    },
+    {
+      "id": "coinbase",
+      "label": "Coinbase",
+      "labelZh": "Coinbase",
+      "type": "protocol",
+      "parent": "cex",
+      "group": "cefi",
+      "summaryZh": "Coinbase 上架 SOL，並支援從 Solana 網路充值與提現。美元進出走其受監管的法幣通道，與自託管的 Coinbase Wallet 是不同產品。",
+      "url": "https://www.coinbase.com",
+      "tags": ["cex", "sol"]
+    },
+    {
+      "id": "okx",
+      "label": "OKX",
+      "labelZh": "OKX",
+      "type": "protocol",
+      "parent": "cex",
+      "group": "cefi",
+      "summaryZh": "OKX 提供 SOL 現貨與合約，Solana 網路的充值與提現為開啟狀態。成交在交易所內部撮合，不經過鏈上訂單簿。",
+      "url": "https://www.okx.com",
+      "tags": ["cex", "sol"]
+    },
+    {
+      "id": "kraken",
+      "label": "Kraken",
+      "labelZh": "Kraken",
+      "type": "protocol",
+      "parent": "cex",
+      "group": "cefi",
+      "summaryZh": "Kraken 上架 SOL 現貨，並支援 Solana 網路充值與提現，客戶也可在交易所帳戶內質押 SOL。",
+      "url": "https://www.kraken.com",
+      "tags": ["cex", "sol"]
+    },
+    {
+      "id": "bybit",
+      "label": "Bybit",
+      "labelZh": "Bybit",
+      "type": "protocol",
+      "parent": "cex",
+      "group": "cefi",
+      "summaryZh": "Bybit 提供 SOL 現貨與合約，並開放 Solana 網路充值與提現。部位留在 Bybit 帳戶，和鏈上永續協議分開結算。",
+      "url": "https://www.bybit.com",
+      "tags": ["cex", "sol"]
+    },
+    {
+      "id": "anchorage",
+      "label": "Anchorage Digital",
+      "labelZh": "Anchorage Digital",
+      "type": "protocol",
+      "parent": "custody-prime",
+      "group": "cefi",
+      "summaryZh": "Anchorage Digital 是美國聯邦特許的數位資產銀行，官方質押頁列 Solana，資產名冊包含 SOL 與多個 Solana 代幣的機構託管。",
+      "url": "https://www.anchorage.com",
+      "tags": ["custody", "prime"]
+    },
+    {
+      "id": "bitgo",
+      "label": "BitGo",
+      "labelZh": "BitGo",
+      "type": "protocol",
+      "parent": "custody-prime",
+      "group": "cefi",
+      "summaryZh": "BitGo 提供合格託管與主經紀。開發者文件把 Solana 列為鏈上錢包資產（代號 sol），機構可在託管帳戶內配置 SOL，再透過場外結算對接交易場所。",
+      "url": "https://www.bitgo.com",
+      "tags": ["custody", "prime"]
+    },
+    {
+      "id": "falconx",
+      "label": "FalconX",
+      "labelZh": "FalconX",
+      "type": "protocol",
+      "parent": "custody-prime",
+      "group": "cefi",
+      "summaryZh": "FalconX 是機構主經紀。官方託管頁寫明可從其介面質押 Solana，並把質押部位接上融資與結算，不必先把幣提到自管錢包。",
+      "url": "https://www.falconx.io",
+      "tags": ["prime", "custody"]
+    },
+    {
+      "id": "copper",
+      "label": "Copper",
+      "labelZh": "Copper",
+      "type": "protocol",
+      "parent": "custody-prime",
+      "group": "cefi",
+      "summaryZh": "Copper 用多方計算做機構託管，官方支援資產頁列有 Solana 上的 SOL。ClearLoop 讓部位留在託管帳戶裡對接交易所，結算時才搬動資產。",
+      "url": "https://copper.co",
+      "tags": ["custody", "settlement"]
+    },
+    {
+      "id": "coinbase-prime",
+      "label": "Coinbase Prime",
+      "labelZh": "Coinbase Prime",
+      "type": "protocol",
+      "parent": "custody-prime",
+      "group": "cefi",
+      "summaryZh": "Coinbase Prime 對機構提供獨立於散戶交易所的託管、交易與融資。官方有 Solana 質押說明，也能建立 Solana 鏈上錢包保管 SPL 代幣。",
+      "url": "https://www.coinbase.com/prime",
+      "tags": ["prime", "custody"]
+    },
+    {
+      "id": "robinhood",
+      "label": "Robinhood",
+      "labelZh": "Robinhood",
+      "type": "protocol",
+      "parent": "broker-dealer",
+      "group": "cefi",
+      "summaryZh": "Robinhood Crypto 在券商帳戶裡買賣 SOL。官方支援頁把 Solana 列為可交易資產，並可把幣轉出；這和自託管的 Robinhood Wallet 不是同一個產品。",
+      "url": "https://robinhood.com",
+      "tags": ["broker", "sol"]
+    },
+    {
+      "id": "fidelity",
+      "label": "Fidelity",
+      "labelZh": "Fidelity",
+      "type": "protocol",
+      "parent": "broker-dealer",
+      "group": "cefi",
+      "summaryZh": "Fidelity Crypto 讓客戶在券商帳戶旁直接買賣 SOL。同一集團的 Fidelity Digital Assets 以國家信託銀行保管比特幣、以太幣與 Solana。",
+      "url": "https://www.fidelity.com/crypto",
+      "tags": ["broker", "custody"]
+    },
+    {
+      "id": "etoro",
+      "label": "eToro",
+      "labelZh": "eToro",
+      "type": "protocol",
+      "parent": "broker-dealer",
+      "group": "cefi",
+      "summaryZh": "eToro 是受監管的多資產券商，官方加密頁把 Solana 與以太幣一併列為可交易資產，客戶在券商帳戶裡下單。",
+      "url": "https://www.etoro.com",
+      "tags": ["broker", "sol"]
+    },
+    {
+      "id": "revolut",
+      "label": "Revolut",
+      "labelZh": "Revolut",
+      "type": "protocol",
+      "parent": "broker-dealer",
+      "group": "cefi",
+      "summaryZh": "Revolut 在應用內買賣並質押 SOL。官方頁寫明可質押 SOL 與 ETH，也能把代幣轉到外部錢包。",
+      "url": "https://www.revolut.com",
+      "tags": ["broker", "sol"]
+    }
+  ],
+  "links": [
+    {
+      "source": "backpack",
+      "target": "cex",
+      "relation": "also-in"
+    },
+    {
+      "source": "fidelity",
+      "target": "custody-prime",
+      "relation": "also-in"
+    }
+  ]
+}

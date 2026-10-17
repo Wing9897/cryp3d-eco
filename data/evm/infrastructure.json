@@ -1,0 +1,3272 @@
+{
+  "domain": "infrastructure",
+  "nodes": [
+    {
+      "id": "metamask",
+      "label": "MetaMask",
+      "labelZh": "MetaMask",
+      "type": "protocol",
+      "parent": "wallet",
+      "group": "infrastructure",
+      "summaryZh": "MetaMask 是使用最廣的 EVM 自託管錢包，有瀏覽器擴充與手機應用，用來連線應用、簽署交易與管理地址。同一組助記詞可以管理多條網路上的地址。",
+      "url": "https://metamask.io",
+      "tags": [
+        "wallet"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "rabby",
+      "label": "Rabby",
+      "labelZh": "Rabby",
+      "type": "protocol",
+      "parent": "wallet",
+      "group": "infrastructure",
+      "summaryZh": "Rabby 是面向多鏈的瀏覽器錢包，簽署前會模擬交易並標示授權對象，適合同時使用多個 EVM 網路的人。切換網路時會一併檢查授權與餘額變化。",
+      "url": "https://rabby.io",
+      "tags": [
+        "wallet"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "rainbow",
+      "label": "Rainbow",
+      "labelZh": "Rainbow",
+      "type": "protocol",
+      "parent": "wallet",
+      "group": "infrastructure",
+      "summaryZh": "Rainbow 是以太坊自託管錢包，涵蓋手機與瀏覽器，用來持有代幣、收藏品，並連上社交與兌換應用。收藏品與代幣餘額顯示在同一個地址底下。",
+      "url": "https://rainbow.me",
+      "tags": [
+        "wallet"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "safe",
+      "label": "Safe",
+      "labelZh": "Safe",
+      "type": "protocol",
+      "parent": "wallet",
+      "group": "infrastructure",
+      "summaryZh": "Safe 是以太坊上最常用的多簽智慧帳戶，金庫支出要達到門檻簽名才會執行，也被協議與公司拿來管資金。",
+      "url": "https://safe.global",
+      "tags": [
+        "wallet",
+        "multisig"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "zerion",
+      "label": "Zerion",
+      "labelZh": "Zerion",
+      "type": "protocol",
+      "parent": "wallet",
+      "group": "infrastructure",
+      "summaryZh": "Zerion 把自託管錢包與投資組合介面放在一起，可以看多鏈餘額、兌換資產並連上 EVM 應用。多鏈餘額會收成一頁，兌換也能在錢包裡完成。",
+      "url": "https://zerion.io",
+      "tags": [
+        "wallet"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "ambire",
+      "label": "Ambire",
+      "labelZh": "Ambire",
+      "type": "protocol",
+      "parent": "wallet",
+      "group": "infrastructure",
+      "summaryZh": "Ambire 提供智慧帳戶錢包，把手續費代付、批量操作與帳戶恢復收進同一套介面，金鑰仍由使用者掌握。多個步驟可以收成一筆智慧帳戶交易。",
+      "url": "https://ambire.com",
+      "tags": [
+        "wallet",
+        "smart-account"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "ready",
+      "label": "Ready",
+      "labelZh": "Ready",
+      "type": "protocol",
+      "parent": "wallet",
+      "group": "infrastructure",
+      "summaryZh": "Ready 前身是 Argent，做智慧帳戶錢包，用帳戶抽象處理恢復與操作，服務想少記助記詞步驟的以太坊使用者。帳戶恢復不必把整組助記詞交給單一裝置。",
+      "url": "https://www.ready.co/",
+      "tags": [
+        "wallet",
+        "smart-account"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "frame",
+      "label": "Frame",
+      "labelZh": "Frame",
+      "type": "protocol",
+      "parent": "wallet",
+      "group": "infrastructure",
+      "summaryZh": "Frame 是桌面端的以太坊錢包與簽章器，給進階使用者管理多個帳戶、網路與硬體裝置的連線。可以同時連上多個自訂網路與硬體簽章器。",
+      "url": "https://frame.sh",
+      "tags": [
+        "wallet",
+        "desktop"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "family",
+      "label": "Family",
+      "labelZh": "Family",
+      "type": "protocol",
+      "parent": "wallet",
+      "group": "infrastructure",
+      "summaryZh": "Family 是面向一般使用者的以太坊錢包，強調群組與收藏品，仍用自託管方式簽署鏈上操作。群組成員仍各自用自己的地址簽署。",
+      "url": "https://family.co",
+      "tags": [
+        "wallet"
+      ],
+      "chains": [
+        "ethereum",
+        "base"
+      ]
+    },
+    {
+      "id": "trust-wallet",
+      "label": "Trust Wallet",
+      "labelZh": "Trust Wallet",
+      "type": "protocol",
+      "parent": "wallet",
+      "group": "infrastructure",
+      "summaryZh": "Trust Wallet 是多鏈自託管手機錢包，支援 EVM 網路的代幣、應用連線與基本兌換。私鑰存在手機裡，簽名在本機完成後再送出，不必把資產放到交易所。",
+      "url": "https://trustwallet.com",
+      "tags": [
+        "wallet",
+        "mobile"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "coinbase-wallet",
+      "label": "Coinbase Wallet",
+      "labelZh": "Coinbase Wallet",
+      "type": "protocol",
+      "parent": "wallet",
+      "group": "infrastructure",
+      "summaryZh": "Coinbase Wallet 是自託管錢包，與 Coinbase 交易所帳戶分開，用來在 Base 與其他 EVM 網路簽署交易。它和交易所託管帳戶分開，金鑰由使用者保管，並可連上 Base 等網路。",
+      "url": "https://wallet.coinbase.com/",
+      "tags": [
+        "wallet"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "ledger",
+      "label": "Ledger",
+      "labelZh": "Ledger",
+      "type": "protocol",
+      "parent": "mobile",
+      "group": "infrastructure",
+      "summaryZh": "Ledger 是硬體簽章器，私鑰留在裝置裡，搭配電腦或手機錢包確認交易，用來降低連網環境被盜的風險。每筆交易都要在裝置上按鍵確認。",
+      "url": "https://www.ledger.com",
+      "tags": [
+        "hardware"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "trezor",
+      "label": "Trezor",
+      "labelZh": "Trezor",
+      "type": "protocol",
+      "parent": "mobile",
+      "group": "infrastructure",
+      "summaryZh": "Trezor 是硬體簽章器，交易摘要在裝置螢幕上確認後才簽名，私鑰不進入日常使用的瀏覽器。簽名前可以在裝置螢幕上核對地址與金額。",
+      "url": "https://trezor.io",
+      "tags": [
+        "hardware"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "onekey",
+      "label": "OneKey",
+      "labelZh": "OneKey",
+      "type": "protocol",
+      "parent": "mobile",
+      "group": "infrastructure",
+      "summaryZh": "OneKey 做開源導向的硬體簽章器與配套軟體，用來離線保管 EVM 地址的私鑰並確認鏈上交易。硬體與手機應用搭配，用來簽署鏈上交易。",
+      "url": "https://onekey.so",
+      "tags": [
+        "hardware"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "gridplus",
+      "label": "GridPlus",
+      "labelZh": "GridPlus",
+      "type": "protocol",
+      "parent": "mobile",
+      "group": "infrastructure",
+      "summaryZh": "GridPlus 的 Lattice 裝置在硬體螢幕上解析以太坊交易，使用者核對後才簽名，用來防範惡意授權。螢幕會盡量把合約呼叫譯成人看得懂的欄位。",
+      "url": "https://gridplus.io",
+      "tags": [
+        "hardware"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "keystone",
+      "label": "Keystone",
+      "labelZh": "Keystone",
+      "type": "protocol",
+      "parent": "mobile",
+      "group": "infrastructure",
+      "summaryZh": "Keystone 是氣隙硬體簽章器，用掃描二維碼傳遞待簽資料，裝置本身不必連上網路。待簽資料用二維碼送進裝置，簽完再掃回來。",
+      "url": "https://keyst.one",
+      "tags": [
+        "hardware"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "infura",
+      "label": "Infura",
+      "labelZh": "Infura",
+      "type": "protocol",
+      "parent": "rpc",
+      "group": "infrastructure",
+      "summaryZh": "Infura 提供以太坊與多個二層的節點 API，錢包與應用透過它讀取狀態、送出交易，而不必自建全節點。許多錢包的預設連線就走它的端點。",
+      "url": "https://www.infura.io",
+      "tags": [
+        "rpc"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "alchemy",
+      "label": "Alchemy",
+      "labelZh": "Alchemy",
+      "type": "protocol",
+      "parent": "rpc",
+      "group": "infrastructure",
+      "summaryZh": "Alchemy 提供 EVM 節點、增強 API 與除錯工具，是許多交易所、錢包與索引服務的遠端呼叫供應商。除了讀寫狀態，也提供日誌與除錯資料。",
+      "url": "https://www.alchemy.com",
+      "tags": [
+        "rpc"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "quicknode",
+      "label": "QuickNode",
+      "labelZh": "QuickNode",
+      "type": "protocol",
+      "parent": "rpc",
+      "group": "infrastructure",
+      "summaryZh": "QuickNode 提供多鏈節點端點與串流，給交易系統和應用程式穩定讀寫 EVM 網路。端點可以按鏈分開，並承受較高頻的請求，適合要穩定送單的系統。",
+      "url": "https://www.quicknode.com",
+      "tags": [
+        "rpc"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "ankr",
+      "label": "Ankr",
+      "labelZh": "Ankr",
+      "type": "protocol",
+      "parent": "rpc",
+      "group": "infrastructure",
+      "summaryZh": "Ankr 提供公開與付費的多鏈 RPC，應用可以用它連上以太坊及多個 EVM 網路，不必自己維運節點。公開端點方便前端試作，付費方案再提高額度。",
+      "url": "https://www.ankr.com/",
+      "tags": [
+        "rpc"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "chainstack",
+      "label": "Chainstack",
+      "labelZh": "Chainstack",
+      "type": "protocol",
+      "parent": "rpc",
+      "group": "infrastructure",
+      "summaryZh": "Chainstack 提供可管理的區塊鏈節點，團隊用它部署以太坊與 EVM 網路的專用端點。節點可以選擇共用或專用，並查看用量與健康狀態。",
+      "url": "https://chainstack.com",
+      "tags": [
+        "rpc"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "drpc",
+      "label": "dRPC",
+      "labelZh": "dRPC",
+      "type": "protocol",
+      "parent": "rpc",
+      "group": "infrastructure",
+      "summaryZh": "dRPC 把多個節點供應商收成一個 RPC 入口，請求會在可用端點之間分配，用來提高讀寫的可用性。單一供應商中斷時，請求可以改走其他節點。",
+      "url": "https://drpc.org",
+      "tags": [
+        "rpc"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "blockdaemon",
+      "label": "Blockdaemon",
+      "labelZh": "Blockdaemon",
+      "type": "protocol",
+      "parent": "rpc",
+      "group": "infrastructure",
+      "summaryZh": "Blockdaemon 為機構運行節點與質押基礎設施，提供以太坊 RPC、驗證者託管與相關的鏈上存取。機構客戶可以把驗證者與查詢節點交給它託管。",
+      "url": "https://www.blockdaemon.com",
+      "tags": [
+        "rpc",
+        "staking"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "geth",
+      "label": "Geth",
+      "labelZh": "Geth",
+      "type": "protocol",
+      "parent": "validator-client",
+      "group": "infrastructure",
+      "summaryZh": "Geth 是使用最廣的以太坊執行層客戶端，負責執行交易、維護狀態，並與共識層客戶端搭配出塊。它仍是節點營運者最常部署的執行層選擇。",
+      "url": "https://geth.ethereum.org",
+      "tags": [
+        "execution-client"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "nethermind",
+      "label": "Nethermind",
+      "labelZh": "Nethermind",
+      "type": "protocol",
+      "parent": "validator-client",
+      "group": "infrastructure",
+      "summaryZh": "Nethermind 是以太坊執行層客戶端，用不同的實作處理區塊與狀態，讓網路不必依賴單一客戶端。與其他執行層並跑時，可以互相對照執行結果。",
+      "url": "https://nethermind.io",
+      "tags": [
+        "execution-client"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "besu",
+      "label": "Besu",
+      "labelZh": "Besu",
+      "type": "protocol",
+      "parent": "validator-client",
+      "group": "infrastructure",
+      "summaryZh": "Besu 是企業與公開網路都在用的以太坊執行層客戶端，支援主網驗證，也常用在需要權限管理的 EVM 網路。",
+      "url": "https://www.besu-eth.org",
+      "tags": [
+        "execution-client"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "erigon",
+      "label": "Erigon",
+      "labelZh": "Erigon",
+      "type": "protocol",
+      "parent": "validator-client",
+      "group": "infrastructure",
+      "summaryZh": "Erigon 是偏重存檔與查詢效率的以太坊執行層客戶端，歸檔節點與資料服務常用它保存完整歷史狀態。",
+      "url": "https://erigon.tech",
+      "tags": [
+        "execution-client"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "reth",
+      "label": "Reth",
+      "labelZh": "Reth",
+      "type": "protocol",
+      "parent": "validator-client",
+      "group": "infrastructure",
+      "summaryZh": "Reth 是用 Rust 編寫的以太坊執行層客戶端，目標是高效同步與執行，作為 Geth 以外的另一套實作。同步與執行效能是它和較早客戶端的主要差別。",
+      "url": "https://reth.rs",
+      "tags": [
+        "execution-client"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "prysm",
+      "label": "Prysm",
+      "labelZh": "Prysm",
+      "type": "protocol",
+      "parent": "validator-client",
+      "group": "infrastructure",
+      "summaryZh": "Prysm 是以太坊共識層客戶端，負責信標鏈、證明與出塊提案，必須和執行層客戶端一起運行。驗證者客戶端負責簽名證明與提出區塊。",
+      "url": "https://prysm.offchainlabs.com",
+      "tags": [
+        "consensus-client"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "lighthouse",
+      "label": "Lighthouse",
+      "labelZh": "Lighthouse",
+      "type": "protocol",
+      "parent": "validator-client",
+      "group": "infrastructure",
+      "summaryZh": "Lighthouse 是以太坊共識層客戶端，處理驗證者職責與分叉選擇，和執行層分開部署以維持客戶端多樣性。資源占用與安全性是營運者選擇它的常見原因。",
+      "url": "https://lighthouse.sigmaprime.io",
+      "tags": [
+        "consensus-client"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "teku",
+      "label": "Teku",
+      "labelZh": "Teku",
+      "type": "protocol",
+      "parent": "validator-client",
+      "group": "infrastructure",
+      "summaryZh": "Teku 是 Consensys 的以太坊共識層客戶端，給驗證者運行信標節點與驗證者客戶端。它用另一套語言實作共識規則，並附驗證者管理工具。",
+      "url": "https://consensys.com/teku",
+      "tags": [
+        "consensus-client"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "nimbus",
+      "label": "Nimbus",
+      "labelZh": "Nimbus",
+      "type": "protocol",
+      "parent": "validator-client",
+      "group": "infrastructure",
+      "summaryZh": "Nimbus 是資源占用較低的以太坊共識層客戶端，適合在較小的硬體上參與驗證。較低的記憶體占用讓它能跑在比較小的設備上。",
+      "url": "https://nimbus.team",
+      "tags": [
+        "consensus-client"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "lodestar",
+      "label": "Lodestar",
+      "labelZh": "Lodestar",
+      "type": "protocol",
+      "parent": "validator-client",
+      "group": "infrastructure",
+      "summaryZh": "Lodestar 是 ChainSafe 用 TypeScript 編寫的以太坊共識層客戶端，提供另一套獨立實作。它用 TypeScript 實作共識客戶端，讓網路多一種獨立程式碼。",
+      "url": "https://lodestar.chainsafe.io",
+      "tags": [
+        "consensus-client"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "ssv",
+      "label": "SSV Network",
+      "labelZh": "SSV Network",
+      "type": "protocol",
+      "parent": "validator-client",
+      "group": "infrastructure",
+      "summaryZh": "SSV 把一個驗證者的職責拆給多個營運者，金鑰用分散式簽章，用來降低單點故障與單人作惡的風險。",
+      "url": "https://ssv.network/",
+      "tags": [
+        "dvt"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "obol",
+      "label": "Obol",
+      "labelZh": "Obol",
+      "type": "protocol",
+      "parent": "validator-client",
+      "group": "infrastructure",
+      "summaryZh": "Obol 做分散式驗證者叢集，多個營運者共同完成一個驗證者的簽名，讓質押不必把金鑰交到單一機器。",
+      "url": "https://obol.org/",
+      "tags": [
+        "dvt"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "chainlink",
+      "label": "Chainlink",
+      "labelZh": "Chainlink",
+      "type": "protocol",
+      "parent": "oracle",
+      "group": "infrastructure",
+      "summaryZh": "Chainlink 是 EVM 上使用最廣的預言機網路，提供價格餵價與跨鏈訊息，借貸清算和衍生品多以它的報價結算。餵價由多個節點簽名後再寫進合約。",
+      "url": "https://chain.link",
+      "tags": [
+        "oracle",
+        "ccip"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "redstone",
+      "label": "RedStone",
+      "labelZh": "RedStone",
+      "type": "protocol",
+      "parent": "oracle",
+      "group": "infrastructure",
+      "summaryZh": "RedStone 提供模組化價格預言機，資料可以在交易時附帶上鏈，也被多個借貸與衍生品市場拿來當報價。價格可以在需要時才附在交易裡上鏈。",
+      "url": "https://redstone.finance/",
+      "tags": [
+        "oracle"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "pyth",
+      "label": "Pyth",
+      "labelZh": "Pyth",
+      "type": "protocol",
+      "parent": "oracle",
+      "group": "infrastructure",
+      "summaryZh": "Pyth 由交易場所提供報價，再把價格發到以太坊等網路，永續合約與借貸可以用它取得低延遲的市場價格。",
+      "url": "https://pyth.network",
+      "tags": [
+        "oracle"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "api3",
+      "label": "API3",
+      "labelZh": "API3",
+      "type": "protocol",
+      "parent": "oracle",
+      "group": "infrastructure",
+      "summaryZh": "API3 讓第一方資料提供者自己營運預言機，價格餵價直接由來源簽署，減少中間聚合層。資料來源自己簽名，呼叫方少信任一層聚合商。",
+      "url": "https://api3.org/",
+      "tags": [
+        "oracle"
+      ],
+      "chains": [
+        "ethereum",
+        "base"
+      ]
+    },
+    {
+      "id": "chronicle",
+      "label": "Chronicle",
+      "labelZh": "Chronicle",
+      "type": "protocol",
+      "parent": "oracle",
+      "group": "infrastructure",
+      "summaryZh": "Chronicle 是從 Maker 體系獨立出來的預言機，持續為 Sky 與相關穩定幣系統提供抵押資產的價格。穩定幣系統的抵押率與清算依這組價格計算。",
+      "url": "https://chroniclelabs.org",
+      "tags": [
+        "oracle"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "uma",
+      "label": "UMA",
+      "labelZh": "UMA",
+      "type": "protocol",
+      "parent": "oracle",
+      "group": "infrastructure",
+      "summaryZh": "UMA 提供樂觀預言機，提案人先提交結果，有人爭議才進入投票，預測市場常用它結算事件。沒有人爭議時不必投票，有爭議才升級表決。",
+      "url": "https://uma.xyz",
+      "tags": [
+        "oracle",
+        "optimistic"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "layerzero",
+      "label": "LayerZero",
+      "labelZh": "LayerZero",
+      "type": "protocol",
+      "parent": "bridge",
+      "group": "infrastructure",
+      "summaryZh": "LayerZero 是跨鏈訊息協議，應用用它在不同鏈之間傳遞指令與資產，代幣發行方也用它擴展多鏈供應。應用要自行選擇訊息走哪一組驗證路徑。",
+      "url": "https://layerzero.network/",
+      "tags": [
+        "bridge",
+        "messaging"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "across",
+      "label": "Across",
+      "labelZh": "Across",
+      "type": "protocol",
+      "parent": "bridge",
+      "group": "infrastructure",
+      "summaryZh": "Across 用意圖與中繼者做跨鏈轉帳，使用者指定目標鏈與金額，資金由中繼者先墊付，再在來源鏈結算。到帳速度通常快於等待官方橋的挑戰期。",
+      "url": "https://across.to",
+      "tags": [
+        "bridge",
+        "intent"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "hop",
+      "label": "Hop",
+      "labelZh": "Hop",
+      "type": "protocol",
+      "parent": "bridge",
+      "group": "infrastructure",
+      "summaryZh": "Hop 在以太坊二層之間轉送代幣，用自己的橋接資產與做市商加快到帳，不必等官方橋的挑戰期。做市商在各層預先放好資金，用來縮短等待。",
+      "url": "https://hop.exchange/",
+      "tags": [
+        "bridge",
+        "l2"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "stargate",
+      "label": "Stargate",
+      "labelZh": "Stargate",
+      "type": "protocol",
+      "parent": "bridge",
+      "group": "infrastructure",
+      "summaryZh": "Stargate 是建立在 LayerZero 上的跨鏈流動性協議，用統一資金池在多條鏈之間轉移穩定幣與主流資產。池子深度決定一次能夠搬走多少資產。",
+      "url": "https://stargate.finance/",
+      "tags": [
+        "bridge"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "hyperlane",
+      "label": "Hyperlane",
+      "labelZh": "Hyperlane",
+      "type": "protocol",
+      "parent": "bridge",
+      "group": "infrastructure",
+      "summaryZh": "Hyperlane 提供可自訂驗證的跨鏈訊息框架，應用可以自己選擇驗證者集合，在 EVM 鏈之間傳遞呼叫。驗證集合可以由應用方自行指定。",
+      "url": "https://www.hyperlane.xyz/",
+      "tags": [
+        "bridge",
+        "messaging"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "wormhole",
+      "label": "Wormhole",
+      "labelZh": "Wormhole",
+      "type": "protocol",
+      "parent": "bridge",
+      "group": "infrastructure",
+      "summaryZh": "Wormhole 用守護者簽署跨鏈訊息，把資產與合約呼叫送到以太坊及其他鏈，是多鏈應用常用的訊息層。守護者簽名達到門檻後，目標鏈才接受訊息。",
+      "url": "https://wormhole.com",
+      "tags": [
+        "bridge",
+        "messaging"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "debridge",
+      "label": "deBridge",
+      "labelZh": "deBridge",
+      "type": "protocol",
+      "parent": "bridge",
+      "group": "infrastructure",
+      "summaryZh": "deBridge 用跨鏈訂單與流動性網路傳遞資產，使用者在來源鏈下單，由執行者在目標鏈完成交付。執行者先在目標鏈交付，再向來源鏈請款。",
+      "url": "https://debridge.com/",
+      "tags": [
+        "bridge"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "axelar",
+      "label": "Axelar",
+      "labelZh": "Axelar",
+      "type": "protocol",
+      "parent": "bridge",
+      "group": "infrastructure",
+      "summaryZh": "Axelar 以自身驗證者網路傳遞跨鏈訊息，EVM 應用可以透過它的閘道在多條鏈之間呼叫合約與轉移資產。訊息由它的驗證者集合確認後送達目標鏈。",
+      "url": "https://axelar.network",
+      "tags": [
+        "bridge",
+        "messaging"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "lifi",
+      "label": "LI.FI",
+      "labelZh": "LI.FI",
+      "type": "protocol",
+      "parent": "bridge",
+      "group": "infrastructure",
+      "summaryZh": "LI.FI 聚合跨鏈橋與交易所路由，把兌換和過橋收成一筆意圖，Jumper 等介面也建立在這套路由上。同一筆操作裡可以同時完成兌換與過橋。",
+      "url": "https://li.fi",
+      "tags": [
+        "bridge",
+        "aggregator"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "threshold",
+      "label": "Threshold",
+      "labelZh": "Threshold",
+      "type": "protocol",
+      "parent": "bridge",
+      "group": "infrastructure",
+      "summaryZh": "Threshold 發行由比特幣超額抵押支持的 tBTC，鑄造與贖回由門檻簽名協調，在以太坊上提供另一種比特幣代幣。",
+      "url": "https://threshold.network/",
+      "tags": [
+        "btc",
+        "bridge"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "wbtc",
+      "label": "WBTC",
+      "labelZh": "WBTC",
+      "type": "protocol",
+      "parent": "bridge",
+      "group": "infrastructure",
+      "summaryZh": "WBTC 由託管商持有比特幣並在以太坊發行對應代幣，是 EVM 借貸與做市裡歷史最久的比特幣代表資產之一。",
+      "url": "https://wbtc.network/",
+      "tags": [
+        "btc",
+        "wrapped"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "the-graph",
+      "label": "The Graph",
+      "labelZh": "The Graph",
+      "type": "protocol",
+      "parent": "indexer",
+      "group": "infrastructure",
+      "summaryZh": "The Graph 用子圖索引合約事件，應用以 GraphQL 查詢歷史資料，索引工作由網路上的索引者執行。查詢不必掃描節點上的全部歷史日誌，前端直接讀取子圖。",
+      "url": "https://thegraph.com/",
+      "tags": [
+        "indexer",
+        "subgraph"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "goldsky",
+      "label": "Goldsky",
+      "labelZh": "Goldsky",
+      "type": "protocol",
+      "parent": "indexer",
+      "group": "infrastructure",
+      "summaryZh": "Goldsky 提供託管的鏈上索引與資料管線，團隊用它把 EVM 事件送到自己的資料庫，不必自建掃描器。事件可以寫進團隊自己的資料庫，再供產品讀取。",
+      "url": "https://goldsky.com",
+      "tags": [
+        "indexer"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "envio",
+      "label": "Envio",
+      "labelZh": "Envio",
+      "type": "protocol",
+      "parent": "indexer",
+      "group": "infrastructure",
+      "summaryZh": "Envio 是多鏈索引框架，開發者描述要抓的事件，由它生成查詢介面，用來取代手寫的日誌掃描。多條鏈的事件可以收進同一套查詢介面。",
+      "url": "https://envio.dev",
+      "tags": [
+        "indexer"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "sqd",
+      "label": "SQD",
+      "labelZh": "SQD",
+      "type": "protocol",
+      "parent": "indexer",
+      "group": "infrastructure",
+      "summaryZh": "SQD 提供去中心化的鏈上資料湖與索引工具，應用可以查詢以太坊及其他網路的歷史區塊與事件。歷史資料先進入資料湖，再按應用需要建立索引。",
+      "url": "https://sqd.dev",
+      "tags": [
+        "indexer"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "ponder",
+      "label": "Ponder",
+      "labelZh": "Ponder",
+      "type": "protocol",
+      "parent": "indexer",
+      "group": "infrastructure",
+      "summaryZh": "Ponder 是本機優先的索引框架，用 TypeScript 描述合約事件如何進資料庫，適合做應用自己的後端查詢。開發時可以在本機重放事件，並檢查轉換結果。",
+      "url": "https://ponder.sh",
+      "tags": [
+        "indexer"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "unstoppable",
+      "label": "Unstoppable Domains",
+      "labelZh": "Unstoppable Domains",
+      "type": "protocol",
+      "parent": "identity",
+      "group": "infrastructure",
+      "summaryZh": "Unstoppable Domains 出售鏈上域名，名稱可以指向錢包地址，用來取代轉帳時的長地址。名稱指向地址後，轉帳介面就能顯示名稱而不是長字串。",
+      "url": "https://unstoppabledomains.com",
+      "tags": [
+        "domain"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "space-id",
+      "label": "Space ID",
+      "labelZh": "Space ID",
+      "type": "protocol",
+      "parent": "identity",
+      "group": "infrastructure",
+      "summaryZh": "Space ID 提供多鏈域名與名稱服務，EVM 地址可以綁上可讀名稱，並在支援的應用裡顯示。同一個名稱服務可以對到多條鏈上的地址。",
+      "url": "https://space.id",
+      "tags": [
+        "domain"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "eas",
+      "label": "EAS",
+      "labelZh": "EAS",
+      "type": "protocol",
+      "parent": "identity",
+      "group": "infrastructure",
+      "summaryZh": "EAS 是以太坊證明服務，任何人可以對地址或事件發出可驗證的證明，用來做身分、出席與合規紀錄。證明內容與簽名人都留在鏈上，事後可以核對。",
+      "url": "https://attest.org",
+      "tags": [
+        "attestation"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "privy",
+      "label": "Privy",
+      "labelZh": "Privy",
+      "type": "protocol",
+      "parent": "identity",
+      "group": "infrastructure",
+      "summaryZh": "Privy 提供嵌入式錢包與登入，應用可以把電子郵件或社交帳號和鏈上地址接在一起，使用者不必先裝瀏覽器錢包。",
+      "url": "https://privy.io",
+      "tags": [
+        "auth",
+        "wallet"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "dynamic",
+      "label": "Dynamic",
+      "labelZh": "Dynamic",
+      "type": "protocol",
+      "parent": "identity",
+      "group": "infrastructure",
+      "summaryZh": "Dynamic 提供嵌入式錢包與身分元件，讓應用用社交或電子郵件登入建立 EVM 地址，並管理會話。使用者即使沒有瀏覽器擴充，也能取得鏈上地址。",
+      "url": "https://www.dynamic.xyz",
+      "tags": [
+        "auth",
+        "wallet"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "web3auth",
+      "label": "Web3Auth",
+      "labelZh": "Web3Auth",
+      "type": "protocol",
+      "parent": "identity",
+      "group": "infrastructure",
+      "summaryZh": "Web3Auth 用門檻簽名把登入憑證拆成金鑰份額，應用可以提供社交登入，同時仍對應到鏈上地址。登入憑證分散保存，單一服務商拿不到完整金鑰。",
+      "url": "https://web3auth.io",
+      "tags": [
+        "auth"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "etherscan",
+      "label": "Etherscan",
+      "labelZh": "Etherscan",
+      "type": "protocol",
+      "parent": "explorer",
+      "group": "developer",
+      "summaryZh": "Etherscan 是以太坊使用最廣的區塊瀏覽器，可以查交易、地址、代幣與已驗證的合約原始碼。已驗證的合約可以在頁面上直接閱讀原始碼。",
+      "url": "https://etherscan.io",
+      "tags": [
+        "explorer"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "blockscout",
+      "label": "Blockscout",
+      "labelZh": "Blockscout",
+      "type": "protocol",
+      "parent": "explorer",
+      "group": "developer",
+      "summaryZh": "Blockscout 是開源區塊瀏覽器，許多 EVM 二層用它架設自己的交易查詢站，功能包含合約驗證與代幣頁。鏈的營運方可以自己架站，不必依賴單一公司的瀏覽器。",
+      "url": "https://www.blockscout.com",
+      "tags": [
+        "explorer"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "foundry",
+      "label": "Foundry",
+      "labelZh": "Foundry",
+      "type": "protocol",
+      "parent": "framework",
+      "group": "developer",
+      "summaryZh": "Foundry 是以 Solidity 為中心的合約開發工具，包含編譯、測試、模糊測試與部署，指令列工具是 forge 與 cast。測試用 Solidity 撰寫，和合約使用同一種語言。",
+      "url": "https://getfoundry.sh",
+      "tags": [
+        "framework"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "hardhat",
+      "label": "Hardhat",
+      "labelZh": "Hardhat",
+      "type": "protocol",
+      "parent": "framework",
+      "group": "developer",
+      "summaryZh": "Hardhat 是以太坊合約開發環境，用 JavaScript 或 TypeScript 編寫測試、腳本與外掛，並在本機網路裡除錯。外掛可以接上合約驗證、升級與本機分叉，方便重現主網狀態。",
+      "url": "https://hardhat.org",
+      "tags": [
+        "framework"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "openzeppelin",
+      "label": "OpenZeppelin",
+      "labelZh": "OpenZeppelin",
+      "type": "protocol",
+      "parent": "framework",
+      "group": "developer",
+      "summaryZh": "OpenZeppelin 提供被廣泛引用的合約程式庫，包含代幣、權限與可升級代理，也有配合 Hardhat 的部署工具。常見的代幣與權限合約大多從這套程式庫修改而來。",
+      "url": "https://www.openzeppelin.com",
+      "tags": [
+        "framework",
+        "library"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "viem",
+      "label": "viem",
+      "labelZh": "viem",
+      "type": "protocol",
+      "parent": "sdk",
+      "group": "developer",
+      "summaryZh": "viem 是 TypeScript 的以太坊介面庫，用來組交易、呼叫合約與連線錢包，型別從合約 ABI 生成。呼叫結果帶有型別，前端較少自己解析回傳值。",
+      "url": "https://viem.sh",
+      "tags": [
+        "sdk"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "wagmi",
+      "label": "wagmi",
+      "labelZh": "wagmi",
+      "type": "protocol",
+      "parent": "sdk",
+      "group": "developer",
+      "summaryZh": "wagmi 是 React 的以太坊鉤子庫，建立在 viem 上，用來處理錢包連線、讀寫合約與交易狀態。連線狀態、讀取與送出交易都包成鉤子，介面元件可以直接用。",
+      "url": "https://wagmi.sh",
+      "tags": [
+        "sdk",
+        "react"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "ethers",
+      "label": "ethers",
+      "labelZh": "ethers",
+      "type": "protocol",
+      "parent": "sdk",
+      "group": "developer",
+      "summaryZh": "ethers 是長期使用的 JavaScript 以太坊程式庫，用來建立提供者、簽署者與合約物件，許多舊專案仍以它連線。提供者、錢包與合約物件是它組裝呼叫的三個基本單位。",
+      "url": "https://ethers.org/",
+      "tags": [
+        "sdk"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "walletconnect",
+      "label": "WalletConnect",
+      "labelZh": "WalletConnect",
+      "type": "protocol",
+      "parent": "sdk",
+      "group": "developer",
+      "summaryZh": "WalletConnect 是錢包與應用之間的連線協議，手機錢包可以掃碼或深連結簽署，不必和網頁共用同一個瀏覽器。",
+      "url": "https://walletconnect.com",
+      "tags": [
+        "sdk",
+        "wallet"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "immunefi",
+      "label": "Immunefi",
+      "labelZh": "Immunefi",
+      "type": "protocol",
+      "parent": "security",
+      "group": "developer",
+      "summaryZh": "Immunefi 是漏洞賞金平台，協議在上面公布範圍與獎金，白帽研究者回報合約缺陷並依規則領取報酬。獎金與影響範圍由協議事先寫在計畫頁上。",
+      "url": "https://immunefi.com",
+      "tags": [
+        "bounty"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "sherlock",
+      "label": "Sherlock",
+      "labelZh": "Sherlock",
+      "type": "protocol",
+      "parent": "security",
+      "group": "developer",
+      "summaryZh": "Sherlock 結合審計競賽與覆蓋，研究者在有時限的競賽裡找合約問題，協議也可以購買後續的保障方案。競賽結束後，協議仍可選擇後續的保障方案。",
+      "url": "https://sherlock.xyz",
+      "tags": [
+        "audit",
+        "contest"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "code4rena",
+      "label": "Code4rena",
+      "labelZh": "Code4rena",
+      "type": "protocol",
+      "parent": "security",
+      "group": "developer",
+      "summaryZh": "Code4rena 舉辦有時限的審計競賽，多位研究者同時審查同一份合約，依找出的問題分配獎金。同一時間有多人審查，問題按嚴重度分配獎金。",
+      "url": "https://code4rena.com",
+      "tags": [
+        "audit",
+        "contest"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "cyfrin",
+      "label": "Cyfrin",
+      "labelZh": "Cyfrin",
+      "type": "protocol",
+      "parent": "security",
+      "group": "developer",
+      "summaryZh": "Cyfrin 提供智能合約安全審查與教育，包含競賽平台與審計服務，協助團隊在上線前找實作缺陷。審查結果用來判斷合約能否帶著資金進入主網。",
+      "url": "https://www.cyfrin.io",
+      "tags": [
+        "audit"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "tenderly",
+      "label": "Tenderly",
+      "labelZh": "Tenderly",
+      "type": "protocol",
+      "parent": "security",
+      "group": "developer",
+      "summaryZh": "Tenderly 提供交易模擬、監控與除錯，團隊可以在送出前重現一筆失敗交易，或對已部署合約設定警報。失敗原因可以逐步對照合約內部的狀態變化。",
+      "url": "https://tenderly.co",
+      "tags": [
+        "simulation",
+        "monitoring"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "dune",
+      "label": "Dune",
+      "labelZh": "Dune",
+      "type": "protocol",
+      "parent": "data-api",
+      "group": "developer",
+      "summaryZh": "Dune 讓人用 SQL 查詢解碼後的鏈上資料，儀表板被研究與協議團隊用來追蹤用量、手續費與資金流。查詢結果可以存成儀表板，之後重複打開。",
+      "url": "https://dune.com",
+      "tags": [
+        "analytics",
+        "sql"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "nansen",
+      "label": "Nansen",
+      "labelZh": "Nansen",
+      "type": "protocol",
+      "parent": "data-api",
+      "group": "developer",
+      "summaryZh": "Nansen 給地址加上標籤並追蹤資金流向，交易與研究團隊用它看巨鯨、交易所與協議金庫的移動。標籤把匿名地址對到交易所、基金或協議金庫。",
+      "url": "https://nansen.ai",
+      "tags": [
+        "analytics",
+        "labels"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "arkham",
+      "label": "Arkham",
+      "labelZh": "Arkham",
+      "type": "protocol",
+      "parent": "data-api",
+      "group": "developer",
+      "summaryZh": "Arkham 做地址標註與資金圖，把鏈上轉帳整理成可追蹤的實體關係，用來調查錢包之間的流向。調查時可以沿著一筆轉帳往前與往後追蹤。",
+      "url": "https://arkm.com",
+      "tags": [
+        "analytics",
+        "labels"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "defillama",
+      "label": "DefiLlama",
+      "labelZh": "DefiLlama",
+      "type": "protocol",
+      "parent": "data-api",
+      "group": "developer",
+      "summaryZh": "DefiLlama 彙總各協議的鎖倉、手續費與收益，並按鏈與品類排名，是比較 EVM 協議規模時的公開資料站。同一協議在不同鏈上的數字會分開列出。",
+      "url": "https://defillama.com",
+      "tags": [
+        "analytics",
+        "tvl"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "token-terminal",
+      "label": "Token Terminal",
+      "labelZh": "Token Terminal",
+      "type": "protocol",
+      "parent": "data-api",
+      "group": "developer",
+      "summaryZh": "Token Terminal 把協議收入、費用與使用量整理成可比較的財務指標，用來對照不同 DeFi 產品的現金流。費用與收入按各協議公開的方法分別計算。",
+      "url": "https://tokenterminal.com",
+      "tags": [
+        "analytics",
+        "fundamentals"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "okx-wallet",
+      "label": "OKX Wallet",
+      "labelZh": "OKX Wallet",
+      "type": "protocol",
+      "parent": "wallet",
+      "group": "infrastructure",
+      "summaryZh": "OKX Wallet 是自託管的多鏈錢包，可在瀏覽器與手機簽署交易，支援以太坊、幣安鏈、Base 與 Arbitrum 的應用連線。交易簽名留在使用者自己的裝置上。",
+      "url": "https://www.okx.com/web3",
+      "tags": [
+        "wallet"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "phantom",
+      "label": "Phantom",
+      "labelZh": "Phantom",
+      "type": "protocol",
+      "parent": "wallet",
+      "group": "infrastructure",
+      "summaryZh": "Phantom 原本以另一條鏈聞名，現也提供以太坊與 Base 的自託管錢包，用來持有代幣、收藏品並連上應用簽署。交易簽名留在使用者自己的裝置上。",
+      "url": "https://phantom.com",
+      "tags": [
+        "wallet"
+      ],
+      "chains": [
+        "ethereum",
+        "base"
+      ]
+    },
+    {
+      "id": "binance-wallet",
+      "label": "Binance Wallet",
+      "labelZh": "Binance Wallet",
+      "type": "protocol",
+      "parent": "wallet",
+      "group": "infrastructure",
+      "summaryZh": "Binance Wallet 是幣安的自託管錢包，金鑰在使用者裝置上，可連幣安鏈、以太坊、Base 與 Arbitrum 的應用並簽署交易。交易簽名留在使用者自己的裝置上。",
+      "url": "https://www.binance.com/en/web3wallet",
+      "tags": [
+        "wallet"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "bitget-wallet",
+      "label": "Bitget Wallet",
+      "labelZh": "Bitget Wallet",
+      "type": "protocol",
+      "parent": "wallet",
+      "group": "infrastructure",
+      "summaryZh": "Bitget Wallet 是多鏈自託管錢包，內建兌換與應用連線，支援以太坊、幣安鏈、Base 與 Arbitrum 的帳戶與簽名。交易簽名留在使用者自己的裝置上。",
+      "url": "https://web3.bitget.com",
+      "tags": [
+        "wallet"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "tokenpocket",
+      "label": "TokenPocket",
+      "labelZh": "TokenPocket",
+      "type": "protocol",
+      "parent": "wallet",
+      "group": "infrastructure",
+      "summaryZh": "TokenPocket 是行動與瀏覽器自託管錢包，使用者用它管理多條 EVM 網路的資產，包含以太坊、幣安鏈、Base 與 Arbitrum。交易簽名留在使用者自己的裝置上。",
+      "url": "https://www.tokenpocket.pro",
+      "tags": [
+        "wallet"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "imtoken",
+      "label": "imToken",
+      "labelZh": "imToken",
+      "type": "protocol",
+      "parent": "wallet",
+      "group": "infrastructure",
+      "summaryZh": "imToken 是長期營運的自託管錢包，用來保管以太坊與幣安鏈等網路的資產，並在手機上連應用完成簽名。",
+      "url": "https://token.im",
+      "tags": [
+        "wallet"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb"
+      ]
+    },
+    {
+      "id": "myetherwallet",
+      "label": "MyEtherWallet",
+      "labelZh": "MyEtherWallet",
+      "type": "protocol",
+      "parent": "wallet",
+      "group": "infrastructure",
+      "summaryZh": "MyEtherWallet 是網頁端的以太坊自託管介面，可建立地址、簽署交易與連上硬體裝置，也支援幣安鏈、Base 與 Arbitrum。交易簽名留在使用者自己的裝置上。",
+      "url": "https://www.myetherwallet.com",
+      "tags": [
+        "wallet"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "brave-wallet",
+      "label": "Brave Wallet",
+      "labelZh": "Brave Wallet",
+      "type": "protocol",
+      "parent": "wallet",
+      "group": "infrastructure",
+      "summaryZh": "Brave Wallet 內建在 Brave 瀏覽器，用來保管金鑰並簽署 EVM 交易，可切換以太坊、幣安鏈、Base 與 Arbitrum。交易簽名留在使用者自己的裝置上。",
+      "url": "https://brave.com/wallet/",
+      "tags": [
+        "wallet"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "exodus",
+      "label": "Exodus",
+      "labelZh": "Exodus",
+      "type": "protocol",
+      "parent": "wallet",
+      "group": "infrastructure",
+      "summaryZh": "Exodus 是桌面與手機自託管錢包，內建資產組合檢視，支援以太坊與幣安鏈上的代幣持有與轉帳。交易簽名留在使用者自己的裝置上。",
+      "url": "https://www.exodus.com",
+      "tags": [
+        "wallet"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb"
+      ]
+    },
+    {
+      "id": "robinhood-wallet",
+      "label": "Robinhood Wallet",
+      "labelZh": "Robinhood Wallet",
+      "type": "protocol",
+      "parent": "wallet",
+      "group": "infrastructure",
+      "summaryZh": "Robinhood Wallet 是獨立於交易所帳戶的自託管錢包，使用者自己保管助記詞，可在以太坊、Base 與 Arbitrum 上持有與轉帳。交易簽名留在使用者自己的裝置上。",
+      "url": "https://robinhood.com/wallet",
+      "tags": [
+        "wallet"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "fireblocks",
+      "label": "Fireblocks",
+      "labelZh": "Fireblocks",
+      "type": "protocol",
+      "parent": "wallet",
+      "group": "infrastructure",
+      "summaryZh": "Fireblocks 提供機構用的託管與多方簽章，交易所和基金用它管理以太坊、幣安鏈、Base 與 Arbitrum 上的金庫支出。交易簽名留在使用者自己的裝置上。",
+      "url": "https://www.fireblocks.com",
+      "tags": [
+        "custody"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "sequence",
+      "label": "Sequence",
+      "labelZh": "Sequence",
+      "type": "protocol",
+      "parent": "wallet",
+      "group": "infrastructure",
+      "summaryZh": "Sequence 做嵌入式智慧帳戶，遊戲與應用可以替使用者代付手續費並批次操作，支援以太坊、Base 與 Arbitrum。交易簽名留在使用者自己的裝置上。",
+      "url": "https://sequence.xyz",
+      "tags": [
+        "smart-account"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "tangem",
+      "label": "Tangem",
+      "labelZh": "Tangem",
+      "type": "protocol",
+      "parent": "mobile",
+      "group": "infrastructure",
+      "summaryZh": "Tangem 是卡片形硬體錢包，私鑰留在卡片晶片，手機靠近即可簽署以太坊、幣安鏈、Base 與 Arbitrum 的交易。私鑰放在離線裝置，手機只負責發起。",
+      "url": "https://tangem.com",
+      "tags": [
+        "hardware"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "safepal",
+      "label": "SafePal",
+      "labelZh": "SafePal",
+      "type": "protocol",
+      "parent": "mobile",
+      "group": "infrastructure",
+      "summaryZh": "SafePal 做離線簽署的硬體錢包與搭配的手機應用，用來保管以太坊、幣安鏈、Base 與 Arbitrum 的金鑰。私鑰放在離線裝置，手機只負責發起。",
+      "url": "https://www.safepal.com",
+      "tags": [
+        "hardware"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "flashbots",
+      "label": "Flashbots",
+      "labelZh": "Flashbots",
+      "type": "protocol",
+      "parent": "rpc",
+      "group": "infrastructure",
+      "summaryZh": "Flashbots 在以太坊提供私有交易通道與區塊構建研究，使用者透過 Protect 端點送出交易，降低被搶跑與夾擊的機會。",
+      "url": "https://www.flashbots.net/",
+      "tags": [
+        "mev",
+        "rpc"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "mev-blocker",
+      "label": "MEV Blocker",
+      "labelZh": "MEV Blocker",
+      "type": "protocol",
+      "parent": "rpc",
+      "group": "infrastructure",
+      "summaryZh": "MEV Blocker 是以太坊的私有遠端節點，錢包把交易送到這裡再進區塊，用來避開公開記憶體池裡的夾擊與搶跑。",
+      "url": "https://mevblocker.io",
+      "tags": [
+        "mev",
+        "rpc"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "bloxroute",
+      "label": "bloXroute",
+      "labelZh": "bloXroute",
+      "type": "protocol",
+      "parent": "rpc",
+      "group": "infrastructure",
+      "summaryZh": "bloXroute 營運高速區塊與交易傳播網路，並提供以太坊與幣安鏈的遠端節點，給交易者與驗證者更快收送交易。",
+      "url": "https://bloxroute.com",
+      "tags": [
+        "rpc",
+        "mev"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb"
+      ]
+    },
+    {
+      "id": "blocknative",
+      "label": "Blocknative",
+      "labelZh": "Blocknative",
+      "type": "protocol",
+      "parent": "rpc",
+      "group": "infrastructure",
+      "summaryZh": "Blocknative 觀察以太坊記憶體池並估計下一個區塊的費用，錢包與交易者用它的介面決定手續費，減少交易卡住。",
+      "url": "https://www.blocknative.com",
+      "tags": [
+        "mempool",
+        "gas"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "nodereal",
+      "label": "NodeReal",
+      "labelZh": "NodeReal",
+      "type": "protocol",
+      "parent": "rpc",
+      "group": "infrastructure",
+      "summaryZh": "NodeReal 提供以太坊與幣安鏈的託管節點，應用用它讀取狀態、查詢日誌並送出交易，不必自己維護全節點。",
+      "url": "https://nodereal.io",
+      "tags": [
+        "rpc"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb"
+      ]
+    },
+    {
+      "id": "publicnode",
+      "label": "PublicNode",
+      "labelZh": "PublicNode",
+      "type": "protocol",
+      "parent": "rpc",
+      "group": "infrastructure",
+      "summaryZh": "PublicNode 提供可公開使用的遠端節點，開發者用來讀寫以太坊、幣安鏈、Base 與 Arbitrum，適合原型與備援呼叫。應用透過這個端點讀寫鏈上狀態。",
+      "url": "https://publicnode.com",
+      "tags": [
+        "rpc"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "getblock",
+      "label": "GetBlock",
+      "labelZh": "GetBlock",
+      "type": "protocol",
+      "parent": "rpc",
+      "group": "infrastructure",
+      "summaryZh": "GetBlock 出租多鏈遠端節點，應用用金鑰呼叫以太坊、幣安鏈、Base 與 Arbitrum，取得區塊、餘額與交易回執。應用透過這個端點讀寫鏈上狀態。",
+      "url": "https://getblock.io",
+      "tags": [
+        "rpc"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "pokt",
+      "label": "Pocket Network",
+      "labelZh": "Pocket Network",
+      "type": "protocol",
+      "parent": "rpc",
+      "group": "infrastructure",
+      "summaryZh": "Pocket Network 用分散的節點營運者提供遠端呼叫，應用向網路購買以太坊、幣安鏈、Base 與 Arbitrum 的讀寫額度。應用透過這個端點讀寫鏈上狀態。",
+      "url": "https://www.pokt.network",
+      "tags": [
+        "rpc"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "dia",
+      "label": "DIA",
+      "labelZh": "DIA",
+      "type": "protocol",
+      "parent": "oracle",
+      "group": "infrastructure",
+      "summaryZh": "DIA 從交易所蒐集價格並送到鏈上，借貸與衍生品可以讀取它的報價，餵價部署在以太坊與幣安鏈等網路。",
+      "url": "https://www.diadata.org",
+      "tags": [
+        "oracle"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb"
+      ]
+    },
+    {
+      "id": "tellor",
+      "label": "Tellor",
+      "labelZh": "Tellor",
+      "type": "protocol",
+      "parent": "oracle",
+      "group": "infrastructure",
+      "summaryZh": "Tellor 讓質押的回報者競爭提交資料，爭議時由代幣持有人表決，以太坊上的合約用這組報價當價格或事件來源。",
+      "url": "https://tellor.io",
+      "tags": [
+        "oracle"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "thorchain",
+      "label": "THORChain",
+      "labelZh": "THORChain",
+      "type": "protocol",
+      "parent": "bridge",
+      "group": "infrastructure",
+      "summaryZh": "THORChain 用原生資產金庫做跨鏈兌換，不必先包成錨定代幣，以太坊、幣安鏈與 Base 的資產可以經由它的接口換出。",
+      "url": "https://thorchain.org/",
+      "tags": [
+        "bridge",
+        "swap"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base"
+      ]
+    },
+    {
+      "id": "chainflip",
+      "label": "Chainflip",
+      "labelZh": "Chainflip",
+      "type": "protocol",
+      "parent": "bridge",
+      "group": "infrastructure",
+      "summaryZh": "Chainflip 用自己的驗證者集合保管原生資產並完成跨鏈兌換，以太坊上的資產可以不經包裝代幣直接換成其他鏈的資產。",
+      "url": "https://chainflip.io",
+      "tags": [
+        "bridge",
+        "swap"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "celer",
+      "label": "cBridge",
+      "labelZh": "cBridge",
+      "type": "protocol",
+      "parent": "bridge",
+      "group": "infrastructure",
+      "summaryZh": "cBridge 是 Celer 的跨鏈流動性網路，在以太坊、幣安鏈與 Arbitrum 之間快速轉移資產，由節點墊付並在鏈上結算。資產在目標鏈到帳後才算完成轉移。",
+      "url": "https://cbridge.celer.network",
+      "tags": [
+        "bridge"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "synapse",
+      "label": "Synapse",
+      "labelZh": "Synapse",
+      "type": "protocol",
+      "parent": "bridge",
+      "group": "infrastructure",
+      "summaryZh": "Synapse 在多條鏈之間傳遞資產與合約呼叫，使用者用它把穩定幣與主流資產搬到以太坊、幣安鏈、Base 或 Arbitrum。資產在目標鏈到帳後才算完成轉移。",
+      "url": "https://synapseprotocol.com",
+      "tags": [
+        "bridge"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "maya",
+      "label": "Maya",
+      "labelZh": "Maya",
+      "type": "protocol",
+      "parent": "bridge",
+      "group": "infrastructure",
+      "summaryZh": "Maya 沿用原生資產金庫的做法做跨鏈兌換，以太坊與 Arbitrum 上的資產可以不經包裝代幣，直接換成其他鏈的原生資產。",
+      "url": "https://www.mayaprotocol.com",
+      "tags": [
+        "bridge",
+        "swap"
+      ],
+      "chains": [
+        "ethereum",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "symbiosis",
+      "label": "Symbiosis",
+      "labelZh": "Symbiosis",
+      "type": "protocol",
+      "parent": "bridge",
+      "group": "infrastructure",
+      "summaryZh": "Symbiosis 聚合多鏈交易所的流動性，讓使用者一次完成跨鏈兌換，路徑可以進出以太坊、幣安鏈、Base 與 Arbitrum。資產在目標鏈到帳後才算完成轉移。",
+      "url": "https://symbiosis.finance",
+      "tags": [
+        "bridge",
+        "aggregator"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "relay",
+      "label": "Relay",
+      "labelZh": "Relay",
+      "type": "protocol",
+      "parent": "bridge",
+      "group": "infrastructure",
+      "summaryZh": "Relay 用意圖與墊付把資產快速搬到目標鏈，使用者在以太坊、Base 與 Arbitrum 之間兌換時，不必自己分步跨橋再交易。",
+      "url": "https://relay.link",
+      "tags": [
+        "bridge"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "bungee",
+      "label": "Bungee",
+      "labelZh": "Bungee",
+      "type": "protocol",
+      "parent": "bridge",
+      "group": "infrastructure",
+      "summaryZh": "Bungee 比較多條跨鏈橋與兌換路徑，替使用者挑出把資產送到以太坊、幣安鏈、Base 或 Arbitrum 的方式，一次提交即可。資產在目標鏈到帳後才算完成轉移。",
+      "url": "https://bungee.exchange/",
+      "tags": [
+        "bridge",
+        "aggregator"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "orbiter",
+      "label": "Orbiter",
+      "labelZh": "Orbiter",
+      "type": "protocol",
+      "parent": "bridge",
+      "group": "infrastructure",
+      "summaryZh": "Orbiter 在第二層之間轉移以太幣與穩定幣，做市商先在目標鏈墊付，使用者可在以太坊、幣安鏈、Base 與 Arbitrum 之間移動資金。",
+      "url": "https://orbiter.finance",
+      "tags": [
+        "bridge"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "squid",
+      "label": "Squid",
+      "labelZh": "Squid",
+      "type": "protocol",
+      "parent": "bridge",
+      "group": "infrastructure",
+      "summaryZh": "Squid 建在 Axelar 的訊息層上，把跨鏈與兌換收成一筆操作，路徑覆蓋以太坊、幣安鏈、Base 與 Arbitrum 的資產。資產在目標鏈到帳後才算完成轉移。",
+      "url": "https://www.squidrouter.com/",
+      "tags": [
+        "bridge"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "everclear",
+      "label": "Everclear",
+      "labelZh": "Everclear",
+      "type": "protocol",
+      "parent": "bridge",
+      "group": "infrastructure",
+      "summaryZh": "Everclear 前身是 Connext，負責在鏈與鏈之間結清淨額，讓跨鏈資金不必每筆都原路搬運，支援這四條 EVM 網路。資產在目標鏈到帳後才算完成轉移。",
+      "url": "https://docs.everclear.org",
+      "tags": [
+        "bridge",
+        "clearing"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "routescan",
+      "label": "Routescan",
+      "labelZh": "Routescan",
+      "type": "protocol",
+      "parent": "explorer",
+      "group": "developer",
+      "summaryZh": "Routescan 提供多鏈區塊瀏覽器，可查以太坊、幣安鏈、Base 與 Arbitrum 的交易、代幣與合約，並支援合約原始碼驗證。查帳時可以直接打開對應的交易頁。",
+      "url": "https://routescan.io",
+      "tags": [
+        "explorer"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "sourcify",
+      "label": "Sourcify",
+      "labelZh": "Sourcify",
+      "type": "protocol",
+      "parent": "explorer",
+      "group": "developer",
+      "summaryZh": "Sourcify 核對已部署合約與原始碼是否一致，驗證紀錄可供瀏覽器讀取，覆蓋以太坊、幣安鏈、Base 與 Arbitrum。查帳時可以直接打開對應的交易頁。",
+      "url": "https://sourcify.dev",
+      "tags": [
+        "verification"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "beaconchain",
+      "label": "beaconcha.in",
+      "labelZh": "beaconcha.in",
+      "type": "protocol",
+      "parent": "explorer",
+      "group": "developer",
+      "summaryZh": "beaconcha.in 顯示以太坊共識層的驗證者、時段與罰沒紀錄，質押者用它查看自己的驗證者是否正常提案與證明。",
+      "url": "https://beaconcha.in",
+      "tags": [
+        "explorer",
+        "staking"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "grandine",
+      "label": "Grandine",
+      "labelZh": "Grandine",
+      "type": "protocol",
+      "parent": "validator-client",
+      "group": "infrastructure",
+      "summaryZh": "Grandine 是以太坊共識層客戶端，驗證者用它跟網路同步並履行證明與提案，為客戶端多樣性再加一種實作。",
+      "url": "https://www.grandine.io",
+      "tags": [
+        "consensus"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "thirdweb",
+      "label": "thirdweb",
+      "labelZh": "thirdweb",
+      "type": "protocol",
+      "parent": "sdk",
+      "group": "developer",
+      "summaryZh": "thirdweb 提供合約範本、開發套件與錢包連線，應用可以在以太坊、幣安鏈、Base 與 Arbitrum 上部署常見的代幣與市集功能。",
+      "url": "https://thirdweb.com",
+      "tags": [
+        "sdk"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "pimlico",
+      "label": "Pimlico",
+      "labelZh": "Pimlico",
+      "type": "protocol",
+      "parent": "sdk",
+      "group": "developer",
+      "summaryZh": "Pimlico 營運帳戶抽象所需的打包器與代付，讓智慧帳戶在以太坊、幣安鏈、Base 與 Arbitrum 上用穩定幣支付手續費。開發者用這套介面組裝交易與呼叫。",
+      "url": "https://www.pimlico.io",
+      "tags": [
+        "account-abstraction"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "biconomy",
+      "label": "Biconomy",
+      "labelZh": "Biconomy",
+      "type": "protocol",
+      "parent": "sdk",
+      "group": "developer",
+      "summaryZh": "Biconomy 提供智慧帳戶與代付基礎設施，應用可以把多步操作收成一筆簽名，支援以太坊、幣安鏈、Base 與 Arbitrum。開發者用這套介面組裝交易與呼叫。",
+      "url": "https://www.biconomy.io",
+      "tags": [
+        "account-abstraction"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "zerodev",
+      "label": "ZeroDev",
+      "labelZh": "ZeroDev",
+      "type": "protocol",
+      "parent": "sdk",
+      "group": "developer",
+      "summaryZh": "ZeroDev 讓開發者建立模組化智慧帳戶，可設定工作階段金鑰與代付，帳戶部署在以太坊、Base 與 Arbitrum。開發者用這套介面組裝交易與呼叫。",
+      "url": "https://zerodev.app",
+      "tags": [
+        "account-abstraction"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "remix",
+      "label": "Remix",
+      "labelZh": "Remix",
+      "type": "protocol",
+      "parent": "framework",
+      "group": "developer",
+      "summaryZh": "Remix 是瀏覽器裡的合約開發環境，用來編寫、編譯、部署與除錯，可直接連上以太坊、幣安鏈、Base 與 Arbitrum。編譯、部署與除錯收在同一套工具。",
+      "url": "https://remix.ethereum.org",
+      "tags": [
+        "ide"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "zama",
+      "label": "Zama",
+      "labelZh": "Zama",
+      "type": "protocol",
+      "parent": "sdk",
+      "group": "developer",
+      "summaryZh": "Zama 提供全同態加密工具，讓以太坊合約在密文上計算，應用可以處理敏感數值而不必把明文放上鏈。",
+      "url": "https://www.zama.org/",
+      "tags": [
+        "cryptography"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "forta",
+      "label": "Forta",
+      "labelZh": "Forta",
+      "type": "protocol",
+      "parent": "security",
+      "group": "developer",
+      "summaryZh": "Forta 運行偵測機器人網路，即時掃描以太坊、幣安鏈、Base 與 Arbitrum 上的異常交易，協議用它發現攻擊與異常資金流。",
+      "url": "https://forta.org",
+      "tags": [
+        "monitoring"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "certik",
+      "label": "CertiK",
+      "labelZh": "CertiK",
+      "type": "protocol",
+      "parent": "security",
+      "group": "developer",
+      "summaryZh": "CertiK 為智能合約做安全審計與上線後監控，專案在部署到以太坊、幣安鏈、Base 或 Arbitrum 之前，常用它出具審查報告。",
+      "url": "https://www.certik.com",
+      "tags": [
+        "audit"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "certora",
+      "label": "Certora",
+      "labelZh": "Certora",
+      "type": "protocol",
+      "parent": "security",
+      "group": "developer",
+      "summaryZh": "Certora 用形式化驗證檢查合約是否滿足撰寫的性質，以太坊上的借貸與治理合約常用它補足人工審計沒覆蓋的路徑。",
+      "url": "https://www.certora.com",
+      "tags": [
+        "formal-verification"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "cantina",
+      "label": "Cantina",
+      "labelZh": "Cantina",
+      "type": "protocol",
+      "parent": "security",
+      "group": "developer",
+      "summaryZh": "Cantina 承作審計競賽與安全審查，研究者在時限內尋找合約缺陷，客戶多為部署在以太坊及其第二層的協議。",
+      "url": "https://cantina.xyz",
+      "tags": [
+        "audit",
+        "contest"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "blocksec",
+      "label": "BlockSec",
+      "labelZh": "BlockSec",
+      "type": "protocol",
+      "parent": "security",
+      "group": "developer",
+      "summaryZh": "BlockSec 提供交易模擬與攻擊監測，協議在以太坊、幣安鏈、Base 與 Arbitrum 上用它在簽名前預覽結果並攔截可疑呼叫。上線前後用它降低資金被盜的機會。",
+      "url": "https://blocksec.com",
+      "tags": [
+        "monitoring"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "nexus",
+      "label": "Nexus Mutual",
+      "labelZh": "Nexus Mutual",
+      "type": "protocol",
+      "parent": "security",
+      "group": "developer",
+      "summaryZh": "Nexus Mutual 是以太坊上的互助保險，成員質押資金為智能合約失敗提供保障，理賠由成員表決是否成立。上線前後用它降低資金被盜的機會。",
+      "url": "https://nexusmutual.io/",
+      "tags": [
+        "cover"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    },
+    {
+      "id": "dexscreener",
+      "label": "DEX Screener",
+      "labelZh": "DEX Screener",
+      "type": "protocol",
+      "parent": "data-api",
+      "group": "developer",
+      "summaryZh": "DEX Screener 即時列出各交易所的新池、價格與成交量，交易者用它看以太坊、幣安鏈、Base 與 Arbitrum 的現貨行情。研究與做市團隊用它看鏈上活動。",
+      "url": "https://dexscreener.com",
+      "tags": [
+        "analytics"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "dextools",
+      "label": "DEXTools",
+      "labelZh": "DEXTools",
+      "type": "protocol",
+      "parent": "data-api",
+      "group": "developer",
+      "summaryZh": "DEXTools 提供現貨圖表、持有人與新池警報，是以太坊、幣安鏈、Base 與 Arbitrum 上長尾代幣的常用行情站。研究與做市團隊用它看鏈上活動。",
+      "url": "https://www.dextools.io",
+      "tags": [
+        "analytics"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "debank",
+      "label": "DeBank",
+      "labelZh": "DeBank",
+      "type": "protocol",
+      "parent": "data-api",
+      "group": "developer",
+      "summaryZh": "DeBank 依地址彙總多鏈的代幣、存款與債務，使用者用它看以太坊、幣安鏈、Base 與 Arbitrum 上的整體部位。研究與做市團隊用它看鏈上活動。",
+      "url": "https://debank.com",
+      "tags": [
+        "portfolio"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "zapper",
+      "label": "Zapper",
+      "labelZh": "Zapper",
+      "type": "protocol",
+      "parent": "data-api",
+      "group": "developer",
+      "summaryZh": "Zapper 把地址在以太坊、Base 與 Arbitrum 的頭寸畫成投資組合，也能從同一頁面進出部分金庫與流動性倉位。研究與做市團隊用它看鏈上活動。",
+      "url": "https://zapper.xyz",
+      "tags": [
+        "portfolio"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "coingecko",
+      "label": "CoinGecko",
+      "labelZh": "CoinGecko",
+      "type": "protocol",
+      "parent": "data-api",
+      "group": "developer",
+      "summaryZh": "CoinGecko 彙總代幣價格、市值與交易所上市資訊，並提供資料介面，行情覆蓋以太坊、幣安鏈、Base 與 Arbitrum。研究與做市團隊用它看鏈上活動。",
+      "url": "https://www.coingecko.com",
+      "tags": [
+        "market-data"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "l2beat",
+      "label": "L2BEAT",
+      "labelZh": "L2BEAT",
+      "type": "protocol",
+      "parent": "data-api",
+      "group": "developer",
+      "summaryZh": "L2BEAT 比較以太坊第二層的證明方式、升級權與鎖倉，Base 與 Arbitrum 的風險說明是研究者核對橋與定序器時的公開資料。",
+      "url": "https://l2beat.com",
+      "tags": [
+        "analytics"
+      ],
+      "chains": [
+        "ethereum",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "moralis",
+      "label": "Moralis",
+      "labelZh": "Moralis",
+      "type": "protocol",
+      "parent": "data-api",
+      "group": "developer",
+      "summaryZh": "Moralis 提供錢包餘額、代幣轉移與收藏品的資料介面，應用用它讀取以太坊、幣安鏈、Base 與 Arbitrum，不必自建索引。研究與做市團隊用它看鏈上活動。",
+      "url": "https://moralis.com",
+      "tags": [
+        "api"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "goldrush",
+      "label": "GoldRush",
+      "labelZh": "GoldRush",
+      "type": "protocol",
+      "parent": "data-api",
+      "group": "developer",
+      "summaryZh": "GoldRush 前身是 Covalent，把多鏈的餘額、日誌與交易做成統一介面，覆蓋以太坊、幣安鏈、Base 與 Arbitrum 的歷史資料。研究與做市團隊用它看鏈上活動。",
+      "url": "https://goldrush.dev",
+      "tags": [
+        "api"
+      ],
+      "chains": [
+        "ethereum",
+        "bnb",
+        "base",
+        "arbitrum"
+      ]
+    },
+    {
+      "id": "poap",
+      "label": "POAP",
+      "labelZh": "POAP",
+      "type": "protocol",
+      "parent": "identity",
+      "group": "infrastructure",
+      "summaryZh": "POAP 把出席證明做成不可替代憑證，活動方發給到場的地址，持有紀錄留在以太坊，用來證明某人參加過某次活動。",
+      "url": "https://poap.xyz",
+      "tags": [
+        "credentials"
+      ],
+      "chains": [
+        "ethereum"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "source": "metamask",
+      "target": "uniswap",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "metamask",
+      "target": "ens",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "metamask",
+      "target": "infura",
+      "relation": "integrates"
+    },
+    {
+      "source": "metamask",
+      "target": "walletconnect",
+      "relation": "integrates"
+    },
+    {
+      "source": "rabby",
+      "target": "walletconnect",
+      "relation": "integrates"
+    },
+    {
+      "source": "rainbow",
+      "target": "farcaster",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "rainbow",
+      "target": "ens",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "rainbow",
+      "target": "walletconnect",
+      "relation": "integrates"
+    },
+    {
+      "source": "safe",
+      "target": "cowswap",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "safe",
+      "target": "snapshot",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "trust-wallet",
+      "target": "pancakeswap",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "ledger",
+      "target": "metamask",
+      "relation": "integrates"
+    },
+    {
+      "source": "trezor",
+      "target": "metamask",
+      "relation": "integrates"
+    },
+    {
+      "source": "keystone",
+      "target": "metamask",
+      "relation": "integrates"
+    },
+    {
+      "source": "onekey",
+      "target": "metamask",
+      "relation": "integrates"
+    },
+    {
+      "source": "gridplus",
+      "target": "metamask",
+      "relation": "integrates"
+    },
+    {
+      "source": "stargate",
+      "target": "layerzero",
+      "relation": "built-on"
+    },
+    {
+      "source": "lifi",
+      "target": "aggregator",
+      "relation": "also-in"
+    },
+    {
+      "source": "lifi",
+      "target": "across",
+      "relation": "integrates"
+    },
+    {
+      "source": "lifi",
+      "target": "stargate",
+      "relation": "integrates"
+    },
+    {
+      "source": "across",
+      "target": "hop",
+      "relation": "competes"
+    },
+    {
+      "source": "across",
+      "target": "stargate",
+      "relation": "competes"
+    },
+    {
+      "source": "hop",
+      "target": "stargate",
+      "relation": "competes"
+    },
+    {
+      "source": "wormhole",
+      "target": "layerzero",
+      "relation": "competes"
+    },
+    {
+      "source": "debridge",
+      "target": "across",
+      "relation": "competes"
+    },
+    {
+      "source": "hyperlane",
+      "target": "layerzero",
+      "relation": "competes"
+    },
+    {
+      "source": "axelar",
+      "target": "layerzero",
+      "relation": "competes"
+    },
+    {
+      "source": "threshold",
+      "target": "wbtc",
+      "relation": "competes"
+    },
+    {
+      "source": "lombard",
+      "target": "wbtc",
+      "relation": "competes"
+    },
+    {
+      "source": "goldsky",
+      "target": "the-graph",
+      "relation": "competes"
+    },
+    {
+      "source": "envio",
+      "target": "the-graph",
+      "relation": "competes"
+    },
+    {
+      "source": "sqd",
+      "target": "the-graph",
+      "relation": "competes"
+    },
+    {
+      "source": "ponder",
+      "target": "the-graph",
+      "relation": "competes"
+    },
+    {
+      "source": "uniswap",
+      "target": "the-graph",
+      "relation": "integrates"
+    },
+    {
+      "source": "wagmi",
+      "target": "viem",
+      "relation": "built-on"
+    },
+    {
+      "source": "hardhat",
+      "target": "openzeppelin",
+      "relation": "integrates"
+    },
+    {
+      "source": "foundry",
+      "target": "hardhat",
+      "relation": "competes"
+    },
+    {
+      "source": "etherscan",
+      "target": "blockscout",
+      "relation": "competes"
+    },
+    {
+      "source": "immunefi",
+      "target": "sherlock",
+      "relation": "competes"
+    },
+    {
+      "source": "immunefi",
+      "target": "code4rena",
+      "relation": "competes"
+    },
+    {
+      "source": "cyfrin",
+      "target": "sherlock",
+      "relation": "competes"
+    },
+    {
+      "source": "dune",
+      "target": "nansen",
+      "relation": "competes"
+    },
+    {
+      "source": "dune",
+      "target": "defillama",
+      "relation": "competes"
+    },
+    {
+      "source": "arkham",
+      "target": "nansen",
+      "relation": "competes"
+    },
+    {
+      "source": "token-terminal",
+      "target": "defillama",
+      "relation": "competes"
+    },
+    {
+      "source": "geth",
+      "target": "nethermind",
+      "relation": "competes"
+    },
+    {
+      "source": "geth",
+      "target": "reth",
+      "relation": "competes"
+    },
+    {
+      "source": "geth",
+      "target": "erigon",
+      "relation": "competes"
+    },
+    {
+      "source": "geth",
+      "target": "besu",
+      "relation": "competes"
+    },
+    {
+      "source": "prysm",
+      "target": "lighthouse",
+      "relation": "competes"
+    },
+    {
+      "source": "prysm",
+      "target": "teku",
+      "relation": "competes"
+    },
+    {
+      "source": "prysm",
+      "target": "nimbus",
+      "relation": "competes"
+    },
+    {
+      "source": "prysm",
+      "target": "lodestar",
+      "relation": "competes"
+    },
+    {
+      "source": "ssv",
+      "target": "obol",
+      "relation": "competes"
+    },
+    {
+      "source": "alchemy",
+      "target": "infura",
+      "relation": "competes"
+    },
+    {
+      "source": "quicknode",
+      "target": "alchemy",
+      "relation": "competes"
+    },
+    {
+      "source": "drpc",
+      "target": "alchemy",
+      "relation": "competes"
+    },
+    {
+      "source": "ankr",
+      "target": "infura",
+      "relation": "competes"
+    },
+    {
+      "source": "chainstack",
+      "target": "quicknode",
+      "relation": "competes"
+    },
+    {
+      "source": "blockdaemon",
+      "target": "alchemy",
+      "relation": "competes"
+    },
+    {
+      "source": "pyth",
+      "target": "chainlink",
+      "relation": "competes"
+    },
+    {
+      "source": "redstone",
+      "target": "chainlink",
+      "relation": "competes"
+    },
+    {
+      "source": "api3",
+      "target": "chainlink",
+      "relation": "competes"
+    },
+    {
+      "source": "chronicle",
+      "target": "chainlink",
+      "relation": "competes"
+    },
+    {
+      "source": "privy",
+      "target": "dynamic",
+      "relation": "competes"
+    },
+    {
+      "source": "web3auth",
+      "target": "privy",
+      "relation": "competes"
+    },
+    {
+      "source": "tenderly",
+      "target": "hardhat",
+      "relation": "integrates"
+    },
+    {
+      "source": "space-id",
+      "target": "ens",
+      "relation": "competes"
+    },
+    {
+      "source": "unstoppable",
+      "target": "ens",
+      "relation": "competes"
+    },
+    {
+      "source": "okx-wallet",
+      "target": "uniswap",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "binance-wallet",
+      "target": "pancakeswap",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "tokenpocket",
+      "target": "pancakeswap",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "fireblocks",
+      "target": "safe",
+      "relation": "integrates"
+    },
+    {
+      "source": "sequence",
+      "target": "walletconnect",
+      "relation": "integrates"
+    },
+    {
+      "source": "tangem",
+      "target": "metamask",
+      "relation": "integrates"
+    },
+    {
+      "source": "safepal",
+      "target": "metamask",
+      "relation": "integrates"
+    },
+    {
+      "source": "flashbots",
+      "target": "mev-blocker",
+      "relation": "competes"
+    },
+    {
+      "source": "mev-blocker",
+      "target": "cowswap",
+      "relation": "integrates"
+    },
+    {
+      "source": "bloxroute",
+      "target": "flashbots",
+      "relation": "competes"
+    },
+    {
+      "source": "blocknative",
+      "target": "flashbots",
+      "relation": "competes"
+    },
+    {
+      "source": "nodereal",
+      "target": "alchemy",
+      "relation": "competes"
+    },
+    {
+      "source": "publicnode",
+      "target": "infura",
+      "relation": "competes"
+    },
+    {
+      "source": "getblock",
+      "target": "quicknode",
+      "relation": "competes"
+    },
+    {
+      "source": "pokt",
+      "target": "infura",
+      "relation": "competes"
+    },
+    {
+      "source": "dia",
+      "target": "chainlink",
+      "relation": "competes"
+    },
+    {
+      "source": "tellor",
+      "target": "chainlink",
+      "relation": "competes"
+    },
+    {
+      "source": "thorchain",
+      "target": "chainflip",
+      "relation": "competes"
+    },
+    {
+      "source": "chainflip",
+      "target": "thorchain",
+      "relation": "competes"
+    },
+    {
+      "source": "celer",
+      "target": "stargate",
+      "relation": "competes"
+    },
+    {
+      "source": "synapse",
+      "target": "across",
+      "relation": "competes"
+    },
+    {
+      "source": "maya",
+      "target": "thorchain",
+      "relation": "competes"
+    },
+    {
+      "source": "symbiosis",
+      "target": "uniswap",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "relay",
+      "target": "across",
+      "relation": "competes"
+    },
+    {
+      "source": "bungee",
+      "target": "lifi",
+      "relation": "competes"
+    },
+    {
+      "source": "bungee",
+      "target": "uniswap",
+      "relation": "routes-liquidity"
+    },
+    {
+      "source": "orbiter",
+      "target": "across",
+      "relation": "competes"
+    },
+    {
+      "source": "squid",
+      "target": "axelar",
+      "relation": "built-on"
+    },
+    {
+      "source": "everclear",
+      "target": "across",
+      "relation": "competes"
+    },
+    {
+      "source": "routescan",
+      "target": "etherscan",
+      "relation": "competes"
+    },
+    {
+      "source": "routescan",
+      "target": "blockscout",
+      "relation": "competes"
+    },
+    {
+      "source": "sourcify",
+      "target": "etherscan",
+      "relation": "integrates"
+    },
+    {
+      "source": "beaconchain",
+      "target": "lighthouse",
+      "relation": "lists"
+    },
+    {
+      "source": "grandine",
+      "target": "lighthouse",
+      "relation": "competes"
+    },
+    {
+      "source": "thirdweb",
+      "target": "walletconnect",
+      "relation": "integrates"
+    },
+    {
+      "source": "pimlico",
+      "target": "safe",
+      "relation": "powers"
+    },
+    {
+      "source": "biconomy",
+      "target": "pimlico",
+      "relation": "competes"
+    },
+    {
+      "source": "zerodev",
+      "target": "biconomy",
+      "relation": "competes"
+    },
+    {
+      "source": "remix",
+      "target": "openzeppelin",
+      "relation": "integrates"
+    },
+    {
+      "source": "certik",
+      "target": "cantina",
+      "relation": "competes"
+    },
+    {
+      "source": "certora",
+      "target": "certik",
+      "relation": "competes"
+    },
+    {
+      "source": "cantina",
+      "target": "code4rena",
+      "relation": "competes"
+    },
+    {
+      "source": "blocksec",
+      "target": "tenderly",
+      "relation": "competes"
+    },
+    {
+      "source": "nexus",
+      "target": "sherlock",
+      "relation": "competes"
+    },
+    {
+      "source": "dexscreener",
+      "target": "uniswap",
+      "relation": "lists"
+    },
+    {
+      "source": "dexscreener",
+      "target": "geckoterminal",
+      "relation": "competes"
+    },
+    {
+      "source": "dextools",
+      "target": "dexscreener",
+      "relation": "competes"
+    },
+    {
+      "source": "debank",
+      "target": "zerion",
+      "relation": "competes"
+    },
+    {
+      "source": "zapper",
+      "target": "debank",
+      "relation": "competes"
+    },
+    {
+      "source": "coingecko",
+      "target": "geckoterminal",
+      "relation": "powers"
+    },
+    {
+      "source": "l2beat",
+      "target": "defillama",
+      "relation": "competes"
+    },
+    {
+      "source": "moralis",
+      "target": "goldrush",
+      "relation": "competes"
+    },
+    {
+      "source": "goldrush",
+      "target": "moralis",
+      "relation": "competes"
+    },
+    {
+      "source": "poap",
+      "target": "ens",
+      "relation": "integrates"
+    },
+    {
+      "source": "myetherwallet",
+      "target": "ledger",
+      "relation": "integrates"
+    },
+    {
+      "source": "coinbase-wallet",
+      "target": "xmtp",
+      "relation": "integrates"
+    },
+    {
+      "source": "ledger",
+      "target": "uniswap",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "fireblocks",
+      "target": "uniswap",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "fireblocks",
+      "target": "aave",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "privy",
+      "target": "uniswap",
+      "relation": "wallet-support"
+    },
+    {
+      "source": "lifi",
+      "target": "uniswap",
+      "relation": "routes-liquidity"
+    }
+  ]
+}
