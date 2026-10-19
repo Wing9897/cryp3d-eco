@@ -884,7 +884,7 @@ export function extractDomain(url?: string, nodeId?: string): string | null {
 
 export function getDomainLogoUrl(domain: string, stamp = getLogoStamp()): string {
   const normalized = domain.trim().toLowerCase();
-  if (import.meta.env.PROD && stamp === 0) {
+  if (import.meta.env.PROD) {
     let file = logoManifest[normalized];
     if (!file) {
       const parts = normalized.split('.');
@@ -892,7 +892,7 @@ export function getDomainLogoUrl(domain: string, stamp = getLogoStamp()): string
         file = logoManifest[parts.slice(-2).join('.')];
       }
     }
-    if (file) return `./logos/${encodeURIComponent(file)}`;
+    if (file) return `${import.meta.env.BASE_URL}logos/${encodeURIComponent(file)}`;
   }
   const version = stamp > 0 ? `&v=${stamp}` : '';
   return `/api/logo?domain=${encodeURIComponent(normalized)}${version}`;

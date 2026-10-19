@@ -242,7 +242,7 @@ function logoRequestUrl(url: string, version: number): string {
       const domain = parsed.searchParams.get('domain')?.trim().toLowerCase();
       if (domain) return `/api/logo?domain=${encodeURIComponent(domain)}&v=${versionText}`;
     }
-    if (parsed.pathname.includes('/logos/')) {
+    if (!import.meta.env.PROD && parsed.pathname.includes('/logos/')) {
       const file = decodeURIComponent(parsed.pathname.split('/').pop() ?? '');
       const dot = file.lastIndexOf('.');
       const domain = (dot > 0 ? file.slice(0, dot) : file).trim().toLowerCase();

@@ -1,4 +1,4 @@
-import { cpSync, mkdirSync, readdirSync, readFileSync, unlinkSync, writeFileSync } from 'node:fs';
+import { copyFileSync, mkdirSync, readdirSync, readFileSync, statSync, unlinkSync, writeFileSync } from 'node:fs';
 import type { IncomingMessage } from 'node:http';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -472,10 +472,19 @@ function logoProxyPlugin(): Plugin {
       return null;
     },
     closeBundle() {
+      // copyFileSync one file at a time. cpSync of this folder crashes Node on Windows.
+      let entries: string[];
       try {
-        cpSync(LOGO_DIR, path.join(outDir, 'logos'), { recursive: true, force: true });
+        entries = readdirSync(LOGO_DIR);
       } catch {
-        // Ignore if cache/logos does not exist yet.
+        return;
+      }
+      const dest = path.join(outDir, 'logos');
+      mkdirSync(dest, { recursive: true });
+      for (const file of entries) {
+        const from = path.join(LOGO_DIR, file);
+        if (!statSync(from).isFile()) continue;
+        copyFileSync(from, path.join(dest, file));
       }
     },
     configureServer(server) {
@@ -487,9 +496,13 @@ function logoProxyPlugin(): Plugin {
   };
 }
 
-export default defineConfig({
+const pagesBase = '/cryp3d-eco/';
+
+export default defineConfig(({ command }) => ({
   plugins: [react(), logoProxyPlugin()],
-  base: './',
+  // Project site is https://wing9897.github.io/cryp3d-eco/
+  // Dev stays at / so the local server and /api/logo keep working.
+  base: command === 'build' ? pagesBase : '/',
   build: {
     chunkSizeWarningLimit: 1800,
     rollupOptions: {
@@ -521,4 +534,4 @@ export default defineConfig({
       },
     },
   },
-});
+}));
