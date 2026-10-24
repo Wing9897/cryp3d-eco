@@ -49,10 +49,10 @@ const EVM_CHAIN_MARK: Record<EvmChainId, { short: string; domain: string }> = {
   arbitrum: { short: 'Arbitrum', domain: 'arbitrum.io' },
 };
 
-const LAYOUT_OPTIONS: { id: LayoutMode; label: string }[] = [
-  { id: 'radial', label: '放射腦圖佈局' },
-  { id: 'tree', label: '樹狀階層佈局' },
-  { id: 'force', label: '自由網路佈局' },
+const LAYOUT_OPTIONS: { id: LayoutMode; label: string; caption: string }[] = [
+  { id: 'radial', label: '放射腦圖佈局', caption: '放射佈局' },
+  { id: 'tree', label: '樹狀階層佈局', caption: '樹狀佈局' },
+  { id: 'force', label: '自由網路佈局', caption: '自由網路' },
 ];
 
 function useLogoStamp(): number {
@@ -136,6 +136,7 @@ function CheckIcon() {
 
 function DockButton({
   label,
+  caption,
   pressed,
   busy,
   className,
@@ -143,6 +144,7 @@ function DockButton({
   children,
 }: {
   label: string;
+  caption: string;
   pressed?: boolean;
   busy?: boolean;
   className?: string;
@@ -163,6 +165,7 @@ function DockButton({
       onClick={onClick}
     >
       {children}
+      <span className="dock-btn-label">{caption}</span>
     </button>
   );
 }
@@ -195,6 +198,7 @@ const TopDock = memo(function TopDock({
   logoDomains,
 }: TopDockProps) {
   const [chainOpen, setChainOpen] = useState(false);
+  const [toolsOpen, setToolsOpen] = useState(false);
   const [logoBusy, setLogoBusy] = useState(false);
   const logoBusyRef = useRef(false);
   const refreshLogos = async () => {
@@ -218,6 +222,7 @@ const TopDock = memo(function TopDock({
     }
   };
   const brandRef = useRef<HTMLDivElement | null>(null);
+  const toolbarRef = useRef<HTMLElement | null>(null);
   const menuId = useId();
   const activeChain = chainProfile(chain);
   const domainPillars = PILLARS.filter((pillar) => visiblePillarIds.includes(pillar.id));
@@ -248,6 +253,18 @@ const TopDock = memo(function TopDock({
     };
   }, [chainOpen]);
 
+  useEffect(() => {
+    if (!toolsOpen) return;
+    const onPointerDown = (event: PointerEvent) => {
+      const target = event.target;
+      if (!(target instanceof Node)) return;
+      if (toolbarRef.current?.contains(target)) return;
+      setToolsOpen(false);
+    };
+    document.addEventListener('pointerdown', onPointerDown, true);
+    return () => document.removeEventListener('pointerdown', onPointerDown, true);
+  }, [toolsOpen]);
+
   const lockTip = nodeLocked ? '節點已鎖定，點擊解鎖拖曳' : '節點已解鎖，點擊重新鎖定';
   const gatherTip = gathered ? '還原節點原位 (快捷鍵 G)' : '聚攏關聯節點 (快捷鍵 G)';
   const tourTip = tourActive ? '暫停焦點巡覽' : '開始焦點巡覽';
@@ -266,7 +283,11 @@ const TopDock = memo(function TopDock({
   };
 
   return (
-    <header className="toolbar topbar">
+    <header
+      ref={toolbarRef}
+      className={toolsOpen ? 'toolbar topbar is-tools-open' : 'toolbar topbar'}
+    >
+      <div className="toolbar-main">
       <div className="dock-island dock-brand">
         <div className="toolbar-brand-slot" ref={brandRef}>
           <button
@@ -276,7 +297,10 @@ const TopDock = memo(function TopDock({
             aria-expanded={chainOpen}
             aria-controls={menuId}
             aria-label={`${headline}，${nodeCount} 節點，選擇要看的鏈`}
-            onClick={() => setChainOpen((open) => !open)}
+            onClick={() => {
+              setToolsOpen(false);
+              setChainOpen((open) => !open);
+            }}
           >
             <ChainMark
               domain={activeSubchainMark ? activeSubchainMark.domain : activeChain.faviconDomain}
@@ -362,6 +386,23 @@ const TopDock = memo(function TopDock({
           ) : null}
         </div>
       </div>
+      <button
+        type="button"
+        className={toolsOpen ? 'mobile-tools-btn is-on' : 'mobile-tools-btn'}
+        aria-expanded={toolsOpen}
+        aria-controls="dock-tools"
+        onClick={() => {
+          setChainOpen(false);
+          setToolsOpen((open) => !open);
+        }}
+      >
+        <svg className="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 7h16M4 12h10M4 17h16" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+          <circle cx="15" cy="12" r="2.1" fill="currentColor" />
+        </svg>
+        <span>工具</span>
+      </button>
+      </div>
 
       <div className="dock-island dock-domains dock-center" role="group" aria-label="主領域篩選">
         <button
@@ -394,12 +435,22 @@ const TopDock = memo(function TopDock({
         })}
       </div>
 
-      <div className="dock-island dock-controls dock-tools" role="toolbar" aria-label="視圖與控制">
+      <div
+        id="dock-tools"
+        className={toolsOpen ? 'dock-island dock-controls dock-tools is-open' : 'dock-island dock-controls dock-tools'}
+        role="toolbar"
+        aria-label="視圖與控制"
+        onClick={(event) => {
+          const target = event.target;
+          if (target instanceof Element && target.closest('button')) setToolsOpen(false);
+        }}
+      >
         <div className="dock-seg" role="group" aria-label="佈局模式">
           {LAYOUT_OPTIONS.map((opt) => (
             <DockButton
               key={opt.id}
               label={opt.label}
+              caption={opt.caption}
               pressed={layoutMode === opt.id}
               className={layoutMode === opt.id ? 'is-selected' : undefined}
               onClick={() => onLayoutMode(opt.id)}
@@ -412,6 +463,7 @@ const TopDock = memo(function TopDock({
         <div className="dock-seg" role="group" aria-label="互動與顯示">
           <DockButton
             label={lockTip}
+            caption={nodeLocked ? '鎖定拖曳' : '解鎖拖曳'}
             pressed={nodeLocked}
             className={nodeLocked ? 'is-on' : 'is-alert'}
             onClick={onToggleNodeLock}
@@ -434,6 +486,7 @@ const TopDock = memo(function TopDock({
           {onToggleGather ? (
             <DockButton
               label={gatherTip}
+              caption={gathered ? '已聚攏' : '聚攏關聯'}
               pressed={gathered}
               className={gathered ? 'is-on' : undefined}
               onClick={onToggleGather}
@@ -468,6 +521,7 @@ const TopDock = memo(function TopDock({
           {onToggleTour ? (
             <DockButton
               label={tourTip}
+              caption={tourActive ? '巡覽中' : '開始巡覽'}
               pressed={tourActive}
               className={tourActive ? 'is-on' : undefined}
               onClick={onToggleTour}
@@ -486,6 +540,7 @@ const TopDock = memo(function TopDock({
           ) : null}
           <DockButton
             label={labelsTip}
+            caption="節點名稱"
             pressed={showAllLabels}
             className={showAllLabels ? 'is-on' : undefined}
             onClick={() => onShowAllLabels(!showAllLabels)}
@@ -504,6 +559,7 @@ const TopDock = memo(function TopDock({
           </DockButton>
           <DockButton
             label={semanticTip}
+            caption="跨領域線"
             pressed={showSemantic}
             className={showSemantic ? 'is-on' : undefined}
             onClick={() => onSemantic(!showSemantic)}
@@ -525,7 +581,7 @@ const TopDock = memo(function TopDock({
         </div>
         <span className="dock-divider" aria-hidden="true" />
         <div className="dock-seg" role="group" aria-label="環境">
-          <DockButton label="更新 Logo" busy={logoBusy} onClick={() => void refreshLogos()}>
+          <DockButton label="更新 Logo" caption="更新 Logo" busy={logoBusy} onClick={() => void refreshLogos()}>
             <svg className="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
               <path
                 d="M20.5 12a8.5 8.5 0 0 1-14.2 6.3L4.5 16.5"
@@ -547,7 +603,11 @@ const TopDock = memo(function TopDock({
               <path d="M19.5 7.5V4.3H16.3" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" fill="none" />
             </svg>
           </DockButton>
-          <DockButton label={themeTip} onClick={() => onTheme(theme === 'dark' ? 'light' : 'dark')}>
+          <DockButton
+            label={themeTip}
+            caption={theme === 'dark' ? '淺色主題' : '深色主題'}
+            onClick={() => onTheme(theme === 'dark' ? 'light' : 'dark')}
+          >
             {theme === 'dark' ? (
               <svg className="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
                 <circle cx="12" cy="12" r="4.2" stroke="currentColor" strokeWidth="1.8" fill="none" />
@@ -571,7 +631,7 @@ const TopDock = memo(function TopDock({
               </svg>
             )}
           </DockButton>
-          <DockButton label="重置視角與篩選" onClick={onReset}>
+          <DockButton label="重置視角與篩選" caption="重置視角" onClick={onReset}>
             <svg className="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
               <path
                 d="M3.5 12a8.5 8.5 0 1 0 2.5-6L3.5 8.5"

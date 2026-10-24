@@ -173,6 +173,7 @@ const DetailCard = memo(function DetailCard({
       aria-label="節點詳細資訊"
       style={{ '--detail-accent': accent } as React.CSSProperties}
     >
+      <div className="sheet-grabber" aria-hidden="true" />
       <div className="detail-top">
         <nav className="crumbs" aria-label="階層路徑">
           {crumbs.map((node, index) => (

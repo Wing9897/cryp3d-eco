@@ -2,6 +2,7 @@ import { useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } f
 import BootScreen, { type BootPhase } from './components/BootScreen';
 import ClusterNav from './components/ClusterNav';
 import DetailCard from './components/DetailCard';
+import InstallPrompt from './components/InstallPrompt';
 import KnowledgeGraph, { type GraphHandle } from './components/KnowledgeGraph';
 import StatusBar from './components/StatusBar';
 import TopDock from './components/TopDock';
@@ -14,6 +15,11 @@ import type { GraphNode, LayoutMode, ThemeMode } from './types';
 const NO_HITS: string[] = [];
 const VALID_EVM_CHAINS = new Set<EvmChainId>(['ethereum', 'bnb', 'base', 'arbitrum']);
 const VALID_LAYOUTS = new Set<LayoutMode>(['radial', 'tree', 'force']);
+const PHONE_LAYOUT = '(max-width: 960px)';
+
+function isPhoneLayout(): boolean {
+  return typeof window !== 'undefined' && window.matchMedia(PHONE_LAYOUT).matches;
+}
 
 function readInitialUrlState(): {
   chain: ChainId;
@@ -177,8 +183,8 @@ export default function App() {
   const [layoutMode, setLayoutMode] = useState<LayoutMode>(initialUrl.layoutMode);
   const [theme, setTheme] = useState<ThemeMode>(initialUrl.theme);
   const [showSemantic, setShowSemantic] = useState(true);
-  const [showAllLabels, setShowAllLabels] = useState(true);
-  const [navOpen, setNavOpen] = useState(true);
+  const [showAllLabels, setShowAllLabels] = useState(() => !isPhoneLayout());
+  const [navOpen, setNavOpen] = useState(() => !isPhoneLayout());
   const [tourActive, setTourActive] = useState(false);
   const [gathered, setGathered] = useState(false);
   // Default to true: lock 3D node pointer raycasting, dragging & auto-camera flight to prevent lag
@@ -233,6 +239,7 @@ export default function App() {
     (id: string) => {
       setTourActive(false);
       setSelectedId(id);
+      if (isPhoneLayout()) setNavOpen(false);
       setPillarId((currentPillar) => {
         if (currentPillar && id !== rootId && !view.pillarMembers.get(currentPillar)?.has(id)) {
           return null;
@@ -256,6 +263,7 @@ export default function App() {
     setTourActive(false);
     setSelectedId(id);
     if (!id) setGathered(false);
+    if (id && isPhoneLayout()) setNavOpen(false);
   }, []);
 
   const choosePillar = useCallback(
@@ -569,6 +577,9 @@ export default function App() {
     if (typeof document !== 'undefined') {
       const subLabel = chain === 'evm' && evmChain ? ` · ${evmChain.toUpperCase()}` : '';
       document.title = `${profile.title}${subLabel}`;
+      document
+        .querySelector('meta[name="theme-color"]')
+        ?.setAttribute('content', theme === 'light' ? '#e4eaf2' : '#070b14');
     }
     if (typeof window === 'undefined') return;
     const params = new URLSearchParams();
@@ -689,7 +700,9 @@ export default function App() {
           progress={bootProgress}
           onExited={finishBoot}
         />
-      ) : null}
+      ) : (
+        <InstallPrompt />
+      )}
     </div>
   );
 }

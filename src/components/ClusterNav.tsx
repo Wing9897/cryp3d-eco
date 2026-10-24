@@ -199,6 +199,9 @@ const ClusterNav = memo(function ClusterNav({
 
   return (
     <>
+      {open ? (
+        <button type="button" className="sheet-scrim" aria-label="關閉目錄" onClick={onToggle} />
+      ) : null}
       <button
         type="button"
         className={
@@ -214,6 +217,7 @@ const ClusterNav = memo(function ClusterNav({
           <rect x="3" y="4" width="18" height="16" rx="2.5" stroke="currentColor" strokeWidth="1.8" fill="none" />
           <path d="M9 4v16M13 9l3 3-3 3" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" fill="none" />
         </svg>
+        <span className="sidebar-collapsed-label">目錄</span>
       </button>
 
       <aside
@@ -222,6 +226,7 @@ const ClusterNav = memo(function ClusterNav({
         aria-label="生態樹狀目錄"
         aria-hidden={!open}
       >
+        <div className="sheet-grabber" aria-hidden="true" />
         <div className="sidebar-header">
           <div>
             <strong>{directoryTitle}</strong>

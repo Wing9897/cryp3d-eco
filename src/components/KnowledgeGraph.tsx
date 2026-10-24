@@ -77,12 +77,12 @@ const _move = new Vector3();
 const _worldUp = new Vector3(0, 1, 0);
 
 const WASD_KEYS = [
-  { dir: 'w', label: 'W', title: '往前', className: 'wasd-w' },
-  { dir: 'a', label: 'A', title: '往左', className: 'wasd-a' },
-  { dir: 's', label: 'S', title: '往後', className: 'wasd-s' },
-  { dir: 'd', label: 'D', title: '往右', className: 'wasd-d' },
-  { dir: 'up', label: '上', title: '往上', className: 'wasd-up' },
-  { dir: 'down', label: '下', title: '往下', className: 'wasd-down' },
+  { dir: 'w', label: 'W', phone: '前', title: '往前', className: 'wasd-w' },
+  { dir: 'a', label: 'A', phone: '左', title: '往左', className: 'wasd-a' },
+  { dir: 's', label: 'S', phone: '後', title: '往後', className: 'wasd-s' },
+  { dir: 'd', label: 'D', phone: '右', title: '往右', className: 'wasd-d' },
+  { dir: 'up', label: '上', phone: '上', title: '往上', className: 'wasd-up' },
+  { dir: 'down', label: '下', phone: '下', title: '往下', className: 'wasd-down' },
 ] as const;
 
 const HOME_RADIAL = { x: 0, y: 540, z: 980 };
@@ -1357,7 +1357,7 @@ const KnowledgeGraphView = forwardRef<GraphHandle, KnowledgeGraphProps>(function
       {padHost
         ? createPortal(
             <div className={`wasd-pad${selectedId ? ' is-beside-detail' : ''}`} role="group" aria-label="鏡頭移動">
-              {WASD_KEYS.map(({ dir, label, title, className }) => (
+              {WASD_KEYS.map(({ dir, label, phone, title, className }) => (
                 <button
                   key={dir}
                   type="button"
@@ -1380,7 +1380,8 @@ const KnowledgeGraphView = forwardRef<GraphHandle, KnowledgeGraphProps>(function
                     }
                   }}
                 >
-                  {label}
+                  <span className="wasd-label-desk">{label}</span>
+                  <span className="wasd-label-phone">{phone}</span>
                 </button>
               ))}
             </div>,

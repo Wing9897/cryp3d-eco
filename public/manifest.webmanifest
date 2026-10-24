@@ -1,0 +1,35 @@
+{
+  "name": "Solana 與 EVM 生態腦圖",
+  "short_name": "生態腦圖",
+  "description": "在手機或電腦上瀏覽 Solana 與 EVM 的立體生態知識地圖。",
+  "lang": "zh-Hant",
+  "dir": "ltr",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#070b14",
+  "theme_color": "#070b14",
+  "categories": ["education", "reference"],
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

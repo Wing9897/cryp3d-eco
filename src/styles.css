@@ -69,7 +69,9 @@ body,
 #root {
   width: 100%;
   height: 100%;
+  height: 100dvh;
   overflow: hidden;
+  overscroll-behavior: none;
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
 }
@@ -146,6 +148,7 @@ button {
   cursor: pointer;
   background: none;
   border: none;
+  touch-action: manipulation;
 }
 
 button:focus-visible,
@@ -750,6 +753,8 @@ a:focus-visible {
   width: 100%;
   padding: 7px 36px 7px 28px;
   font-size: 12px;
+  user-select: text;
+  -webkit-user-select: text;
   background: var(--bg-panel-solid);
   border: 1px solid var(--border-color);
   border-radius: 7px;
@@ -2122,6 +2127,7 @@ a:focus-visible {
 .graph-canvas {
   position: absolute;
   inset: 0;
+  touch-action: none;
 }
 
 .wasd-pad {
@@ -2384,15 +2390,481 @@ a:focus-visible {
   }
 }
 
+.toolbar-main {
+  display: contents;
+}
+
+.mobile-tools-btn,
+.dock-btn-label,
+.sheet-grabber,
+.sheet-scrim,
+.sidebar-collapsed-label,
+.wasd-label-phone {
+  display: none;
+}
+
+.install-prompt {
+  position: fixed;
+  z-index: 60;
+  left: 50%;
+  top: calc(var(--chrome-top) + 8px);
+  transform: translateX(-50%);
+  width: min(420px, calc(100vw - 24px));
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-panel);
+  backdrop-filter: blur(16px) saturate(170%);
+  -webkit-backdrop-filter: blur(16px) saturate(170%);
+  box-shadow: var(--shadow);
+  pointer-events: auto;
+}
+
+.install-prompt p {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  user-select: text;
+}
+
+.install-prompt-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.install-later,
+.install-now {
+  height: 36px;
+  padding: 0 12px;
+  border-radius: 9px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-panel-elevated);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.install-now {
+  border-color: transparent;
+  background: var(--accent);
+  color: #041018;
+}
+
+.app:has(.toolbar.is-tools-open) .install-prompt,
+.app:has(.sidebar.is-open) .install-prompt,
+.app:has(.detail-panel) .install-prompt {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  :root,
+  .app {
+    --chrome-top: calc(max(6px, env(safe-area-inset-top, 0px)) + 112px);
+    --mobile-sheet: min(58dvh, 520px);
+  }
+
+  .toolbar {
+    top: max(6px, env(safe-area-inset-top, 0px));
+    left: max(8px, env(safe-area-inset-left, 0px));
+    right: max(8px, env(safe-area-inset-right, 0px));
+    width: auto;
+    height: auto;
+    padding: 0;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 6px;
+  }
+
+  .toolbar-main {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .dock-brand {
+    flex: 1 1 auto;
+    min-width: 0;
+    width: auto;
+  }
+
+  .toolbar-brand {
+    width: 100%;
+    min-width: 0;
+    height: 40px;
+  }
+
+  .toolbar-brand h1 {
+    flex: 1 1 auto;
+    max-width: none;
+    font-size: 13px;
+  }
+
+  .brand-count,
+  .has-tip[data-tooltip]::after {
+    display: none;
+  }
+
+  .mobile-tools-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    height: 48px;
+    padding: 0 12px;
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-panel);
+    backdrop-filter: blur(16px) saturate(170%);
+    -webkit-backdrop-filter: blur(16px) saturate(170%);
+    box-shadow: var(--shadow);
+    color: var(--text-primary);
+    font-size: 13px;
+    font-weight: 700;
+    flex-shrink: 0;
+    pointer-events: auto;
+  }
+
+  .mobile-tools-btn.is-on {
+    color: #e0f2fe;
+    border-color: rgba(125, 211, 252, 0.5);
+    background: linear-gradient(180deg, rgba(56, 189, 248, 0.24), rgba(99, 102, 241, 0.16));
+  }
+
+  .app.theme-light .mobile-tools-btn.is-on {
+    color: #0369a1;
+  }
+
+  .dock-domains {
+    flex: 1 1 100%;
+    width: 100%;
+    height: 48px;
+    overscroll-behavior-x: contain;
+    -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent);
+    mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent);
+  }
+
+  .domain-pill {
+    height: 40px;
+    padding: 0 12px;
+  }
+
+  .dock-controls {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    left: auto;
+    z-index: 230;
+    width: min(340px, calc(100vw - 20px));
+    height: auto;
+    max-height: min(70dvh, 440px);
+    overflow-y: auto;
+    padding: 8px;
+  }
+
+  .dock-controls.is-open {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+  }
+
+  .dock-controls .dock-seg {
+    display: contents;
+  }
+
+  .dock-controls .dock-divider {
+    grid-column: 1 / -1;
+    width: 100%;
+    height: 1px;
+    margin: 2px 0;
+  }
+
+  .dock-controls .dock-btn {
+    width: 100%;
+    height: 44px;
+    justify-content: flex-start;
+    gap: 8px;
+    padding: 0 10px;
+  }
+
+  .dock-btn-label {
+    display: block;
+    min-width: 0;
+    overflow: hidden;
+    font-size: 13px;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .chain-menu,
+  .brand-menu {
+    position: fixed;
+    top: calc(max(6px, env(safe-area-inset-top, 0px)) + 60px);
+    left: 10px;
+    right: 10px;
+    width: auto;
+    max-height: min(70dvh, 480px);
+    overflow-y: auto;
+  }
+
+  .sheet-scrim {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 44;
+    border: 0;
+    background: rgba(2, 6, 23, 0.46);
+    pointer-events: auto;
+  }
+
+  .app.theme-light .sheet-scrim {
+    background: rgba(15, 23, 42, 0.28);
+  }
+
+  .sheet-grabber {
+    display: block;
+    width: 36px;
+    height: 4px;
+    margin: 8px auto 2px;
+    border-radius: 999px;
+    background: var(--border-strong);
+    flex-shrink: 0;
+  }
+
+  .sidebar {
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: min(78dvh, 680px);
+    max-height: calc(100dvh - var(--chrome-top) - 8px);
+    border-radius: 18px 18px 0 0;
+    border-bottom: none;
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    z-index: 46;
+  }
+
+  .sidebar.is-open {
+    transform: translateY(0) scale(1);
+  }
+
+  .sidebar.is-collapsed {
+    transform: translateY(110%);
+    opacity: 0;
+  }
+
+  .sidebar-header small {
+    display: none;
+  }
+
+  .sidebar-collapsed-btn {
+    top: auto;
+    left: max(12px, env(safe-area-inset-left, 0px));
+    bottom: calc(14px + env(safe-area-inset-bottom, 0px));
+    width: auto;
+    height: 48px;
+    padding: 0 14px 0 12px;
+    gap: 6px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .sidebar-collapsed-label {
+    display: inline;
+  }
+
+  .sidebar-search input {
+    font-size: 16px;
+    min-height: 40px;
+  }
+
+  .kbd-hint {
+    display: none;
+  }
+
+  .detail-header h2 {
+    font-size: 18px;
+    overflow-wrap: anywhere;
+  }
+
+  .caret-btn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .pillar-title,
+  .cat-title,
+  .proto-btn,
+  .tree-leaf,
+  .root-btn {
+    min-height: 40px;
+  }
+
+  .detail-panel {
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: var(--mobile-sheet);
+    max-height: calc(100dvh - var(--chrome-top) - 8px);
+    border-radius: 18px 18px 0 0;
+    padding: 0 14px calc(12px + env(safe-area-inset-bottom, 0px));
+    animation-name: detailSheetEnter;
+  }
+
+  .close-btn,
+  .fly-node-btn,
+  .icon-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .official-link,
+  .rel-card {
+    min-height: 44px;
+  }
+
+  .statusbar {
+    display: none;
+  }
+
+  .wasd-pad,
+  .wasd-pad.is-beside-detail {
+    right: max(12px, env(safe-area-inset-right, 0px));
+    bottom: calc(14px + env(safe-area-inset-bottom, 0px));
+    grid-template-columns: repeat(4, 46px);
+    grid-template-rows: repeat(2, 46px);
+    gap: 6px;
+  }
+
+  .wasd-key {
+    width: 46px;
+    height: 46px;
+    font-size: 14px;
+  }
+
+  .wasd-label-desk {
+    display: none;
+  }
+
+  .wasd-label-phone {
+    display: inline;
+  }
+
+  .app:has(.detail-panel) .wasd-pad,
+  .app:has(.detail-panel) .sidebar-collapsed-btn {
+    z-index: 48;
+    bottom: calc(var(--mobile-sheet) + 10px);
+  }
+
+  .app:has(.sidebar.is-open) .wasd-pad {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .boot-title {
+    font-size: 28px;
+  }
+
+  .boot-card {
+    width: min(420px, calc(100vw - 32px));
+  }
+}
+
+@media (max-width: 380px) {
+  .wasd-pad,
+  .wasd-pad.is-beside-detail {
+    grid-template-columns: repeat(4, 40px);
+    grid-template-rows: repeat(2, 40px);
+  }
+
+  .wasd-key {
+    width: 40px;
+    height: 40px;
+  }
+
+  .mobile-tools-btn span {
+    display: none;
+  }
+
+  .mobile-tools-btn {
+    width: 48px;
+    padding: 0;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 900px) and (max-height: 500px) {
+  :root,
+  .app {
+    --chrome-top: calc(max(6px, env(safe-area-inset-top, 0px)) + 58px);
+    --mobile-sheet: min(62dvh, 280px);
+  }
+
+  .toolbar {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .toolbar-main {
+    width: auto;
+    flex: 0 1 auto;
+  }
+
+  .dock-domains {
+    flex: 1 1 auto;
+    width: auto;
+    min-width: 0;
+  }
+
+  .toolbar-brand h1,
+  .brand-count {
+    display: none;
+  }
+
+  .sidebar,
+  .detail-panel {
+    height: var(--mobile-sheet);
+  }
+
+  .wasd-pad {
+    transform: scale(0.82);
+    transform-origin: bottom right;
+  }
+}
+
+@keyframes detailSheetEnter {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .boot-screen {
+  .boot-screen,
+  .sidebar,
+  .detail-panel,
+  .install-prompt {
     transition: none;
   }
 
   .boot-stars,
   .boot-pulse,
   .boot-track.is-busy::after,
-  .dock-btn.is-busy .svg-icon {
+  .dock-btn.is-busy .svg-icon,
+  .detail-panel {
     animation: none;
   }
 }
