@@ -1,13 +1,19 @@
-const CACHE = 'cryp3d-eco-v1';
+const CACHE = 'cryp3d-eco-v2';
+
+function underScope(path) {
+  const scope = self.registration?.scope || new URL('./', self.location).href;
+  return new URL(path, scope).href;
+}
+
 const CORE = [
-  './',
-  './index.html',
-  './manifest.webmanifest',
-  './icons/favicon-32.png',
-  './icons/icon-192.png',
-  './icons/icon-512.png',
-  './icons/icon-maskable-512.png',
-  './icons/apple-touch-icon.png',
+  underScope('./'),
+  underScope('index.html'),
+  underScope('manifest.webmanifest'),
+  underScope('icons/favicon-32.png'),
+  underScope('icons/icon-192.png'),
+  underScope('icons/icon-512.png'),
+  underScope('icons/icon-maskable-512.png'),
+  underScope('icons/apple-touch-icon.png'),
 ];
 
 self.addEventListener('install', (event) => {
@@ -28,23 +34,50 @@ self.addEventListener('activate', (event) => {
   );
 });
 
+async function cachePage(response) {
+  if (!response || !response.ok || response.type !== 'basic') return;
+  const cache = await caches.open(CACHE);
+  await cache.put(underScope('index.html'), response.clone());
+}
+
+async function cachedPage() {
+  return (
+    (await caches.match(underScope('index.html'), { ignoreSearch: true })) ||
+    (await caches.match(underScope('./'), { ignoreSearch: true }))
+  );
+}
+
 self.addEventListener('fetch', (event) => {
   const request = event.request;
   if (request.method !== 'GET') return;
 
-  const url = new URL(request.url);
+  let url;
+  try {
+    url = new URL(request.url);
+  } catch {
+    return;
+  }
   if (url.origin !== self.location.origin) return;
   if (url.pathname.includes('/api/')) return;
 
   if (request.mode === 'navigate') {
     event.respondWith(
-      fetch(request)
-        .then((response) => {
-          const copy = response.clone();
-          caches.open(CACHE).then((cache) => cache.put('./index.html', copy)).catch(() => undefined);
+      (async () => {
+        try {
+          // The original navigation request uses redirect:manual. Passing it
+          // straight through turns GitHub Pages' slash redirect into a failed launch.
+          const response = await fetch(request.url, { credentials: 'same-origin' });
+          await cachePage(response).catch(() => undefined);
           return response;
-        })
-        .catch(async () => (await caches.match('./index.html')) || caches.match('./')),
+        } catch {
+          const cached = await cachedPage();
+          if (cached) return cached;
+          return new Response('暫時打不開。請連上網路後再試一次。', {
+            status: 503,
+            headers: { 'Content-Type': 'text/plain; charset=utf-8' },
+          });
+        }
+      })(),
     );
     return;
   }
@@ -53,13 +86,13 @@ self.addEventListener('fetch', (event) => {
     caches.match(request).then((cached) => {
       const fetched = fetch(request)
         .then((response) => {
-          if (response.ok) {
+          if (response.ok && response.type === 'basic') {
             const copy = response.clone();
             caches.open(CACHE).then((cache) => cache.put(request, copy)).catch(() => undefined);
           }
           return response;
         })
-        .catch(() => cached);
+        .catch(() => cached || new Response('', { status: 504 }));
       return cached || fetched;
     }),
   );

@@ -498,11 +498,39 @@ function logoProxyPlugin(): Plugin {
 
 const pagesBase = '/cryp3d-eco/';
 
-export default defineConfig(({ command }) => ({
-  plugins: [react(), logoProxyPlugin()],
+function absoluteManifestPlugin(base: string): Plugin {
+  return {
+    name: 'absolute-pwa-manifest',
+    apply: 'build',
+    writeBundle(options) {
+      const dir = options.dir ?? path.join(PROJECT_ROOT, 'dist');
+      const file = path.join(dir, 'manifest.webmanifest');
+      const manifest = JSON.parse(readFileSync(file, 'utf8')) as {
+        id?: string;
+        start_url?: string;
+        scope?: string;
+        icons?: { src: string }[];
+      };
+      const root = base.endsWith('/') ? base : `${base}/`;
+      const toAbs = (src: string) => {
+        if (src.startsWith('/')) return src;
+        return `${root}${src.replace(/^\.\//, '')}`;
+      };
+      manifest.id = root;
+      manifest.start_url = root;
+      manifest.scope = root;
+      for (const icon of manifest.icons ?? []) icon.src = toAbs(icon.src);
+      writeFileSync(file, `${JSON.stringify(manifest, null, 2)}\n`);
+    },
+  };
+}
+
+export default defineConfig(({ command, isPreview }) => ({
+  plugins: [react(), logoProxyPlugin(), absoluteManifestPlugin(pagesBase)],
   // Project site is https://wing9897.github.io/cryp3d-eco/
   // Dev stays at / so the local server and /api/logo keep working.
-  base: command === 'build' ? pagesBase : '/',
+  // Preview must use the same base as the build, or the installed app opens a dead address.
+  base: command === 'build' || isPreview ? pagesBase : '/',
   build: {
     chunkSizeWarningLimit: 1800,
     rollupOptions: {
